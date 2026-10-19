@@ -1,0 +1,91 @@
+{
+  "language": "NL",
+  "input_column": "yt_comment",
+  "label_column": "hate_speech",
+  "labels": [
+    "no",
+    "yes_implicit",
+    "yes_explicit"
+  ],
+  "source": "StereoQueerEval_NL_training.csv",
+  "source_sha256": "fc6632cbdd48a796d0cea98ab4e0fad79432fa2d736a90d0986638339b865f77",
+  "seed": 42,
+  "numpy_version": "2.1.3",
+  "scikit_learn_version": "1.7.2",
+  "method": "StratifiedGroupKFold(10), allocation 7/1/2 by class-count deviation",
+  "group_rule": "Normalized title+description or duplicate comment; transitive grouping",
+  "normalization": "NFKC, casefold, collapse whitespace; output text unchanged",
+  "target_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "fold_allocation": {
+    "train": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "val": [
+      8
+    ],
+    "test": [
+      0,
+      9
+    ]
+  },
+  "relative_class_count_error": 0.0021852614820132735,
+  "total_rows": 2238,
+  "total_groups": 127,
+  "subsets": {
+    "train": {
+      "rows": 1556,
+      "ratio": 0.6952636282394995,
+      "groups": 84,
+      "label_counts": {
+        "no": 784,
+        "yes_implicit": 335,
+        "yes_explicit": 437
+      },
+      "label_proportions": {
+        "no": 0.5038560411311054,
+        "yes_implicit": 0.2152956298200514,
+        "yes_explicit": 0.2808483290488432
+      }
+    },
+    "val": {
+      "rows": 226,
+      "ratio": 0.10098302055406613,
+      "groups": 13,
+      "label_counts": {
+        "no": 109,
+        "yes_implicit": 55,
+        "yes_explicit": 62
+      },
+      "label_proportions": {
+        "no": 0.4823008849557522,
+        "yes_implicit": 0.24336283185840707,
+        "yes_explicit": 0.2743362831858407
+      }
+    },
+    "test": {
+      "rows": 456,
+      "ratio": 0.2037533512064343,
+      "groups": 30,
+      "label_counts": {
+        "no": 234,
+        "yes_implicit": 97,
+        "yes_explicit": 125
+      },
+      "label_proportions": {
+        "no": 0.5131578947368421,
+        "yes_implicit": 0.21271929824561403,
+        "yes_explicit": 0.2741228070175439
+      }
+    }
+  }
+}
