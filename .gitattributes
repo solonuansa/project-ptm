@@ -1,0 +1,2 @@
+# Preserve CSV bytes, including newlines inside quoted fields and source hashes.
+Analisis/data/**/*.csv -text
