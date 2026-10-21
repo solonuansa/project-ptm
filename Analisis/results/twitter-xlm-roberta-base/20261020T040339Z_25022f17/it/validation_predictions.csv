@@ -1,0 +1,272 @@
+﻿language,StereoQueerEval_id,yt_comment,true_label,predicted_label,prob_no,prob_yes_implicit,prob_yes_explicit
+it,training_IT_0002,E cosa sarà mai guardate cosa succede nel mondo  sveglia !!!,yes_implicit,yes_explicit,0.010180352,0.0644204,0.92539924
+it,training_IT_0007,"Che palle. Ognuno è libero di fare ciò che vuole. È una cosa che riguarda lei personalmente senza coinvolgere nessuno, che senso ha prendersela a caso? Madonna",no,no,0.94776607,0.037400566,0.014833395
+it,training_IT_0020,Ma come venivano trattate questo persone nel medioevo perchè tecnicamente è una prova che la natura abbia creato un unione tra due generi,no,no,0.8245297,0.14865339,0.026816892
+it,training_IT_0024,"""Ndo sta più la fratellanza"" il rispetto per il prossimo l'amore per tutti",no,no,0.7221418,0.26592067,0.011937473
+it,training_IT_0025,Triste e stupendo allo stesso tempo come una donna di una tale età sia più aperta mentalmente di molti idioti di 30/40 anni se non più giovani...,no,no,0.9861596,0.008261381,0.005579022
+it,training_IT_0037,Grandi ❤❤❤ il mio cuore è con voi,no,no,0.98829764,0.0065111946,0.005191177
+it,training_IT_0064,Se non ti sta bene stai a casa perché hanno le loro regole,yes_implicit,yes_explicit,0.39841357,0.08499298,0.51659346
+it,training_IT_0068,"Non siamo noi a dover dire se è giusto o no ciò che fanno queste persone, puoi avere il tuo pensiero ma mai imporlo..",no,no,0.9070447,0.08210263,0.010852663
+it,training_IT_0085,Commenti orribili... che tristezza.,no,no,0.9877993,0.0055773943,0.00662332
+it,training_IT_0088,"Intanto alla nipotina dovrebbe spiegare perché ha un nonno ignorante, cafone e maleducato... Poi gli si spiega che se due persone si vogliono bene e si baciano è normale e si chiama ""amore""...",no,no,0.98203826,0.012717139,0.005244649
+it,training_IT_0089,"Perché non andava via lui.
+Ho 70 anni è inorridisco a vedere un comportamento così omofobo.",no,no,0.9603228,0.007609358,0.0320679
+it,training_IT_0105,"Se ci è arrivata una signora della sua età ci possono arrivare tutti, complimenti signora 😊",no,no,0.94569504,0.05034074,0.0039642267
+it,training_IT_0114,"Siete proprio dei guerrieri, se caso mai fossimo attaccati la guerra la vinciamo in 6 ore ...",yes_implicit,yes_explicit,0.0073180622,0.05457757,0.9381044
+it,training_IT_0116,Come ha ragione Sgarbi! Che casino che facciamo noi umani. I figli sono un dono e come tutti i doni non bisogna pretenderli o addirittura rubarli.,yes_explicit,no,0.36624637,0.27559805,0.35815555
+it,training_IT_0134,"Il problema come è stato già detto non è l'essere omosessuale ma la questione che Gianluca voleva continuare il suo percorso verso il presbiterato mantenendo una relazione sentimentale, etero o omo, che fosse. Se uno è omosessuale alla fine è chiamato alla scelta del celibato come l'eterosessuale per cui non sussiste il problema. Altra condizione è la questione riguardante l'identità di genere, ma questo non era il caso.",no,no,0.8681827,0.09226852,0.039548784
+it,training_IT_0135,Una pagliacciata oserei dire altro che manifestazione. Solo Gesù può convertire tutta questa gente. Ravvedetevi. Se siete così Gesù non vi ama per cui cambiate. Il regno dei cieli è vicino.,yes_explicit,yes_explicit,0.021439884,0.022228733,0.9563314
+it,training_IT_0138,"Mi sfugge una cosa: cosa dovrebbe c'entrare l'omosessualità con il diventare sacerdote, se tanto questo sacerdote non può essere fidanzato?",no,yes_implicit,0.39640722,0.52323455,0.080358244
+it,training_IT_0144,Che gran coraggio ❤️,no,no,0.9857107,0.010592644,0.003696644
+it,training_IT_0145,Quindi è il Pride o la Palestina No perché se vai Fai un Pride In Palestina ti prendo una sassate quindi che si decidano cosa vogliono fare,yes_explicit,yes_implicit,0.022040736,0.9556805,0.02227878
+it,training_IT_0146,Pride?  Non ne avete un briciolo. Ma andata a zappare,yes_explicit,yes_explicit,0.0065004537,0.18584247,0.8076571
+it,training_IT_0149,Ma dove viviamo e questi sarebbero i Giovanni che saranno il futuro ...apposto siamo ...e ci risiamo fanno forza sempre sul branco,no,yes_explicit,0.0074137384,0.08396482,0.9086215
+it,training_IT_0160,Imbarazzanti!,yes_explicit,yes_explicit,0.4842487,0.016618695,0.49913272
+it,training_IT_0165,Mi è piaciuto,no,no,0.98559964,0.00884085,0.005559543
+it,training_IT_0183,"O etero o gay non cambia nulla l'importante che facciano i preti e non i cretini.
+Non si può tenere il piede in due scarpe.",no,yes_explicit,0.017566323,0.40749416,0.57493955
+it,training_IT_0190,"È una mutazione genetica,non sei intersex ne nulla.",no,yes_explicit,0.1216034,0.138199,0.74019766
+it,training_IT_0207,Andate a farlo in palestina e vedrete che fine vi fanno fare😂😂😂😂😂,yes_implicit,yes_explicit,0.0088765,0.040388457,0.95073503
+it,training_IT_0225,Ha ragione il nonnino. Avete rotto!,yes_explicit,yes_explicit,0.008817484,0.055946328,0.93523616
+it,training_IT_0232,"Io aspetto adesso che la Rowling  si scusi twittando qualcosa come ""Ah già lo sapevate che la mcgranitt è una transgender?"" ho fiducia i lei e so che lo farà",no,yes_implicit,0.43711218,0.5400251,0.02286269
+it,training_IT_0247,"Io c'è una cosa che non riesco a farmi andare giù: da che mondo è mondo ognuno di noi ha cose che non gli piacciono, che non condivide, che lo disgusta, magari. È normale, ognuno ha il suo pensiero e il suo sistema di valori, è cresciuto in un ambiente e ha fatto esperienze che lo hanno reso com'è. Sarebbe strano che ognuno pensasse le stesse cose di tutti gli altri ed è assurdo aspettarsi di avere una simile omogeneità. Tuttavia, mi avevano insegnato che la varietà è bella e che non puoi costringere gli altri a cambiare. Se proprio non sopporti un'idea o una persona, la lasci stare e vai in una direzione che ti è più consona. Mi sembra invece che, in questo periodo storico, si vada sempre di più verso una posizione totalizzante: tu la devi pensare così (e questo vale per ogni cosa, eh). Non esiste la sfumatura, la separazione dei contesti e dei livelli, è tutto un assoluto. Non sono d'accordo, dunque ho ragione e tu sei il mio nemico. Che è un salto logico insensato perché salta fasi e ragionamenti. Abbracci un immigrato? Devi essere insultata perché io sono contro l'immigrazione. Che c'entra? Ci rendiamo conto che in un caso parliamo di un sistema, una serie di misure che vanno prese, e nell'altro di due individui dotati di empatia che agiscono nel contesto di un singolo rapporto? Sei contrario all'omosessualità? Liberissimo, ma cosa c'entra col prendersela con due ragazzine che si stanno facendo i cavoli loro, che diritto hai di prendertela con due singoli? A che serve?  Tra l'altro, se non erro, articoli arcobaleno si vendono da Tiger da mesi. Li ho visti un sacco in giro. Ma ci rendiamo conto? Io boh, questa deriva della società per cui la devi avere vinta su qualsiasi cosa mi preoccupa.",no,no,0.93108845,0.048699595,0.020211995
+it,training_IT_0259,Ho visto bandiere Lgbt  pro palestina ma se andate là vi mangiano vivi,yes_implicit,yes_explicit,0.015073731,0.11481808,0.8701082
+it,training_IT_0272,Io odio il pride e anche lomofobia,yes_implicit,yes_explicit,0.09432038,0.02337525,0.88230443
+it,training_IT_0291,Hanno rotto i coglion1,yes_explicit,yes_explicit,0.012219766,0.057871822,0.9299084
+it,training_IT_0314,Non commento sennò farei almeno 3o4 peccari mortali!,yes_implicit,yes_explicit,0.046153672,0.042977966,0.9108684
+it,training_IT_0316,d0v3 È l4 L3Gg3 dDL z4N 1!1!1!1!1!1!1!1,yes_implicit,yes_explicit,0.07914964,0.13539623,0.78545415
+it,training_IT_0332,"Ma perché dovete odiare qualcuno per i suoi pensieri? Mica io odio tutte le persone con cui non vado d'accordo. Quello è il suo pensiero, finché non minaccia di uccidere tutti i transgender non dà fastidio a nessuno.  Penso che ognuno di noi debba scegliere alle parole di chi dare importanza. Mica io do retta a tutti quelli che mi criticano, altrimenti non vivrei o sarei depresso. Se mi insultano, mica io li prendo sul serio, sta a noi reagire al pensiero degli altri. Se ci sentiamo offesi è colpa nostra, non di chi ci offende.",yes_implicit,no,0.9704366,0.011242916,0.018320478
+it,training_IT_0355,...quanti commenti ignoranti...[CHANNEL] potevi almeno dare la spiegazione di intersex...dato che molti non sanno cosa sia e lo associano alla transessualità...ma anche se fosse così certi commenti non sono da giustificare,no,no,0.6384726,0.34764042,0.01388701
+it,training_IT_0366,"Saverio fa
+Sfissino mamma mia.  Chi lo segue sta peggio di lui.",yes_explicit,yes_explicit,0.09371939,0.027669603,0.878611
+it,training_IT_0372,"La famiglia è la mamma il padre .
+I figli ........
+
+Poi sto poracci non contano nulla 
+Fatela finita di fare ridere la gente!!!!!!",yes_explicit,yes_explicit,0.01671294,0.033514697,0.94977236
+it,training_IT_0375,Hanno contato anche chi passava di lì per caso....che buffoni,yes_explicit,no,0.9742202,0.012915075,0.012864723
+it,training_IT_0384,Totalmente d'accordo,no,no,0.5979354,0.26968542,0.13237916
+it,training_IT_0385,I bisex sono ammessi....???,no,yes_implicit,0.11033784,0.8749281,0.014733994
+it,training_IT_0388,"Egli non ha comandato a nessuno di essere empio
+e non ha dato a nessuno il permesso di peccare' (Sir 15,20)",yes_implicit,yes_explicit,0.13553847,0.2489589,0.6155026
+it,training_IT_0396,"Sgarbi: dal cul* non nasce niente
+
+Adorooooooooo",yes_implicit,no,0.8328334,0.102725476,0.0644411
+it,training_IT_0405,Tutti dovrebbero esere così,no,no,0.9618236,0.023798255,0.014378098
+it,training_IT_0420,"Però caro Gian Luca, entrando nella Chiesa Apostolica, ti sei messo fuori dalla Comunione col Papa e dalla Chiesa Romana. Ti prego rifletti su questo passo che stai facendo. Prego per te ❤️🙏🙏🙏",no,yes_explicit,0.067050114,0.015675066,0.9172749
+it,training_IT_0447,"La chiesa non potrà mai tollerare:  prostituzione, edonismo, orgia, promiscuità, atti omosessuali, violenze sessuali, pederestia... esistono altre confessioni è riti che permettono di sposarsi preti inclusi
+
+La comunità lgbt è affetta da complessi d inferiorità non gli va giù il fatto  che 2 uomini non possono procreare naturalmente...",yes_explicit,yes_explicit,0.030767744,0.2885153,0.68071693
+it,training_IT_0457,🤮🙈VOMITEVOLI!vedere poi un Gualtieri in prima fila al corteo dei pagliacci ...va beh famme sta zitta!!che è meglio!!👹🔥🖤,yes_explicit,yes_explicit,0.0075211613,0.03397188,0.958507
+it,training_IT_0466,Per qualsiasi cosa se sia vera o no per me rimane un grande uomo portiere e tutto,no,yes_implicit,0.13232797,0.6664617,0.20121035
+it,training_IT_0468,Sinceramente penso che è assurdo forzare la Chiesa ad accettare una tipologia di famiglia che non rientra nei suoi dogmi. Piuttosto è importante rafforzare il secolarismo nella società e nella politica. Ad iniziare dalla rimozione dei crocefissi nelle scuole!,no,yes_explicit,0.13142319,0.052429907,0.81614697
+it,training_IT_0479,"Uno è libero di vestirsi come gli pare e NESSUNO ha il diritto di mettere becco, o peggio ancora, AGGREDIRE SENZA MOTIVO il proprio prossimo. Quelle bulle stronzette (passatemi il termine poco lusinghiero) dovevano farsi i cavoli loro! Se io voglio vestirmi arcobaleno, lo faccio perché è un mio DIRITTO farlo e un loro DOVERE rispettarmi, punto.",no,yes_explicit,0.007345456,0.041798122,0.9508565
+it,training_IT_0483,"Un ""torna a ruttare al bar"" sarebbe bastato a mettere a tacere il demente di turno.
+Perché questa gente, deve tacere, sono dei relitti di un passato che fa schifo.",no,yes_explicit,0.040199548,0.013974232,0.9458262
+it,training_IT_0492,"Dipende dal bacio che si sono date. Vedo scene con fidanzati che si mettono otto metri di lingua in bocca e non è per nulla bello farlo in pubblico. E per me la legge vale per tutti, lesbiche, gay e etero. Se poi si sono date un semplice bacio a “schiocco” allora il discorso è un’altro. E se l’anziano lo ha fatto solo perché sono state due ragazze a baciarsi, deve solo vergognarsi",no,yes_explicit,0.37178048,0.24341811,0.38480142
+it,training_IT_0501,Che belli! sono contenta per loro <3,no,no,0.9862076,0.009593199,0.0041991514
+it,training_IT_0528,E si lo dico: nel 2022 ancora così stiamo messi...,no,yes_implicit,0.026862811,0.8869718,0.086165525
+it,training_IT_0534,"Ragazzi andate a vedere il video : Coming Out Tra Fratelli
+E comunque non capisco perché Giorgia meloni sia contro gay e lgbt 🏳️‍🌈",no,no,0.71756,0.2663059,0.016134094
+it,training_IT_0542,È già carnevale?,yes_implicit,yes_implicit,0.0230395,0.9635348,0.013425704
+it,training_IT_0546,i vip del tipo Elodie perché non aiutano le famiglie italiane povere in difficoltà  invece di partecipare con queste carnevalate 🤔 ah già sono pagati dallo stato essendo che il gay pride è finanziato dallo stato anziché di aiutare gli italiani la sinistra italiana company spende soldi inutilmente per fare le sfilate gay pride che tra l'altro sono una idiozia tremenda....,yes_explicit,no,0.8729183,0.119704425,0.007377276
+it,training_IT_0551,Il migliore modo di beccarsi  il vaiolo delle scimmie.,yes_explicit,yes_explicit,0.008438811,0.07347196,0.9180892
+it,training_IT_0579,Posso avere lei come nonna?,no,no,0.8817665,0.11082504,0.007408518
+it,training_IT_0595,SAVERIO !! Tutti i bambini orfani di sto mondo che sperano in dei genitori  ti ringraziano,no,no,0.989696,0.004807847,0.0054960987
+it,training_IT_0597,"Peccato che non sia finita peggio per loro , non ho niente contro gli omosessuali ma solo se intelligenti e seri  nel fare le loro cose in privato .",yes_implicit,no,0.5875669,0.40225405,0.010178993
+it,training_IT_0598,Sto sviluppando sempre di più un odio verso la società che mi circonda,no,no,0.83547884,0.07375575,0.090765424
+it,training_IT_0604,"Io non ho un euro ma voglio la Ferrari.
+Maranello apra le porte anche ai disoccupati",yes_implicit,yes_implicit,0.037354387,0.94244516,0.020200437
+it,training_IT_0607,"dio mio è davvero bellissima, la mia autostima scende :(",no,no,0.9868421,0.0074759973,0.0056818877
+it,training_IT_0615,"Questo è un traditore della Chiesa.
+Menomale che ti hanno cacciato .",yes_explicit,yes_explicit,0.01858773,0.047395956,0.93401635
+it,training_IT_0623,"Non posso giudicare, loro vita respetto per tutti persone.",no,no,0.5068868,0.47177884,0.02133436
+it,training_IT_0634,lo schifo proprio,yes_explicit,yes_explicit,0.049283,0.021268927,0.92944807
+it,training_IT_0640,"Meno male, la prossima volta cambia borsa e si mette dei calzini normali",yes_explicit,yes_implicit,0.02938117,0.9560172,0.014601661
+it,training_IT_0644,"E chissenefrega, gay o no per me quelli come lui sono veri campioni, anche fuori dal campo
+P.s quanto bisogna essere idioti per hackerare una persona e scrivere una cosa del genere pensando che sarebbe stato disprezzato, mah",no,no,0.96227044,0.026743399,0.010986193
+it,training_IT_0654,E fatevi una risata Madonna santa,yes_implicit,yes_explicit,0.022083081,0.26356602,0.7143509
+it,training_IT_0659,"La casa in cui abitate, la dice tutta sulla discriminazione e all odio su base sessuale che avete dovuto subire negli anni passati. Bravi andate avanti a combattere per non continuare a vivere nella indigenza e nella discriminazione quotidiana.",no,no,0.98499113,0.0052194824,0.009789443
+it,training_IT_0660,Per queste persone io accetto e darei la possibilità di fare interventi o cure ormonali non per chi lo vuole fare perchè non si sente nel proprio corpo e vuole cambiare.,yes_implicit,no,0.96563673,0.009892066,0.024471147
+it,training_IT_0690,L islam a la sua cultura e le sue convinzione e vanno rispettate!,yes_implicit,yes_implicit,0.02502847,0.93826973,0.036701825
+it,training_IT_0693,"👏👏👏👏👏Ha solo sbagliato nel comportamento,che vadano a fare le loro cose in privato....",yes_implicit,yes_implicit,0.049312335,0.8913218,0.05936597
+it,training_IT_0702,Quanto starei bene senza sti pagliacci che rovinano questa società odierna,yes_explicit,yes_explicit,0.20834315,0.021244656,0.7704122
+it,training_IT_0709,Siete solo amanti dell’apparire e del distinguervi a tutti i costi. La diversità è un concetto coniato da voi e strumentalizzato da chi vi manovra politicamente per propaganda. Ma da chi siete rappresentati? Da gente che cerca notorietà in ambito media come Lussuria? Vi consiglio un pellegrinaggio tipo a campostela,yes_explicit,yes_explicit,0.012936939,0.12164591,0.8654172
+it,training_IT_0711,"Forse non hanno ancora capito che in palestina é prevista una pena per gli omosessuali di fino a 10 anni di reclusione. Assurdo supportare un paese cosi restrittivo nei loro confronti e al contempo opporsi ad un paese aperto e inclusivo agli omosessuali com gli USA.
+Incoerenza agli estremi",yes_implicit,no,0.88330567,0.016971286,0.099723056
+it,training_IT_0720,Io non c'ero x problemi salute però avrei voluto esserci. Grandi ❤,no,no,0.98634213,0.0077698687,0.00588796
+it,training_IT_0728,"Non sapete più di cosa parlare 😂😂 tra i video di Tommasi e queste notizie sciocche c’è un abisso di mezzo. fatemi capire, per essere politicamente corretto doveva fingersi omosessuale??? Penso che questo sarebbe stato il vero gesto irrispettoso, fingersi ciò che non si è",no,yes_explicit,0.0752408,0.013938553,0.91082066
+it,training_IT_0738,E qinni che me ne fott  mi,yes_implicit,yes_implicit,0.011980916,0.7114459,0.27657312
+it,training_IT_0741,"Ma una persona si può vestire arcobaleno hahahahahahah , così è ovvio che ti bullizzano",yes_explicit,yes_implicit,0.09024183,0.58387125,0.32588696
+it,training_IT_0760,Tommasi sempre ridicolo. Sgarbi un grande.,yes_implicit,yes_explicit,0.012335586,0.03415958,0.95350486
+it,training_IT_0763,"Il signore ha sbagliato mai alzare le mani se disturbava la cosa del bacio c'erano 2 opzioni
+1) si alzava prendeva la piccola che per la tenera età poteva essere turbato da un bacio tra 2 ragazze
+2) chiedere con garbo senza scenate di andare via con la calma si ottiene tutto.",no,no,0.9625867,0.023493728,0.013919573
+it,training_IT_0778,Questo anziano sta senza mascherina e con la sigaretta in mano non lo sa che vistato fumare in spiaggia e poi con quel costume chi si deve vergognare è proprio lui😡😡,no,yes_explicit,0.05690365,0.017966833,0.9251295
+it,training_IT_0801,"io non capisco perchè certe persone abbiano bisogno dell'approvazione di una chiesa a tutti i costi. nella chiesa cattolica il sacerdote è obbligato al celibato e alla castità...quindi non ha nessun senso essere omosessuali o eterosessuali. Nelle altre chiese,nell'ortodossia ad esempio il sacerdote può sposarsi ma non fare sesso fuori del matrimonio,che può avvenire solo con una donna. La donna nel vangelo è esclusa dal parlare in assemblea e dall'insegnare,pertanto deve stare zitta ed ascoltare il marito e parlare solo tramite lui. Questa è la religione cristiana,ma nessuno,vivaddio,ci obbliga ad aderirci...si può benissimo farne a meno e vivere liberi e in pace con la natura.",no,yes_implicit,0.024681017,0.5535687,0.42175022
+it,training_IT_0827,"Questa si chiama libertà, ed io sono per uno stato democratico e libero da obblighi e leggi dittature,  bravi avete fatto bene e tanti auguri.",no,no,0.9505648,0.035915803,0.013519413
+it,training_IT_0837,"non siete il centro del mondo, la violenza è violenza x chiunque la subisca non volete essere discriminati ma non vi ritenete come tutti  gli altri comuni mortali.",yes_implicit,yes_explicit,0.034389302,0.03885419,0.9267565
+it,training_IT_0839,"Invece di entrare in chiesa entra in una fabbrica perché siete o pedofili o gay, perché fate tutti la stessa cosa ed entrate solo per nascondervi siete Lupi travestiti da pecorelle fate le peggiori cose 😡😡😡😡👎",yes_explicit,yes_explicit,0.013217953,0.058320343,0.92846173
+it,training_IT_0877,"Omg!!!!..
+I ragazzi di oggi nn hanno piu rispetto... Sotto casa mia ce un giardino... E ne sento di cotte e crude... Solidarietà per la ragazza.",no,no,0.91465765,0.009867564,0.075474806
+it,training_IT_0878,Una minoranza goliardica.,yes_implicit,yes_implicit,0.020679785,0.7707166,0.20860364
+it,training_IT_0890,Le priorità della sinistra sia nazionale che internazionale.. eccole qua.,yes_implicit,yes_implicit,0.043717805,0.94251907,0.013763134
+it,training_IT_0893,"l'orgoglio dei pagliacci senza frontiere... fate la stessa manifestazione nei postacci dove inneggiate le loro bandiere se avete le ""palle""... ridicoli",yes_explicit,yes_explicit,0.0071038464,0.23941885,0.7534773
+it,training_IT_0912,"Povero figlio, spero per lui che non abbia la possibilità di averti come genitore",yes_explicit,no,0.9852248,0.0073912116,0.0073839976
+it,training_IT_0913,È di questa carnevalata che sono orgogliosi?,yes_implicit,yes_implicit,0.008795206,0.95873344,0.032471385
+it,training_IT_0916,"Se le leggi sono quelle non bisogna fare tutta questa polemica, basta non andarci o rispettare le regole. Per il resto fanno bene",yes_implicit,yes_implicit,0.019833317,0.95842654,0.021740135
+it,training_IT_0922,"Hai mai pensato che NON esiste una donna ricca, o benestante, disposta a dare il proprio utero in “affitto”? Bensì solo le persone povere lo fanno…",no,no,0.9631564,0.03354185,0.0033016903
+it,training_IT_0924,"La adotto come madre, padre, zii, nonni ecc...",no,no,0.608341,0.3731446,0.018514385
+it,training_IT_0930,no comment,no,no,0.4604242,0.4300016,0.10957414
+it,training_IT_0950,Fanno vomitare ste persone,yes_explicit,yes_explicit,0.02037559,0.020615773,0.9590087
+it,training_IT_0956,Contenuto per loro❤👍,no,yes_implicit,0.03016588,0.9592811,0.010553088
+it,training_IT_0963,questo cammina per la strada dell inferno. Vergogna,yes_explicit,yes_explicit,0.017731763,0.02822481,0.9540434
+it,training_IT_0967,Trogloditi analfabeti energumeni cavernicoli celenterati cretacei. C'è da stupirsi? No: in Senato sono messi anche peggio. Tornatevene nell'età della pietra.,no,yes_explicit,0.012902138,0.019539382,0.96755844
+it,training_IT_0972,"Charamsa avrai pure ragione sulla Chiesa...xò se hai incontrato Cristo nella tua vita.,,già allora dovevi essere libero e felice malgrado la tua condizione.Cristo è una persona che quando lo incontri lo sento che ti cambia il cuore e la vita e la Chiesa non c entra più.",yes_implicit,no,0.59324336,0.32003078,0.08672595
+it,training_IT_0974,Buffoni sono 4 gatti! Poi con sta storia della Palestina che non c’entra niente! Bah,yes_explicit,yes_explicit,0.007741206,0.12333053,0.86892825
+it,training_IT_0989,Un Italia sempre più fascista e senza vergogna. E arrivato il momento di chiudere le fogne,no,yes_explicit,0.025476925,0.05871728,0.9158058
+it,training_IT_1020,"Non è omofobia ma transfobia.
+Non è un Lui ma una Lei.
+Se è una donna trans si deve parlare di lei al femminile. Grazie.",no,no,0.9657937,0.017144892,0.01706138
+it,training_IT_1024,"E anche oggi dal circo è tutto, ci vediamo alla prossima edizione
+(che poi chi è lui per cacciare due ragazze da una spiaggia PUBBLICA?)",no,yes_implicit,0.039116375,0.94816583,0.012717843
+it,training_IT_1047,"Ma infatti, questa persona ha perfettamente ragione,sta dicendo la verita' con intelligenza.penso che la societa' ha le sue colpe",no,yes_implicit,0.14326912,0.7867022,0.070028655
+it,training_IT_1052,"Andate in piazza a difendere i diritti dei lavoratori, delle famiglie, per il diritto alla casa, per la scuola, per la sanità, luxuria non sei una parlamentare? T'interessano solo i gay.
+Mi fate diventare omofoba con queste pagliacciate e non lo sono mai stata ma non se ne può più 
+In tv se non sei lesbica, omo o almeno fluid non lavori😢",yes_implicit,yes_explicit,0.008626125,0.160749,0.8306248
+it,training_IT_1061,"Io rispetto la loro scelta omosessuale perché bisogna rispettare tutti ma per me non è una cosa normale e da cattolico dico che la normalità è  un rapporto ""tra maschio e femmina"".l'unica cosa che condanno è l'omofobia , perché uno anche se non l'accetta non deve fare violenza.",yes_implicit,no,0.86597663,0.071292244,0.06273114
+it,training_IT_1072,"Chissà se questi 2 ""Cristiani"" sentendo qualcuno che bestemmia lo denunciano nello stesso modo in cui denunciano qualcuno che li ""discrimina""!?... è discriminazione se qualcuno parla male degli omosessuali ma si può liberamente bestemmiare discriminando il credo di altri!",yes_implicit,no,0.9880782,0.008245181,0.003676686
+it,training_IT_1079,E voi vorreste governare l' Italia ? Luridi depravati !!!!!!!!!!!!,yes_explicit,yes_explicit,0.010269938,0.04702622,0.9427039
+it,training_IT_1083,a me il film è piaciuta davvero nulla è normale e come dico anche io sia nell'acqua sia ľamore il tempo vola perché non esiste quando una persona è nel profondo e sei ipnotizzato da una persona tu non pensi al tempo ma nel tuo cuore ti senti proprio nell'animo di un/a e poi ti senti al paradiso col sorriso ed è un/a sentimento magico,no,no,0.9840307,0.008758087,0.007211244
+it,training_IT_1095,Terzo mondo,no,yes_implicit,0.41083926,0.47437632,0.114784405
+it,training_IT_1128,Spero con tutto il cuore che lo sia diventato,no,no,0.95521694,0.023200298,0.021582859
+it,training_IT_1133,Ma sembra che nel mondo esista solo gli lgbt ma basta siete ridicoli . Non rovinate i mondiali basta.,yes_explicit,yes_explicit,0.013505414,0.040616114,0.94587845
+it,training_IT_1139,"A chi piace la banana..a chi la fragolina..ognuno è libero di mangiare ciò che vuole..
+Ma perché dissociarsi da un pensiero di un'altra persona??
+VIVA LA LIBERTÀ SEMPREE",no,no,0.9507637,0.02443784,0.024798451
+it,training_IT_1142,di sicuro il buon VIttorio di dietro e' vergine a differenza dell agitatore toscano che avra sicuro lo sfintere compromesso da sempre,yes_explicit,yes_explicit,0.006936795,0.16421005,0.82885313
+it,training_IT_1149,"Ma chose cuesta shimja che diche chosi , anche con Gezu e con satana .",yes_explicit,yes_implicit,0.077927835,0.7068803,0.21519192
+it,training_IT_1151,Anche te sei una persona buona gentile cotese di animo buono si vede dalla tua espressione facciale come parli t.v.t.b.,no,no,0.98687,0.008202994,0.0049270163
+it,training_IT_1167,Si sono d'accordo con Luxuria. È demenziale pensare che si pissa fare diventare gay un bambino. E questa manifestazione serve perché così c'è visibilità e se ne parla,no,yes_implicit,0.07819547,0.7484473,0.17335722
+it,training_IT_1192,"Non importa quanti siate
+Fate solo SCHIFO🤮🤮🤮🤮🤮🤮",yes_explicit,yes_explicit,0.014214602,0.026504558,0.95928085
+it,training_IT_1193,Siamo messi bene! In caso di scoppio di guerra che fara’ questo esercito di pacifisti? I razzi mi sa che entreranno agli italiani li’ dove non batte il sole. Comunque “Viva la Pace e Viva il Vaticano “ che possiede l’unica diplomazia ragionevole in questo mondo di pazzi. 🍀😴,yes_implicit,no,0.79095316,0.02155698,0.18748982
+it,training_IT_1198,"( a me non frega nulla degli LGBT )
+E secondo me hanno anche esagerato ad aver dato un mese in memoria ecc... A persone normali.
+Ma certe cose sono tristi
+Nessuno può giudicare in questo modo delle scelte altrui e vergognoso
+Ognuno fa le sue scelte nella vita 
+E se queste scelte non fanno male a nessuno e ancora peggio giudicarle.
+Mi dispiace per le ragazze perché non hanno niente di diverso dalle altre ragazze forse hanno un po' più di intelligenza",no,no,0.9880944,0.009002803,0.0029028705
+it,training_IT_1200,"Quanti commenti disgustosi leggo e mi meraviglio che ancora esista certa gente. 
+Vi fate problemi sulle vite altrui e su queste coppie... che di male nulla hanno fatto. Sarà un bel giorno quando capirete che i problemi sono ben altri. Ma credo che mai succederà, siete talmente chiusi che anche se vedrete la terra finire male, causa tutti i VERI problemi, voi starete ancora lì a puntare il dito sulle vite degli altri.",no,no,0.9058157,0.013227174,0.08095706
+it,training_IT_1206,Il Qatar è un bellissimo paese,yes_implicit,no,0.97882974,0.014405466,0.006764906
+it,training_IT_1227,"Avete ottenuto fior di diritti ormai vi è riconosciuto tutto,  ma cosa volete ancora??????? Qua si sta veramente esagerando,  pienamente d'accordo con il Vaticano in questo caso!!!!!!!!!......",yes_explicit,yes_explicit,0.008542977,0.083565205,0.9078918
+it,training_IT_1250,Scommetto che tutti quelli nella sua situazione si sentano malissimo. È terribile nascere con queste malformazioni perchè confondi anche la tua identità. Condoglianze per tutte queste persone.,yes_implicit,no,0.98874784,0.0042429864,0.0070091793
+it,training_IT_1265,Luca ti stimo per avere messo la faccia...    ma la castità.... . Eheh no eh.....,no,yes_implicit,0.20159784,0.7765862,0.021815963
+it,training_IT_1276,Pedofilo in carriera,yes_explicit,yes_implicit,0.034760226,0.8895016,0.07573818
+it,training_IT_1300,"Se scoppia la guerra,andrete a difendere la vostra Patria,di conseguenza i vostri diritti???",yes_implicit,yes_explicit,0.009816685,0.17769696,0.81248635
+it,training_IT_1318,"Difronte a una bambina, ovviamente si può capire, c'è  a parer mio a prescindere dal fatto omosessuale o etero, difronte ai bambini magari certi atteggiamenti andrebbero evitati.",no,no,0.9864247,0.0073497985,0.006225522
+it,training_IT_1320,"Tempo fa ho seguito un canale su tematiche lesbo (che purtroppo è stato chiuso) condotto da una coppia di ragazze scatenate e senza peli sulla lingua. In un simpatico video svelavano la loro personale top 10 di italiane famose che nasconderebbero accuratamente il loro reale orientamento sessuale. Nella top 10 c'erano, tra le altre, Emma ed Elodie. Non so quanto affidabile sia la testimonianza, ma se lo fosse... benvenuta nel club, cara Elodie!",no,no,0.9224421,0.073795535,0.003762454
+it,training_IT_1327,Ecco una testimonianza dell' inevitabile declino di questo paese.,yes_explicit,yes_explicit,0.15169686,0.33058897,0.51771414
+it,training_IT_1353,Un casino ha combinato per uno scherzo stupido !!,no,yes_implicit,0.02104412,0.96093833,0.018017577
+it,training_IT_1364,Il nonno che fuma e aggredisce delle persone è più educativo di un bacio? Questa è la società in cui viviamo?,no,no,0.9661728,0.021724071,0.01210308
+it,training_IT_1371,"Dubito che i medici abbiano agito per i motivi che sostiene. Come fa a ritenere con certezza che se non l'avessero operata sarebbe stata più serena, stabile e felice e che non avrebbe avuto problemi di identità ancora più gravi?🤔 Per quanto riguarda le cure ormonali, boh, non so se si possa dire che siano causa di una rovina  della sua  vita. Tanta gente è costretta per patologie a prendere un sacco di medicine...",no,no,0.99007356,0.004871131,0.0050552916
+it,training_IT_1386,"Beh!!! Avere un personaggio di fama mondiale  come Elodie a far da madrina è un salto di qualità enorme  (lei sa' come zittire i contrari ...Conosciamo tutti il suo impegno per le categorie più discriminate...dai disabili ai senza tetto...dai terremotati ai disoccupati per forza...dalle lotte per il lavoro agli aumenti salariali...dai bimbi disabili, a quelli sfruttati torturati abbandonati...dagli anziani soli con pensioni da fame ecc.ecc Tutti diritti negati!!! Elodie dice di stare dalla parte giusta...",no,yes_implicit,0.102994576,0.8795863,0.017419262
+it,training_IT_1394,Solo io penso sia solo e soltanto una moda?,yes_implicit,yes_implicit,0.019497542,0.9514467,0.029055685
+it,training_IT_1401,L'atteggiamento della chiesa ha un nome specifico: omofobia internalizzata da parte delle gerarchie ecclesiastiche che sono esse in larghissima parte omosessuali. Il panico e' il rischio percepito del presunto controllo sulla sessualita' delle persone che da sempre hanno cercato di esercitare.,no,no,0.9646126,0.010810476,0.024576843
+it,training_IT_1410,Il corteo dei nature freaks,yes_implicit,yes_implicit,0.03867581,0.9443784,0.016945783
+it,training_IT_1423,ddl zan grazie a te non succederanno più queste cose!!!;🤔🤔,no,no,0.98203826,0.013458235,0.0045035444
+it,training_IT_1466,"Che dranmone poter esprimere liberamente il proprio pensiero ...
+Co sta musica poi.",yes_implicit,no,0.966018,0.028135994,0.005846017
+it,training_IT_1482,"Che vergogna, non c'è altro da dire",no,no,0.85907465,0.0416985,0.09922685
+it,training_IT_1490,"Cosa vi lamentate? Solo 80 anni fa, vi buttavano dentro i fornelli 🔥🔥🔥🔥🔥🍒",yes_explicit,yes_explicit,0.0062824655,0.07397787,0.91973966
+it,training_IT_1495,"Un successone 😂😂😂. Se non fosse stato per Google TV che metteva la ""pubblicità del mese Pride"" nella Home Page non me ne sarei neppure accorto. E non ho visto così tante notizie, video, commenti, discussioni, ecc... come alcuni anni fa. Ormai è un ""Carnevale Estivo"" di cui si è perso il significato se mai c'è ne fosse stato uno.",yes_implicit,no,0.9864682,0.008096215,0.0054355417
+it,training_IT_1496,questa nonna ha la mente più aperta dei 20 del giorno d’oggi ❤️,no,no,0.8367574,0.15508717,0.008155356
+it,training_IT_1508,Che fenomeni da baraccone.... 🤦‍♂️,yes_implicit,yes_implicit,0.0111033805,0.7405883,0.24830838
+it,training_IT_1553,Buffoni schifosi,yes_explicit,yes_explicit,0.011598804,0.050654247,0.93774694
+it,training_IT_1556,"Non usiamo la scusa del cosidetto ""diritto umano"" contro le regole di un paese o cultura. Supportare 0m0sessualita in Qatar (dove e vietato) e come se fosse i musulmani andare in un paese cattolico a supportare  per l'indosso del velo alle donne che non sono musulmane. Le regole sono da seguire, non puoi forzare o andare contro di una nazione.",yes_implicit,yes_explicit,0.013068682,0.037963487,0.9489678
+it,training_IT_1564,"La domanda è perché l'omosessualità e odiata ancora oggi al 21° secolo ? E chi ci rimette sono sempre queste creature ? Le religioni anno predicato da millenni questi insegnamenti,non dimentichiamo l'inquisizione e la seconda guerra mondiale.",no,yes_explicit,0.011869431,0.036901183,0.95122945
+it,training_IT_1621,"Mi sembra che siano stati più che mai corretti, un Paese che cerca di difendere la propria identità nazionale e tradizionale è un esempio da seguire.",yes_implicit,yes_implicit,0.32098007,0.61569166,0.063328296
+it,training_IT_1622,"Non capisco, ma sforzandomi penso sia paura del diverso, i pollici in basso ma se una PERSONA nasce cosi perché qualcuno deve decidere per questa persona? Sbagliando magari e cmq non rispettando il diritto di scelta della persona. Inciviltà totale.",no,no,0.9820685,0.009808171,0.008123321
+it,training_IT_1623,Non ci resta che piangere...,yes_implicit,no,0.9796259,0.012611785,0.0077623106
+it,training_IT_1632,L'ignoranza di questa persona è madornale!,yes_implicit,no,0.9853726,0.005135534,0.009491928
+it,training_IT_1654,A me non sembra che la Rowling abbia detto chissà che.,yes_explicit,yes_implicit,0.27251473,0.70961595,0.017869284
+it,training_IT_1655,Cocorite in piazza 😁😁😁,yes_implicit,yes_explicit,0.010812858,0.20937248,0.77981466
+it,training_IT_1670,"madonna che cattiveria. a me è successa una cosa simile ma non mi hanno aggredita. 
+sono uscita con la mia amica nella piazza del mio paesino e avevo una borsa arcobaleno, sono passata davanti a dei ragazzini 08 penso e uno di loro ha detto ""NO, NO, GUARDA LA BORSA!"" mi batteva il cuore a mille. poi quando stavo ritornando a casa avevo la borsa rivolta verso un campetto di calcio dove c'era quel ragazzino e ha urlato ""LGBT!!!!!!"" io sono corsa via verso casa mia.",no,no,0.9632187,0.009269467,0.027511839
+it,training_IT_1672,Ora è una cosa normale essere lesbiche o gay ti criticano se sei etero invece😪,yes_explicit,no,0.89715236,0.06323651,0.039611068
+it,training_IT_1677,Che schifezza. C'è qualcosa che non funziona più.,yes_explicit,yes_explicit,0.29048416,0.030482553,0.6790333
+it,training_IT_1697,"Mi dispiace per sta ragazza . Ci sono ancora persone così ignoranti? In che società viviamo? Che schifo...... Ti auguro una buona vita cara 😘😘😘😘 sui felice e non ascoltare mai ste persone perché i veri problemi mentali li hanno loro un bacio stammi bene 😘😘😘😘😘.  Io non sono razzista,non ho niente contro gli omosessuali o le lesbiche,non sono un fascista,non ho niente contro i disabili o ragazzi (parlo in generale) che hanno malattie gravi io sono..... UGUALE A TUTTI. Che possiate campare per sempre ❤️❤️❤️❤️❤️ vi auguro a voi tutti una serena vita piena di felicità 😘😘😘😘😘",no,no,0.9510912,0.008148585,0.04076026
+it,training_IT_1700,Andate a trovare Hamas...loro vi fanno il c..o davvero,yes_explicit,yes_explicit,0.02855012,0.020443741,0.9510061
+it,training_IT_1711,Vi prego proteggete questa donna,no,no,0.88930935,0.024739817,0.08595082
+it,training_IT_1720,Sgarbi stupendo ti stimo tantooooo.👍👍,yes_implicit,no,0.98950726,0.005741916,0.004750928
+it,training_IT_1727,Vabbè allora i bambini che nascono con degli arti in più che si possono amputare lasciamoli così...,yes_implicit,yes_explicit,0.29496598,0.07009905,0.63493496
+it,training_IT_1782,Ma io la voglio come mia nonna subitooo 💕,no,no,0.8639845,0.12439283,0.011622712
+it,training_IT_1788,Bravissima donna !!!! Complimenti!!! ❤️❤️❤️❤️,no,no,0.99059945,0.0052032676,0.004197307
+it,training_IT_1826,È simpatico!,no,no,0.9722987,0.022206081,0.0054952377
+it,training_IT_1829,ha ragione sgarbi ma tantissimo,yes_implicit,yes_implicit,0.026271887,0.7603158,0.21341231
+it,training_IT_1844,"È un problema pratico.
+Un prete omosessuale si trova tutta la vita in un ambiente maschile.
+Sarebbe come mettere un prete etero tutta la vita in mezzo alle donne.",yes_implicit,no,0.5694462,0.04241476,0.388139
+it,training_IT_1851,Che schifo di persone che ci sono in giro 🤢😡...che gli torni tutto indietro,no,no,0.9655727,0.004853755,0.029573586
+it,training_IT_1852,"Essere gay e cattolico allo stesso tempo, mi sembra una profonda contraddizione, quando S. Paolo e i principali dottori della chiesa hanno apertamente condannato ciò che definivano con il termine sodomia, S Caterina addirittura lo considerava il peccato più grave, che non sarà mai perdonato.",yes_explicit,no,0.6648806,0.22821121,0.106908225
+it,training_IT_1856,E fanno meglio,yes_implicit,yes_implicit,0.040264226,0.7634489,0.1962869
+it,training_IT_1867,"Guarda che io sappia o fai il prete o sei gay... generalmente..i preti si astengono proprio o dovrebbero..almeno così si dice..per Gesù che dice  di amare il prossimo come te stesso...vuol dire vai a fare del bene..e scusate ma se il vaticano che è la chiesa per eccellenza da qualche regolina forse pure gli altri dovrebbero capirla...poi se vuoi fare del bene puoi farli da gay,lesbica trans ,come te pare...",no,yes_implicit,0.07592085,0.9139067,0.010172435
+it,training_IT_1875,Brava nonna Ecco perché siete la cosa più bella che esiste sulla terra 😍,no,no,0.9779333,0.009077093,0.012989643
+it,training_IT_1906,Falsi moralisti il sesso non si può cambiare. Il resto e disordine mentale,yes_explicit,yes_explicit,0.057950415,0.026209729,0.9158399
+it,training_IT_1912,"nn so cosa dire, dopo ciò rimango senza parole.",no,no,0.98093516,0.011420173,0.007644712
+it,training_IT_1915,"In poche parole degli scherzi dalla natura, mutanti? 😱😱",yes_explicit,no,0.6728649,0.30107078,0.026064338
+it,training_IT_1919,Ma siamo sicuri di essere nel 2021🤔🤔😳,no,yes_implicit,0.3420853,0.6390995,0.018815283
+it,training_IT_1950,Non ci siamo... Dove siamo finiti.,yes_explicit,no,0.6949788,0.02985703,0.2751641
+it,training_IT_1952,"Sembra di stare ancora nel medioevo, in mezzo a degli ignoranti...",no,no,0.9292028,0.043226592,0.02757057
+it,training_IT_1983,Elodie sei meravigliosa vero dove c'è amore c'è normalità.  Ma ora ci avete stufato l abbiamo capito tutti quanti stanno facendo anche troppo per il pride basta basta basta🏳️‍🌈🏳️‍🌈🏳️‍🌈.,yes_implicit,no,0.98091036,0.0080427425,0.011046935
+it,training_IT_1993,"W il Vaticano, e la coppia naturale",yes_explicit,yes_implicit,0.1457221,0.8218767,0.03240109
+it,training_IT_1995,Viva la Rowling,yes_implicit,no,0.42109767,0.16836205,0.41054034
+it,training_IT_2008,Hahaha mi ci scappa da ridere perché nel 2021 esistono ancora gli omofobi... Mah...,no,no,0.7406339,0.22532979,0.034036323
+it,training_IT_2010,Stima per quella donna,no,no,0.9879644,0.007513793,0.0045218803
+it,training_IT_2019,"Comunque è imbarazzante vedere come ancora tante persone considerano un pensiero discriminatorio ""libertà di opinione"". Per voi è un'opinione, ma incide profondamente sul modo di essere di tante persone e dimostra che non siete capaci di accettare chi è diverso da voi. Chiamatela libertà di opinione quanto volete, ma è triste che ancora nel 2020 si facciano queste discriminazioni.",no,no,0.9764479,0.010857954,0.012694235
+it,training_IT_2063,La propaganda pro ddl zan continua! Stay tuned!,yes_implicit,yes_implicit,0.18698955,0.7736559,0.039354548
+it,training_IT_2074,I Palestinesi sono Musulmani chisa' cosa direbbero di loro,yes_implicit,yes_implicit,0.23012851,0.7358243,0.034047246
+it,training_IT_2075,"Legga chi intende..
+
+L ideologia : ""fai ciò che vuoi"" , come si vede e si pratica ha a che fare con la ribellione , la perversione;
+Non c'è libertà nella ribellione perché si diventa schiavi della depravazione; perché uno è schiavo di ciò che lo ha vinto.
+Coloro che si dedicano a questo servizio lo sanno , ma altri invece vengono ingannati sia in totale inconsapevolezza o con completa conoscenza.....",yes_explicit,yes_explicit,0.09204976,0.1057419,0.80220836
+it,training_IT_2078,E vero chi te la detto a ragione fai shifo 🤮,yes_explicit,yes_explicit,0.007846688,0.48735747,0.50479585
+it,training_IT_2085,Se 350 mila 😂😂..... bello schifo con tutti i problemi che abbiamo diamo importanza a ste schifezze,yes_explicit,yes_explicit,0.13541113,0.0970579,0.7675309
+it,training_IT_2095,"Premetto che [CHANNEL] non sta facendo altro che alimentare odio pubblicando vagonate di video riguardo a questo decreto che inasprisce solamente la legge Mancino.
+Per quelli di una certa parte politica quando la chiesa va contro Zan  è tutto perfetto, quando si schiera contro i porti chiusi e per la tutela dei migranti sono la peggio cosa.
+Decidetevi",no,yes_explicit,0.008700772,0.041005444,0.9502938
+it,training_IT_2097,Non di tutti le persone con handicap non vengono mai menzionate in queste manifestazioni che difendono solo alcuni diritti di alcune categorie male molto male,no,no,0.7878607,0.1970018,0.015137466
+it,training_IT_2103,io penso che dobbiamo decidere se fossimo uomini o cani...,yes_implicit,yes_implicit,0.01852774,0.70001733,0.28145492
+it,training_IT_2110,"Vergogna. E' vero, ognuno ha il sacrosanto diritto di essere ciò che effettivamente è.
+Ma non in pubblico, con manifestazioni oscene, nuocendo in tal modo la pubblica morale.",yes_explicit,yes_implicit,0.046100058,0.5814251,0.37247488
+it,training_IT_2111,Ecco perché ci estingueremo la passera non piace più a nessuno.... W le donne ❤️ donne dalla nascita. Non é omofobia ma dolo gusto personale.,yes_explicit,yes_explicit,0.014126275,0.06278622,0.9230875
+it,training_IT_2150,Bhe e allora se sei prete perché volere che il vaticano accetti sacerdoti omosessuali magari anche con compagno? Non puoi paventare questa pretesa.  Sai come la pensa il vaticano dunque perché pretendere che ti accolga come prete. Sai le regole del vaticano ne prendi atto e infatti sei prete di altra Chiesa non cattolica. Dove è il problema?,yes_implicit,yes_implicit,0.031257458,0.9526526,0.016089961
+it,training_IT_2163,"Ha ragione, ormai un mondo totalmente al contrario! Emma Watson e Daniel Radcliffe sono i classici ""buonisti del c.."" la colpa è di gente come loro, ognuno può pensare ciò che vuole ma non imporlo agli altri, ma sul fatto di essere maschi o femmine non si transigge.",yes_explicit,yes_implicit,0.025579967,0.9561389,0.018281177
+it,training_IT_2189,Voi non state lottando x i diritti...ma x i vizi! State rovinando la società! E in mezzo al pride fate anche politiche che non c entrano niente col Pride! Candidatevi e andate in parlamento! Il vero genocidio è l aborto! L aborto è un genocidio silenzioso! Ipocriti!,yes_explicit,yes_explicit,0.0079810275,0.040254883,0.9517641
+it,training_IT_2214,Omofobi rassegnatevi siete destinati a estinguervi 🥰,no,yes_explicit,0.2714964,0.023607537,0.7048961
+it,training_IT_2229,Figlio prendi contatti con la chiesa cattolica ecumenica perché vive tutto ciò che vivi tu,no,no,0.60459775,0.3552512,0.04015108
+it,training_IT_2240,Ke schifo... Leggi più dure,no,yes_explicit,0.04581967,0.02165425,0.93252605
+it,training_IT_2252,"Se i gay esistono sono persone naturali, altrimenti sarebbero astratte come il vento. L uomo e la donna sono diversi ma in natura possono moltiplicarsi. Se tutti sono dello stesso sesso non esisterebbe l umanità. Per cui sostenere che l omosessualità non sia un difetto è solo Correzzione Politica. Da dove nasce la vita umana ""moderna""? D+U, non D+D o U+U.
+Non si deve discriminare una persona dall aspetto e dai gusti personali.",yes_explicit,yes_explicit,0.014139326,0.026989404,0.9588713
+it,training_IT_2269,"Cmq l'essere umano non imparerà mai, dopo miliardi di sbagli ne facciamo ancora altri. Io non mi capacito di come sia possibile fare queste cose, ognuno è libero e deve essere libero. Ma scusatemi un attimo, che fastidio vi hanno dato? Che fastidio vi dà vedere persone con altri orientamenti sessuali? Ripeto, l'essere umano è un'arma di distruzione, noi saremo la causa della nostra fine, perché non impariamo dagli errori. Mai.",no,yes_explicit,0.032742925,0.016887564,0.95036954
+it,training_IT_2272,Rispetto 🙏,no,no,0.91344035,0.073893934,0.012665702
+it,training_IT_2278,Che persone schifose veramente. sono basita,no,no,0.97735673,0.005777623,0.016865691
+it,training_IT_2288,"4 pagliaccetti buffoni esibizionisti...
+E tutti etero cisgender e qualche travesta la stragrande maggioranza di gay/lesbo/trans non ci viene a fare o carri di carnevale",yes_explicit,yes_implicit,0.006735271,0.9048314,0.088433266
+it,training_IT_2291,E fanno bene a trattarvi come cavie,yes_explicit,yes_explicit,0.009955096,0.030514494,0.95953035
+it,training_IT_2296,"Sgarbi fa lo ""show man"", quando non fa il politico o entrambi. Le adozioni per le coppie sono legittime. Basta leggere la Costituzione.",no,yes_implicit,0.010023889,0.9775498,0.012426296
+it,training_IT_2305,Anche noi dovremo fare cosi,yes_explicit,no,0.6144567,0.36192667,0.02361659
+it,training_IT_2310,"Non lo so, è complicato. Vivere fino ai 18 con entrambi gli organi per un bambino/adolescente credo provochi problemi psicologici non indifferenti. Anche vivere con un sesso che non senti tuo. Insomma, è complicato.",no,no,0.9784097,0.010210622,0.011379653
+it,training_IT_2315,Levati sto colletto,yes_implicit,yes_explicit,0.0073658037,0.055757843,0.93687636
+it,training_IT_2318,"Folkloristici e volgari , nulla di nuovo",yes_explicit,yes_implicit,0.009275459,0.81800157,0.17272288
+it,training_IT_2319,"Io sono basita proprio. Apparte che essere amiche non vuol dire essere lesbiche, e poi anche se fosse qual è il problema? Io sono proprio sotto shock",no,no,0.911114,0.017556937,0.071329124
+it,training_IT_2339,❤tanto amore per questa nonnina❤❤❤,no,no,0.99006736,0.00600327,0.003929358
+it,training_IT_2356,"I gay che voglio essere cattolici e soprattutto preti, sono come ebrei che vogliono iscriversi al partito nazista. 
+Ci sono altre chiese protestanti che non hanno problemi con l’omosessualità. Prendete in considerazione quelle.",yes_explicit,yes_implicit,0.061463743,0.8983649,0.040171366
+it,training_IT_2365,"PAGLIACCI PAGLIACCI
+Andate sd Ariccia vi fate un panino poi c'è il ponte ............ ridicoli ridicoli ma che schifo che fate sti pagliacci",yes_explicit,yes_explicit,0.009266043,0.02693027,0.9638037
+it,training_IT_2372,"Se uno specifico giorno il DDL Zan dovesse essere approvato, allora segnerebbe l'inizio della fine dell'influenza vaticana sull'italia. Stanno diventando sempre meno maggioranza giorno dopo giorno. Devono prendere atto del cambiamento culturale del paese, seppur lento",no,no,0.8651028,0.07474766,0.060149472
+it,training_IT_2392,È una gran cavolata. Non sono state cacciate le ragazze ma gli omofobi,no,no,0.9237965,0.01700274,0.059200693

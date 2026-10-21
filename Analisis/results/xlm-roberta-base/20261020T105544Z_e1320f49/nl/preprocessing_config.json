@@ -1,0 +1,15 @@
+{
+  "input_column": "yt_comment",
+  "replace_emoji": true,
+  "emoji_replacement": " [EMOJI] ",
+  "casefold": true,
+  "max_length": 384,
+  "truncation": true,
+  "padding": "dynamic per batch",
+  "add_emoji_special_token": false,
+  "label2id": {
+    "no": 0,
+    "yes_implicit": 1,
+    "yes_explicit": 2
+  }
+}

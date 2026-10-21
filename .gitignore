@@ -1,0 +1,14 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local model weights and training checkpoints
+Analisis/results/**/_checkpoints/
+Analisis/results/**/best_model/
+
+# Large per-language archives containing model weights
+# Historical small archives in Analisis/archive/results remain tracked.
+Analisis/results/*/*/*.zip

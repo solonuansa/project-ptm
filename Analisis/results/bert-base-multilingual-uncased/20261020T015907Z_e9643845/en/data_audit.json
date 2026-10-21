@@ -1,0 +1,76 @@
+{
+  "language": "en",
+  "source_files": {
+    "train": {
+      "path": "E:\\Projek\\PTM\\TBP\\Analisis\\data\\en-splitting\\en-train.csv",
+      "sha256": "0accc269cdb4427cadc8fc9e7181d114fb79eee0d3007b21841ab3b2abd57edd",
+      "rows": 2111
+    },
+    "val": {
+      "path": "E:\\Projek\\PTM\\TBP\\Analisis\\data\\en-splitting\\en-val.csv",
+      "sha256": "333bc5a954e1c0c1541c5610031cb38e3e5722e00be51f545b7127cf3b72f7bf",
+      "rows": 292
+    },
+    "test": {
+      "path": "E:\\Projek\\PTM\\TBP\\Analisis\\data\\en-splitting\\en-test.csv",
+      "sha256": "d6ef66ac736ff169530df997f0d68913d6d970e938a00565073b2fd7be380f1d",
+      "rows": 586
+    }
+  },
+  "overlap_checks": [
+    {
+      "left": "train",
+      "right": "val",
+      "key": "id",
+      "overlap_count": 0
+    },
+    {
+      "left": "train",
+      "right": "val",
+      "key": "normalized_comment",
+      "overlap_count": 0
+    },
+    {
+      "left": "train",
+      "right": "val",
+      "key": "video_context",
+      "overlap_count": 0
+    },
+    {
+      "left": "train",
+      "right": "test",
+      "key": "id",
+      "overlap_count": 0
+    },
+    {
+      "left": "train",
+      "right": "test",
+      "key": "normalized_comment",
+      "overlap_count": 0
+    },
+    {
+      "left": "train",
+      "right": "test",
+      "key": "video_context",
+      "overlap_count": 0
+    },
+    {
+      "left": "val",
+      "right": "test",
+      "key": "id",
+      "overlap_count": 0
+    },
+    {
+      "left": "val",
+      "right": "test",
+      "key": "normalized_comment",
+      "overlap_count": 0
+    },
+    {
+      "left": "val",
+      "right": "test",
+      "key": "video_context",
+      "overlap_count": 0
+    }
+  ]
+}

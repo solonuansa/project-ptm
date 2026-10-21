@@ -1,0 +1,590 @@
+﻿language,StereoQueerEval_id,yt_comment,true_label,predicted_label,prob_no,prob_yes_implicit,prob_yes_explicit
+nl,training_NL_0005,Een travestiet is niet hetzelfde als een transgender.,no,yes_explicit,0.24068955,0.28512025,0.4741902
+nl,training_NL_0010,"Ik voel mezelf een zuid afrikaanse olifant, en mensen accepteren het maar gewoon. 
+
+Mijn ouders vinden het ook oke.",yes_implicit,no,0.3810604,0.29589292,0.32304665
+nl,training_NL_0029,Voetbal is voor iedereen,no,no,0.38442945,0.35942283,0.25614774
+nl,training_NL_0030,Je weet dat het filmpje 6 jaar oud is omdat we inmiddels 2x zoveel letters en tekens hebben,yes_implicit,no,0.42779434,0.3361282,0.2360775
+nl,training_NL_0031,"Ik ken dat soort volk, geeft alles en iedereen de schuld, zelf te lomp en/of lui om voor zichzelf te zorgen, en de meeste houden er misselijkmakende communistische trekjes op na. Uitroken die luie flikkers. De tent bestoken met pepperpray en ammoniak, en alles wat naar buiten kruipt verbouwen en afvoeren. Ik ben dat oversekste alfabet gejeuk helemaal zat.",yes_explicit,yes_explicit,0.19731684,0.34379572,0.45888743
+nl,training_NL_0036,"Ze,zijn gewonen mensen.Lief voor me kaar.👍",no,no,0.92594784,0.03668259,0.03736958
+nl,training_NL_0040,"De ""T"" staat niet voor transseksueel maar voor transgender. Zijn twee verschillende dingen",no,yes_explicit,0.26980534,0.30334106,0.42685357
+nl,training_NL_0041,god created only two genders ! maar verder doen ze wat ze willen he,yes_explicit,yes_explicit,0.19144802,0.37128496,0.43726704
+nl,training_NL_0047,Ik heb liever een homo die elk seizoen 25 goals maakt dan een hetero die er net 5 kan maken. Volgens mij heeft geaardheid niks te maken met of iemand een goede voetballer is. Jammer dat sommige snel hun oordeel klaar hebben.,no,no,0.5279909,0.23501064,0.23699845
+nl,training_NL_0053,"Hoe gaat het nu met deze verknipte nicht? Seksualiteit en zonde op één hoop gooien, dan spoor je niet. De kerk zit trouwens vol met dit soort zelfhaat. Lees Sodoma van Frédéric Martel.",yes_implicit,yes_explicit,0.1819491,0.3173875,0.5006634
+nl,training_NL_0058,eyy hij draagt een hatsune miku shirt 🥴,no,yes_explicit,0.16744362,0.31376284,0.5187936
+nl,training_NL_0063,Begrijpelijk dat Ivo zo denkt maar lieve Ivo dat is nergens voor nodig. Borst vooruit en hoofd omhoog. Wij als transgender hebben het recht om als ieder mens behandeld te worden 💜💜💜💜,no,no,0.64115363,0.13961032,0.21923605
+nl,training_NL_0075,Allemaal geestelijk ziek door de media,yes_explicit,yes_explicit,0.13761663,0.4196672,0.44271615
+nl,training_NL_0078,Dan kan beter met dames spelen Dan is het minder druk op hem,yes_implicit,no,0.3945117,0.2991411,0.3063472
+nl,training_NL_0081,Bij zijn kleedkamer moet je geen zeepje laten vallen hahahah,yes_implicit,yes_explicit,0.13283724,0.30488515,0.5622776
+nl,training_NL_0085,Geweldig! Iedereen heeft rechten. Niet alleen heterosexuele mannan!,no,no,0.6747756,0.16839606,0.15682831
+nl,training_NL_0086,Heel moedig dat hij het vertelt🥰🥰❤veel respect voor hem en zijn familie 😚😊,no,no,0.954234,0.023564398,0.022201654
+nl,training_NL_0093,Persoonlijk heb ik iets van. Liefde is liefde. Als je van iemand houd en het is wederzijds ga er lekker voor. Wees gelukkig.,no,no,0.9398367,0.027561206,0.032602143
+nl,training_NL_0097,Ik ben trots op je Kess ❤,no,no,0.94526154,0.028824545,0.025913963
+nl,training_NL_0111,"Wat maakt het uit of je homo of pot bent. Als je maar gelukkig bent en er een ander niet mee lastig valt. En pesten gebeurd nog steeds. We praten er heeeel veel over hoe erg het allemaal is, maar we doen er niks of vrij weinig aan🤔",no,no,0.39228728,0.25331062,0.35440204
+nl,training_NL_0117,Diep respect om het te vertellen,no,no,0.91414994,0.047673766,0.038176242
+nl,training_NL_0133,"zeg nou zelf, wil je zo'n vent als herder? Natuurlijk niet.",yes_implicit,yes_explicit,0.24118221,0.29709408,0.46172374
+nl,training_NL_0134,Misschien dat al deze mensen ook eens naar Amsterdam kunnen komen om te protesteren tegen de homohaat in Nederland. En Femke zorg eerst dat je de homohaat (en jodenhaat) in je eigen stad onder controle krijgt voordat je een ander land de les leest! Gore linkse trut!,no,yes_explicit,0.20433415,0.36266777,0.43299806
+nl,training_NL_0135,Spijtig da ze het vuur nie hebben geopend 😏,yes_explicit,no,0.90192723,0.056543067,0.0415297
+nl,training_NL_0137,"En dit is dus het soort priester dat ook kinderen misbruikt uiteindelijk, paarze bende die opgerold moet worden",yes_explicit,yes_explicit,0.13624611,0.29875362,0.5650003
+nl,training_NL_0142,wel grappig : video gaat over poten potten twijfelaars en omgebouwden maar zo'n beetje hele discussie in forum hier gaat over pedo's....,yes_implicit,yes_implicit,0.28459024,0.36130714,0.35410264
+nl,training_NL_0144,Over ziekten gesproken,yes_implicit,yes_implicit,0.11947631,0.5738994,0.30662423
+nl,training_NL_0145,"Ik ben biseksueel. Ik ben een vrouw en val op beide, maar vooral op vrouwen. Nu heb ik een vriendje en ben heel gelukkig met hem",no,no,0.74487764,0.10395745,0.1511649
+nl,training_NL_0158,Dit geeft gewoon niet hoor dit is normaal voor deze mensen daar moet je respect voor hebben,no,no,0.94476885,0.02940644,0.025824687
+nl,training_NL_0160,Het maakt niet uit hiedereen is ze zelf,no,yes_explicit,0.10709717,0.44002104,0.45288178
+nl,training_NL_0163,Hoe is het feitelijk onjuist terwijl der in sharia landen je vermoord kan worden ervoor,no,yes_implicit,0.122579366,0.5257435,0.3516772
+nl,training_NL_0166,Like mijn reactie want 1 like is één stem op respect 🙏🏼❤️,no,no,0.94555056,0.02778298,0.026666498
+nl,training_NL_0170,Waarom is zijn achternaam “ kardasian”?,no,yes_implicit,0.35851964,0.4138138,0.22766653
+nl,training_NL_0175,niemand kent lhbt meer kennen lgbt,no,yes_implicit,0.080405526,0.71945155,0.200143
+nl,training_NL_0178,"Wat een held deze man!! De eerste niet-hypocriete priester op tv. Dit is zo moedig en ontwapenend. Alleen dat hij door de bekentenis verlost is van de behoefte in porno geloof ik niet. Het wordt tijd dat de kerk erkent dat behoefte aan seks niet slecht is, ook niet voor priesters. En dat je daarvan niet hoeft te genezen. Het celibaat staat ook niet als doel in de bijbel beschreven.",no,no,0.50793,0.21549155,0.27657843
+nl,training_NL_0182,"Vreselijk. Goed dat Hongarije dit verbiedt in de publieke ruimte. Het is een absurde illusie te denken dat iedereen met elkaar kan trouwen of kinderen krijgen. Hongarije, ga zo door!!!!❤❤",yes_explicit,no,0.38138157,0.24625348,0.37236503
+nl,training_NL_0183,"Die gasten hebben wel gwn gelijk, tief gwn op met je homotranslesbiebiseksueel-gedoe",yes_implicit,yes_explicit,0.27595547,0.3068938,0.4171507
+nl,training_NL_0187,Ik vind als je homo of lesbies of bi bent helemaal oké❤❤❤❤,no,no,0.848165,0.06682382,0.085011125
+nl,training_NL_0197,Gewoon decadente waanzin.,yes_explicit,yes_explicit,0.071850464,0.39801952,0.53012997
+nl,training_NL_0201,De wereld vergaat,yes_implicit,yes_implicit,0.13085727,0.4781888,0.3909539
+nl,training_NL_0215,Doe dat maar eens bij kamrad Putin.Walgelijk dit.Dit mag niet.Wat een droeftoeters die links idioten.Kamrad Orban houd je poot stijf.💪🏻🇭🇺🇭🇺🇭🇺🇷🇺,yes_explicit,yes_explicit,0.15706077,0.27872083,0.5642184
+nl,training_NL_0224,"Onzin, tweede kamer mag opkankeren als ik verplicht ben transgenders te accepteren",yes_implicit,yes_explicit,0.11857633,0.4347944,0.44662923
+nl,training_NL_0247,"De Islam wordt wel gebruikt voor homofobe en seksistische gedachtegoeden. Daar zijn ze niet uniek in, dit zien we ook bij het Christendom, Jodendom en andere religies in bijvoorbeeld Azië. Het is kwalijk dat in Nederland alleen de Islam hiervan beschildigen en de andere religies die wel bij Nederland horen (wat nog geen 1000 jaar het geval is) niet. De beschuldigingen dienen de politici puur een excuus voor racisme en dat is uiteraard niet oké. Deze mensen hechten over het algemeen namelijk verder geen waarde aan een samenleving waarin vrouwen en niet-hetero's gelijk behandeld worden",no,yes_implicit,0.2887003,0.35595375,0.35534593
+nl,training_NL_0251,Moslima maakt veel keer discriminatie mee dan LGBT,no,yes_implicit,0.18338467,0.529218,0.28739735
+nl,training_NL_0260,Die kan zowiezo niet meer naar een Arabische voetbal club.,no,yes_implicit,0.16011003,0.5858011,0.2540888
+nl,training_NL_0264,"40% van nederland gelooft in een geloof waar je niet in het ""gay"" zijn mag geloofen, en het [CHANNEL] zegt dat 93% het wel prima vindt🤔?",no,no,0.38554326,0.34061474,0.273842
+nl,training_NL_0282,"Ik snap het niet als ze homo zijn dan vallen ze toch beide op ((( Mannen ))) ….waarom dan zo graag een vrouw willen worden terwijl je daar niet op valt 😵‍💫😵‍💫😵‍💫😵‍💫 ……
+
+wat een vage logica….!!! Of ben ik in de war misschien
+
+
+En nee ze horen jullie niet weg te jagen daar ben ik zeker met jullie mee eens",yes_implicit,yes_explicit,0.30527848,0.22299233,0.47172916
+nl,training_NL_0283,Bah. Waar gaat de wereld naartoe.,yes_implicit,yes_implicit,0.105140984,0.63563126,0.25922775
+nl,training_NL_0285,Respect dat hij dat durft te zeggen,no,no,0.9185191,0.048089106,0.033391774
+nl,training_NL_0289,"mijn kind denkt dat het een piraat is, Nu wil hij een houten poot, een hand met een haak en een lapje voor het rechter oog.
+LTHBPIRAAT",yes_explicit,yes_explicit,0.19655952,0.30965176,0.49378878
+nl,training_NL_0291,Respect voor die vrouw dat ze zichzelf in kan houden en dat haar liefde voor god belangrijker is dan wat dan ook👍ze zal hier zkr voor beloond worden want dit is wel een zware beproeving.,no,no,0.93142736,0.032947693,0.03562495
+nl,training_NL_0299,Meteen lesgeven over mentale stoornissen en provocatie,yes_implicit,yes_explicit,0.06504606,0.33211014,0.60284376
+nl,training_NL_0309,Waar gaat deze wereld naar toe man zieke mensen echt waar.,yes_explicit,yes_explicit,0.055688806,0.4149176,0.5293936
+nl,training_NL_0312,"Veel respect voor hem, ik Zou het het niet durven",no,no,0.9304164,0.040680524,0.028903207
+nl,training_NL_0314,Heel knap dat hij dit durft recept voor hem,no,no,0.9295669,0.040405933,0.03002714
+nl,training_NL_0319,"Respect voor deze jongen ! 
+Jammer voor deze titel",no,no,0.8799202,0.062325478,0.05775433
+nl,training_NL_0334,Is niet erg hij mag zijn wie hij wil zijn,no,no,0.877543,0.06998754,0.052469466
+nl,training_NL_0339,"Zielige man, ik hoop dat hij sneller kan genezen, en ook snelste naar de kapper !!! ik ga voor hem bidden",yes_implicit,no,0.91741604,0.039106462,0.043477546
+nl,training_NL_0345,super goed dat je dat durft te zeggen je mag zijn wie je wil zijn!,no,no,0.9410656,0.03157866,0.027355755
+nl,training_NL_0348,"Lhbt, hetero staat er niet bij, moet ik me nu buiten gesloten voelen? Flikker op man met die onzin.",yes_explicit,yes_explicit,0.18084846,0.27353984,0.5456117
+nl,training_NL_0356,Opheffen of in iedere geval geen subsidie meer voor dat 'clubje'. Nu zeggen dat het hen spijt is lulkoek. Weg ernee.,no,yes_implicit,0.1284762,0.47063532,0.4008884
+nl,training_NL_0358,Goed van hem!,no,no,0.9042723,0.052557915,0.043169677
+nl,training_NL_0359,met homo schelden is echt gay,no,yes_explicit,0.20686974,0.2973599,0.4957703
+nl,training_NL_0361,"De. Dag. Voor. Kwes. 
+in. Een. Zij. 3. 23",no,yes_implicit,0.10699167,0.5119263,0.38108203
+nl,training_NL_0369,"Alle media aandacht die we hebben gekregen' zegt ze.... 
+
+Nooit van gehoord...
+Het boeit me GEEN zak 😉😉😉",yes_implicit,no,0.47258204,0.26095274,0.26646525
+nl,training_NL_0373,Hij is moedig,no,no,0.86228245,0.078346826,0.059370745
+nl,training_NL_0376,Welkom in Nederland waar ieder een aai over ze bolletje krijgt 🙈🙈🙈 kap gewoon met dat gejank,yes_implicit,yes_explicit,0.12883595,0.24194643,0.6292177
+nl,training_NL_0382,Goed van hem dat hij zichzelf wil zijn😊,no,no,0.9385997,0.033740725,0.02765966
+nl,training_NL_0401,En dan kom je op mijn opleiding waar meer dan de helft van de klas 1 van de lhbt is,no,yes_explicit,0.25338003,0.3480459,0.39857408
+nl,training_NL_0403,Bijzondere man,no,yes_explicit,0.22025858,0.3196734,0.46006808
+nl,training_NL_0406,Iedereen en alles moet zich altijd maar aanpassen..soms kan dat gewoon niet,yes_implicit,yes_implicit,0.26697248,0.39982033,0.33320713
+nl,training_NL_0408,Ik ben zelf bi ik weet hoe moeilijk het was om te zeggen aan mijn familie,no,no,0.6859458,0.19415419,0.11989999
+nl,training_NL_0414,Is ouderwets zeg je maar waarom zegt iedereen dan nu he prc omdat hoort bij deze tijd💀,yes_implicit,yes_explicit,0.21940786,0.34933114,0.43126106
+nl,training_NL_0415,Bang om gepest te worden. Jongen ga naar school man en sta je mannetje. daar kun je honderd therapieën voor nemen maar de wereld is hard dus je gaat altijd opmerkingen krijgen.,yes_implicit,yes_explicit,0.13430053,0.1955493,0.6701502
+nl,training_NL_0421,"Geen enkel probleem met de alfabet mensen maar die ideologie mag niet opgedrongen worden.
+Als ze willen sporten, goed zo beweging is gezond.! 
+Maar dat woke gedoe, claimen dat ze geen rechten hebben terwijl iedereen gelijk is voor de grondwet, kinderen wijsmaken dat mannen zwanger kunnen worden en dat er meer dan 2 geslachten zijn..en er zelf in geloven..🤦‍♂️
+Someone please call the Ghostbusters..👻🚫",yes_explicit,yes_explicit,0.16826072,0.29726887,0.53447044
+nl,training_NL_0430,Deze Gay Pride is HOTNEWS voor deze woke [CHANNEL] staatsomroep! En Trump is BAD! 😅😅😅,no,yes_explicit,0.24668044,0.3166666,0.4366529
+nl,training_NL_0439,"Heel duidelijk. Dankjewel. 
+Happy pride iedereen 🩵❤️🩷💛💜🧡",no,no,0.9523385,0.023609636,0.024051793
+nl,training_NL_0441,"We zijn drie jaar verder, en ik heb nog steeds geen les gehad over lesbiennes",no,no,0.5506467,0.22730604,0.22204728
+nl,training_NL_0445,"Wanneer een hetero -parade? Ik ben trots om nog een klasieke hetero te zijn, wat duidelijk niet meer van deze tijd is!",yes_implicit,no,0.8880604,0.060374282,0.051565267
+nl,training_NL_0446,"Fijn als mensen er voor kiezen om als homo's door het leven te gaan, maar dat hoef je niet door de strotten van kinderen te douwen. Je mag ze niet mishandelen, je hebt maar te accepteren dat ze hand in hand over straat lopen, maar je hoeft ze niet op handen en voeten te dragen omdat ze elke avond een paal in hun reet stoppen.",yes_explicit,yes_explicit,0.205778,0.32468405,0.46953794
+nl,training_NL_0463,Sowieso meer dan 3 kwart mensen die met homo scheld zou iemand niet in elkaar slaan als die homo zou zijn dus stel je bent homo is er niks om je zorgen om te maken,no,no,0.40419862,0.25770953,0.33809182
+nl,training_NL_0468,"Ik daag jullie uit om dit in Mekka, Borgerhout, Molenbeek of Amsterdam-West te doen.",no,yes_implicit,0.35920334,0.38673556,0.25406116
+nl,training_NL_0478,100k betogers op een bevolking van bijna 10 miljoen is ongeveer een procent. Het meelopen van Halsema is ongepast daar er regelmatig berichten zijn van in elkaar geslagen homo's in haar eigen Amsterdam.,no,yes_implicit,0.20079064,0.43792513,0.3612843
+nl,training_NL_0484,Ik vind het best als er wat aandacht aan besteedt wordt als het maar niet 20% van het lessenpakket wordt en er van die genderneutrale wc's komen voor de 20 mensen in heel NL die op het MBO zitten en die daar om vragen,no,no,0.49608383,0.28882718,0.21508892
+nl,training_NL_0485,Is volgens mij wel duidelijk wat voor typetjes hieraan meedoen,yes_implicit,no,0.59170455,0.22557484,0.18272068
+nl,training_NL_0501,"Hij die zichzelf weet te beheersen is sterker dan een stad met grote muren staat in de Bijbel. Wat deze dame doet is iets laten zien wat we in het westen kwijt zijn, nl. zelfbeheersing. Respect en steun voor deze powerwoman i.p.v. ""vooral doen waar je je lekker bij voelt"" Klinkt ook zo lekker doordacht....",no,yes_explicit,0.30316404,0.25916755,0.43766838
+nl,training_NL_0502,"Ik ben zelf lesbisch en mijn beste vriend homo. We worden door een buurman elke keer voor flikker uitgemaakt en nu noem ik hem kast-homo terug. Ik heb altijd geleerd, je mag schelden met wat je zelf bent/hebt.",no,yes_explicit,0.33584478,0.24103038,0.4231248
+nl,training_NL_0504,What the hack. Ik zeg het ook vaak maar niet om uit te schelden maar gewoon als grapje naar mijn vrienden. Het is gewoon voor mij.,no,no,0.7639571,0.12182361,0.11421938
+nl,training_NL_0514,"Sinds de woke hier ben ik druk in de systemen van jonge mensen man.nasr vrouw. Om te catten
+Eerder niet meegemaakt.
+Meer zeg ik niet.politoek,duidelijk de schuldige
+Jeugd raakt de kluts kwijt",yes_explicit,yes_explicit,0.09445735,0.3246565,0.5808861
+nl,training_NL_0516,Homo betekent mens in het Latijn. Dus eigenlijk zeg je tegen iemand dat hij een mens is.,no,yes_explicit,0.29292366,0.3267999,0.3802764
+nl,training_NL_0517,"Hier zit ik ook op school, schaam me nogal voor deze idioten.",yes_explicit,no,0.5485305,0.21256436,0.23890504
+nl,training_NL_0519,Ze willen als normale mensen aanvaard worden... door zichzelf uit te sluiten en in een apart hokje te gaan zitten.,no,yes_explicit,0.17789483,0.36045578,0.46164945
+nl,training_NL_0522,"Leg mij iemand uit waarom deze ""Europese"" waarden en normen miljoenen mensen die elke dag gewoon hun leven leiden, opgedrongen moeten krijgen. Ben je homo, lesbisch of wat dan ook, prima, geen enkel probleem mee maar waarom moet dat zo uitgebreid tentoongespreid worden.",yes_implicit,yes_implicit,0.27018565,0.37552798,0.35428634
+nl,training_NL_0523,"Ik zou respect kunnen hebben voor Pierre.... maar hij reageert nooit op FB waar óver hem wordt gesproken. Dat is héél jammer... Iedereen is als mens geboren op aarde, of je man/vrouw blank/zwart homo/hetero bent is on-interessant. Jezus is ook als mens op aarde geboren. Waren de 'Drie Koningen' alle blank ? Feitelijk wordt de rk-kerk gegijzeld door een groep oude mannetjes die elkaar de functies toebedelen... Daarin zit een onrecht dat zich uit in het uitsluiten van vrouwen voor functies, en homo's die ze zondig vinden >> om dat te herkennen hoe je echt niet gestudeerd te hebben. Pierre schuwt de media én hij zou veel voor de kerk én de medemens kúnnen betekenen wanneer hij zich zou keren tegen de kerkleiders.... tenzij je laf bent.... jammer.",no,no,0.48748264,0.2289252,0.28359216
+nl,training_NL_0530,"In de mannelijke voetbalcultuur is homosexualiteit totaal niet genormaliseerd. 
+Deze mannen hebben ballen van staal en durven zichzelf ondanks alles toch te uiten, Daar kun je alleen maar respect voor hebben.
+Je zet er een deel van je carrière mee op het spel, dat is helaas de pijnlijke realiteit.",no,yes_explicit,0.2426245,0.29277715,0.46459833
+nl,training_NL_0536,"Haha, waarom op het MBO? Die mensen doen al een specifieke studie. Moet je op de middelbare school me beginnen",no,no,0.40012595,0.30039468,0.29947934
+nl,training_NL_0538,Piemeltje in alle kleuren? GESTOORD IS HET!!!!,yes_explicit,yes_explicit,0.13728787,0.37455627,0.4881558
+nl,training_NL_0559,zeer jammer,yes_implicit,no,0.48701668,0.30172262,0.21126077
+nl,training_NL_0561,Maar wat boeit het eigenlijk. Want het is 2022 en het maakt helemaal niks meer uit. Want het is gewoon Oké.,no,no,0.8357185,0.096082374,0.06819917
+nl,training_NL_0568,Bro blijf gwn je gender god heeft je zo gemaakt,yes_implicit,yes_explicit,0.12618284,0.29092315,0.582894
+nl,training_NL_0576,"Ik heb veel moslims in mijn leven gesproken die zelf zeggen dat ze niet instemmen met homoseksualiteit. Overigens vind ik dit verwijt naar de kant van moslims wel eenzijdig, aangezien er ook genoeg christen in nederland er net zo over denken.",no,no,0.39569798,0.30563176,0.29867026
+nl,training_NL_0580,Waarom zou je dan ook homo worden? Is toch niks leuks aan man.,no,no,0.42331925,0.23827359,0.33840713
+nl,training_NL_0584,Wat een droevenis! wel goed dat het de genenpoel niet vervuild!,yes_implicit,no,0.7414373,0.11549366,0.14306898
+nl,training_NL_0598,Burgerschap is sinds 2017 een verplicht vak op het MBO. Daar wordt (hopelijk) tegenwoordig tijd besteed aan seksualiteit.,no,yes_explicit,0.2178318,0.37440917,0.40775904
+nl,training_NL_0609,Zie die titel en denk meteen haha en terecht,yes_explicit,no,0.91368127,0.04882696,0.037491806
+nl,training_NL_0615,respect naar hem want ik ben zelf homo,no,no,0.92487186,0.040775165,0.034352902
+nl,training_NL_0617,Volgens mij is deze optocht niet verboden. Alleen wordt er ingegrepen bij onzedelijk gedrag. En iedereen loopt er netjes bij. En Alfabet mensen; jullie zijn niet speciaal en hebben niet meer of minder rechten dat de gewone burger.,yes_implicit,yes_explicit,0.23925777,0.33380243,0.42693982
+nl,training_NL_0618,Schelden hoort erbij,yes_explicit,yes_implicit,0.109865695,0.5601278,0.33000648
+nl,training_NL_0626,Kinderen moeten beschermd worden tegen dit soort viespeuken,yes_explicit,yes_explicit,0.06546438,0.3188619,0.61567366
+nl,training_NL_0640,Wat ben ik blij dat ik van school af ben en die linkse indoctrinatie mis. Waar moet het naar toe met ons landje. Belachelijk,yes_explicit,no,0.48909014,0.2746898,0.23622
+nl,training_NL_0644,"Laat het leger maar wat oefeningen doen in stedelijke oorlogsvoering en huis aan huis gevecht met live munitie en handgranaten!!!!!!! Uitroeien dat soort ongedierte, geen genade!!!!",yes_explicit,yes_explicit,0.10606148,0.4158106,0.47812793
+nl,training_NL_0648,Ik snap echt niet waarom mensen dat zouden zeggen,no,no,0.7767993,0.14894405,0.07425653
+nl,training_NL_0668,Knap hoor! Heel erg goed dat hij deze keuze heeft gemaakt! R E S P E C T!,no,no,0.94225,0.030466571,0.0272834
+nl,training_NL_0675,Zal nooit geaccepteerd worden,no,yes_implicit,0.28674003,0.40019423,0.31306574
+nl,training_NL_0684,Wat een mafkees,yes_explicit,yes_explicit,0.19463006,0.38088113,0.42448887
+nl,training_NL_0688,"Weten die omgebouwden wel dat ze er erg lelijk gaan uitzien na hun veertigste? De meesten zien er dan monsterlijk uit!!! Verbieden die onzin, zo niet hoop ik dat ze er over 20 jaar er goed mismaakt uitzien....dan kunnen we nog lachen!!!!",yes_explicit,yes_explicit,0.28120068,0.30553868,0.41326058
+nl,training_NL_0713,echt jong wat een mongole zeg maak je zelf maar bekend mensen de moslims moeten julie niet en das een feit,yes_explicit,no,0.35199064,0.2993968,0.34861252
+nl,training_NL_0716,"Goed dat dit in Nederland kan!
+
+Happy pride month iedereen!
+❤💛💚💙💜",no,no,0.9212037,0.0420872,0.036709107
+nl,training_NL_0723,Knap dat hij dat durft te zeggen,no,no,0.9196892,0.049268156,0.031042708
+nl,training_NL_0735,"Het evangelie in één woord: Vergeven? Ik zondig en jij moet vergeven? Nee hoor : het éne woord is : Sterven. Sterven aan jezelf door nee te zeggen tegen je zondige verlangens. Sterven met Christus aan het kruis zodat je vergeven kan worden.
+De Katholieke kerk (en andere ook) zijn beroerd ziek. In onze kerk worden mensen die geen spijt hebben van hun zonden en daarmee doorgaan uit de kerk gezet. Volgens 1Korinthe 5:2. We mogen Gods lichaam de kerk niet verontheiligen.",no,yes_explicit,0.20869039,0.33448514,0.4568244
+nl,training_NL_0744,bisexueel betekent niet op jongens en meisjes vallen maar op 2 of meer genders vallen,no,yes_explicit,0.22823621,0.30001083,0.47175288
+nl,training_NL_0745,Respect! Niet veel mensen zeggen dat sterke nog HEEL veel mensen zeggen dat! En dat je dat durft te vertellen is echt geweldig hun weten dit vast niet maar hun zijn echt een hele goede voorbeelden!💖👍,no,no,0.95220715,0.025724774,0.022068122
+nl,training_NL_0751,Je mag zijn wie je bent 🏳️‍🌈,no,no,0.8879892,0.05836939,0.053641282
+nl,training_NL_0757,"Was niet verboden, ze wilden het alleen niet tussen de kinderen in de stad, geheel terecht, viespeuken.",yes_implicit,yes_explicit,0.071525715,0.4112003,0.51727396
+nl,training_NL_0768,Einde der tijden,yes_implicit,yes_implicit,0.19289748,0.43618953,0.37091297
+nl,training_NL_0773,Gaan we nou serieus Amerikaanse praktijken overnemen?,yes_implicit,yes_implicit,0.1272965,0.65376604,0.21893741
+nl,training_NL_0775,Niet gemeen bedoeld maar Luna ziet dr als meisje nog beter uit als ik die natuurlijk een meisje is 😭✌🏻,no,no,0.9103546,0.04230844,0.04733695
+nl,training_NL_0776,Laat hem snel terug naar zn mancafe gaan en niet naar de kerk,yes_implicit,yes_explicit,0.12067039,0.34325477,0.5360748
+nl,training_NL_0784,Blijf lekker jezelf en dan bedoel ik het letterlijk,yes_explicit,no,0.61967593,0.18144003,0.19888406
+nl,training_NL_0786,Heel moedig,no,no,0.42369643,0.29768947,0.27861413
+nl,training_NL_0790,Dit vind ik voor jullie samen heel mooi. Ik wens jullie samen een heel mooi leven !!!!!!!!!!!!!!,no,no,0.92549264,0.03769934,0.03680806
+nl,training_NL_0792,Ik val op jongens en daar ben ik trots op want er is een jongen die mij ook leuk vind op mijn school dus vandaar 🏳️‍🌈🏳️‍🌈🏳️‍🌈🏳️‍🌈🏳️‍🌈,no,no,0.9577864,0.020509224,0.02170441
+nl,training_NL_0794,Waarom is alles zo genormaliseerd,no,yes_implicit,0.17341846,0.49173692,0.3348446
+nl,training_NL_0798,Ik vind persoonlijk ook dat met homo of gay schelden gwn niet kan. Je kwetst daarmee mensen die niks eraan kunnen doen,no,no,0.3428344,0.32740456,0.32976103
+nl,training_NL_0799,Zijn deze twee mensen nou een vrouw geworden en dan lesbienne? of zijn het gewoon twee vrienden. Want anders hadden ze gewoon gay kunnen zijn had een heleboel geld bespaard voor hunzelf.,yes_explicit,yes_explicit,0.30346024,0.2768439,0.4196959
+nl,training_NL_0809,"Omdat ik zelf gay ben, vind ik het best vreemd dat het zo’n scheldwoord is. Ik ben er zelf ook zo vaak mee uitgescholden, en dan zeg ik: ‘Klopt, ik ben gay. En wat dan nog?’",no,no,0.436485,0.2692719,0.29424298
+nl,training_NL_0813,"Het is allemaal de schuld van de Kerk, ene Van Geest vindt dat ook. Zelfs zijn naam is in dit verband belachelijk. Lieden die onder valse vlag de kerk misbruiken om een plaats in de samenleving te vinden, dienen glashard te worden afgestraft. Als je bij een bank gaat werken om geld te ontvreemden vindt men dat ook niet in orde. 
+Een medische opleiding volgen om te kunnen aborteren stuit evenzeertegen de borst als partij Denk, die de PvdA misbruikte om in het parlement te komen.",yes_implicit,yes_explicit,0.23550016,0.35339817,0.41110164
+nl,training_NL_0816,"Gelukkig zijn lang niet alle gelovige mensen zo. Een van de eerste mensen aan wie ik vertelde dat ik op jongens val, was een docent en zij is christelijk. Ze heeft het goed opgevat en gaf me zelf advies bij het zoeken van iemand.",no,no,0.597774,0.20199682,0.20022923
+nl,training_NL_0817,"Er is een verschil tussen iets aanvaarden of tot norm verheffen.
+Dat 0,2% van de bevolking hun aberratie als het nieuwe normaal beschouwen is misschien zeer trendy in de media maar de meerderheid van de bevolking gaat daar niet in mee. Het is zoals gewoonlijk weer de roepende minderheid die opkomt voor hun democratische rechten en dat past voor vele Europese politici goed in hun agenda.",yes_implicit,yes_implicit,0.26966447,0.3912117,0.33912387
+nl,training_NL_0819,"Dat waren nog eens tijden.. 
+
+Nu kan je nog geen krantje of een website openen zonder er mee geconfronteerd te worden",yes_explicit,yes_implicit,0.22317979,0.39293787,0.38388234
+nl,training_NL_0821,Ik voel me geen mens maar een beer. Dus ik stop met werken en belastinggeld betalen. En ik ga alles wat eetbaar is vangen en op eten. Hoe bedoel je steekje los.,yes_implicit,yes_explicit,0.114022896,0.3433307,0.54264635
+nl,training_NL_0825,"Heel knap dat hij dit durft te vertellen, niks mis mee om gay te zijn!🫶🏽",no,no,0.9485099,0.02847518,0.023014909
+nl,training_NL_0828,"Moeder: je hebt 11 jaar een dochter in huis en dan is het ineens je zoon
+Bijdehante Zoon: je hebt altijd al een jonge in huis gehad alleen je wist het nog niet",no,yes_explicit,0.18107623,0.19761495,0.6213088
+nl,training_NL_0833,"Iedere priester die kinderen sexueel misbruikt heeft, heeft ook het celebaat geschonden. Zie ik toch liever een priester die openlijk uitkomt voor zijn homoseksualiteit. Die blijft tenminste van kinderen af.",no,yes_explicit,0.25011232,0.28210276,0.46778497
+nl,training_NL_0841,"XX chromosomen en XY chromosomen.
+
+Discussie klaar.",yes_explicit,yes_explicit,0.10999084,0.38240904,0.5076001
+nl,training_NL_0850,EU haat hongarije dus organiseren we de verboden gay pride...genoeg landen in de EU waar het toegelaten maar orban moet weg dus hopelijk regime change 😉,no,yes_implicit,0.2518307,0.540481,0.20768833
+nl,training_NL_0853,"Pfff,... droef, maar normaal zijn jullie ook niet",no,no,0.5903112,0.19152905,0.21815975
+nl,training_NL_0856,Iedereen moet in zijn waarde gelaten worden!,no,yes_implicit,0.19753426,0.49520877,0.307257
+nl,training_NL_0857,Het meest bizar is nog dat zo'n engerd ooit priester heeft kunnen worden!! Volkomen terecht ontslagen dus 👍,yes_explicit,no,0.4746321,0.21466592,0.3107019
+nl,training_NL_0858,"Die taal expert zegt: jongens moeten mannelijk zijn en als je niet mannelijk doet dan gedraag je je als een meisje, een homo. Dus homo's gedragen zich als meisjes??",no,yes_explicit,0.29153067,0.27753606,0.4309333
+nl,training_NL_0859,"Gaat het niet worden, seksuele eerlijkheid ( wel of niet praktiserend) en de dogma's van de Rooms-katholieke kerk. Ik denk dat het einde oefening is voor deze priester",no,yes_explicit,0.20305201,0.35441515,0.44253293
+nl,training_NL_0861,Je moet gewoon je zelf zijn en je moet ook zelf weten wat je doet,no,no,0.48559302,0.2195697,0.2948373
+nl,training_NL_0862,"mooi arresteer ze gelijk maar, tuig",yes_implicit,no,0.8813483,0.066517726,0.05213394
+nl,training_NL_0863,"Gevoelens-parade. Waarom gaan zoveel mensen er blind van uit dat het natuurlijk is om af te wijken van de natuurlijke orde? Dat mensen zo worden geboren? En de organisaties die dit pushen, proberen die wellicht hun misdaden te verbergen door de symptomen te normaliseren? Je helpt de alfabet-mensen juist niet door te doen alsof hun gedrag normaal is. Maar ook daar gaan veel mensen maar simpelweg in mee vanwege gevoelens.",yes_implicit,yes_explicit,0.2249844,0.3402867,0.43472886
+nl,training_NL_0871,"Misschien toch er mee stoppen om tegen een vriend van mij homo te zeggen, hij zegt het ook tegen mij maar we bedoelen het allebij gwn grappig naar elkaar",no,no,0.3835538,0.29195267,0.3244935
+nl,training_NL_0872,Waar is Achmed in zijn vrachtwagen als je hem nodig hebt? 😅,yes_implicit,no,0.45128125,0.31003773,0.238681
+nl,training_NL_0888,"Heb gewoon een les erover in burgerschap ofzo, ik vind burgerschap persoonlijk al groepstherapie ofzoiets
+
+Op Wellant college wordt het echt wel geaccepteerd, ben er erg open over en niemand een probleem",no,no,0.51755947,0.24519508,0.23724543
+nl,training_NL_0900,Gewoon doorgaan als trainer/coach van vrouwenvoetbal kunnen ze lekker kletsen en giechelen onder de douche samen,yes_implicit,yes_explicit,0.30653977,0.3017159,0.39174435
+nl,training_NL_0907,allemaal heel erg grappig en woke en breeddenkend.. dus: doe maar voort als je in de nabije toekomst ultra onverdraagzaal rechts aan de macht wil .. gl,yes_implicit,no,0.9097128,0.044394225,0.045892995
+nl,training_NL_0912,De mafklappers zijner weer doe dat lekker thuis of in een club val anderen niet lastig met jullie fantasieën,yes_explicit,yes_explicit,0.28207007,0.2946477,0.42328227
+nl,training_NL_0922,Als iemand je homo of gay noemt in elkaar slaan die handel eve heb ik geleerd van mijn moeder,no,yes_explicit,0.19281639,0.32562804,0.48155555
+nl,training_NL_0923,"Zeg gewoon dat je een trekvogel bent , who cares",yes_implicit,yes_explicit,0.17909276,0.29349524,0.527412
+nl,training_NL_0930,"Helemaal niks mis mee. Je voelt je aangetrokken tot mensen, dit kan tot mensen van het andere geslacht of mensen van hetzelfde geslacht, of allebei",no,yes_explicit,0.245197,0.2977201,0.45708287
+nl,training_NL_0936,"Jongen druk bezig met zijn opleiding, heb je geen tijd voor homofiele propoganda",yes_implicit,yes_explicit,0.2547924,0.31505898,0.43014857
+nl,training_NL_0944,"Deze mensen lopen er nog netjes bij ,dat is in amsterdam dus anders dat is net sodom en gomorra.",yes_implicit,yes_explicit,0.109592155,0.33330917,0.5570987
+nl,training_NL_0959,Jammer dat mensen zichzelf dit aandoen.,no,yes_implicit,0.084795915,0.5419793,0.37322482
+nl,training_NL_0962,"mannen gewoon zeggen dat je een trans en een flikker ben. En dat je komkomer bij de dokter ligt na de verwijdering van je komkomer. Als ze bewijs willen zien, gewoon je komkomer naar achter plaatsen dan lijk het op je een vagina hebt die is gemaakt op de operatie tafel door Bert en Pino.",yes_implicit,yes_explicit,0.1411584,0.26801464,0.590827
+nl,training_NL_0964,Sorry maar ik heb het ook een keer gedaan,no,no,0.5896583,0.23019849,0.18014324
+nl,training_NL_0976,"Heel jammer, hij ziet mij juist een heel oprechte man uit die zich echt wil inspannen voor zijn gemeente. Goed dat hij zo eerlijk durft te zijn over zijn zonden. Niemand is vrij van zonden en ook priesters niet. We hebben vandaag onrealistische verwachtingen van priesters gecreëerd, waardoor jonge mannen vrij geïntimideerd zijn geraakt om zich tot priester te laten wijden, wat weer leidt tot een te kort aan priesters. Het is best dat er iemand is die de taboes wil doorbreken. Wat zijn homoseksuele handelingen betreft, die liggen in het verleden. Ik vind het mooi dat hij blijft proberen om tegen Satan en diens internetpornografie te strijden. Satan richt zich slechts tot Gods volgelingen, omdat zij de enige zijn die zich bewust tegen hem verzetten. Houd moed Pierre en blijf trouw aan de Heer.",no,no,0.4981113,0.22125152,0.28063717
+nl,training_NL_0990,Dat dit in 2019 nog een onderwerp van gesprek is. Leven voetballers nog in de 20ste eeuw of zo.,no,yes_implicit,0.16313118,0.55524427,0.28162462
+nl,training_NL_0993,sinds wanneer zeggen nederlanders LHBT en niet LGBT,no,yes_implicit,0.13216671,0.64769477,0.2201385
+nl,training_NL_1000,Wanneer een Gay Pride in Teheran of Kabul? Daar heeft men échte ballen voor nodig ;-),no,yes_implicit,0.09239071,0.57740617,0.33020315
+nl,training_NL_1013,Wat een schaamte naar allen mannen dit.,yes_explicit,yes_explicit,0.22473113,0.30453888,0.47072998
+nl,training_NL_1017,Gaan we weer Amerika achterna met dit gezeik,no,yes_implicit,0.07229293,0.7118276,0.21587951
+nl,training_NL_1018,Snap er niks meer van. Alles mag. Behalve je verkleden als zwarte Piet. Dat is toch ook trans?,no,yes_explicit,0.29002884,0.34608245,0.36388868
+nl,training_NL_1019,"Het is niet te bevatten dat sommige mensen “de bijbel” ( of hoe ze hun “boek” noemen) letterlijk nemen en het niet zien als een rode draad in hun leven om het draaglijker te maken, echter het voor sommige mensen ondraaglijker maken. Die daar zo ver in gaan en zelfs zelfmoord daarvoor plegen .... 
+Het feit dat dit meisje kiest voor haar geloof boven haar geluk is niet te bevatten. Helaas is dat met heel veel dingen; Die zijn soms gewoon niet te bevatten of te begrijpen.....
+Het eind van deze aflevering was lachwekkend ; De twee jongens die het geloof verkondigen door langs de deuren te gaan of zelfs te “ onderwijzen “ konden de blz waarin werd verboden met dezelfde sekse iets te hebben, niet vinden🙄🤦🏽‍♀️! Zo goed kennen ze het geschreven “woord” 🙃",no,yes_explicit,0.34347236,0.29367095,0.36285663
+nl,training_NL_1021,God doet wel een beetje lullig hoor,no,no,0.810627,0.103766575,0.08560649
+nl,training_NL_1024,Als het normaal zou zijn waarom moet het dan zo in het nieuws komen niemand boeit het,yes_implicit,yes_implicit,0.34945783,0.3701388,0.28040338
+nl,training_NL_1030,Non Binairen? Transgenders? Borderliners bedoelen jullie.,yes_explicit,yes_implicit,0.13299485,0.48245355,0.3845516
+nl,training_NL_1031,Knap dat hij het zegt 😁,no,no,0.9220513,0.042956784,0.034991898
+nl,training_NL_1037,ZEER ontgoochelt dat er door de Hongaarse politie niet met scherp is geschoten op deze verderfelijke kudde pedofielen. Hongerije is dus net zoals West-Europa in verval. Orban is dus toch niet de sterke leider die hij laat uitschijnen te zijn.,yes_explicit,yes_implicit,0.16476275,0.52348715,0.3117501
+nl,training_NL_1047,"Ik ben voor vrijheid maar deze ""vrijheid"" gaat te ver. Je moet niet anderen dwingen het met je eens te zijn. Wees discreet.",yes_implicit,no,0.69642824,0.14131537,0.16225637
+nl,training_NL_1050,"Ik ben heel blij dat de reactie zo massaal is. Het gaat inderdaad over de kernwaarden waar Europa op gebouwd is: de gelijkheid van alle mensen, de gelijke rechten van alle burgers, de inherente vrijheid om te kiezen wat je doet met je leven zolang het anderen niet schaadt, en de gezamenlijke inspraak van ALLE burgers in het opbouwen van een samenleving. 
+
+Pride is van oorsprong een protest, en dat is het nog steeds. Deze Pride toont dat, en het toont ook hoe belangrijk solidariteit is. Om het met de woorden van Emma Lazarus te zeggen: “Until we are all free, we are none of us free.”",no,no,0.56350774,0.24810909,0.18838315
+nl,training_NL_1053,"Respect voor hem, alleen ben k bang dat ie nu zijn hoge punt is.",no,no,0.94478816,0.029811852,0.025400016
+nl,training_NL_1068,Zullen er door deze actie van UEFA meer voetballers uit de kast komen? Wat denk jij?,no,yes_implicit,0.19086675,0.55594385,0.25318938
+nl,training_NL_1073,Het boeit echt niemand iets,no,no,0.55213076,0.27400625,0.17386293
+nl,training_NL_1077,Love you Koen ❤❤❤❤,no,no,0.9201663,0.03746408,0.04236953
+nl,training_NL_1079,"Pride zal altijd een protest zijn, sterk signaal dit!",no,yes_implicit,0.12997255,0.4791486,0.39087877
+nl,training_NL_1088,Is niet bizonder ofzi,no,yes_implicit,0.14860281,0.4789936,0.3724036
+nl,training_NL_1104,Wat zal het programma tegen Luna hebben gezegd ik denk niet van trek maar geen merk kleding aan,no,yes_implicit,0.31575802,0.39571705,0.28852496
+nl,training_NL_1106,Wanneer je zelf als trans moet lachen hierom 😭🏳️‍🌈 maar er gaan wat dingen goed mis bij jullie. Sterkte met de negatieve publiciteit en reacties 🖤,no,no,0.95458984,0.022427889,0.022982182
+nl,training_NL_1107,Ik heb het gevoel dat in het professioneel voetbal al meer geaccepteerd wordt dan in het amateurvoetbal,no,yes_implicit,0.34072596,0.38050187,0.27877218
+nl,training_NL_1115,Ah ze komen het weer door de mensen hun strot rammen. Je bent wie je bent. Door er zo een spel van te maken maken ze zichzelf niet bepaald populair.,yes_implicit,yes_explicit,0.16476858,0.33239505,0.5028363
+nl,training_NL_1116,"Goed! Nu zijn ze op weg naar de Pride te Caïro, Casablanca, Algiers en Teheran!",no,yes_implicit,0.11424157,0.65007305,0.23568527
+nl,training_NL_1138,"Linksen die gaan lopen doen dat zij hier de slachtoffers zijn, terwijl het nu wel duidelijk is dat zij hier de slachtoffers maken. De staat van het huidige westen is daar maar al te pijnlijk bewijs van. Dat je op hetzelfde geslacht valt. Helemaal prima. Maar ga dat niet belangrijker maken dan dat het is.",yes_explicit,yes_explicit,0.201004,0.38877186,0.41022414
+nl,training_NL_1140,Eerst Nederlands gay zijn moeilik is ook niet voel vrij,no,yes_implicit,0.31978706,0.34647337,0.33373955
+nl,training_NL_1146,"Ik heb even gegoogeld en ze is inmiddels getrouwd met een vrouw! ❤ Zo zie je maar weer, jezelf zijn is altijd het beste en iedereen verdiend liefde.",no,no,0.9377694,0.027500583,0.034730062
+nl,training_NL_1153,Stop deze sexualisering van kinderen.,yes_implicit,yes_explicit,0.07396736,0.43130153,0.49473116
+nl,training_NL_1156,"Er gebeurt iets groots in dit land' Ja, daar heb je gelijk in, maar of het iets positiefs is, daar twijfel ik over.",yes_implicit,yes_implicit,0.37729785,0.46465114,0.158051
+nl,training_NL_1158,Ja en waarom moet ik weten dat twee geesteszieken verliefd op elkaar zijn,yes_explicit,yes_explicit,0.3485842,0.2944345,0.35698134
+nl,training_NL_1160,Opzouten met die pride troep ziekte. En maar zeuren dat we niet genoeg mankracht bij defensie hebben,yes_explicit,yes_implicit,0.049958546,0.6242708,0.32577065
+nl,training_NL_1169,Iedereen mag zijn wie je wilt zijn,no,no,0.6400327,0.19515131,0.16481602
+nl,training_NL_1176,Ieuw,yes_explicit,yes_implicit,0.28031045,0.4313272,0.2883624
+nl,training_NL_1179,Ik vind dat iedereen in het kabinet voor zichzelf mag kunnen bepalen of ze dat willen of niet,no,yes_implicit,0.30905098,0.49743178,0.19351724
+nl,training_NL_1181,Die vrouw die ‘pan’ was even een vraag wat zit er tussen man en vrouw dan?,no,yes_explicit,0.18320993,0.30534303,0.511447
+nl,training_NL_1189,Maar wat is nou het talent van deze knaap dat hij een bn er is,yes_implicit,no,0.9174761,0.046670437,0.035853423
+nl,training_NL_1191,Aldus het niveau van de autochtone Nederlander👎🏻,yes_implicit,yes_implicit,0.19974954,0.559938,0.24031243
+nl,training_NL_1201,Geen aandacht geven dorpsgekken,yes_implicit,yes_implicit,0.0713556,0.5957054,0.33293897
+nl,training_NL_1216,Het boeit niemand,no,yes_implicit,0.17023844,0.53301924,0.29674232
+nl,training_NL_1219,"Het klinkt bot maar er zijn veel mensen die zeggen ""Respect, respect"" dat is toch eigenlijk van de gekken dat we hier voor respect moeten hebben. Welke geaardheid je hebt, hoe je bent wie je bent iedereen moet toch kunnen zijn wie die is?",no,no,0.48878115,0.24288158,0.26833722
+nl,training_NL_1222,Dat je met meerdere mensen tegelijk kunt hebben vind ik een beetje te ver gaan,yes_implicit,no,0.400524,0.31529725,0.28417876
+nl,training_NL_1225,Dat verklaart waarom er profvoetballers zijn die soms raar lopen. Lijkt wel of ze last hebben van een achterwerk🤔,yes_implicit,no,0.5980856,0.20309132,0.19882311
+nl,training_NL_1226,Schop ze van deze planeet het is tijd om deaatsgapij te normaliseren naar vroeger,yes_explicit,yes_implicit,0.057532474,0.5765356,0.36593187
+nl,training_NL_1227,In de war,yes_explicit,yes_implicit,0.08934174,0.6247134,0.28594482
+nl,training_NL_1233,"Batties opgelet
+
+man + vrouw = juist 
+
+man + man = Tegen de aard van de man
+
+Vrouw + Vrouw = Tegen de aard van de vrouw",yes_explicit,yes_explicit,0.086492494,0.22685048,0.6866571
+nl,training_NL_1238,"Als je achter die Pridemars staat, ga op eigen kosten.",no,yes_explicit,0.06390595,0.40153834,0.5345557
+nl,training_NL_1240,Zou eens andersom moeten zijn. 'Alleen voor hetero's' Wat zijn die linkse wappies toch een stel mafkezen. En maar roepen met het woordje 'fascist' niet begrijpend dat zij dat juist zijn.,yes_explicit,yes_explicit,0.312623,0.3279562,0.35942078
+nl,training_NL_1243,"Ik ken heel veel voetballers die homo zijn, maar voor de buitenwereld hetero.
+Ik ben wel eens verliefd op zo'n jongen geweest, dat was best raar en erg moeilijk.",no,no,0.70895183,0.1469807,0.14406747
+nl,training_NL_1248,Dit zijn kinderen!!! What in the grooming world is dit ?! Sorry maar hier zijn dingen mis onder het oppervlak. Sprookjes zijn voor sprookjesboeken. Een meisje met hoge mannelijke energie en jongen met hoge vrouwlijke energie. It happens. Ik ben ook zo'n vrouw met zo'n partner. Hoop echt dat deze kinderen gewoon eerst gezond kunnen opgroeien voordat ze slachtoffer raken van big Harma.,yes_explicit,yes_explicit,0.2198091,0.22759084,0.5526
+nl,training_NL_1253,En juist dit is het soort priesters dat de katholieke kerk nodig heeft. Deze man brengt het geloof een stuk dichter bij de mensen.,no,yes_explicit,0.2227156,0.36513984,0.41214454
+nl,training_NL_1259,En nu spelen ze bij de vrouwen? 😂😂😂😂,yes_explicit,yes_explicit,0.2117995,0.3017268,0.4864738
+nl,training_NL_1271,Ik wou dat iedereen homo wordt. Worden er misschien minder kinderen gemaakt. Goed tegen de overbevolking en vervuiling. Ik ben pro.,no,no,0.585543,0.21160413,0.20285289
+nl,training_NL_1273,Gewoon nee.... Fuck die LHBTIXYZ bullshit. Les daarin geven betekend gewoon indoctrineren. Die rotzooi moeten we niet hebben.... Iedereen mag zijn zoals die wil zijn maar val andere er niet mee lastig.....,yes_explicit,yes_explicit,0.23422568,0.3049942,0.46078005
+nl,training_NL_1281,"Leviticus 18:22
+U mag niet slapen met een mannelijk persoon, zoals u met een vrouw slaapt. Dat is een gruwel.
+1 Nephi 10:21
+En niets wat onrein is, kan bij God wonen.",yes_explicit,yes_explicit,0.12092268,0.23236014,0.6467172
+nl,training_NL_1298,Iemand vroeg aan mij of ik gay ben op snapchat en ik zij nee bi hij ging stommen opmerkingen maken en me uitlachen ik voelde me heel erg gekwetst 😡😭,no,no,0.6964239,0.13278508,0.17079106
+nl,training_NL_1307,"het word je gewoon opgedrongen en het is niet normaal hoe het hele woke gedoe/beweging in het maatschappij dit ook nog op de basis/middelbare scholen als les willen hebben,,,(te ziek voor woorden),,,,,!!!!!!!",yes_explicit,yes_explicit,0.16185535,0.3441989,0.49394578
+nl,training_NL_1317,Kiest ze zelf voor,no,yes_implicit,0.24631347,0.43462172,0.31906474
+nl,training_NL_1320,Jammer om leerlingen van een toch al actieve opleiding lastig te vallen met dit soort bagger…,yes_explicit,yes_explicit,0.33238786,0.27740702,0.39020506
+nl,training_NL_1328,"Luna is echt een transgender maar sorry, Ivan is gewoon lesbisch.",yes_explicit,no,0.7293435,0.12141033,0.14924614
+nl,training_NL_1337,Het is best wel heftig om met homo the schelden. Dat is juist de rede waarom je het doet.,yes_implicit,no,0.45295122,0.24741031,0.2996384
+nl,training_NL_1341,Ieder land heeft een groepje mensen die helaas emotioneel zwaar beschadigd is. Laten we hopen dat er een tijd komt dat ze de hulp krijgen die ze nodig hebben.,yes_implicit,yes_implicit,0.32606846,0.38406184,0.2898697
+nl,training_NL_1343,"Eey wedde dat jamal hem diep van binnen gwn haat, hij zet hier gwn een masker op",no,yes_explicit,0.23742285,0.29545045,0.4671267
+nl,training_NL_1344,Lhbt verbieden bedoel je,yes_explicit,yes_implicit,0.10516306,0.4855573,0.40927973
+nl,training_NL_1346,Misschien maar eens ombouwkunde introduceren,yes_implicit,yes_implicit,0.1663173,0.6479158,0.185767
+nl,training_NL_1351,"Het is je gegund, kerel!",no,yes_explicit,0.36140352,0.20647527,0.4321212
+nl,training_NL_1357,"Slimme zet, ze zijn nu TransProtected. Technisch gezien mogen ze daarmee alles doen waar ze zin in hebben. Eerlijk is eerlijk.",no,no,0.6631009,0.21742977,0.11946937
+nl,training_NL_1358,"Ik ben ook een transgender, maar ik haat het daarin tegen als mensen me zien als transgender. Want ze gaan toch je anders behandelen. Meestal zien mensen me als transgender als ze het eenmaal weten en niet als jongen.",no,no,0.4146293,0.26349008,0.32188058
+nl,training_NL_1360,Amsterdam los steken en afzinken,yes_implicit,yes_implicit,0.088807434,0.52240497,0.3887875
+nl,training_NL_1362,Geen haat hoor maar dit is echt het meest onnodige en nutteloze ooit,yes_implicit,no,0.84461135,0.079837225,0.075551465
+nl,training_NL_1364,Kzag dezw mensen op een festival,no,yes_implicit,0.11656223,0.49026632,0.3931714
+nl,training_NL_1365,Zie ook een MAP sticker op de voordeur ... 🤔(MAP = Minor Attracted Person aka PEDOFILIE) ... tijd voor evictie? 🤔,yes_explicit,yes_explicit,0.12592562,0.32440102,0.5496734
+nl,training_NL_1368,Die gene met oorbellen lijkt gwn een wijf gwn dat hooft je ziet t meteen,yes_explicit,yes_explicit,0.15361747,0.28911817,0.5572644
+nl,training_NL_1380,"Zijn er ook nog gewoon docus over lesbiennes of homo's? TG ideologie zoals je kan zien in deze video is lesbo/homofoob. Het trans 'meisje' is een jonge homo en de trans 'jongen' is een lesbienne. Maar in de TG ideologie bestaat homoseksualiteit niet, immers wist deze ideologie biologische sekse uit. We zien nu ook veel detransitioners, vaak lesbiennes en homo's die misleid zijn door de TG beweging. Een jongensachtig meisje is geen man, en een vrouwelijke jongen is geen vrouw.",yes_explicit,yes_explicit,0.25647745,0.29803702,0.4454855
+nl,training_NL_1382,Zo veel respect,no,no,0.8359072,0.08618921,0.07790349
+nl,training_NL_1384,Wat een kansloze titel zeg,yes_implicit,no,0.6373219,0.23077339,0.13190468
+nl,training_NL_1385,Stop alsjeblieft met het promoten van het slopen van een samenleving 😢,yes_explicit,yes_implicit,0.22002968,0.39493588,0.38503444
+nl,training_NL_1389,Alleen omdat nikkie zij dat ze trans us wilt iedereen nu hun verhaal kwijt,no,yes_implicit,0.22672342,0.4292487,0.34402797
+nl,training_NL_1396,"Misschien had hij gewone vragen kunnen stellen, die hij ook aan andere mensen vraagt. Maar ja, behalve haar transgender identiteit weet hij denk ik weinig over haar, dan is er ook weinig wat je kunt vragen.",no,no,0.48698467,0.2626123,0.250403
+nl,training_NL_1403,hij zat bij mij in de klas,no,no,0.5449939,0.22530922,0.22969697
+nl,training_NL_1404,"Alsof je een patatje koopt....ik ben liever een meid, ja goed zoon doen we ff......vroeger kreeg je van je vader een klap voor je kanis",yes_explicit,yes_explicit,0.14453764,0.21241666,0.64304566
+nl,training_NL_1406,kan iemand een tekeningetje maken hoe dan die andere geslachten er uit zien? ik weet hoe een piemel en een vagina er uit ziet. als er meerdere geslachten zijn kan er vast wel iemand een tekening van maken toch? het mag ook een cartoony versie zijn... nee? niemand? en dat er het geslacht waarmee je geboren bent op je paspoort staat is alleen maar functioneel mocht je buiten bewust zijn aankomen in het ziekenhuis? of denk je dat een man en vrouw 100% dezelfde medische problemen hebben? hoe jezelf gedraagd en kleed achter je voordeur moet je lekker zelf weten maar waarom moet iedereen daar aan mee doen? en als iedereen daar verplicht aan mee moet doen kunnen we dan ook iedereen verplichten om mee te doen aan andere mentale problemen? schizofrenie? waanbeelden? of iemand die denkt dat ie een dolfijn is? of als iemand zich identificeerd als 12 jarige? mag die dan in de kleedkamer met andere 12 jarige? waarom stellen jullie die vragen niet?,yes_explicit,yes_explicit,0.22706729,0.28322873,0.489704
+nl,training_NL_1408,"Sinds dat dennis weg is bij jullie is jullie omroep echt slechter geworden. Heel respectloos naar deze persoon toe, jullie maken hem gewoon belachelijk voor views, walgelijk.",no,no,0.5226478,0.21670493,0.26064727
+nl,training_NL_1412,gaan ze weer transchendertje spelen,yes_explicit,yes_explicit,0.08264842,0.3731274,0.5442242
+nl,training_NL_1424,"Ik vraag mij wel eens af,in wat voor tijd leven we in godsnaam?",yes_implicit,no,0.4058283,0.35849214,0.23567958
+nl,training_NL_1425,Een man die af en toe vrouwenkleding draagt noemt men ook wel een travestiet. Niks mis mee,yes_explicit,yes_explicit,0.22562447,0.29274708,0.48162836
+nl,training_NL_1426,Ik word altijd uit gescholden met lesbie,no,yes_explicit,0.2531371,0.3003098,0.4465531
+nl,training_NL_1427,Ik heb zoveel respect voor mensen! Iedereen mag zijn wie ze zijn. Het zal geen makkelijke tijd zijn maar je komt er wel Boris! Be who you are! :),no,no,0.94076526,0.030152384,0.029082341
+nl,training_NL_1432,Als hij jongen wil zijn is ie jongen punt 🤍♡,no,no,0.9340902,0.03165219,0.034257617
+nl,training_NL_1434,Die zat bij mij in de klas,no,no,0.52799267,0.24383685,0.2281705
+nl,training_NL_1437,Zo leuk! Echt jammer dat ik er niet bij kon zijn ❤️🧡💛💚💙💜🏳️‍🌈,no,no,0.9108732,0.048156798,0.040970046
+nl,training_NL_1440,Gehandicapte transgender? je zal je moer bedoelen [CHANNEL]! dit gaat echt te ver...F U pow,no,yes_explicit,0.29793355,0.19346716,0.5085993
+nl,training_NL_1441,En wij maar denken dat we het hadden gehad na rapper Sjors.,yes_implicit,yes_implicit,0.23833023,0.41004205,0.35162777
+nl,training_NL_1443,"Jongens, meiden, en alles wat er tussenin zit. 🤨🤔 Sorry dat ik het zeg hoor, maar er bestaan maar 2 geslachten.",yes_explicit,yes_explicit,0.3408959,0.19298403,0.46612012
+nl,training_NL_1444,Dit is echt raar,yes_explicit,no,0.8491077,0.082005285,0.06888699
+nl,training_NL_1448,Net als vroeger een knokploeg er op afsturen,yes_explicit,yes_explicit,0.038161755,0.42516547,0.5366728
+nl,training_NL_1452,Hahahaha succes met kinderen maken he!,yes_implicit,no,0.87338185,0.06965568,0.056962457
+nl,training_NL_1455,"“De kleren van een man mogen niet door een vrouw gedragen worden, en een man mag geen vrouwenkleding aantrekken, want ieder die dat doet, is voor de HEERE, uw God, een gruwel”.",yes_explicit,yes_explicit,0.12291529,0.23399729,0.6430874
+nl,training_NL_1462,Respect voor deze jongen👌♥️,no,no,0.94315517,0.029905995,0.026938776
+nl,training_NL_1465,Je lijkt ook op een jongen,no,no,0.8660217,0.06568091,0.06829735
+nl,training_NL_1470,Fijn hé technologie. Of dacht u dat dit natuurlijk is.,yes_implicit,no,0.8867201,0.072290555,0.040989283
+nl,training_NL_1474,echt vervelend😪,no,no,0.78946644,0.122346275,0.088187285
+nl,training_NL_1476,Maakt niet uit als je homo of lesbisch bent dus kinderen die het zijn en die het zeggen maakt helemaal niet uit Groetjes van Sofie doei altijd naar het [CHANNEL] [CHANNEL],no,no,0.92647004,0.03497125,0.03855873
+nl,training_NL_1484,"Hoop dat deze kerel het gaat maken❤
+Dan kan hij die mensen die hem onrecht aan gedaan hebben laten zien dar hij niet klein te krijgen is😈😈",no,no,0.89389324,0.0466857,0.05942107
+nl,training_NL_1485,Mooie plek voor een goeie molotovcocktail,yes_explicit,yes_explicit,0.23710765,0.35325703,0.40963528
+nl,training_NL_1486,Mijn juf van groep 1 is lesbisch en niemand maakte daar een probleem van,no,no,0.4618094,0.27049136,0.26769927
+nl,training_NL_1493,"Even uitleggen wat ik geslacht vind:
+
+Heb je zaad in je zaadballen, 
+dan ben je een echte biologische man.
+Heb je eicellen in je Eierstokken dan ben je een echte biologisch vrouw.
+
+Laat jij je biologische geslacht verwijderen omdat je er anders uit wilt zien dan zeg je ik lijk op een vrouw/man ( niet zeggen ik ben een vrouw/man )
+
+Hoe je er uit wilt zien boeit mij niet dat vind ik prima, maar ik hou niet van leugens.",yes_explicit,yes_explicit,0.24289757,0.22921409,0.5278884
+nl,training_NL_1495,Super tof dat je dít durft te zeggen respect fijn leven Boris,no,no,0.9347402,0.03358558,0.031674217
+nl,training_NL_1499,wereld is naar de kloten...,no,yes_implicit,0.09829374,0.5773612,0.32434505
+nl,training_NL_1509,"Fist ! 
+Lik het met duimpje omhoog.
+Héérlijk kijkgenot met al die kindertjes derbij.
+Geile propaganda van de [CHANNEL]. Zoals we wel gewend zijn.",yes_explicit,yes_explicit,0.17590272,0.28544426,0.5386531
+nl,training_NL_1511,Waar gaat de wereld naar toe 😞 ik schaam me kijk naar hun noem je dit normaal 😣,yes_implicit,no,0.6566563,0.1740816,0.16926202
+nl,training_NL_1513,Hebben ze therapie voor zieke mensen Hell zal warm zijn,yes_explicit,yes_implicit,0.12430869,0.54633737,0.329354
+nl,training_NL_1515,het pand afsluiten en in de fik steken dan zijn we van deze dwazen af heel simpel !,yes_explicit,yes_explicit,0.082006335,0.44051692,0.47747666
+nl,training_NL_1522,"Tja, in Amerika zijn er miss wel aanslagen enzo maar hier zijn ze veel aardiger",no,no,0.5193051,0.3466081,0.13408685
+nl,training_NL_1523,Het is geen Nikki meer maar Nick 😂,yes_explicit,no,0.63842463,0.16871199,0.1928634
+nl,training_NL_1527,Er vaarde ook en boot met leerlingen hoor,no,yes_implicit,0.11249531,0.51511794,0.37238675
+nl,training_NL_1528,Hoezo is zijn haar lang dan,yes_implicit,yes_implicit,0.2518734,0.39843512,0.34969154
+nl,training_NL_1532,Die ene met dat krulhaar lijkt net op een slechte cosplay,yes_implicit,yes_explicit,0.30204034,0.30523717,0.39272252
+nl,training_NL_1533,Ik dacht wat is dit nou weer maar veel respect naar arjen,no,no,0.9351929,0.033210367,0.03159685
+nl,training_NL_1535,Dat zit gewoon in de opvoeding,yes_implicit,yes_implicit,0.20625469,0.39960983,0.39413548
+nl,training_NL_1536,Dus ze was in behandeling voor een eetstoornis en heeft een negatief lichaamsbeeld. In plaats van dat aan te pakken is het idee in haar hoofd gestopt dat ze trans is. Het probleem is dus hetzelfde: een vertekend lichaamsbeeld. Ze heeft het ene pad der vernietiging ingeruild voor het andere.,yes_explicit,yes_explicit,0.21964343,0.31559837,0.46475816
+nl,training_NL_1541,hij kan wel goed tekenen wow,no,no,0.9230578,0.0433198,0.03362238
+nl,training_NL_1543,"Er zijn belangrijkere dingen dan dit, maar ja als een iemand uit de kast komt is dat meteen heel speciaal",no,no,0.67812496,0.18450855,0.13736641
+nl,training_NL_1546,"Boris lijkt wel op een jongen, im dacht ook eerst dat hij een jongen was",no,no,0.9220062,0.040234145,0.037759587
+nl,training_NL_1554,Boeit mij niks beter zo die mensen zeggen van wij transgenders zijn beter dan normale mensen bek houden dan,yes_explicit,no,0.36150894,0.32237768,0.31611338
+nl,training_NL_1555,Deze boris is bezeten,yes_implicit,yes_implicit,0.1472246,0.4995157,0.3532597
+nl,training_NL_1556,Trost op hem,no,yes_implicit,0.2651437,0.3699174,0.36493888
+nl,training_NL_1558,Wat een onzin. Die regenboogzever wordt ons toch een beetje teveel door de strot geramd. Triestig...,yes_explicit,yes_implicit,0.16147996,0.46113804,0.37738204
+nl,training_NL_1559,Niks tegen hun persoonlijk als mens. Het zijn waarschijnlijk goede mensen. They just lost their brains somewhere down the road,yes_explicit,no,0.3605327,0.31245336,0.3270139
+nl,training_NL_1562,"Beuk dat alfabet schorem er uit, nu!",yes_explicit,yes_explicit,0.09998472,0.44374573,0.45626956
+nl,training_NL_1563,Goed initiatief van de krakers! Ik betaal wel graag 50% belasting voor deze mensen die daar gratis zitten met waarschijnlijk een uitkering. Top ook dat ze mannen weren! En ook top dat dit door ons land getolereerd word. Wat een fantastisch land wonen we in❤❤,yes_implicit,no,0.9493929,0.026932204,0.023674926
+nl,training_NL_1566,Ik had gewoon geweld gebruikt en ze eruit gegooid. De consequenties daarvan zijn nog altijd minder dan je pand maanden lang kwijt zijn en daarvan de schade moeten herstellen. Want netjes zijn deze tokkies niet.,yes_explicit,yes_explicit,0.11532992,0.34641948,0.53825057
+nl,training_NL_1569,Voor de mensen die hier slechte commentaar op geven mogen oprotten want deze jongeren zijn alleen zichzelf,no,no,0.3615454,0.3230898,0.31536475
+nl,training_NL_1572,Dit is zo ongezond voor de menselijke zintuigen,yes_implicit,yes_explicit,0.24640755,0.36146513,0.39212728
+nl,training_NL_1573,Ik kan ni eens naar ze kijken,yes_explicit,no,0.54980576,0.29274914,0.15744509
+nl,training_NL_1580,Op de brandstapel ermee,yes_explicit,yes_implicit,0.13741435,0.6200727,0.24251293
+nl,training_NL_1581,Ben blij voor hem!,no,no,0.8966928,0.056794297,0.046512865
+nl,training_NL_1586,"Vandaag in het nieuws transgenders zijn verdubbeld afgelopen jaar, door al de propaganda van de msm. Mischien is Orban toch niet zo gek.",yes_explicit,yes_implicit,0.13930339,0.5541933,0.30650327
+nl,training_NL_1591,gelukkig zitten dit soort gekken niet bij de bsb of DSI!,yes_explicit,yes_implicit,0.14819811,0.5609348,0.29086706
+nl,training_NL_1604,Linkse indoctrinatie,yes_explicit,yes_implicit,0.054131333,0.5063626,0.43950605
+nl,training_NL_1605,"Wat een onwetendheid, domheid en intolerantie hier. Unbelievable dit forum.",no,no,0.43844283,0.26111996,0.30043718
+nl,training_NL_1608,Knap dat je het zegt! Topper!,no,no,0.90070987,0.0530456,0.04624461
+nl,training_NL_1615,Loop daar naar binnen met een honkbalknuppel en veeg de tent leeg,yes_explicit,yes_explicit,0.11150545,0.35627204,0.53222257
+nl,training_NL_1618,Woke en LHBTIQ+ 🤡🤡🤡,yes_explicit,yes_explicit,0.1829567,0.35291663,0.46412674
+nl,training_NL_1619,Molotovcocktails naar binnen en gecontroleerd laten uitbranden,yes_explicit,yes_explicit,0.071005896,0.35500717,0.57398695
+nl,training_NL_1621,Wat is dit een kut zender geworden,no,no,0.882652,0.06839596,0.048952047
+nl,training_NL_1623,"Ik heb een docent die vrouw is en op vrouwen valt. Maar iedereen vind dat wel oke enzo. Ze was een van de 2 moeders van dat meisje met dat regenboogzebrapad, ook op het [CHANNEL] geweest.",no,no,0.3988577,0.2624088,0.3387335
+nl,training_NL_1626,"Ik heb in mijn jonge jaren zo vaak gedacht dat alle puzzelstukjes op zijn plek vielen en dan bleek het toch anders te zijn, en/ of veranderde de situatie toch weer waardoor ik er op een andere manier naar ging kijken, en ging ik op een andere manier de dingen ervaren. Dat heet volwassen worden. Om in zo’n veranderlijke/ kwetsbare periode als de puberteit je lichaam met hormonen en eventueel chirurgie aan te passen vind ik barbaars! Een puberteit stoppen is denken dat je God bent. Waarom coach je deze jonge mensen niet door deze moeilijke en verwarrende periode en probeer je ze één te laten worden met hun lichaam in plaats van ze (verder) te laten dissociëren van hun lichaam?",yes_explicit,yes_explicit,0.21986887,0.27153498,0.5085962
+nl,training_NL_1628,"Je bent perfect Ik vind het echt heel goed dat van jou dat je dit durft te zeggen Ik hoop dat je fijn verder in het leven gaat en dat je niet wordt gepest je bent zoals je bent en je bent perfect veel plezier in het leven Ik hoop dat je je leven fijn hebt heel veel mensen pesten jou maar daar ben ik niet voor Ik wil de zulke mensen als jou wil ik heel graag helpen veel plezier in het leven Ik hoop dat je echt een heel fijn leven hebt en later er niet meer mee wordt achtervolgd en ik hoop dat je er echt heel erg blij mee zou zijn met je keuze en anders kan je altijd weer terug daar hoef je niet bang voor te wezen we blijven je steunen veel veel veel veel veel veel veel veel veel plezier in het leven je bent bent bent bent bent perfect perfect perfect perfect perfect perfect Sorry dat ik niet naar dat moest maar ja daar gaan we nu even niet open Ik vind het heel erg stoer van jou dat je dit even durft te vertellen ook nog wel eens op een heel druk programma Ik hoop dat je een fijn leven hebt met leuke kinderen en ik hoop dat die heel erg blij met jou zou gaan zijn succes in het leven en nog heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel heel veel veel veel veel veel veel veel veel veel veel veel veel veel plezier Plezier plezier Plezier plezier in het leven gaat hebben veel plezier, Ik hoop dat je echt een heel fijn leven gaat hebben en als je toch weer een meisje wil zijn kan dat altijd weer hè Dus bijvoorbeeld als ik een meisje jou wil zijn Kan ik dat ook worden als een jongen wil zijn dan kan ik dat ook worden Ik kan gewoon allebei worden veel plezier in het leven",no,no,0.89360094,0.048316777,0.058082294
+nl,training_NL_1631,Hoe kun je zo zijn twee mannen die zich als wijf gedragen,yes_explicit,yes_explicit,0.17229594,0.29543808,0.53226596
+nl,training_NL_1632,Helemaal gek in hun hoofd.,yes_explicit,yes_explicit,0.13971972,0.32884791,0.53143233
+nl,training_NL_1634,wat een leuke spontane jongen!,no,no,0.94323736,0.03113041,0.025632195
+nl,training_NL_1637,Je kunt zo zien dat dat mannen zijn dat gezicht en zelfs de stem hoezo denken ze dat niemand ze doorheeft?,yes_explicit,yes_explicit,0.18589623,0.3287367,0.4853671
+nl,training_NL_1640,Ik ben tegen transgenders kbedoel wrm echt dom,yes_explicit,no,0.6714325,0.17474785,0.15381962
+nl,training_NL_1641,Begin eerst met je haar kort te maken,yes_implicit,yes_explicit,0.16784464,0.3112298,0.5209256
+nl,training_NL_1642,Was je eerst lasbie,no,no,0.48917797,0.2349108,0.27591124
+nl,training_NL_1645,gun hem dit podium we hebben het al gegeven aan famke lowiese en die rappert sjors die hebben niet eens een beperking of een kwaal die zijn gewoon zo deze kerel/vrouw/persoon wil iets maken van zijn leven,no,yes_explicit,0.18061699,0.28644243,0.5329406
+nl,training_NL_1648,"Ik ben zelf ook transgender , ben als meisje geboren maar mij ook nooit meisje gevoeld , ben al 5 jaar uit de kast , zowel thuis , school , en werk , tuurlijk wel een nare reacties gehad maar daar trek ik mij niks van aan , ben op geven moment in traject in gegaan en ben eindelijk geworden wie ik was ! mijn traject is klaar , ik help ook graag anderen die nog in de kast zitten of anderen die er al wel voor uit zijn gekomen maar niet weten wat verder , ik vind het erg dapper van je boris ! En als ik iets voor je kan betekenen let my know 😊 ik ben een open boek dus je kan en mag alles vragen ! 👋😉",no,no,0.92992026,0.032273907,0.037805784
+nl,training_NL_1661,Je jat un pand en vervolgens discrimineer je ook.maar als nouw un groep mannelijke vegtsporters erin zoude willen mag dat tog ok met pandje pikke.july stelen en stellen vervolgens eisen,no,yes_explicit,0.15828782,0.3012404,0.54047173
+nl,training_NL_1666,Respect voor boris,no,no,0.71582526,0.15602225,0.12815253
+nl,training_NL_1680,Mag ik hun gezins situatie even weten. Gestoorde gasten.,yes_explicit,yes_implicit,0.068875246,0.5551348,0.37599
+nl,training_NL_1683,Dat werkschuwe tuig eruit rammen door de ME!,yes_explicit,yes_explicit,0.044784658,0.43180707,0.52340823
+nl,training_NL_1688,Een huis vol patiënten. Stumpers,yes_implicit,yes_implicit,0.091896854,0.478692,0.4294111
+nl,training_NL_1690,"Mooi, alles verloopt volgens plan! Economie gaat binnenkort instorten, steeds meer kinderen besluiten gay te worden dus minder geboortes, geen mensen meer waar de een in een groot vrijstaand huis woont met een Tesla en de ander in een appartementje, dat het snel moge gebeuren!",yes_implicit,yes_explicit,0.22861108,0.33607596,0.43531296
+nl,training_NL_1693,waarom komt de politie ze er niet uitgooien,yes_implicit,yes_implicit,0.089990936,0.5550426,0.35496652
+nl,training_NL_1696,Goed bezig Ivo jij komt er wel,no,no,0.93371606,0.03567763,0.03060623
+nl,training_NL_1697,Kees wilt als man geïdentificeerd worden. Maar stel je voor dat die vermoord wordt en na een lange tijd de politie de onherkenbare lijf vindt. Het skelet van deze persoon zal bewijzen dat het over een vrouw gaat en niet een man.,yes_explicit,yes_explicit,0.15462983,0.2898845,0.5554856
+nl,training_NL_1699,Super goedd blijf wie je bent ❤️👍🏻😘,no,no,0.94423753,0.027636234,0.028126322
+nl,training_NL_1705,"Zijn dat niet van die mensen die boos worden dat andere ze niet accepteren, terwijl ze zich zelf niet eens accepteren",yes_explicit,no,0.35091126,0.33920267,0.3098861
+nl,training_NL_1708,Als ik eigenaar was zou ik ze motiveren o zo lief met een grote knuppel het pand te verlaten. Criminelen verdienen geen compassie,yes_explicit,yes_explicit,0.3205242,0.2863736,0.39310223
+nl,training_NL_1709,gun je het beste Arjen !!,no,no,0.888414,0.056242477,0.055343486
+nl,training_NL_1711,Het is inderdaad net een sprookje... Sprookjes zijn namelijk ook verzonnen..!,yes_implicit,yes_explicit,0.25503,0.35914543,0.38582453
+nl,training_NL_1713,ME inschakelen en de knuppel erover heen.,yes_explicit,yes_explicit,0.06339657,0.3575911,0.57901233
+nl,training_NL_1714,"Ik vind walgelijk, ziek en het is alles behalve normaal. Dat gezegd hebbende, vind ik wel dat ze met rust gelaten moeten worden",yes_explicit,no,0.5944032,0.19706902,0.20852783
+nl,training_NL_1723,"Een man kan als een vrouw klinken er uit zien en gewoon een vrouw zijn 
+Een vrouw kan moeilijk man worden want ze zien er nog een beetje alls vrouw uit
+Toch vreemd",yes_explicit,yes_explicit,0.21161379,0.2625872,0.52579904
+nl,training_NL_1730,Ik dacht dat het een jongen was die een meisje wou worden,no,no,0.4400031,0.2315542,0.32844266
+nl,training_NL_1741,"Moet ook gebeuren op de middelbare scholen, niemand heeft zin om 2k per jaar te betalen voor vervolgonderwijs en dan les krijgen over lgbt als ze een IT studie doen",no,yes_implicit,0.30865932,0.37475362,0.31658703
+nl,training_NL_1748,Geef mijn liever 10 van de rapper Sjors .,yes_implicit,no,0.5282383,0.24219963,0.22956207
+nl,training_NL_1754,Wat ben je morgen? Een kameel of dromedaris?',yes_implicit,yes_explicit,0.083791286,0.3087489,0.60745984
+nl,training_NL_1764,Het zijn weer Denen die voor overlast zorgen aanhangers van de religie van liefde en vrede. Ik keur alle geweld af tegen wie dan ook. Maar  Transgenders zijn abnormaal.,yes_explicit,yes_explicit,0.25903502,0.3582762,0.3826888
+nl,training_NL_1766,"Heel trots!
+Lijkt mij super eng",no,no,0.93015486,0.037704695,0.032140493
+nl,training_NL_1770,"Ik vraag me af wat het probleem eigenlijk was. Zijn het niet gewoon twee hetero’s met een rol-probleem? Het is echt extreem verwarrend…
+Ben benieuwd of dit soort experimentele kalverliefde stand wist te houden. Is er werkelijk aantrekkingskracht, of zijn het zielsverwanten? En hoe ga je deze rol volhouden, als toch blijkt dat naarmate je ouder wordt de biologische psychologie van het geslacht gaat rijpen?
+Waarom is er nooit eens gezonde kritische beschouwing op dit fenomeen? Alleen maar jubelzang op iets dat alles op zijn kop zet, wat indien we het normaliseren de basis van de samenleving aantast: man, vrouw, gezin, rollen. De mens slaat op drift… of is dat het doel?
+Lieve kinderen hoor, maar volgens ernstig verward door de tijdgeest, en jullie omroep maakt het alleen maar erger. Tijd voor eens wat kritiek op de tijdgeest wokies!",yes_explicit,yes_explicit,0.21018825,0.2637156,0.52609617
+nl,training_NL_1773,Hun hebben volgens mij last van gender dysphoria,no,yes_explicit,0.16970913,0.39787456,0.4324163
+nl,training_NL_1778,"Zolang t maar niet van mn belastingcenten gaat, moeten ze t zelf weten",yes_implicit,yes_implicit,0.0994016,0.5625987,0.33799973
+nl,training_NL_1785,Ik ken iemand die nu van man naar vrouw gaat. Hij of zij is een goed persoon. Maar het is gewoon verwarrend voor mij deze transgenders. Ik weet niet of het een hij of zij is in het algemeen. Ik ben dan gewoon in de war van is het nou het geslacht waar je mee geboren bent of wat je wordt. Voor mij is het echt hocus pocus.,yes_implicit,no,0.55013436,0.18694544,0.26292026
+nl,training_NL_1786,Zei is een zei en je bent geen hij,yes_explicit,yes_explicit,0.15361434,0.22335754,0.62302816
+nl,training_NL_1788,Het lijkt wel een grap,yes_implicit,no,0.8619187,0.079082295,0.05899899
+nl,training_NL_1795,Jullie maken hem alleen belachelijk,no,no,0.34866187,0.31352723,0.33781093
+nl,training_NL_1798,Wel zo netjes dat jullie toegeven dat transgenders een verstandelijke beperking hebben!,yes_explicit,no,0.9093694,0.053424995,0.037205715
+nl,training_NL_1804,Omg ik haat echt mannen die zicht gaan veranderen als een vrouw en ook anders om echt tfoee blijf gwn je zelf jongen je hoeft niet Veranderen van geslacht zo gaan mensne je alleen maar raar aan kijken en kleed je normaal want jullie zien er niet uit het lijkt alsof jullie 2 zwervers zijn,yes_explicit,yes_explicit,0.27358142,0.23081496,0.49560365
+nl,training_NL_1818,"Awww ik wou daar bij zijn, ik ben 3 dagen geleden uit de kast gekomen in me klas.🌈",no,no,0.7349393,0.11476129,0.15029946
+nl,training_NL_1824,Hoe groot is zijn pipie?,yes_explicit,yes_implicit,0.22353505,0.5203059,0.25615907
+nl,training_NL_1825,Mag ik op mars wonen?!,yes_implicit,yes_implicit,0.31450683,0.5137457,0.17174748
+nl,training_NL_1826,"Niets tegen deze mensen hoor. Gewoon jezelf blijven, maar ik blijf het toch apart vinden",yes_implicit,no,0.5976846,0.19248275,0.20983264
+nl,training_NL_1827,"Stelletje linkse stakkers dat het toch zijn 
+
+En je eigen zin maar weer doordrammen aan een ander, zelfs als het buiten dit land is 
+
+Maar de problemen in eigen land, ook als het gaat om homo-acceptatie maar dan bij andere groepen, daar wagen ze zich weer niet aan 
+
+Zijn ze allemaal weer te slap voor 
+
+Laat Hongarije gewoon met rust ( en trouwens de kinderen in eigen land ook want die moeten ook alles van die lgtbi-rotzooi in dit land maar pikken en braaf overnemen ) 
+
+En maak je druk over de problemen in eigen land 
+
+Want daar lopen jullie van weg 
+
+En die linkse media - zogenaamd voor iedere Nederlander en Vlaming zoals ze dat dan zeggen - nog het meest !!
+
+Slappe zooi dat jullie toch zijn",yes_explicit,yes_explicit,0.20326816,0.3459819,0.45074996
+nl,training_NL_1832,Maar als ze transgender is val je dus op jongens en niet op meisjes,yes_explicit,yes_explicit,0.34750092,0.26770967,0.38478935
+nl,training_NL_1834,"Ik hoef ook geen transgender in me huis. Sterker nog, ik moet ze helemaal niet. Ik discrimineer ook",yes_explicit,no,0.38800064,0.27382693,0.3381724
+nl,training_NL_1836,"De titel vind ik niet kunnen.
+
+Verder over hem, ik vind dat hij het best leuk doet. Ik ben blij dat hij een uitlaatklep heeft gevonden 😊",no,no,0.95892406,0.021540036,0.019535966
+nl,training_NL_1837,No offense meant to anyone maar je word geboren als jongen of meisje ik vind het persoonlijk bullshit al voel je je zogenaamd als een jongen als je een meisje bent of andersom en naar mijn mening zou je er gewoon het beste van moeten maken en niet gaan huilen dat je in het verkeerde lichaam geboren bent altough dit soort shit wat die jongeren doen hoeft ook allemaal weer niet,yes_explicit,yes_explicit,0.33180952,0.26273936,0.40545118
+nl,training_NL_1842,"Kraken is natuurlijk geweldig, maar discrimineren op basis van geslacht of geaardheid is zeer kwalijk. Jammer...",no,yes_explicit,0.38331193,0.22657867,0.3901094
+nl,training_NL_1843,"waar is de doodstraf als je het nodig hebt !?!?!
+
+Misselijk dit",no,no,0.46699575,0.27236712,0.26063716
+nl,training_NL_1844,Respect Arjen volg je dromen! fuck de haters.,no,no,0.9228325,0.035922144,0.041245315
+nl,training_NL_1847,"Kijken hoeveel haat ik ga krijgen 
+
+
+Maar sorry ik vind dit niet kunnen je moet blijven wie je bent",yes_explicit,no,0.70707494,0.14145842,0.15146661
+nl,training_NL_1853,Wat goed 👍 als je dat durft te zeggen 💞❤️♥️💕,no,no,0.7615792,0.13515067,0.10327004
+nl,training_NL_1858,"Mijn huisarts toen ik vertelde dat ik me een jongen voelde en geen meisje zat hij echt zo van ""ok, sure maar wat moet ik er mee.""",no,no,0.43416634,0.24722959,0.31860402
+nl,training_NL_1860,Ga jij naar de Canal Parade in Amsterdam aanstaand weekend?,no,yes_implicit,0.31583744,0.48652852,0.19763395
+nl,training_NL_1861,"Grondig geïnformeerd. Yeah right. Wat een subjectief verslag!! ""Transpersonen: Aangeschoten wild""??! De bishop vroeg geen genade voor de honderdduizenden kinderen (385.000) die binnen getrafficked zijn in de USA door de kartels, en de honderdduizenden doden door Fentanyl. En what about de immigranten die wel netjes al jaren in de rij staan voor USA verblijfsvergunning zoals wij persoonlijk. Trump zei trouwens dat je in de persoonlijke leven ALLES mag doen wat je wil maar de overheid hanteert 2 genders. Als je dat later officieel wil laten veranderen kan dat, net zoals je je naam kan veranderen in de USA. Geen trans in de military is omdat er vaak gebruik van werd gemaakt om je gratis te laten ombouwen. In de Military mag je geen drugs gebruikt worden, dat geld voor iedereen: man en vrouw dus voor iedereen. En ja, het is oneerlijk dat er een trans met een penis van 185 cm bij de vrouwen kleedkamers binnenloopt. DAT zit er echt achter. En let op: in de EU gaat dit ook overwaaien. Ik voel me als vrouw in mijn waarde nu, wij tellen OOK mee.",yes_implicit,yes_explicit,0.13579616,0.2820578,0.58214605
+nl,training_NL_1863,Wokeies? Wtf.. dit zijn mensen die zich duidelijk veilig voelen bij vrouwen en andere lhbtiq+ leden want ze worden door cis mannen kut behandeld(toenemend geluid van haat)en als je kijkt naar fvd wappies en pvv wappies snap ik dat deze groep mensen nu een veilige plek zoekt. Wtf. Hoe dom en niet empatisch kunnen deze cis heads zijn... 1% inlevingsvermogen en dit was heeeeel makkelijk te snappen met alle haat richting deze groep. Kraken is een ander verhaal and I don't care about de pandjes van huisjes melkers 😂maak je woning betaalbaar en hij zal niet leeg staan. Maar uitbuiters tranen zijn saai😂,no,yes_explicit,0.25791463,0.22938003,0.5127054
+nl,training_NL_1865,Deze figuren voegen niets maar dan ook echt niets toe aan deze maatschappij.,yes_explicit,yes_implicit,0.21751978,0.42807215,0.3544081
+nl,training_NL_1866,Gewoon zeggen dat je jezelf identificeert als trans als man zijnde,yes_explicit,yes_explicit,0.18090053,0.26229462,0.5568049
+nl,training_NL_1867,"bijzondere video,het bewijst weer dat ieder mens 2 slachtig is,iedereen is ergens een man en een vrouw",no,no,0.41697085,0.2130719,0.36995724
+nl,training_NL_1868,Dus dit is de wereld tegenwoordig.,yes_implicit,yes_implicit,0.08550493,0.5467779,0.3677172
+nl,training_NL_1870,"Ik vind het te gek dat ze elkaar gevonden hebben en zo'n unieke relatie hebben. Wel vind ik het misdadig om een kind zo'n dergelijke hormoonbehandeling te laten ondergaan. Beter zoiets uitstellen tot een kind volwassen is, kinderen zijn kwetsbaar en beïnvloedbaar en kunnen moeilijk de consequenties overzien.",yes_explicit,no,0.46130073,0.2147868,0.32391253
+nl,training_NL_1875,Alleen maar liefde voor deze man!,no,no,0.88405466,0.057321686,0.058623757
+nl,training_NL_1879,Zolang die gekken in Amsterdam blijven prima.. ze drijven vanzelf af als je die klimaat gekte gelooft haha,yes_explicit,yes_implicit,0.18107644,0.44143575,0.37748784
+nl,training_NL_1881,er zijn 2 smaken man of vrouw meer is er niet,yes_explicit,yes_explicit,0.16489598,0.35186562,0.4832384
+nl,training_NL_1883,Mijn juf is lesbisch,no,no,0.5407719,0.19595025,0.26327786
+nl,training_NL_1885,Goed ge zegt,no,yes_implicit,0.2933474,0.40224907,0.30440357
+nl,training_NL_1896,respect dat zij wilt zeegen waar meschien 1000 mensen daar op wachten maar andere zeggen dat ze lijlen is en zo ',no,yes_explicit,0.2319653,0.35430986,0.41372484
+nl,training_NL_1900,Respect voor dit meisje,yes_implicit,no,0.92434454,0.03791085,0.03774461
+nl,training_NL_1903,Hoe mensen elkaar vinden maakt niet uit en voordelig geaccepteerd worden wil iedereen.,no,no,0.3671335,0.32973975,0.30312687
+nl,training_NL_1909,Wat een ongelooflijk leuk mens.,no,no,0.9339731,0.036267154,0.0297598
+nl,training_NL_1916,dit is een mevouw een zij* ookal wilt ze een man zijn is en blijft ze een vrouw,yes_explicit,yes_explicit,0.10909306,0.23170538,0.6592016
+nl,training_NL_1917,"Zoooooo ontactisch 
+van die krakers! Doe 
+'t burgerlijk als je ziel 
+wilt winnen! P.s. Zou 
+idd mooie actie zijn : 
+""VERBODEN VOOR 
+LGBTQ"" en kijk dan 
+hoe zij daar dan op 
+reageren. Is niet blij 
+(denk ik). Een goeie 
+actie voerder denkt 
+strategisch/tactisch 
+na! Neem voorbeeld 
+aan BANKSY! Acties 
+van hem zijn leuk, en 
+dus tactisch. Burger 
+heeft geen zin in dat 
+negatieve gedoe! Ipv, 
+doe iets leuks, doe 'n 
+actie die de burger in 
+de buurt leuk vind! En 
+ipv weg te rennen voor 
+welke media dan ook, 
+maak 'n babbeltje. En 
+vooral (OOK), hou het 
+babbeltje gezellig! En 
+hou 't pand netjes! Dit 
+is mijn advies aan alle 
+actievoerders. Wonen 
+in buurt moet je je wel 
+aanpassen. Doe je dat 
+niet, verwacht frictie!!! 
+Met onstrategisch, en 
+ontactisch actievoeren, 
+gooi je je eigen raam in!",yes_implicit,no,0.41352594,0.25420678,0.33226728
+nl,training_NL_1919,Ik identificeer mijzelf als een goudvis,yes_implicit,yes_explicit,0.18015045,0.318537,0.50131255
+nl,training_NL_1920,Ik vond het heel mooi hoe ze haar positie als transgender plaatste ten opzichte van de twijfel die ze heeft.,no,no,0.933149,0.037863024,0.028988095
+nl,training_NL_1947,"Wat me opvalt dat de kinderen steeds jonger worden ,wat me zorgen baart is er wel goede begeleiding hierin , hier zie je dat het prima gaat maar of dit overal gaat heb ik mijn twijfels. Het is niet niks . Vind dat iedereen mag zijn wie ze zijn als men maar gelukkig is.",yes_implicit,no,0.8770744,0.06619517,0.056730423
+nl,training_NL_1951,"zijn er nou srs mensen aan t zeiken over de titel, het hele stukje gaat over deze man en het feit dat hij transgender is. Dat mag best in de titel en nou niet zeiken tis een deel van zn identiteit, hij heeft t er zelf over",no,yes_explicit,0.3251261,0.2955365,0.3793374
+nl,training_NL_1960,Waar zaten die ouders in vredesnaam met hun hoofd.,yes_implicit,yes_explicit,0.07459997,0.41385636,0.5115437
+nl,training_NL_1971,"Die reacties hier zijn gwn fucking absurd. Het zijn mensen die hun leven in een andere gender beter vinden, wat in godsnaam is daar het probleem aan? Veel tieners worden hier in Nederland opgegroeid met het idee dat mensen van LHBT+ eng en apart zijn. Als ik hun zou kennen zou ik bevriend met ze zijn. Ken naar ze als mensen, niet als objecten waaran je kan zeggen wat er mis is aan de wereld.",no,no,0.45071816,0.25015908,0.2991227
+nl,training_NL_1977,Kijk zo hoort dat,yes_implicit,no,0.7997978,0.13069096,0.0695112
+nl,training_NL_1979,Wie is de man en wie is de vrouw,yes_implicit,yes_explicit,0.12856951,0.27895957,0.5924709
+nl,training_NL_1980,Ik vind het super goed en knap van hem💪🏻,no,no,0.95369446,0.023898602,0.022406852
+nl,training_NL_1984,Is nog steeds een meid,yes_implicit,no,0.7904797,0.08238551,0.12713473
+nl,training_NL_1985,Het is toch niet zo bijzonder als iemand alleen vrouwelijke huisgenoten zoekt.,no,no,0.42252162,0.25511745,0.3223609
+nl,training_NL_1989,"Jammer dat dit onze maatschappij aan het worden is.
+Maargoed, als die mensen zelf gelukkig zijn.
+Maar vind het toch allemaal ziek vaag.",yes_explicit,no,0.7844174,0.11619541,0.0993872
+nl,training_NL_1991,wtf lol dus ze konden ook verlieft worden op de normale manier toch?,yes_implicit,no,0.8307363,0.08217374,0.08708993
+nl,training_NL_1994,Zieke geesten 😡,yes_explicit,yes_implicit,0.19262922,0.4296682,0.37770256
+nl,training_NL_1995,Wat zijn ze een mooi stelletje ❤ en wat super knap dat ze hun gevoelens gewoon kunnen delen met iedereen ❤,no,no,0.95813257,0.022687681,0.019179717
+nl,training_NL_1996,Pesters hebben zelf problemen daarom pesten ze hou je sterk ivo je bent goed en mooi zoals je bent 💞💞,no,no,0.95222414,0.022025457,0.025750367
+nl,training_NL_1998,Ik kijk sambeklad en een tip voor Boris wees sterk je kan het jongen,no,no,0.9010459,0.044337794,0.054616366
+nl,training_NL_2001,Toch sneu dat het zo lastig is om uit de kast te komen hoort gewoon te kunnen,no,no,0.69669926,0.17667,0.1266308
+nl,training_NL_2003,"Ja, ja, dit boeit echt kankerveel",yes_explicit,no,0.9046911,0.053202078,0.042106863
+nl,training_NL_2007,"Zulke gestoorde mensen moet je geen podium geven
+Jullie verzieken de samenleving",yes_explicit,yes_explicit,0.10865082,0.38501254,0.5063366
+nl,training_NL_2014,Ik ben ik en dat is wie ik mag zijn,no,no,0.7547441,0.12481319,0.120442644
+nl,training_NL_2015,Moet je dan geen hulp zoeken als je zegt dat het in je hoofd zit? Bedenk wat er op latere leeftijd kan gebeuren,yes_explicit,yes_explicit,0.17139551,0.3682435,0.460361
+nl,training_NL_2025,"Mijn belastbaar inkomen identificeert zich als 0 euro.
+En wanneer ik 100 rijd in de bebouwde kom, identificeert die snelheid zich als 50.
+En iedereen die het daar niet mee eens is wordt beboet voor haatzaaien.",yes_explicit,yes_explicit,0.15544023,0.3766329,0.46792686
+nl,training_NL_2033,"Ik moet kijhard huilen RESPECT 
+Like als je hier mee eens bent en zeg in de chat RESPECT 💪💪",no,no,0.9590842,0.020657703,0.020258145
+nl,training_NL_2034,En gaat het nu met ze? Nog steeds gelukkig?,no,yes_implicit,0.1835736,0.46240625,0.35402018
+nl,training_NL_2035,Wat een onzin je kan medicijnen slikken tot je een ons weegt maar jij blijft een man en de ander een vrouw oeeee rocket science heeee! 1+1=4?!,yes_explicit,yes_explicit,0.09354304,0.21526217,0.6911948
+nl,training_NL_2037,Respect !!!👍👍👍 ik ben zelf óók trans van meisjes naar jonge,no,no,0.941693,0.026428346,0.031878673
+nl,training_NL_2038,"Je word gewoon als man of vrouw geboren en dat is het
+Je moet er gewoon mee dealen klaar",yes_explicit,yes_explicit,0.10191007,0.21479762,0.6832923
+nl,training_NL_2046,Of we kunnen gewoon even allemaal normaal doen,yes_implicit,yes_implicit,0.13285236,0.6422143,0.22493333
+nl,training_NL_2054,"come on, hebben we de ziektes nog?",yes_implicit,yes_implicit,0.11310155,0.5443406,0.3425578
+nl,training_NL_2062,Heftig.. mooi interview!,no,no,0.9124239,0.050135907,0.03744021
+nl,training_NL_2064,Ieeuuw,yes_explicit,yes_implicit,0.22621663,0.45363542,0.3201479
+nl,training_NL_2065,"These people are from the Netherlands, en dan staat er een kankerlelijke pot met een belachelijk kapsel. En bedankt, hè.",yes_explicit,yes_explicit,0.23489235,0.24078576,0.5243219
+nl,training_NL_2066,"Vind regenboog kleuren vlag leuk omdat zelf biseksueel ben hoewel ben ik verliefd op een Fryske charismatische famke. Heb respect! 👬👭💏👪🌈😎 Zeer hartelijke groet, Yasin Jafari Chofe 
+P.S. famke (frl)=meisje, mejuffrouw, juffrouw, mevrouw, vrouw (NL)=Miss, Mrs. Misses (EN)= Madame (FR).",no,no,0.94559675,0.023011541,0.031391677
+nl,training_NL_2070,blij dat men een plek heeft gemaakt waar men veilig kan sporten,no,no,0.81474507,0.11896187,0.06629313
+nl,training_NL_2075,Ik vind het heel fijn dat jullie hier een uitgezocht over maken want mijn moeder ik verliefd of een vrouw,no,no,0.9470055,0.024991587,0.028002921
+nl,training_NL_2076,"Het ligt er wel aan hoe die gastjes het interpreteren! Ga nou niet ontkennen dat er een probleem is. In mindere mate, maar dus ook, geldt dit voor EXTREEM christelijke mensen. Respecteer elkaar en laat elkaar met rust.",no,no,0.38392812,0.27764925,0.3384227
+nl,training_NL_2090,"Pfff, als aambeien zo pijnlijk zijn wat zou het zijn als een man zijn dna in de uitlaatpijp van een andere man "" forceert ""... enkel een simpele vraag maar hoe vermijdt men prolapsaties der rectum? en kan men dan nog met een gerust hart/trots een "" scheet "" laten zonder dat eigen stoverij saus langs uw benen loopt. Komen daar ook kinderen van?? en dus ook een vraag aan homo transformatios/mutatios, hoe brengen jullie eigenlijk kinderen voort, u weet wel, uw nageslacht, uw trots?? hoe doen jullie dat? zijn wetenschappelijke natuurlijke vragen zodat wij uw stelling gefundeerd kunnen ondersteunen maar antwoord graag, zonder pistes te verleggen of afdwalende antwoorden, for once and for all... answer!!! is het ook normaal wanneer een nicht haar eigen nonkel tussen de lakens wil krijgen?? Recht Op Een Leven, dus...",yes_explicit,yes_explicit,0.1346174,0.24595001,0.61943257
+nl,training_NL_2092,Wat heeft lhbt met bijv logistiek ofz te maken niks. Dus wrm zou het ons uitmaken?,no,yes_implicit,0.14888895,0.61023563,0.24087538
+nl,training_NL_2097,"Niks om fier over te zijn, met het dna van een andere man in uw uitlaatpijp -of mond rond te lopen promoten of de verf/vernis van een ander paar salondeuren/klapdeuren... waar is jullie nageslacht, fier op uw kinderen, respect voor uw ouders??",yes_explicit,yes_explicit,0.08691218,0.2658521,0.64723575
+nl,training_NL_2100,Waarom word het niet geaccepteerd bij de mannen maar wel bij de vrouwen?,no,yes_explicit,0.20023043,0.34821275,0.45155686
+nl,training_NL_2106,Waarom wordt hier zoveel aandacht aan gegeven? Ik heb niks tegen homos ofzo maar nu geven ze het verplicht op school haha,yes_implicit,no,0.4234026,0.34027585,0.23632161
+nl,training_NL_2111,"Je bent niet alleen, dus wees sterk💪😍☺️
+Happy pride 🏳️‍⚧️🏳️‍🌈🌈🌈🌈🌈🌈🌈❤♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️",no,no,0.57667285,0.21930824,0.20401889
+nl,training_NL_2118,Zeker doen!!,no,no,0.532734,0.29291362,0.17435245
+nl,training_NL_2123,Deze mannen hebben gewoon psygische problemen in hun hersenen . Helemaal de weg kwijt die twee,yes_explicit,yes_explicit,0.082005255,0.26217568,0.65581906
+nl,training_NL_2125,"het gaat meer om dat ze hun zelf nog niet eens accepteren laatstaan dat wij het doen. tis simpel. er zijn zo veel transgenders die gewoon hun mond houden over dat ze trans zijn maar gewoon hun "" eigen geslacht "" accepteren is beter. dit is meer een virtue signal dat gewoon niet werkt dan iets goeds",yes_explicit,yes_explicit,0.25885865,0.34153247,0.39960885
+nl,training_NL_2135,"Geen haat op Koen, en geen haat op homo’s. Iedereen mag zelf beslissen wat hij kiest.",no,yes_implicit,0.30902612,0.3574279,0.333546
+nl,training_NL_2140,"Lieve allen, er is een LGBTQ+ parade in Noord Korea van 20 juli tot 4 augustus, net tijdens de Gentse Feesten. Allen daarheen. BTW: Wie is dat dom wijf @1:30 die zo graag alle logica in één lijn doortrekt zonder nuances en al haar conclusies kan trekken uit 1 datapoint? Zalig toch. Toen ik 20 was kon je me hier nog in bijgooien in die massa mentaal-gehandicapten. Nu niet meer hoor ;)",no,no,0.4822382,0.25900728,0.25875446
+nl,training_NL_2147,Gast als ik op een opleiding over een technisch vak zit dan heeft dat er toch niks mee te maken wtf,no,no,0.38630554,0.3345645,0.27912995
+nl,training_NL_2153,"Oprechte vraag, wat is de redenering achter iedereen die zegt ""probeer dit eens in [insert place here]"", wat heeft dat hiermee te maken. Denken zij dat de [CHANNEL] of de Vlamingen die in Budapest waren deze optoch zelf georganiseerd hebben, nee toch?",no,yes_implicit,0.2140392,0.46613696,0.31982392
+nl,training_NL_2161,Ze zou zo gelukkig kunnen zijn als ze zich zelf zou accepteren en lekker doen wat ze wil.,no,no,0.618906,0.20783967,0.17325424
+nl,training_NL_2162,Ik moest deze video kijken nadat ik me docent kanker homo heb genoemd,no,no,0.5057722,0.23739815,0.25682962
+nl,training_NL_2176,wat een ster statement word er hier gemaakt zeg!!!!!!!!!,no,no,0.8698299,0.07475351,0.055416625
+nl,training_NL_2185,Respect naar hem heel stoer en moedig ik denk niet dat elke jongen dit durft!!,no,no,0.9585202,0.022236139,0.019243771
+nl,training_NL_2186,"Oke nu naar Brussel Noord, Amsterdam west, Parijs , Rotterdam zuid, Den Haag Schilderswijk... Onee wacht dat kan hier niet",no,yes_implicit,0.16747709,0.5183908,0.31413218
+nl,training_NL_2201,Het is niet erg #respect,no,no,0.9267038,0.038908936,0.03438735
+nl,training_NL_2204,Waarom is elke speler die uit de kast komt zo knap😮‍💨,no,no,0.92161775,0.045041118,0.03334122
+nl,training_NL_2206,"Zzzz... mensen zijn allemaal gelijk en vallen onder dezelfde rechten. Mensen zijn het mss gewoon beu om het over deze zever en polarisatie te hebben!? De grootste vijanden van de LGBTwhatever zijn wel de vreemdelingen die links blindelings willen toelaten. Er is helemaal niks mis met geaardheid of van geslacht veranderen, maar hoever moet ik meegaan met sommige zever die mensen verkopen? 3a4 genders geen probleem 30+ gtfo. Mss alle mensen behandelen als een arme working class man? maw geen special treatment. Leef en laat leven. Maar ik laat me door niemand mijn vrije meningsuiting beperken, zoals nu steeds meer strafbaar wordt dankzij links.",yes_implicit,yes_explicit,0.20064911,0.3292835,0.47006738
+nl,training_NL_2208,Goed van die mensen dat ze opkomen voor te mogen zijn wie je wilt zijn.,no,no,0.9310402,0.037869804,0.03109007
+nl,training_NL_2216,Het is haar keuzevrijheid.,no,yes_implicit,0.12662013,0.4582085,0.41517144
+nl,training_NL_2220,Waarom zaten ze in de kast?😬,no,no,0.48925152,0.31793484,0.19281368
+nl,training_NL_2223,"Ik hoop dat ze nu in een buurt wonen waar ze niet weggepest worden. Ook al heb ik niets met transgenders, en kan ik het me zelf niet voorstellen wat dat is, toch vind ik het heel erg triest dat deze mensen weggepest zijn. Leven en laten leven!.",no,no,0.7688235,0.11900183,0.11217462
+nl,training_NL_2231,Respect naar hem,no,no,0.7416793,0.14661692,0.111703776

@@ -1,0 +1,375 @@
+﻿language,StereoQueerEval_id,yt_comment,true_label,predicted_label,prob_no,prob_yes_implicit,prob_yes_explicit
+en,training_EN_0009,Should’ve kept fighting those desires. Just like a crack addict you gotta fight son.,yes_explicit,yes_explicit,0.1062548,0.24253775,0.65120745
+en,training_EN_0041,This is WRONG!!,no,yes_explicit,0.1048218,0.30967206,0.58550614
+en,training_EN_0059,Another “super spreader” event..😔,yes_explicit,yes_implicit,0.41229826,0.49927312,0.08842867
+en,training_EN_0068,"This makes me appreciate having parents who are supportive. It's easy to take for granted sometimes, especially when so many LGBT folks don't get that at home. Stay safe and know you're loved and deserve happiness.",no,no,0.8100793,0.12990583,0.060014915
+en,training_EN_0070,In islam you will be death!,yes_explicit,yes_explicit,0.07987052,0.24646567,0.67366374
+en,training_EN_0100,Well done Chad Hungary,yes_implicit,yes_implicit,0.2500486,0.56122786,0.18872355
+en,training_EN_0101,lol what an ignorant statement — they are “trying to protect children”,no,yes_implicit,0.22092582,0.39461285,0.3844613
+en,training_EN_0111,lol he probably calls himself a Queen all the time. Man up and grow some balls.,yes_explicit,yes_explicit,0.27168733,0.31941476,0.40889788
+en,training_EN_0118,Absolutely not,yes_implicit,yes_explicit,0.18432802,0.3885588,0.42711315
+en,training_EN_0164,"If you haven't been in the military, which these people haven't, please leave me your comments. What makes serving America invalid?  Because if you want to play the hormone/pill theory.. I've got some stories to tell on the other side. Less than 3 million people serve. I'm AF and the internal hate will hurt us. We all shed the same blood. I don't care where you came from or who you are, you can not like me but in the field, they win even were divided.",no,no,0.6030816,0.30465838,0.09226004
+en,training_EN_0166,Garcia is gay? Huh. I thought Comer was gay 🤔 Anyway,no,no,0.73314387,0.19152068,0.07533549
+en,training_EN_0172,So you have stupid people running the country and now kicking out the most vital individuals to fight for your country 🙄,no,yes_implicit,0.21242404,0.49619704,0.29137892
+en,training_EN_0179,"I’m so happy for him .! Russ you deserve the best .! I met him 3 years ago , in L.A and the most genuine person .! Go Russ !!!",no,no,0.71370554,0.21713008,0.06916439
+en,training_EN_0195,Everything's homophobic give me a break,yes_implicit,no,0.60635954,0.15451413,0.23912637
+en,training_EN_0205,This is due long time ago.  You bring new viewer like me to football.,no,no,0.60161835,0.33289477,0.06548688
+en,training_EN_0208,Imagine hurting your kid this bad to the point they fall into another persons arms because they weren’t accepted.,no,yes_explicit,0.24746063,0.24055079,0.5119886
+en,training_EN_0211,This is so gay 🤦‍♂️,yes_implicit,no,0.6742205,0.15169288,0.17408668
+en,training_EN_0228,"This man is so so amazing. He just singlehandedly restored my faith in cis men. Hate solves nothing. Love everyone based on the character, no matter the color of their skin,what gender they are attracted to, or religion they believe in❤️🧡💛💚💙💜✊🏻✊🏼✊🏽✊🏾✊🏿🏳️‍🌈",no,yes_explicit,0.28907225,0.18946254,0.5214652
+en,training_EN_0232,"Treat it???,
+
+Stop sinning! Forgive. Repent by the help of our Lord God through our Lord Jesus Christ and the Holy Spirit. No-one can protect them...they..we all need to seek The Lord our God through our Lord Jesus Christ and the Holy Spirit for safety..Repent..for the kingdom of God is at hand.",yes_explicit,yes_explicit,0.07852452,0.330964,0.5905115
+en,training_EN_0239,Spread the word!,no,no,0.50001025,0.41655207,0.083437786
+en,training_EN_0240,"I worked in the AIDS unit at St Mary’s Hospital and was lucky enough to meet and care for Derek during his illness. He was the most amazing man and his legacy lives on. The sisters were infamous and needed and relevant and remain so today. I so loved watching this and seeing Derek again, erudite and charming and handsome, but so terribly perverse when it suited him. I loved him.",no,no,0.8041775,0.14115094,0.054671552
+en,training_EN_0251,There's a common theme between the countries that discriminate against gay people. They are deeply religious.,no,no,0.7566079,0.16884266,0.07454943
+en,training_EN_0254,This priest did a very evil thing.,yes_explicit,yes_explicit,0.107727654,0.2610409,0.6312315
+en,training_EN_0259,The demoralisation of the West.,yes_implicit,yes_explicit,0.10736327,0.30568153,0.58695525
+en,training_EN_0281,"WELL, DAAAMMN... I HAD NO IDEA HE WAS GAY TOO.
+
+IN ANY EVENT, KEEP FIGHTIN' THE GOOD FIGHT ✊🏼✊🏼",no,no,0.7127054,0.22132552,0.06596903
+en,training_EN_0295,Is there any Heterosexual black men left in America ?,yes_implicit,no,0.69497716,0.1996863,0.105336525
+en,training_EN_0334,"""her sperm"". What nonsense.",yes_explicit,yes_explicit,0.12703095,0.35687646,0.5160926
+en,training_EN_0336,"Just goes to show you, when a liberal deals with this subject and can't call the other person names, they can't get anywhere and have no good arguments to justify it.",yes_implicit,no,0.43012652,0.39144346,0.17843004
+en,training_EN_0339,I do not understand the EU. What is this overwhelming attack on Mo? Where did common sense go  in the EU and the US? Is it more important than all that  transvestites read fairy tales  in Hungarian kindergartens?  This is what the debate is about.,yes_implicit,no,0.52679855,0.350196,0.12300541
+en,training_EN_0371,"If Obama had a son, he would have been at the gay club .",yes_implicit,no,0.45871007,0.28944615,0.25184378
+en,training_EN_0399,God bless Hungary,yes_implicit,yes_implicit,0.124220826,0.54038167,0.3353975
+en,training_EN_0411,"on a side note, the over exaggerated dumb haters of some colorful idiots
+
+on the other side , the infinitely annoying idiots
+
+gamemode : deathmatch
+map : twitter",yes_implicit,yes_explicit,0.19051616,0.31253988,0.49694392
+en,training_EN_0436,"For Trump to ban transgender individuals from serving in the United States Military, who are willing to serve and protect our country including possibly sacrificing their life for all of the rest of us doesn't make any logical sense whatsoever! 🤨",no,yes_implicit,0.27945533,0.41823384,0.30231085
+en,training_EN_0438,I watched the first two minutes with my eyebrows stiffly meeting at the center. This is preposterous,yes_explicit,yes_explicit,0.2042095,0.39391252,0.40187794
+en,training_EN_0455,"Poignant gratitude for these individuals and for this movement - past, present and future. May their outrageous courage and true heart continue to humanize all of humanity.",no,no,0.7424239,0.20353185,0.05404425
+en,training_EN_0460,I have known a number of people who engage in gay/ lesbian behaviors because of childhood sexual abuse. These individuals are afraid of forming loving attachments with the opposite gender because of what has happened to them. A good number of people are also merely experimenting with their sexuality. I take serious issue that all gay and lesbian behavior is innate.  Labeling oneself as gay or lesbian seems to be a status symbol or a mark of achievement nowadays. Get over yourselves people!,yes_explicit,no,0.80107415,0.09997287,0.098952994
+en,training_EN_0463,"There are a lot of men that are drama queens, and they’re not gay",no,no,0.69903517,0.16318215,0.13778268
+en,training_EN_0469,Fuck the EU.,yes_implicit,yes_implicit,0.11244494,0.45217317,0.43538183
+en,training_EN_0474,Why has the nhs rendered these people infertile as children? How disgraceful for the the nhs to destroy peoples healthy bodies!!,yes_implicit,yes_explicit,0.12969302,0.26176333,0.6085437
+en,training_EN_0479,I like him!!!!!❤❤ How refreshing to proudly be authentic to himself unlike Republicans.,no,no,0.6691807,0.24665157,0.084167756
+en,training_EN_0489,you can never transition from male to female.end of.,yes_explicit,yes_explicit,0.10609226,0.17594446,0.7179633
+en,training_EN_0496,That's because it's a disgrace lol,yes_explicit,yes_explicit,0.09939616,0.22035858,0.6802452
+en,training_EN_0497,"Thank you for your service. We are blessed to have you serve our country! The president is doing a disservice to our country by removing the people who most serve this country for our freedom. Trans or non trans, PEOPLE, who whole heartedly serve this country deserve all our respect. Thank you!!!!!!!!!❤",no,no,0.61574066,0.28354594,0.10071342
+en,training_EN_0510,"why are people so against gays we didn't do anything, can we just have a break? something years back gays were killed, for what liking the same sex?! Like y'all need to grow up!",no,no,0.6420593,0.20791249,0.1500282
+en,training_EN_0529,EU should not respond. Hungary is a stable and prosperous country. EU please do not interfere and make the country a BS country,yes_implicit,yes_implicit,0.16500793,0.49867302,0.33631903
+en,training_EN_0531,"could gay people go into straight bars or straight spaces and turn into a gay space? Plus, I could count the number of times when straight women tried to touch and feel on me at gay spaces---I don't like it and other gay men said the same thing",no,no,0.8321743,0.11828704,0.049538635
+en,training_EN_0552,Keep the good work hangay 👍,yes_implicit,yes_implicit,0.3522822,0.5176608,0.13005696
+en,training_EN_0558,People who accepted gays only couple decades ago now want the others do the same,no,no,0.70800734,0.21325162,0.07874111
+en,training_EN_0559,they always come out once they find their fairy tale white knight.,no,yes_implicit,0.29112184,0.42825902,0.28061923
+en,training_EN_0572,No they fuc king shouldn't be,yes_implicit,yes_explicit,0.08323309,0.34824955,0.56851727
+en,training_EN_0583,"Homophobes go to a gay bar sometime,you don't know what you are missing.",no,no,0.710882,0.15257986,0.13653816
+en,training_EN_0584,"She is still a woman. I’m not saying she shouldn’t be allowed to to live how she wants, nor am I saying I agree with the military ban. But this is a woman and you can’t change sex.",yes_explicit,yes_explicit,0.13590273,0.185621,0.6784763
+en,training_EN_0586,"When Christians and Muslims teach millions of Children that homosexuality is an immoral affront to God, there's a chance you might get an Omar or two when they grow up. Just a fact of life.",no,yes_explicit,0.16552897,0.1858368,0.6486342
+en,training_EN_0594,"No, too many sick people out their need treating for other dieseases like cancer, people with depression, dementia, Parkinson’s, they want children then adopt.",no,yes_explicit,0.25263083,0.34045026,0.40691885
+en,training_EN_0596,"Of course not. What nonsense. You choose, you pay.",yes_implicit,yes_implicit,0.18120556,0.49728015,0.3215143
+en,training_EN_0606,"straight couples are always busy and like to interfere in LGBT matters, you just take care of your own affairs",no,no,0.6896683,0.18643922,0.12389245
+en,training_EN_0613,Its not her.. its he,yes_explicit,yes_explicit,0.19988994,0.27089247,0.5292176
+en,training_EN_0614,33 thumbs down = low life disgusting idiots!  GAY IS HERE TO STAY ... GET USE TO IT MORONS!,no,yes_explicit,0.09425718,0.21063024,0.69511265
+en,training_EN_0619,Dont come to iran they kill gay peaple in iran,no,yes_explicit,0.20424409,0.31750003,0.47825587
+en,training_EN_0624,Why not just kick women out when they  end up harrasing the gay guys,no,no,0.50415593,0.1793678,0.31647632
+en,training_EN_0632,"Hypocrisy 
+God one day will judge
+God loves you but dont love sin
+Repent. Jesus coming soon",yes_explicit,yes_explicit,0.08645192,0.32044417,0.59310395
+en,training_EN_0641,What is he wants to give the sgt some cooch,yes_implicit,yes_implicit,0.19495839,0.6611479,0.14389375
+en,training_EN_0642,Here come the homophobes,no,no,0.5350164,0.19381742,0.2711662
+en,training_EN_0656,"When the transphobes have their way in a few months' time after Brexit they're going to sell off the NHS to their bestest friend Donald Trump anyway and it will be you cis people who also have to pay for medical treatment not just us trans.  Don't say I didn't warn ya!  Gosh, equality at last LOL:)",no,no,0.458433,0.33719277,0.20437424
+en,training_EN_0660,Man this makes me tear up. I’m not in the lgbt community. But I can just feel the pain of rejection from someone who we trusted to love us,no,no,0.77507335,0.09950653,0.12542006
+en,training_EN_0661,So after a decade Trump decides this guy is not fit???make it make sense...just saying,no,yes_implicit,0.30486038,0.5040891,0.19105059
+en,training_EN_0670,"Nothing is more painful than death of an innocent whatever his race, his kind or his opinion…
+Concerning this tragic shooting in Olando,
+We cannot imagine the immoderate moral and psychological suffering that characterize, at present, the lives of these families. However they should know that far away  from them, many people around the world,  as my modest person, share deeply their pains.
+Evidently , Mr president, in the face of hate and violence, love  and solidarity of American people constitute a fearsome  arm for vanquishing enemy. 
+
+Mr President, you were seen  bursting into tears. This is a proof of love, feeling and compassion which characterize you towards your people. In other words,
+ you are extremely sensitive to the  pain that may feel one of your compatriot. It is the faultless attitude of a real Head of state.
+M r president ,I would like you to receive my sincere congratulations. God bless you  and the USA….
+ 
+.
+However, in  this extremely painful and sad circumstance  , I feel compassion for the victims of this tragic event, while greatly honoring  them , and I address  my sincere condolences to the  American people in general and to the families of victims in particular. 
+
+NB .: I apologize for my language level because I am  French speaking.
+
+Thank you for reading my note.
+
+Jean Blaise Tchoussé
+Author of the book entitled: “ LE MICRO LABORATOIRE PORTATIF ET LA MEDECINE AUTOMATISEE” 
+that means: THE MOBILE MICRO LABORATORY and THE AUTOMATED MEDICINE",no,no,0.7249416,0.100094095,0.17496437
+en,training_EN_0675,"HALLELUYAH
+This is beautiful and awesome, GOD IS with you my brothers and sister, stay strong and keep up the good work, GOD bless in JESUS mighty name.",yes_implicit,no,0.5791612,0.29002324,0.1308155
+en,training_EN_0709,I am sure this was top of Bevans priorities in 1946 when the NHS was formed. Not!,yes_implicit,yes_implicit,0.42080632,0.44100124,0.13819245
+en,training_EN_0718,Very hot GAY man he is. Bisexual my ASS! There's no such thing IMO.,yes_explicit,no,0.6439075,0.117321536,0.238771
+en,training_EN_0732,Currently crying.,no,no,0.515393,0.30942446,0.17518248
+en,training_EN_0734,These chicks are mental 😂😂😂,yes_explicit,yes_explicit,0.07905937,0.24295583,0.6779848
+en,training_EN_0755,It caused it to its self. Disaster from the beginning. How stupid are you??!!!,yes_explicit,yes_explicit,0.12579356,0.29819563,0.5760108
+en,training_EN_0771,Back then it was a true shocker to hear about same x marriage,no,no,0.6569268,0.20490235,0.1381708
+en,training_EN_0782,"Leave Hungary alone. Let the rest of the Western nations dabble in the degeneracy they've created and see how far it goes before the society itself declines. If it survives then I will agree Hungary should open up more about their stuff but until then, we should let experiments stay within globalist elite countries. It's going to be amusing to see how the confused people fight vs people trained to win wars if there ever comes to one as they bully other nations how to run their nations on what they think is right (minus the authoritative aspects of it).",yes_implicit,no,0.44752142,0.4092675,0.14321114
+en,training_EN_0801,Trans my arse.,yes_explicit,yes_explicit,0.13231173,0.27874807,0.58894026
+en,training_EN_0807,"THIS IS NOT ABOUT GUNS ITS ABOUT..........QUOTE
+
+ The killer was not insane, sick or deranged. He was being  a good muslim, following the koran and sharia law.",yes_implicit,yes_explicit,0.1257775,0.24383745,0.6303851
+en,training_EN_0818,This is funny as hell 😂,yes_implicit,yes_implicit,0.38440615,0.41235727,0.20323655
+en,training_EN_0823,"I don't watch football, but I am thinking about watching it if you play.",no,no,0.65808284,0.27289355,0.069023564
+en,training_EN_0827,He's a total disgrace to America.,no,yes_explicit,0.12775904,0.27247906,0.5997619
+en,training_EN_0830,Can someone please tell me wjat LGBTQ stands for please!!,no,no,0.7251718,0.19511779,0.07971046
+en,training_EN_0833,What in the heresy?,yes_implicit,yes_implicit,0.16082546,0.48083997,0.35833457
+en,training_EN_0834,She😂😂😂😂,yes_implicit,yes_explicit,0.13638039,0.28096393,0.58265567
+en,training_EN_0845,Short answer. No.,yes_implicit,yes_implicit,0.2527319,0.43428934,0.31297874
+en,training_EN_0861,"""Today's liberals are in fact communists with degrees"" also ""The left is the enemy of freedom"" and ""Liberals want political correctness and hegemony of opinion instead of pluralism of ideas"" also ""Parents can decide on the sexual education of their children""",no,yes_explicit,0.23719488,0.35521427,0.40759087
+en,training_EN_0871,"How should the EU respond?
+With resounding applause and a medal of courage for the Hungarian President Viktor Orban!",yes_implicit,no,0.5201186,0.3991784,0.08070298
+en,training_EN_0875,Honestly it’s not like we don’t have enough resources in the world to have some trans people to have kids,no,no,0.55303484,0.3175812,0.12938395
+en,training_EN_0883,I hate you hungry 🤮🤮🤮🤮,no,yes_explicit,0.10050126,0.23933066,0.6601681
+en,training_EN_0892,His father sad He was disappointed by a gay kiss,no,no,0.5354046,0.14759153,0.31700385
+en,training_EN_0894,"From my point of view. Where another homophobic country came from. 1, No sex education,barely admitted homosexuality. 2, Gay in some country have less self-acceptation for being gay,  conceiving less normality to be couple or fixed partner. Therefore, sex indulgence.3, hopeless and helpless. Where some country don’t even have the awareness  of prep or not able to acknowledged from the government.",no,no,0.69844157,0.13719593,0.16436248
+en,training_EN_0937,"So the sperm and eggs will be - what?  The right sperm from the wrong body and right eggs from the wrong body?  Gender-fluid non-male sperm, with non-binary male eggs from male ovaries?  Let's all dig deep into our pockets for these poor little souls who are well-fed, housed and physically healthy, shall we?",yes_explicit,yes_explicit,0.099056125,0.2509036,0.6500402
+en,training_EN_0945,"It's ""he"".",yes_explicit,yes_implicit,0.31327802,0.41723564,0.26948625
+en,training_EN_0950,"yes we are equal, all lives matter",no,no,0.438413,0.33989775,0.22168924
+en,training_EN_0951,"This had me tearing up all the way through!!!! so raw and beautiful. Thank you, sisters 💓💓💓 healing energies <3",no,no,0.7495578,0.19190407,0.058538154
+en,training_EN_0959,Not to  gay movement,yes_explicit,no,0.5292172,0.28350738,0.18727545
+en,training_EN_0968,Full of hatred is the only Highlighted Title as an explanation? Just because I'm not apart of the LGBTQ doesn't mean I should be treated lesser as a straight heterosexual who knows many Gays don't care If I'm struggling looking for a Job or save Money to start a Family in this twisted America,no,no,0.7766329,0.10972054,0.11364651
+en,training_EN_0976,God bless the Hungarian leadership!,yes_explicit,yes_implicit,0.2814624,0.5479574,0.17058018
+en,training_EN_0979,"What a wonderful kind, gentle and very humble man Sir Derek is, I could sit and listen to this over and over again,....",no,no,0.76639074,0.18589048,0.047718775
+en,training_EN_0989,First if your a woman where's your tits.  Stop exaggerating everything.  Your no victim. You got paid and it didn't work out. The backlash comes from your greedy and fame chasing,yes_explicit,yes_explicit,0.11089849,0.22550268,0.66359884
+en,training_EN_0990,Orban>>>>Man of his WORDS,yes_implicit,yes_implicit,0.16635343,0.5854703,0.24817623
+en,training_EN_1009,"He asked: ""do you believe someone born of a homosexual relationship? ""
+
+Translator: ""do you believe someone born a homosexual?""",no,no,0.63793343,0.1976708,0.16439581
+en,training_EN_1015,Sir Derek charmed us for decades...I'm happy he had a charmed life.,no,no,0.7253251,0.19622207,0.07845294
+en,training_EN_1023,"Wow, great, stunning, brave, superb, 
+
+What do I post now..........Yawn",no,no,0.697792,0.24907888,0.05312915
+en,training_EN_1048,"Well women are offered IVF on the NHS, so why shouldn’t trans people access fertility services???",no,no,0.4880802,0.34907076,0.16284902
+en,training_EN_1055,At least someone is standing up for real women,yes_explicit,yes_implicit,0.40545914,0.43510038,0.15944046
+en,training_EN_1060,The church has been penetrated. Over and over. Francis is most likely a bishop in a tutu.,yes_explicit,yes_explicit,0.14033501,0.3634685,0.49619645
+en,training_EN_1076,"no , it is a cosmetic surgery",yes_implicit,yes_explicit,0.10456967,0.35284898,0.5425813
+en,training_EN_1088,1st world problem.,yes_implicit,yes_implicit,0.1359727,0.49809653,0.3659308
+en,training_EN_1093,"Most men , if not all , who say they are bisexual, are really gay. 
+They feel the public will be more accepting because they like women too. 
+Think Elton John and his fake marriage to a woman. 
+Being gay is inborn. Just love yourself and accept it.",no,no,0.80871165,0.10675538,0.08453297
+en,training_EN_1101,Another washed up player looking for attention.,yes_implicit,yes_implicit,0.22766295,0.4550891,0.31724802
+en,training_EN_1113,"The deal is simple... Be gay just don't force people to live your lifestyle. Its like yall forcing all of us to be gay... Is that what the aim is???
+
+No thank you. I shall pass. If gay people don't wanna be hated then Don't provoke hate. Simple as that",yes_explicit,no,0.57392794,0.21509042,0.21098171
+en,training_EN_1139,He's Gay 🏳️‍🌈 he's Happy 😀 Lighthearted and Carefree it's Wrong for Anybody to Judge Him!!!,no,no,0.61256075,0.18365486,0.20378433
+en,training_EN_1153,Homophobia is a mental disorder. And it’s Un Christian.,no,yes_explicit,0.21982658,0.15775636,0.6224171
+en,training_EN_1159,Hes just so somebody that cannt make his mind up                now I cant get on a roster I'll force the teams to employ me or accuse them of homophobia   nice,yes_implicit,no,0.48009238,0.34186277,0.1780448
+en,training_EN_1202,Thank you for your service.  Shame on this administration,no,yes_implicit,0.24428292,0.37906933,0.37664777
+en,training_EN_1204,"Well damn, we should all be like Hungary.",yes_implicit,yes_implicit,0.24258128,0.47240692,0.28501183
+en,training_EN_1213,Thanks for standing up against stupidity,yes_implicit,no,0.4312784,0.41002443,0.1586972
+en,training_EN_1224,"Love how we dedicate a whole month to people who just identify as other genders or wannabe ethnicities and just one day to the people who died for our country, who made the ultimate sacrifice that allows Taylor Swift, a music artist, to go grandstanding about how great pride month is and how safe of a space they have created, meanwhile police sirens in the background cause good ol' Chicago.",no,no,0.6471152,0.25551844,0.097366415
+en,training_EN_1232,Joan 100% correct,yes_implicit,yes_implicit,0.2990714,0.40264112,0.2982875
+en,training_EN_1242,Good great leader the hell with satanic USA!!! Poisoning the world with disgusting anti god perversion!!!,yes_explicit,yes_explicit,0.0698675,0.26854154,0.66159093
+en,training_EN_1244,Obama knows all about mass murder and closet homosexuality,yes_implicit,yes_explicit,0.34156093,0.3054546,0.35298446
+en,training_EN_1252,Nope! They can pay themselves. They decided to go down this route. They should pay.,yes_implicit,yes_implicit,0.26383615,0.54747057,0.18869333
+en,training_EN_1256,We have no issue with equality but don't shove it in my face...people have choices to either like it or not 🚫,no,no,0.6083881,0.27069658,0.12091531
+en,training_EN_1260,"I want to do this at some point. Mr. Dittman, you are a good man.",no,no,0.5790472,0.34966987,0.07128297
+en,training_EN_1272,hi . from what i understand they protest against the adoption for gay ppls,no,no,0.70122474,0.21624377,0.0825315
+en,training_EN_1275,"Hungary is on the right path. Respect from America, where these LGBT fanatics have taken over. Learn from our mistakes 🙏",yes_explicit,no,0.6397313,0.2531498,0.10711884
+en,training_EN_1291,People in the community say the right thing but i bet he wont play in the league anymore.,no,no,0.4646287,0.4210914,0.1142799
+en,training_EN_1315,"genesis 3,15.
+'And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel.'
+God has his seed and the dev*l has his seed, the dev*ls seed is pushing the homosexual agenda. it is an end times agenda, 'as in the days of noah....' this is a wake up call for Gods seed.
+Yeshua saves, God bless.",yes_explicit,yes_explicit,0.058791235,0.25208664,0.68912214
+en,training_EN_1328,He sure is handsome!,no,no,0.6168918,0.26479608,0.11831215
+en,training_EN_1353,Told the truth and died for it !!,yes_implicit,yes_implicit,0.3138048,0.42468318,0.26151198
+en,training_EN_1371,"Gay by Birth. Proud by Choice. 
+
+Happy 25th anniversary, Amsterdam Pride
+❤️🧡💛💚💙💜",no,no,0.60716695,0.16461806,0.228215
+en,training_EN_1375,"So fucking weird that we have a push against anything considered non-hetrosexual. Like come on dude who gives a shit what other people do or don't do. Why is that any of your business, how does two dudes gettting it on? Ruin your life? God damn luddites",no,yes_explicit,0.11934363,0.15633897,0.7243174
+en,training_EN_1392,Anyone should be allowed to marry but gays should not be allowed to adopt or surrogate. They must pay the price of being gay.,yes_explicit,no,0.45912683,0.18054442,0.3603288
+en,training_EN_1400,The phrase “drama Queen” has nothing to do with being gay. It isn’t even particularly offensive or harsh. At worst slightly sexist. You could say it about anyone that overreacts or is always getting upset.,no,no,0.6754232,0.116003536,0.20857333
+en,training_EN_1410,Nobody should need a hug from a person they don’t know personally. Parents should never look on their child with disgust or hate for a harmless trait that makes them even more unique,no,yes_explicit,0.24579464,0.21760255,0.5366028
+en,training_EN_1420,I stand with Hungary.,yes_implicit,yes_implicit,0.29505512,0.47641447,0.22853036
+en,training_EN_1425,"Really? was the money worth it?  Your not trans, you dress up.",yes_explicit,no,0.5049664,0.38887632,0.10615726
+en,training_EN_1430,Sometimes I feel as a species that we are truly lost.,yes_implicit,no,0.529068,0.30815092,0.16278104
+en,training_EN_1434,Sanity is back,yes_implicit,yes_implicit,0.21026257,0.45048285,0.33925453
+en,training_EN_1445,"Ahh religion really hates the gays doesn't it? Speaking of which, when are all the Pride organisations planning to go after the UK Muslim population for its rampant homophobia? What do you mean you're not, are just going to have big parties, and lecture the rest of us who didn't give a fig in the first place? Ssshhhh... too much truth...",yes_implicit,no,0.5619222,0.30947176,0.12860607
+en,training_EN_1450,This is both heartwarming and heartbreaking,no,no,0.708388,0.18255198,0.10906
+en,training_EN_1458,Im sorry brother! Thank you for your service.,no,no,0.7171926,0.22359069,0.05921671
+en,training_EN_1461,They were in it for the money just like you dylan who decided to cut your noodle off for fame and fortune but then cries when you fail.😂😂😂😂,yes_explicit,yes_explicit,0.17846711,0.40986392,0.41166905
+en,training_EN_1462,"We should be welcoming anyone who has the heart to give their life for this country, not turning our backs on them",no,yes_implicit,0.42454067,0.45203155,0.123427786
+en,training_EN_1475,"Of course everything comes down to his sexuality. 
+Maybe the fact that he's acting like a drama queen has absolutely nothing to do with the fact that he's gay.",no,no,0.7257918,0.15291622,0.12129198
+en,training_EN_1500,How can a country be peaceful when LGBTQ+ rights are not respected?,no,no,0.68279755,0.1810338,0.13616858
+en,training_EN_1504,homosexual priest should be an oxymore by the way,yes_explicit,yes_explicit,0.12245647,0.2077468,0.66979676
+en,training_EN_1515,Stand on business!,no,yes_implicit,0.31635347,0.58264494,0.10100163
+en,training_EN_1532,"Come on guys. It’s enough. Let it go. No old people are trans, they’re bored.",yes_explicit,yes_explicit,0.25522035,0.19274452,0.55203515
+en,training_EN_1540,YOU SHOULD BE PREACHING TO YOURSELF..,yes_explicit,yes_implicit,0.27069417,0.44013155,0.28917432
+en,training_EN_1542,"Dylan your not a vitum . Your a men in womens clothing that does not even know yourself personally who you are. I do not live in dylton, I live for the facts.",yes_explicit,yes_explicit,0.11504217,0.22551675,0.659441
+en,training_EN_1570,"Why y’all can’t grow up, it’s a lot of hate comments I have seen, I live in America, and it’s also going backwards with LGBTQIA rights. It’s so hard to think people are so strict about another person loving another, it’s so unbelievable at this moment in history that we are still so against love in all ways.",no,no,0.80097276,0.13002305,0.06900416
+en,training_EN_1578,"F u tube for taking down Joan stating , everybody knows it Michele is a tranny.",yes_explicit,yes_explicit,0.13889097,0.4060365,0.4550725
+en,training_EN_1581,He is a male - this is not hate speech - it is a scientific fact - goodbye,yes_explicit,yes_explicit,0.25207463,0.22332574,0.5245996
+en,training_EN_1593,"""I've neen scared to leave my house."" Says while having the giddiest smile on his face.",yes_implicit,no,0.5827251,0.2629435,0.1543314
+en,training_EN_1606,Has she realized that she's a he yet?,yes_explicit,no,0.6109494,0.23348087,0.15556976
+en,training_EN_1624,You can't be calling yourself a priest if you don't live by the lord's word..,yes_implicit,yes_explicit,0.09897181,0.34058842,0.5604397
+en,training_EN_1625,"Thank you for your service. I honor your dedication to srve and protect all Americans. The election was a mistake,  please know you are excepted as a U.S. soldier.    THANK YOU FOR YOUR SERVICE.   BLESS YOU FOR BEING WHO YOU ARE. MORE OF A MAN AND MORE OF AN AMERICAN THE THE ONE WHO SAYS HE IS A LEADER OF BOTH. A PATRIOT HE IS NOT!! HE IS NOT MY KING NOR MY PRESIDENT.  ❤",no,no,0.50139934,0.3016738,0.19692689
+en,training_EN_1634,[CHANNEL] weaponizing hiv now,no,yes_implicit,0.13106154,0.51759964,0.35133877
+en,training_EN_1646,Respects from Turkey 🇹🇷,yes_implicit,yes_implicit,0.19976987,0.6527852,0.147445
+en,training_EN_1658,Orban is right on sex education just as he was on immigration.,yes_implicit,yes_implicit,0.2314105,0.49834022,0.27024922
+en,training_EN_1663,"In 1920s the great Iranian secularist Mr. Ahmad Kasravi warned the Iranians:
+""Do not be deceived by the mullahs, they are the scum of the same hounds that attacked Iran.  If you're not alert, a day will come when they will rule you, and on that day your life, property, and even your children will no longer be safe from them.""",yes_explicit,yes_explicit,0.06542807,0.2590916,0.67548037
+en,training_EN_1666,Treat cancer patients instead.,yes_implicit,yes_explicit,0.22795147,0.38499936,0.38704917
+en,training_EN_1668,"Love wins.  #RIP ORLANDO.  
+RAINBOW TRIBUTE TO ORLANDO AROUND THE WORLD ON Video on my channel.",no,yes_implicit,0.38072997,0.45373142,0.16553864
+en,training_EN_1682,I wonder how many of them are still in the closet.  Everything they’re against comes from within.,no,no,0.45028308,0.35576868,0.19394824
+en,training_EN_1685,"Gender dysphoria is a mental issue. No one is 'born in the wrong body'. These deluded, vulnerable children need sympathetic help from clinical psychologists not the surgeon's knife.",yes_explicit,yes_explicit,0.1303374,0.21290568,0.65675694
+en,training_EN_1696,"VISIBILITY is important , Iam happy he is open and now he open the door for other LGBT football ball players , to do the same",no,no,0.7260791,0.20710666,0.06681428
+en,training_EN_1698,That’s a guy,yes_explicit,yes_explicit,0.16892144,0.2310292,0.6000493
+en,training_EN_1701,Thank big Mike and Barack for the BS that is happening in the United States today,yes_explicit,yes_implicit,0.20889604,0.51174825,0.27935576
+en,training_EN_1706,"When you pretend to be ""bi"" to get signed by progressive team 😂😂😂",yes_implicit,yes_implicit,0.3977273,0.45817265,0.14410004
+en,training_EN_1717,Mulvaney must be doing a skit no one is this dumb,yes_explicit,yes_explicit,0.10599749,0.36637223,0.5276303
+en,training_EN_1723,These discussions are important for the health of trans persons . They are important for all to learn more about each other . Peace and Love,no,no,0.7540322,0.19809261,0.04787527
+en,training_EN_1732,Stop telling these people to adopt as if someone else's child is their commodity. A child needs to be raised in a stable environment. If you can't tell the difference between a man and a woman that doesn't ring stability.,yes_implicit,yes_explicit,0.07806089,0.21038605,0.7115531
+en,training_EN_1751,"Listen I’m completely up for trans rights ect, but let me break it down. So nhs are hugely under staffed, and under funded, trans people sadly fall into the none emergency. It’s important for trans people to have the surgery’s and things yes but what I don’t agree with is when they start to complain because it’s not their fault that the transition is so slow. NHS and medical professionals are always over run so they need to think realistically for example a man walks in with a broken leg, but then the man comes in after with a pole in his stomach the man who has the pole in his stomach is seen before the broken leg guy, because his needs are more important. Think about it what a surgery for trans people costs what like 20,000 at least, I think their should be something else’s for trans people",no,no,0.584028,0.19586383,0.22010812
+en,training_EN_1761,NOOOO NOT AT ALL!!!!!!!!!!!,yes_implicit,yes_explicit,0.20025544,0.34558824,0.45415628
+en,training_EN_1787,"Who cares if he's gay
+ Trump 2020🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸",no,yes_explicit,0.23584615,0.3685103,0.39564353
+en,training_EN_1805,"""How should EU respond"" - Who gives a sh*t !",yes_implicit,yes_implicit,0.25352183,0.5352337,0.21124445
+en,training_EN_1809,I didn’t know kno you were gay? Uninteresting however if your being drama and argumentative then you should get called out and catty or drama queen is common phrasing,yes_implicit,no,0.77254087,0.12995838,0.09750081
+en,training_EN_1810,I stand with Hungary 🇷🇸🤝🇭🇺,yes_explicit,yes_explicit,0.09330911,0.35860848,0.54808235
+en,training_EN_1817,"I'm now HIV negative, Dr Abiola cured me from HIV virus, Introducing a tested and trusted  HIV cure to the world from #drabiola 🇺🇸💙..
+.
+.........",no,yes_implicit,0.25384524,0.4560773,0.29007736
+en,training_EN_1824,Should the NHS pay for cisgender fertility treatment?  If they're prepared to pay for cisgender fertility treatment but not transgender fertility treatment then they are being transphobic.  Trans people pay the same taxes to the NHS as cis people do therefore we should both receive equal treatment. Simples.,no,no,0.66043115,0.18505925,0.15450959
+en,training_EN_1832,"What is LGBT, Have you'all quickly forgotten how God was wrathful on them at TAIWAN on June 27, 2015? Fire devoured many of 'em. God can't be passive and watch filth prevail in His Earth. ISAIAH 54:16 IMPOSSIBLE",yes_explicit,yes_explicit,0.12602225,0.19932856,0.6746492
+en,training_EN_1839,Bring  him down  Garcia ❤,no,yes_explicit,0.13179164,0.41334745,0.45486093
+en,training_EN_1840,I had to google to see who he is or why he's in the news.Like who cares.Everyone knows bm are oversexed low IQ and lazy.Tell us something we don't know.Everyone already know this but naïve and overweight ww that allow them to move into their homes while she pays for everything.He looks as sweet as a quinceanera on her sweet 15th birthday.,yes_implicit,no,0.6522444,0.1690715,0.1786841
+en,training_EN_1848,I wish I could get a huge from him my gran disowned me for coming out,no,no,0.55161494,0.38097474,0.06741041
+en,training_EN_1851,Grow up MAGA. SHE WAS BORN FEMALE. GOOGLE HER. YOU SICK PEOPLE,no,yes_explicit,0.08578575,0.18605135,0.7281629
+en,training_EN_1861,No. Nope. Nada. When “they” change “their” minds and blame the doctors and surgeons. “They’ll” sue and get compensated from the tax payer.,yes_explicit,yes_implicit,0.12550588,0.45863333,0.41586083
+en,training_EN_1866,"On the decriminalisation of homosexuality: _""The state has no business in the bedrooms of the nation.""_ —Pierre Elliot Trudeau, Minister of Justice (Canada) (1967-1968)",no,yes_explicit,0.2592621,0.33101487,0.40972295
+en,training_EN_1869,Easily the best president of all time,yes_implicit,yes_implicit,0.29561752,0.5337771,0.17060542
+en,training_EN_1882,Better to be homophobic than homosexual 🤮🤮,yes_explicit,no,0.5702932,0.16596477,0.263742
+en,training_EN_1892,Dylan:  let me go against societal norms as aggressively as I can and then be surprised that some people aren’t happy with me,yes_implicit,no,0.71510166,0.2037204,0.081177935
+en,training_EN_1919,"Just to piss off Trump, I'm re-enlisting as a bearded woman. This is a case that would bring other of his misdeeds to court and overturn them, like many other cases of his abuse of power. 
+A question, Sargent: Who did you vote for?",no,yes_implicit,0.31847662,0.4023281,0.27919528
+en,training_EN_1920,"So much respect, gratitude, and affection for Derek Jacobi and his brilliant body of work.
+He. is a treasure.",no,no,0.7412406,0.19622797,0.06253141
+en,training_EN_1930,Draft dodging pedophile should be in prison.,yes_explicit,yes_explicit,0.09011338,0.1742928,0.7355938
+en,training_EN_1940,You mean the brand never reached out to him or it I guess,no,no,0.5329166,0.39467868,0.0724047
+en,training_EN_1971,"OMG, 0.4% population HIV pos is low????",no,yes_implicit,0.34011716,0.45132518,0.20855764
+en,training_EN_1978,Slowly.... shows a degenerate drag queen i say thats fast....... stop 🛑 your imperialism needs to end,yes_explicit,yes_explicit,0.098544635,0.29985604,0.6015993
+en,training_EN_1998,Next week in the news: Pittsburgh man dies of monkeypox...,yes_implicit,yes_implicit,0.20897579,0.433739,0.35728517
+en,training_EN_2003,"You don't have to ""stand by"" as Trumps policies are implemented but you ARE gonna watch as Trumps policies are implemented! When Republicans have the majority in the senate,  congress AND the house, you will stand by and watch EVERYTHING as it plays out...QUEEN!",yes_implicit,yes_implicit,0.29066712,0.479873,0.22945994
+en,training_EN_2021,Great actor and a lovely interview,no,no,0.62878525,0.27987456,0.09134016
+en,training_EN_2044,"The patriarchy of transgenderism is doing battle with Mother Nature, and losing. A campaign that speaks with a male voice.",yes_implicit,yes_explicit,0.21056268,0.2643305,0.5251068
+en,training_EN_2052,Marriage is only between Men and Women,yes_explicit,yes_explicit,0.26265562,0.19044074,0.54690367
+en,training_EN_2060,Well it also fixes population control,no,yes_implicit,0.2670684,0.5257748,0.20715688
+en,training_EN_2073,"working in eldercare and over the years, there have been a handful of trans identifying people. They are treated just as well as anyone else. The tragic ones, are those who have dementia and do not remember that they transitioned, being horrified and very confused about the changes to their bodies. Its very sad.",no,no,0.6574771,0.23350246,0.10902038
+en,training_EN_2114,Fuking disgusting!!! Should have left the f****** kids alone!!!,yes_explicit,yes_explicit,0.07762997,0.21197537,0.7103947
+en,training_EN_2139,She*,yes_implicit,yes_implicit,0.30341408,0.4025967,0.29398927
+en,training_EN_2140,What's up. Our goverment is being run by Pedophiles and Gays.😢,yes_implicit,no,0.39372534,0.30426592,0.3020087
+en,training_EN_2151,"YES to love , equality , diversity and peace.  NO  to hate and bigotry.  It's great to see that Cuba is making progress when it comes to LGBT right , HUMAN RIGHTS  over all .",no,no,0.78881186,0.14605808,0.06513013
+en,training_EN_2162,We love you and know you are all an equal hear and soul of the country.,no,no,0.7275488,0.21047252,0.061978675
+en,training_EN_2173,"yeah, whatever",no,no,0.44783777,0.38436747,0.16779476
+en,training_EN_2175,"I thought that Michael Sams came out as gay a while back, identifying as LGBTQ.",no,no,0.8160162,0.11038188,0.07360202
+en,training_EN_2186,Protect gay men haaan just go and protect children in war zone areas or give food to those are hungry .,yes_implicit,yes_implicit,0.2838488,0.3836191,0.33253208
+en,training_EN_2206,Dude it's he.... Quit enabling this madness.,yes_explicit,yes_explicit,0.07974619,0.24960655,0.6706473
+en,training_EN_2213,"If one is Catholic one cannot promote the infiltration of gay agendas even amongst adult consenting individuals, whether lay or even worse priests, no matter whether civil law now allows it. If ""Catholics"" differ in opinion on this all they need to do is convert to a Protestant denomination that allows it, or become schismatic to allow it. Both old and New Testaments are clear on this. Feel free to edit the words on these holy books because maybe they are false and there was no tape recorder in the past. But beware, if the Bible is redacted to suit modern trends it will have serious consequences: its credibility will be undermined completely.",yes_explicit,no,0.6310522,0.2635398,0.10540792
+en,training_EN_2218,"Recently discovered myself. And things like this just make my head hurt like crazy. I feel like people want me dead for just being alive, man :/",no,no,0.69694686,0.19834249,0.1047107
+en,training_EN_2232,If this doesn't change the hearts of those kids' parents then I don't know what will... Imagine abandoning your child and making them feel like they can never get any love from you just because they're a part of LGBTQ+... They literally fell into the arms of a random person and sobbed their hearts out just because their parents will never validate their identity,no,no,0.6039604,0.12796424,0.26807535
+en,training_EN_2242,MICHELE IS MICHAEL,yes_explicit,yes_implicit,0.2712438,0.43004698,0.29870924
+en,training_EN_2259,"Thank you, Sisters of Perpetual Indulgence. Thank you so much for everything you did for my generation. 
+What a beautiful and powerful documentary.",no,no,0.7607016,0.19128184,0.048016556
+en,training_EN_2283,Child raping homo scum.,yes_explicit,yes_explicit,0.13882445,0.12233281,0.7388428
+en,training_EN_2296,True dad love right there.,no,no,0.5096207,0.32915637,0.16122289
+en,training_EN_2299,My my husband is a drama queen and he’s straight but the drama he spits out drive you crazy he nags like a woman,no,yes_explicit,0.2885172,0.16300336,0.5484794
+en,training_EN_2308,Why is the non binary person taking  hormones?,no,yes_implicit,0.27563423,0.39079997,0.3335658
+en,training_EN_2329,Never heard of him. Does he have the AIDS? 🤷‍♂️,no,no,0.6017157,0.3281871,0.07009719
+en,training_EN_2333,"Just like Hitler hated jews, Just like whites hated and discriminated blacks in the past, just like ISIS hates Christians,  that's what happened there.",no,no,0.37459886,0.2857636,0.33963755
+en,training_EN_2334,"I’m so angry at trump & his sycophants but I am more sad that Our Heroes like you sir are treated so dishonorably!
+😔
+🙏🏼",no,no,0.36772534,0.28781292,0.34446168
+en,training_EN_2335,I’m trans and think this is ridiculous. No one is stopping us. We can if we PAY!! People in the U.K. are so entitled ffs,no,yes_implicit,0.38826305,0.41502282,0.19671412
+en,training_EN_2343,"I'm very very sorry. You have the right to serve in our military if you desire. I feel safe with you in charge of weapons then I do of this administration in charge of weapons. This is wrong. I've fought hard for everyone's rights, I'm not about to give up now. None of us should lie down and take this. We stand tall, proud and we fight back. The supreme court is not to be trusted. The entity who resides in the wh should not be trusted. Stay strong. 🫂",no,yes_implicit,0.32318175,0.36874178,0.30807647
+en,training_EN_2345,"This is so extremely sad, I hope that they will be able to get safe soon.",no,no,0.63900304,0.25420886,0.10678812
+en,training_EN_2346,"he is going to a better place than heaven
+Mega Heaven.",no,yes_implicit,0.1675849,0.45188758,0.3805275
+en,training_EN_2354,"The only people who see 'outrage' are those that never even visited Hungary, foreign activists, foreign journalists, foreign politicians. In Hungary, apart from a tiny minority, nobody perceives 'outrage,' only a sensible law to protect school children from propaganda.",yes_explicit,yes_explicit,0.15076382,0.34785095,0.5013852
+en,training_EN_2359,"You're a veteran & deserve your benefits, trump hates the military. From 1 veteran to another, thanks for your service.",no,yes_implicit,0.31500039,0.4146925,0.27030712
+en,training_EN_2371,If you're non-binary why did you take PB?!,no,no,0.5528666,0.26716122,0.17997219
+en,training_EN_2373,Good! God bless and protect all the beautiful LGBT people!,no,no,0.7668093,0.13805312,0.09513758
+en,training_EN_2378,Think of how women had to be silenced as your stole our biology and benefited from it. You did not show respect for the biology of real women and we had to remain silent.,yes_explicit,no,0.44363716,0.3303277,0.22603518
+en,training_EN_2389,One mother one father that s what all orphans need and no one can deny it except stupid brainwashed people,yes_explicit,yes_explicit,0.14311883,0.29824886,0.5586324
+en,training_EN_2391,Good for him to taking the lead.,no,yes_implicit,0.44523653,0.44818112,0.10658237
+en,training_EN_2394,"Congrats,  RR.  Your  action  can  be an example  to  all of us,  any of us who has some deep  secret or  conflict  we've  not  faced in life.",no,no,0.68317163,0.269698,0.047130387
+en,training_EN_2410,"Justice ⚖️ for the victims. Mr Garcia God Protect You, You're Fighting Against Evil.",no,yes_explicit,0.12576781,0.32282984,0.55140233
+en,training_EN_2413,You got to watch the whole bit lol. Trump complaining about his wife and then imitating a trans women had me rolling. What a time to be alive,no,no,0.44714907,0.28636703,0.26648393
+en,training_EN_2425,LOL I love how you religious nutters keep waving with these verses and ignore that it condones raping women. Yay!,no,no,0.6206275,0.25958598,0.11978657
+en,training_EN_2437,There are so many others stories to cover,yes_implicit,no,0.6220391,0.3111054,0.06685554
+en,training_EN_2448,"I would have cried and been unable to let go, my dad abused and left me as a kid and the last time we spoke as an adult he threatened to kill me. What this guy is doing is so kind and important.",no,no,0.63541424,0.16673179,0.19785394
+en,training_EN_2454,"As a pansexual man, I cannot properly describe the immense joy that comes with having parents and/or siblings who love you for who you are and don't treat you any differently than before you came out. And the hugs? I cherish them, they are more valuable to me than all the gold in the world. If anyone reading this is LGBTQ and live with a family who doesn't respect you for who you are, just know you're beautiful people who deserve better, and it pains me that I cannot hug each and every one of you.",no,no,0.7966342,0.10059069,0.102775194
+en,training_EN_2472,"After watching this interview, I can see why he was called a drama queen. He went to [CHANNEL] to make a claim of homophobia and score political points. This kind of drama does definitely belong on cable TV, maybe an episode of Law and Order.",no,no,0.5765597,0.30823368,0.115206644
+en,training_EN_2473,"So many people need to be on meds and talking to doctors. America, what are you doing to yourself?",yes_explicit,yes_implicit,0.38763773,0.46094975,0.15141249
+en,training_EN_2479,What are the costs of all the treatments and medications they have and receive for free and for all their life? Can [CHANNEL] do a journalistic investigation about that? Just to know.,no,no,0.46263158,0.44058478,0.09678364
+en,training_EN_2484,"[CHANNEL] trawling the world for minority, muck-raking stories.
+Most people aren't black, gay or slightly interested in this yet we are constantly lectured by these crackpots as if this is a normal day in our lives. It isn't.
+Give us proper news, not minority interest propoganda that the majority of British people who fund this crap are not interested in.",yes_explicit,no,0.4655642,0.38128343,0.1531524
+en,training_EN_2497,Happy Pride Month to all of our LGBTQ+IA friends,no,no,0.7357407,0.14704967,0.11720959
+en,training_EN_2498,Stay strong Hungary. You are doing well,yes_implicit,no,0.379583,0.37293482,0.24748226
+en,training_EN_2510,"Such a stupid question....who cares about gay.....there are much more important things to deal with. And plus, nobody is born gay, some people become because of sexual traumas like abuse and molestation and some other because of the life style of drugs and transgressive life.",yes_explicit,no,0.6470073,0.14743002,0.2055627
+en,training_EN_2521,"Oh lovely, Satan‘s princess is celebrating the alphabet mafia… How freaking wonderful 🤮",yes_explicit,yes_implicit,0.37926525,0.43287024,0.18786456
+en,training_EN_2529,Gay proud standing TALL.. Congratulations Holland 🇳🇱👏 love yah💖 kisses 💋😘😗😚😙💖,no,no,0.41614643,0.25801298,0.3258406
+en,training_EN_2536,"As we the tax payer fund the NHS should we be asked if we should pay extra to afford these procedures, how much will it cost us all?",no,yes_implicit,0.43697235,0.46937552,0.093652084
+en,training_EN_2537,I’m a fan now! I have been since I was only 5 years old!😂😂😂,no,no,0.7498162,0.18350378,0.066680074
+en,training_EN_2546,He's so pathetic and disgusting. Dude nobody cares about you. Go away...,yes_explicit,yes_explicit,0.09946632,0.14924373,0.75128996
+en,training_EN_2548,"Must not have got the other memo stud. Fat people are out to if they cant get into shape. So you got 2 hurdles to get over.  Sorry it hurts your feelings, but we have standards once again now.",yes_implicit,yes_implicit,0.30066994,0.3852675,0.31406257
+en,training_EN_2571,"""Poven a Drama Queen""
+Where is the Gay mentioned?😮
+
+The response 🙄🤔😂",yes_implicit,yes_implicit,0.3330256,0.37579873,0.29117566
+en,training_EN_2577,Do libtards really think this is something to be proud of?,yes_implicit,no,0.43116558,0.4102175,0.15861696
+en,training_EN_2589,"Then why did God make gay people attracted to the same gender???
+Have you ever heard of Mardi Gras?  Spring break?  The Jersey Shore?  Heterosexuals run around like freaks and blare out their personal business all the time.",no,yes_explicit,0.34613213,0.20935754,0.44451028
+en,training_EN_2595,This is proof that being gay is a curse!,yes_explicit,yes_explicit,0.18494372,0.2111608,0.6038955
+en,training_EN_2615,This dude is playing delusional costume and the public aint about this nonsense.,yes_explicit,yes_explicit,0.06560821,0.25936282,0.675029
+en,training_EN_2625,From those of us who've been rejected by their parents... thank you so much.,no,no,0.711268,0.23108411,0.057647906
+en,training_EN_2639,"More of these kind people please. I wish I had the confidence,  charisma or whatever it is to do the same.",no,no,0.7336367,0.22815956,0.03820383
+en,training_EN_2666,"Some cancer treatments render patients infertile.  Should the NHS pay for all patients who may become infertile to store gametes?  Sounds expensive. Meanwhile, trans folk are also complaining that they don't get the same priority for masectomies as breast cancer patients.  Enough already.",yes_explicit,no,0.45271912,0.39791703,0.14936385
+en,training_EN_2678,He speaking facts tho,yes_implicit,yes_implicit,0.15625408,0.5515397,0.29220626
+en,training_EN_2697,Proof their all fatherless,no,yes_explicit,0.089309804,0.28436783,0.6263223
+en,training_EN_2704,that's it for bud light for not reaching out to you,no,no,0.51190156,0.38152903,0.106569394
+en,training_EN_2759,"Another celebrity falling into this delusion, not surprising",yes_explicit,yes_implicit,0.3403875,0.4410591,0.21855342
+en,training_EN_2760,"yes fuck gay France, respect form Poland",yes_explicit,yes_explicit,0.16815178,0.40952736,0.4223209
+en,training_EN_2793,"Taylor Swift gives message to LGBTQRSTUV at 1,400 a ticket 😂😂😂",yes_implicit,no,0.6399988,0.24807791,0.111923315
+en,training_EN_2797,Couldn’t you have waited until you were  on a Team??   And trust me there are bi guys on the Cowboys and other Teams too but their playing!,no,no,0.48485443,0.43760192,0.077543646
+en,training_EN_2808,That Comer is a jacka$$! I'm sure he helps crash grinder on a regular basis!😂😂😂😂😂😂😂😂😂😂😂😂,no,yes_explicit,0.08631068,0.26462525,0.64906406
+en,training_EN_2820,Gay bars are for gay people period! Good! 👍🏳️‍🌈,no,no,0.69403636,0.18453097,0.12143271
+en,training_EN_2825,"All the gays should abandon their Church  posts, as Father Sissy recommended.",yes_explicit,no,0.44195262,0.32960355,0.22844389
+en,training_EN_2826,Sodom and Gomorrah = Cuba and Miami,yes_implicit,yes_implicit,0.13365477,0.6295875,0.23675776
+en,training_EN_2829,"This was wonderful , Thank you,",no,no,0.7190904,0.2360046,0.044905018
+en,training_EN_2834,As a libertarian I agree with a lot of conservative ideals but also believe in freedom of choice   If you want to serve and you are qualified dies it really matter what gender sex you were born as. No it does not and I’m sorry they are treating you this way. Shame on them as politicians and humans,no,no,0.6270065,0.24239738,0.13059609
+en,training_EN_2854,"Some one here call it:
+Sh*t Blender",yes_explicit,yes_implicit,0.1437227,0.4299156,0.42636174
+en,training_EN_2865,"Here's my nominations for more:
+Saint Oscar Wilde
+Saint Peter Tchaikovsky
+Saint Rudolph Nureyev
+Saint Kenneth Williams
+Saint Martina Navratilova
+Saint Matthew Shepard
+Saint Rabbi Blue
+Saint Freddie Mercury
+Saint Rupaul
+Amen!",no,no,0.3790197,0.34526992,0.27571034
+en,training_EN_2885,"Like Chris Rock used to say, if they wanna fight let’’em fight ‘cause I ain’t fighting.",no,yes_implicit,0.28643754,0.38127893,0.33228347
+en,training_EN_2894,"For me as a trans woman 
+It should be free but other things need to change before it becomes free
+Would I use it ,no
+But I'd like the option",no,no,0.7169802,0.22932854,0.053691324
+en,training_EN_2901,Respect !!,yes_implicit,yes_implicit,0.32648882,0.48218063,0.1913305
+en,training_EN_2903,saw him  years ago on stage in Becket it was unbelievable!!!!,no,no,0.6138205,0.3106896,0.07548994
+en,training_EN_2917,#perfection,no,yes_implicit,0.22230093,0.58912677,0.18857224
+en,training_EN_2923,Mr Russell - Do you get checked regularly (like daily) for the HIV virus? I for one do not want to have the HIV virus being spread throughout the NFL because of your sexual preference.,yes_explicit,no,0.40352407,0.3717438,0.22473209
+en,training_EN_2927,"Dylan Mulvaney is not a Her. Anheuser-Busch in St. Louis Mo. is closing down over him in their ad. That should tell you a lot.  If want your company to burn down, just call Dylan Mulvaney, He will help you do it.",yes_explicit,yes_implicit,0.2298494,0.4775293,0.2926213
+en,training_EN_2935,I just don't understand how you can disown your own child. Your flesh and blood. Your support means so much to you. It's horrible,no,yes_explicit,0.25294954,0.23257336,0.5144771
+en,training_EN_2936,"Let's teach our children to spread love, peace, and cooperation, not hatred, enmity, and war!
+🇮🇷🤝🏻🇺🇸",no,no,0.4401442,0.3559179,0.20393786
+en,training_EN_2958,"i know what you are saying but what my point is, okay there are people who like the same sex, so what? as long as they're not harming you or forcing it down your throat what's wrong with it? GOD IS LOVE. LOVE ALL if you can't love then you do not know God right? instead go and throw hate at luciferians or something like that not fucking gay people. it's a waste of time seriously. the end is coming no time for all this hate. there is enough already.",no,no,0.6310034,0.11920054,0.24979609
+en,training_EN_2962,Bravo Hungary.   Less drag queens and more Chuck Norris,yes_explicit,yes_implicit,0.18887928,0.4497914,0.36132932
+en,training_EN_2964,Won’t have to worry about kicking his ass. He takes it there anyway. So good luck with that!,yes_explicit,yes_implicit,0.24131769,0.42877972,0.32990256
+en,training_EN_2983,Who cares about his sexuality it always have to be a black man who gay,no,no,0.4311757,0.17890894,0.38991538

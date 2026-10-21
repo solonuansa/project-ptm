@@ -34,7 +34,7 @@ Gunakan split yang sama untuk semua model, tanpa splitting ulang atau menggabung
 
 1. Buka/upload salah satu notebook `.ipynb` ke Colab.
 2. Aktifkan **Runtime → Change runtime type → GPU**. Notebook memerlukan satu GPU CUDA; lingkungan yang dituju menggunakan Python 3.11/3.12.
-3. Jalankan instalasi dan impor pada **bagian 2** notebook. Jika diminta restart, restart runtime lalu lanjutkan dari sel impor. Pastikan nama GPU tampil.
+3. Siapkan dependensi di environment terlebih dahulu, termasuk `transformers==4.57.1` dan `emoji>=2,<3`. Notebook tidak menginstal paket. Jalankan impor pada **bagian 2** dan pastikan nama GPU tampil.
 
 ### B. Pilih bahasa dan lokasi data
 
@@ -95,7 +95,7 @@ Pastikan download selesai, ZIP dapat dibuka, dan file hasil tersedia. Simpan ZIP
 1. Pastikan ZIP dan ringkasan eksperimen sebelumnya sudah tersimpan di luar runtime.
 2. Untuk bahasa lain pada model yang sama, ubah `LANGUAGES` pada **bagian 3**, lalu jalankan ulang mulai bagian tersebut. Konfigurasi membuat ID run baru; jangan hanya mengulang sel training.
 3. Upload tiga CSV bahasa baru pada bagian 4, lanjutkan proses, dan download hasilnya. Sesuaikan juga `DOWNLOAD_LANGUAGE` pada bagian 13.
-4. Untuk model lain, buka notebook model tersebut dan ulangi langkah yang sama. Pada runtime baru, mulai kembali dari instalasi dan impor.
+4. Untuk model lain, buka notebook model tersebut dan ulangi langkah yang sama. Pada runtime baru, siapkan dependensi di luar notebook lalu mulai dari sel impor.
 
 ## 4. Jika memakai Modal
 
