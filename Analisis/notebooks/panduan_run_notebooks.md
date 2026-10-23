@@ -164,3 +164,9 @@ Gunakan [Twitter_XLM_RoBERTa_Base_E2_Tuning.ipynb](Twitter_XLM_RoBERTa_Base_E2_T
 Default EN/IT/NL menghasilkan 12 training. Label smoothing dihitung langsung di custom loss. Hasil lokal masuk `Analisis/results/e2_tuning_multibahasa`; tabel perbandingan mencantumkan selisih macro-F1 terhadap baseline. Konfigurasi dan hash data diperiksa sebelum memakai ulang hasil yang selesai. Jika konfigurasi berubah, gunakan folder hasil baru.
 
 Cleanup dan kebijakan satu pemenang per pasangan model/bahasa tetap mengikuti `best_models.json` bersama notebook ablation sebelumnya. Test tetap terkunci selama tuning. Notebook salinan tidak menyertakan output lama dan tidak menjalankan training secara otomatis.
+
+## Qwen melalui VS Code dan GPU Modal
+
+Ikuti [panduan setup Modal dari VS Code](panduan_setup_modal_vscode.md) untuk instalasi CLI, autentikasi, upload CSV, pemilihan GPU, koneksi Jupyter remote, menjalankan notebook Qwen versi terbaru, cek billing, penyimpanan/download hasil, dan penghentian sesi.
+
+Panduan tersebut mengikuti notebook Qwen ringkas dengan bagian 1?10 setelah PR #4. Launcher tersedia di [modal_qwen_jupyter.py](../modal_qwen_jupyter.py).

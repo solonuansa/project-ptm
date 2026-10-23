@@ -1,0 +1,16 @@
+{
+  "status": "draft",
+  "submission_ready": false,
+  "reference_count": 12,
+  "all_references_resolve": true,
+  "unused_references": [],
+  "duplicate_keys": [],
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "pages": 7,
+  "figures": 2,
+  "tables": 4,
+  "paragraphs_registered": 39,
+  "human_verification": "pending",
+  "pdf_sha256": "41548c7e0801f59fa45610460ea85c5d6c899add5b38d1299549e9b21af8224c"
+}

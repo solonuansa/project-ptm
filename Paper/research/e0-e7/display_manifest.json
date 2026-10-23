@@ -1,0 +1,11 @@
+{
+  "creator": "Codex; generated locally with matplotlib",
+  "human_review": "pending",
+  "source": "Analisis/results/ablation_multibahasa_e0_e6",
+  "processing": "Aggregate counts; class-order no/implicit/explicit; delta=(F1-E0)*100; no image retouching",
+  "uncertainty": "No error bars: single seed and no inferential analysis",
+  "figures": {
+    "ablation_delta": "Bar chart: EN improves most with E2; IT improves most with E1. IT E5-E7 unavailable.",
+    "confusion_best": "Two row-normalized matrices with counts: implicit recall is 60.0% EN and 35.7% IT."
+  }
+}

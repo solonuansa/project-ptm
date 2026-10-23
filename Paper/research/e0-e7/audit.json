@@ -1,0 +1,232 @@
+{
+  "analysis": "descriptive, one seed, internal validation",
+  "test_evaluated_by_this_script": false,
+  "completed": [
+    {
+      "language": "en",
+      "run": "E0_legacy",
+      "best_epoch": 2.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E0_legacy/validation_metrics.json",
+      "metrics_sha256": "211e6254af9a3f7c60d666739e2edc85d1edf581516708c514c7455d9d1ff214",
+      "configuration": {
+        "preproc": "legacy",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E1_keep_emoji",
+      "best_epoch": 2.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E1_keep_emoji/validation_metrics.json",
+      "metrics_sha256": "2e538025278c6f2449e6804e21d5b5ca41a8978680082461cff5aac36d39fb11",
+      "configuration": {
+        "preproc": "keep_emoji",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E2_keep_case",
+      "best_epoch": 8.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E2_keep_case/validation_metrics.json",
+      "metrics_sha256": "383737a3521f76806d7af97b9a15d53c0bd9a23a873f0d16a005af7eb3e1ce4e",
+      "configuration": {
+        "preproc": "raw",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E3_no_weights",
+      "best_epoch": 8.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E3_no_weights/validation_metrics.json",
+      "metrics_sha256": "4344e5466112064f879763055ca642c5a42fc3de06a3365c94b477a6348ac8c2",
+      "configuration": {
+        "preproc": "raw",
+        "context": "none",
+        "weighted": false,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E4_title_pair",
+      "best_epoch": 4.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E4_title_pair/validation_metrics.json",
+      "metrics_sha256": "06d84ccf6d27124e10b2f6f8a360188050a78cf8bd05dffab500935e69a87ae5",
+      "configuration": {
+        "preproc": "raw",
+        "context": "title",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E5_title_desc_pair",
+      "best_epoch": 5.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E5_title_desc_pair/validation_metrics.json",
+      "metrics_sha256": "94015cf7846e3e35e1a17f20a99ecce662027abc1e244d0819aa07d8b33b3553",
+      "configuration": {
+        "preproc": "raw",
+        "context": "title_desc",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E6_lr_warmup",
+      "best_epoch": 5.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E6_lr_warmup/validation_metrics.json",
+      "metrics_sha256": "a2820c9b40630dd80fb2ed69a9543a208bcbc4cfedb7dab9b275e1b8b6ea1096",
+      "configuration": {
+        "preproc": "raw",
+        "context": "title",
+        "weighted": true,
+        "lr": 2e-05,
+        "warmup": 0.1
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "en",
+      "run": "E7_focal_loss",
+      "best_epoch": 7.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/E7_focal_loss/validation_metrics.json",
+      "metrics_sha256": "a1eea21ff85a278f1f865b61f7f496659bce2f61ccbabe09b9a9cfa212351b29",
+      "configuration": {
+        "preproc": "raw",
+        "context": "none",
+        "weighted": false,
+        "lr": 1e-05,
+        "warmup": 0.0,
+        "loss": "focal",
+        "gamma": 2.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "it",
+      "run": "E0_legacy",
+      "best_epoch": 9.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/it/twitter-xlm-roberta-base/E0_legacy/validation_metrics.json",
+      "metrics_sha256": "9d3b6cecb74da20689678498c2e4993369e6ac1d9923ee8f3b673a78a5528501",
+      "configuration": {
+        "preproc": "legacy",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "it",
+      "run": "E1_keep_emoji",
+      "best_epoch": 9.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/it/twitter-xlm-roberta-base/E1_keep_emoji/validation_metrics.json",
+      "metrics_sha256": "57ace571f2f595c321e027e0fa3a01f8d243bc29aec39851394baf9f4755e2d2",
+      "configuration": {
+        "preproc": "keep_emoji",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "it",
+      "run": "E2_keep_case",
+      "best_epoch": 8.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/it/twitter-xlm-roberta-base/E2_keep_case/validation_metrics.json",
+      "metrics_sha256": "09ef5b45b729565eb6fb68e8e26a36676683d3424bcfb724944f0c51106fa43a",
+      "configuration": {
+        "preproc": "raw",
+        "context": "none",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "it",
+      "run": "E3_no_weights",
+      "best_epoch": 10.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/it/twitter-xlm-roberta-base/E3_no_weights/validation_metrics.json",
+      "metrics_sha256": "ab2101baa114b9e2322c0a444d3ebb20ce633d795a1e9eea5cd200f59ec6ff00",
+      "configuration": {
+        "preproc": "raw",
+        "context": "none",
+        "weighted": false,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    },
+    {
+      "language": "it",
+      "run": "E4_title_pair",
+      "best_epoch": 10.0,
+      "metrics_file": "Analisis/results/ablation_multibahasa_e0_e6/it/twitter-xlm-roberta-base/E4_title_pair/validation_metrics.json",
+      "metrics_sha256": "13342e4db9bd7d1591f2dcf31c554776db8b10b86dafd80feb080d053dd0ef27",
+      "configuration": {
+        "preproc": "raw",
+        "context": "title",
+        "weighted": true,
+        "lr": 1e-05,
+        "warmup": 0.0
+      },
+      "prediction_and_matrix_agree": true
+    }
+  ],
+  "missing": {
+    "en": [],
+    "it": [
+      "E5_title_desc_pair",
+      "E6_lr_warmup",
+      "E7_focal_loss"
+    ],
+    "nl": [
+      "E0_legacy",
+      "E1_keep_emoji",
+      "E2_keep_case",
+      "E3_no_weights",
+      "E4_title_pair",
+      "E5_title_desc_pair",
+      "E6_lr_warmup",
+      "E7_focal_loss"
+    ]
+  },
+  "checks": [
+    "split counts",
+    "group isolation",
+    "normalized comment and ID isolation",
+    "context proxy isolation",
+    "train SHA256",
+    "validation identity and labels",
+    "all metrics recomputed",
+    "confusion matrices",
+    "best epoch"
+  ]
+}

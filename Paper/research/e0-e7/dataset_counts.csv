@@ -1,0 +1,10 @@
+language,split,n,no,yes_implicit,yes_explicit
+en,train,2111,983,546,582
+en,val,292,147,70,75
+en,test,586,277,156,153
+it,train,1699,822,401,476
+it,val,220,105,56,59
+it,test,481,233,124,124
+nl,train,1556,784,335,437
+nl,val,226,109,55,62
+nl,test,456,234,97,125

@@ -16,3 +16,6 @@
 *.xdv
 *.run.xml
 *.bcf
+
+# Rebuildable TeX intermediates and visual QA renders
+build/

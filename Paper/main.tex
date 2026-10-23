@@ -1,377 +1,231 @@
 \documentclass[11pt]{article}
-
-% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
-% Change to "preprint" to generate a non-anonymous version with page numbers.
 \usepackage[final]{acl}
-
-% Standard package includes
 \usepackage{times}
 \usepackage{latexsym}
-
-% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
 \usepackage[T1]{fontenc}
-% For Vietnamese characters
-% \usepackage[T5]{fontenc}
-% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
-
-% This assumes your files are encoded as UTF8
 \usepackage[utf8]{inputenc}
-
-% This is not strictly necessary, and may be commented out,
-% but it will improve the layout of the manuscript,
-% and will typically save some space.
 \usepackage{microtype}
-
-% This is also not strictly necessary, and may be commented out.
-% However, it will improve the aesthetics of text in
-% the typewriter font.
 \usepackage{inconsolata}
-
-%Including images in your LaTeX document requires adding
-%additional package(s)
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[indonesian]{babel}
+\usepackage{xurl}
 
-% If the title and author information does not fit in the area allocated, uncomment the following
-%
-%\setlength\titlebox{<dim>}
-%
-% and set <dim> to something 5cm or larger.
-
-\title{Instructions for *ACL Proceedings}
-
-% Author information can be set in various styles:
-% For several authors from the same institution:
-% \author{Author 1 \and ... \and Author n \\
-%         Address line \\ ... \\ Address line}
-% if the names do not fit well on one line use
-%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
-% For authors from different institutions:
-% \author{Author 1 \\ Address line \\  ... \\ Address line
-%         \And  ... \And
-%         Author n \\ Address line \\ ... \\ Address line}
-% To start a separate ``row'' of authors use \AND, as in
-% \author{Author 1 \\ Address line \\  ... \\ Address line
-%         \AND
-%         Author 2 \\ Address line \\ ... \\ Address line \And
-%         Author 3 \\ Address line \\ ... \\ Address line}
-
-\author{First Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  \texttt{email@domain} \\\And
-  Second Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  \texttt{email@domain} \\}
-
-%\author{
-%  \textbf{First Author\textsuperscript{1}},
-%  \textbf{Second Author\textsuperscript{1,2}},
-%  \textbf{Third T. Author\textsuperscript{1}},
-%  \textbf{Fourth Author\textsuperscript{1}},
-%\\
-%  \textbf{Fifth Author\textsuperscript{1,2}},
-%  \textbf{Sixth Author\textsuperscript{1}},
-%  \textbf{Seventh Author\textsuperscript{1}},
-%  \textbf{Eighth Author \textsuperscript{1,2,3,4}},
-%\\
-%  \textbf{Ninth Author\textsuperscript{1}},
-%  \textbf{Tenth Author\textsuperscript{1}},
-%  \textbf{Eleventh E. Author\textsuperscript{1,2,3,4,5}},
-%  \textbf{Twelfth Author\textsuperscript{1}},
-%\\
-%  \textbf{Thirteenth Author\textsuperscript{3}},
-%  \textbf{Fourteenth F. Author\textsuperscript{2,4}},
-%  \textbf{Fifteenth Author\textsuperscript{1}},
-%  \textbf{Sixteenth Author\textsuperscript{1}},
-%\\
-%  \textbf{Seventeenth S. Author\textsuperscript{4,5}},
-%  \textbf{Eighteenth Author\textsuperscript{3,4}},
-%  \textbf{Nineteenth N. Author\textsuperscript{2,5}},
-%  \textbf{Twentieth Author\textsuperscript{1}}
-%\\
-%\\
-%  \textsuperscript{1}Affiliation 1,
-%  \textsuperscript{2}Affiliation 2,
-%  \textsuperscript{3}Affiliation 3,
-%  \textsuperscript{4}Affiliation 4,
-%  \textsuperscript{5}Affiliation 5
-%\\
-%  \small{
-%    \textbf{Correspondence:} \href{mailto:email@domain}{email@domain}
-%  }
-%}
+\title{Ablasi Prapemrosesan, Konteks Video, dan Fungsi Loss\\
+untuk Deteksi Ujaran Kebencian LGBTQIA+\\
+dengan Twitter-XLM-RoBERTa}
+\author{Draf Penelitian \\
+Identitas dan afiliasi penulis belum diisi}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-This document is a supplement to the general instructions for *ACL authors. It contains instructions for using the \LaTeX{} style files for ACL conferences.
-The document itself conforms to its own specifications, and is therefore an example of what your manuscript should look like.
-These instructions should be used both for papers submitted for review and for final versions of accepted papers.
+Deteksi ujaran kebencian terhadap komunitas LGBTQIA+ memerlukan pembedaan antara komentar nonkebencian, kebencian implisit, dan kebencian eksplisit. Penelitian ini mengkaji pengaruh prapemrosesan, konteks video, pembobotan kelas, dan fungsi loss pada Twitter-XLM-RoBERTa untuk Subtask B StereoQueerEval. Rancangan mencakup delapan konfigurasi pada bahasa Inggris, Italia, dan Belanda, dengan model dilatih terpisah per bahasa. Dari 24 run yang direncanakan, tersedia 13 run lengkap: delapan Inggris dan lima Italia. Evaluasi menggunakan validation internal yang dipisahkan berdasarkan kelompok konteks dan duplikasi komentar. Konfigurasi terbaik sementara memperoleh macro-F1 0,6172 untuk Inggris dengan teks asli dan pembobotan kelas, serta 0,5794 untuk Italia dengan emoji dipertahankan dan teks di-casefold. Penambahan konteks video belum memperbaiki skor pada run yang tersedia. Recall kebencian implisit sebesar 0,6000 pada Inggris dan 0,3571 pada Italia menunjukkan perlunya diagnosis per kelas. Temuan bersifat deskriptif pada satu seed; hasil Belanda dan evaluasi test konfigurasi final belum tersedia dalam rangkaian ini.
 \end{abstract}
 
-\section{Introduction}
+\section{Pendahuluan}
+% Evidence: E101, E102. See research/e0-e7/evidence-outline.md.
+Ujaran kebencian terhadap komunitas LGBTQIA+ dapat disampaikan melalui serangan langsung maupun ungkapan tidak langsung yang membutuhkan interpretasi konteks. \citet{elsherief-etal-2021-latent} menekankan tantangan bahasa kebencian implisit, termasuk makna diskriminatif yang disampaikan melalui bahasa tersandi atau implikasi. Dalam konteks queer, stereotip perlu dibedakan dari ujaran kebencian. QUEEREOTYPES menganotasi stereotip dan dimensi lain, termasuk hate speech, secara terpisah \citep{cignarella-etal-2024-queereotypes}. Oleh sebab itu, keberadaan stereotip tidak dijadikan aturan otomatis untuk menetapkan label kebencian dalam penelitian ini.
 
-These instructions are for authors submitting papers to *ACL conferences using \LaTeX. They are not self-contained. All authors must follow the general instructions for *ACL proceedings,\footnote{\url{http://acl-org.github.io/ACLPUB/formatting.html}} and this document contains additional instructions for the \LaTeX{} style files.
+% Evidence: E103-E106.
+Model bahasa pralatih menyediakan representasi kontekstual untuk klasifikasi teks. BERT menggunakan representasi bidireksional yang dapat disesuaikan untuk tugas hilir \citep{devlin-etal-2019-bert}, sedangkan XLM-R memperluas pembelajaran representasi ke banyak bahasa \citep{conneau-etal-2020-unsupervised}. XLM-T melanjutkan arah tersebut pada data Twitter multilingual \citep{barbieri-etal-2022-xlm}. Relevansi adaptasi register juga ditunjukkan oleh \citet{wong-etal-2023-cantnlp}, yang menguji pelatihan ulang XLM-R pada data media sosial untuk deteksi homofobia dan transfobia. Namun, kecocokan terhadap Twitter tidak dengan sendirinya menjamin keberhasilan pada komentar YouTube.
 
-The templates include the \LaTeX{} source of this document (\texttt{acl\_latex.tex}),
-the \LaTeX{} style file used to format it (\texttt{acl.sty}),
-an ACL bibliography style (\texttt{acl\_natbib.bst}),
-an example bibliography (\texttt{custom.bib}),
-and the bibliography for the ACL Anthology (\texttt{anthology.bib}).
+% Evidence: E001-E003; descriptive objectives.
+Penelitian ini menilai konfigurasi downstream pada satu backbone, yaitu Twitter-XLM-RoBERTa. Pertanyaan yang dikaji adalah bagaimana pelestarian emoji dan kapitalisasi, pembobotan kelas, konteks video, serta perubahan optimisasi memengaruhi macro-F1 validation. Kontribusinya berupa pelaporan ablasi yang dapat ditelusuri ke artefak eksperimen, perbandingan pola pada bahasa yang memiliki run lengkap, dan diagnosis kesalahan per kelas. Cakupan empiris dibatasi pada klasifikasi hate speech tiga kelas; deteksi stereotip dan identifikasi target belum dievaluasi.
 
-\section{Engines}
+\section{Deskripsi Task}
+\subsection{SemEval-2027 Task 8: StereoQueerEval}
+% Evidence: E112. Task number follows the user outline; see evidence-outline.md.
+StereoQueerEval menyediakan komentar YouTube pada video berita bertopik LGBTQIA+, disertai judul dan deskripsi video \citep{stereoqueereval-2026-data}. Anotasinya meliputi stereotip, ujaran kebencian, dan target kebencian. Eksperimen ini memakai kolom \texttt{hate\_speech}, dengan label \texttt{no}, \texttt{yes\_implicit}, dan \texttt{yes\_explicit}, yang berturut-turut menyatakan komentar nonkebencian, kebencian implisit, dan kebencian eksplisit. Kolom stereotip dan target tidak digunakan sebagai fitur.
 
-To produce a PDF file, pdf\LaTeX{} is strongly recommended (over original \LaTeX{} plus dvips+ps2pdf or dvipdf).
-The style file \texttt{acl.sty} can also be used with
-lua\LaTeX{} and
-Xe\LaTeX{}, which are especially suitable for text in non-Latin scripts.
-The file \texttt{acl\_lualatex.tex} in this repository provides
-an example of how to use \texttt{acl.sty} with either
-lua\LaTeX{} or
-Xe\LaTeX{}.
+% Evidence: E001, E002, E004, E112.
+Data yang disiapkan mencakup bahasa Inggris (EN), Italia (IT), dan Belanda (NL). Data Persia tidak dilibatkan. Seluruh subset train, validation, dan test dalam naskah ini merupakan pembagian internal dari training release. Dengan demikian, test internal berbeda dari test resmi shared task. Naskah ini hanya melaporkan skor validation rangkaian ablasi.
 
-\section{Preamble}
+\subsection{Related Work}
+% Evidence: E101, E106.
+QUEEREOTYPES menyediakan korpus Italia dari Facebook dan Twitter untuk mengkaji stereotip terhadap komunitas LGBTQIA+, termasuk eksperimen klasifikasi dengan AlBERTo dan mBERT \citep{cignarella-etal-2024-queereotypes}. Studi tersebut mendukung pemisahan stereotip dari dimensi kebencian, tetapi platform dan labelnya berbeda dari eksperimen ini. Sistem cantnlp menggunakan XLM-R yang dilatih ulang pada bahasa media sosial untuk klasifikasi homofobia dan transfobia dalam lima kondisi bahasa \citep{wong-etal-2023-cantnlp}. Hasil kedua studi memberi dasar pemilihan model, tetapi tidak dapat dibandingkan langsung dengan skor StereoQueerEval.
 
-The first line of the file must be
-\begin{quote}
-\begin{verbatim}
-\documentclass[11pt]{article}
-\end{verbatim}
-\end{quote}
+% Evidence: E107, E108.
+Manfaat konteks eksternal perlu diuji secara empiris. \citet{pavlopoulos-etal-2020-toxicity} menemukan bahwa konteks dapat mengubah penilaian toksisitas manusia, tetapi tidak memperoleh bukti peningkatan kinerja classifier pada pengaturan yang diuji. Sebaliknya, \citet{yu-etal-2022-hate} melaporkan manfaat konteks komentar sebelumnya untuk klasifikasi hate speech dan counter speech pada Reddit. Konteks percakapan tersebut berbeda dari metadata video; hasilnya menjadi motivasi ablasi, bukan jaminan peningkatan.
 
-To load the style file in the review version:
-\begin{quote}
-\begin{verbatim}
-\usepackage[review]{acl}
-\end{verbatim}
-\end{quote}
-For the final version, omit the \verb|review| option:
-\begin{quote}
-\begin{verbatim}
-\usepackage{acl}
-\end{verbatim}
-\end{quote}
+% Evidence: E102, E109.
+Latent Hatred menekankan tantangan bahasa kebencian yang tidak langsung \citep{elsherief-etal-2021-latent}, sedangkan HateCheck menunjukkan bahwa skor agregat dapat menyembunyikan kelemahan fungsional model \citep{rottger-etal-2021-hatecheck}. Karena itu, penelitian ini menyertakan precision, recall, F1 per kelas, dan confusion matrix. Pengujian fungsional untuk negasi, kutipan, atau counter speech belum dilakukan, sehingga fenomena tersebut tidak dinyatakan sebagai penyebab kesalahan yang telah teramati.
 
-To use Times Roman, put the following in the preamble:
-\begin{quote}
-\begin{verbatim}
-\usepackage{times}
-\end{verbatim}
-\end{quote}
-(Alternatives like txfonts or newtx are also acceptable.)
+\section{System Overview}
+\subsection{Arsitektur Sistem Klasifikasi}
+% Evidence: E001 cells 10 and 12; E002 configurations.
+Sistem terdiri atas prapemrosesan sesuai skenario, tokenisasi, encoder Twitter-XLM-RoBERTa, dan classification head tiga kelas. Model dimuat melalui \texttt{AutoModelForSequence\allowbreak Classification}; encoder dan head disesuaikan pada data train. Prediksi dipilih berdasarkan logit tertinggi, tanpa threshold tambahan atau ensemble.
 
-Please see the \LaTeX{} source of this document for comments on other packages that may be useful.
+Pelatihan dilakukan terpisah untuk setiap bahasa dan konfigurasi. Encoder awal bersifat multilingual, tetapi data fine-tuning tidak digabung lintas bahasa. Pada skenario berkonteks, komentar menjadi urutan pertama dan metadata menjadi pasangan urutan kedua. Label validation digunakan untuk evaluasi dan pemilihan checkpoint, bukan sebagai fitur masukan.
 
-Set the title and author using \verb|\title| and \verb|\author|. Within the author list, format multiple authors using \verb|\and| and \verb|\And| and \verb|\AND|; please see the \LaTeX{} source for examples.
+\subsection{Model Transformer}
+\subsubsection{Twitter-XLM-RoBERTa-Base}
+% Evidence: E103.
+Backbone yang dievaluasi adalah \path{cardiffnlp/twitter-xlm-roberta-base}, yang terkait dengan XLM-T \citep{barbieri-etal-2022-xlm}. Model card menyatakan bahwa checkpoint ini dilatih pada sekitar 198 juta tweet multilingual.\footnote{\url{https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base}} Pemilihannya dimotivasi oleh paparan terhadap register media sosial. Penelitian ini tidak melanjutkan prapelatihan pada korpus YouTube; adaptasi dilakukan melalui fine-tuning berlabel.
 
-By default, the box containing the title and author names is set to the minimum of 5 cm. If you need more space, include the following in the preamble:
-\begin{quote}
-\begin{verbatim}
-\setlength\titlebox{<dim>}
-\end{verbatim}
-\end{quote}
-where \verb|<dim>| is replaced with a length. Do not set this length smaller than 5 cm.
+\subsubsection{XLM-RoBERTa-Base}
+% Evidence: E104, E001 MODEL_NAMES.
+XLM-R menggunakan prapelatihan masked language modeling multilingual pada data CommonCrawl \citep{conneau-etal-2020-unsupervised}. Model ini relevan untuk menguji manfaat tambahan adaptasi Twitter. Namun, \path{FacebookAI/xlm-roberta-base} hanya menjadi opsi dalam notebook dan tidak aktif dalam daftar model rangkaian ablasi yang menjadi sumber naskah ini. Tidak ada keunggulan empiris XLM-T terhadap XLM-R yang disimpulkan.
 
-\section{Document Body}
+\subsubsection{Multilingual BERT Uncased}
+% Evidence: E105, E001 MODEL_NAMES.
+mBERT merupakan alternatif encoder multilingual berbasis BERT \citep{devlin-etal-2019-bert}. Varian \path{google-bert/bert-base-multilingual-uncased} mengabaikan perbedaan huruf besar dan kecil menurut model card-nya.\footnote{\url{https://huggingface.co/google-bert/bert-base-multilingual-uncased}} Model ini juga hanya menjadi opsi rancangan, bukan run aktif dalam sumber eksperimen. Analisis kapitalisasi di bawah merupakan perbandingan prapemrosesan pada Twitter-XLM-RoBERTa, bukan perbandingan dengan mBERT.
 
-\subsection{Footnotes}
+\section{Experimental Setup}
+\subsection{Deskripsi dan Eksplorasi Dataset}
+% Evidence: E004 and dataset_counts.csv.
+Training release memuat 2.989 contoh EN, 2.400 IT, dan 2.238 NL. Pembagian internal menargetkan rasio 70:10:20 menggunakan seed 42. Catatan pembagian menyatakan penggunaan \texttt{StratifiedGroupKFold} dengan sepuluh fold yang dialokasikan sebanyak tujuh, satu, dan dua fold. Kelompok dibentuk dari kesamaan judul dan deskripsi ternormalisasi atau komentar duplikat, termasuk hubungan transitif. Karena kelompok tidak dipecah, rasio aktual tidak persis sama dengan target.
 
-Footnotes are inserted with the \verb|\footnote| command.\footnote{This is a footnote.}
-
-\subsection{Tables and figures}
-
-See Table~\ref{tab:accents} for an example of a table and its caption.
-\textbf{Do not override the default caption sizes.}
-
-\begin{table}
-  \centering
-  \begin{tabular}{lc}
-    \hline
-    \textbf{Command} & \textbf{Output} \\
-    \hline
-    \verb|{\"a}|     & {\"a}           \\
-    \verb|{\^e}|     & {\^e}           \\
-    \verb|{\`i}|     & {\`i}           \\
-    \verb|{\.I}|     & {\.I}           \\
-    \verb|{\o}|      & {\o}            \\
-    \verb|{\'u}|     & {\'u}           \\
-    \verb|{\aa}|     & {\aa}           \\\hline
-  \end{tabular}
-  \begin{tabular}{lc}
-    \hline
-    \textbf{Command} & \textbf{Output} \\
-    \hline
-    \verb|{\c c}|    & {\c c}          \\
-    \verb|{\u g}|    & {\u g}          \\
-    \verb|{\l}|      & {\l}            \\
-    \verb|{\~n}|     & {\~n}           \\
-    \verb|{\H o}|    & {\H o}          \\
-    \verb|{\v r}|    & {\v r}          \\
-    \verb|{\ss}|     & {\ss}           \\
-    \hline
-  \end{tabular}
-  \caption{Example commands for accented characters, to be used in, \emph{e.g.}, Bib\TeX{} entries.}
-  \label{tab:accents}
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Bahasa & Split & $N$ & no & impl. & ekspl. \\
+\midrule
+\input{tables/dataset}
+\end{tabular}
+\caption{Distribusi kelas per split internal. impl. dan ekspl. merujuk pada \texttt{yes\_implicit} dan \texttt{yes\_explicit}. Data NL telah disiapkan, tetapi hasil ablasinya belum tersedia.}
+\label{tab:data}
 \end{table}
 
-As much as possible, fonts in figures should conform
-to the document fonts. See Figure~\ref{fig:experiments} for an example of a figure and its caption.
+Tabel~\ref{tab:data} menunjukkan bahwa \texttt{no} merupakan kelas terbesar di seluruh subset. Audit lokal mengonfirmasi tidak adanya overlap ID, komentar ternormalisasi, kelompok manifest, serta pasangan judul--deskripsi nonkosong antar-split. Normalisasi audit memakai NFKC, casefold, dan peringkasan whitespace. Proksi metadata ini mengurangi tumpang tindih konteks, tetapi tidak menjamin identitas video secara sempurna apabila metadata berubah atau identik untuk video berbeda.
 
-Using the \verb|graphicx| package graphics files can be included within figure
-environment at an appropriate point within the text.
-The \verb|graphicx| package supports various optional arguments to control the
-appearance of the figure.
-You must include it explicitly in the \LaTeX{} preamble (after the
-\verb|\documentclass| declaration and before \verb|\begin{document}|) using
-\verb|\usepackage{graphicx}|.
+\subsection{Prapemrosesan Teks}
+% Evidence: E001 cells 8 and 10; E002 configurations.
+E0 mengganti emoji pada komentar dengan teks literal \texttt{[EMOJI]} lalu menerapkan casefold. E1 mempertahankan emoji tetapi tetap memakai casefold. E2 menggunakan komentar asli tanpa kedua transformasi tersebut. Penggantian emoji E0 bukan penambahan special token baru ke vocabulary. Tidak ada stemming, penghapusan stopword, atau normalisasi URL/mention tambahan dalam fungsi tokenisasi notebook.
 
-\begin{figure}[t]
-  \includegraphics[width=\columnwidth]{example-image-golden}
-  \caption{A figure with a caption that runs for more than one line.
-    Example image is usually available through the \texttt{mwe} package
-    without even mentioning it in the preamble.}
-  \label{fig:experiments}
-\end{figure}
+E3 menggunakan teks asli seperti E2 dan menghapus pembobotan kelas. E4 menambahkan judul video sebagai pasangan komentar. E5 menggunakan judul, pemisah titik, dan maksimal 200 karakter awal deskripsi. Batas 200 dihitung sebagai karakter sebelum tokenisasi, bukan token. E6 mempertahankan masukan E4 sambil mengubah learning rate dan warmup. E7 menggunakan komentar asli dengan focal loss tanpa pembobotan kelas.
+
+Panjang maksimum adalah 384 token. Komentar tunggal memakai truncation biasa, sedangkan pasangan memakai \texttt{longest\_first}, sehingga urutan yang lebih panjang dapat dipotong. Padding dilakukan secara dinamis per batch. Proporsi masukan yang terpotong belum tercatat; penurunan skor skenario berkonteks belum dapat dikaitkan langsung dengan truncation.
+
+\subsection{Proses Pelatihan Model}
+% Evidence: E001 cell 12, E003 histories, E111 optimizer.
+Optimisasi menggunakan AdamW \citep{loshchilov-hutter-2019-decoupled} dengan scheduler linear dan weight decay 0,01. Evaluasi dilakukan setiap epoch. Model dengan macro-F1 validation tertinggi dimuat kembali untuk menghasilkan prediksi validation. Batas pelatihan sepuluh epoch, dengan early stopping setelah tiga evaluasi tanpa peningkatan. Notebook memakai seed 42 untuk inisialisasi dan urutan data, FP16, serta gradient checkpointing. Output perangkat mencatat NVIDIA GeForce RTX 3060 Ti.
+
+Pada skenario berbobot, bobot dihitung hanya dari train sebagai $w_c=N/(3n_c)$, dengan $n_c$ jumlah contoh kelas $c$ dan $N$ jumlah contoh train. Implementasinya memakai weighted cross-entropy. E3 menghilangkan bobot tersebut. E7 memakai focal loss untuk menurunkan kontribusi contoh yang telah diprediksi dengan mudah \citep{lin-etal-2017-focal}:
+\begin{equation}
+\mathcal{L}_{\mathrm{focal}}=-\frac{1}{B}\sum_{i=1}^{B}(1-p_{i,y_i})^{2}\log p_{i,y_i}.
+\end{equation}
+Di sini $p_{i,y_i}$ adalah probabilitas kelas benar dan $B$ ukuran batch. Tidak ada faktor pembobotan kelas tambahan pada E7. E7 dan E3 sama-sama menggunakan teks asli tanpa class weight, sehingga menjadi pasangan pembanding untuk perubahan loss.
+
+\subsection{Konfigurasi Hyperparameter}
+% Evidence: E001, E002.
+Ukuran batch train adalah 32, batch evaluasi 16, dan gradient accumulation satu langkah. Tabel~\ref{tab:config} merangkum konfigurasi. E0--E5 dan E7 memakai learning rate $10^{-5}$ tanpa warmup. E6 menggunakan $2\times10^{-5}$ dan warmup ratio 0,1. E6 terhadap E4 mengubah dua parameter sekaligus, sehingga tidak mengisolasi kontribusi masing-masing.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llll}
+\toprule
+Run & Teks komentar & Konteks & Loss \\
+\midrule
+E0 & casefold, emoji diganti & -- & WCE \\
+E1 & casefold, emoji asli & -- & WCE \\
+E2 & asli & -- & WCE \\
+E3 & asli & -- & CE \\
+E4 & asli & judul & WCE \\
+E5 & asli & judul+deskripsi & WCE \\
+E6 & asli & judul & WCE$^{*}$ \\
+E7 & asli & -- & focal \\
+\bottomrule
+\end{tabular}
+\caption{Konfigurasi ablasi. WCE: weighted cross-entropy; CE: cross-entropy biasa. $^{*}$E6 mengubah learning rate dan warmup. Semua run menggunakan satu seed.}
+\label{tab:config}
+\end{table}
+
+Rancangan mencakup 24 run. Pada snapshot yang dianalisis, EN E0--E7 dan IT E0--E4 memiliki metrik lengkap. Output pelatihan terakhir berhenti dengan \texttt{KeyboardInterrupt} saat E5 Italia. IT E5--E7 dan seluruh run NL belum memiliki metrik lengkap di direktori rangkaian ini. Run yang belum lengkap tidak diberi skor nol atau diperlakukan sebagai hasil negatif.
+
+\subsection{Metrik Evaluasi}
+% Evidence: E001 compute_metrics, E003 recomputation.
+Metrik utama adalah macro-F1 atas tiga kelas:
+\begin{equation}
+F_{1,\mathrm{macro}}=\frac{1}{3}\sum_{c=1}^{3}F_{1,c},\quad
+F_{1,c}=\frac{2P_cR_c}{P_c+R_c}.
+\end{equation}
+Precision $P_c$ dan recall $R_c$ dihitung per kelas; pembagian yang tidak terdefinisi ditetapkan nol sesuai implementasi evaluasi. Accuracy, weighted-F1, dan confusion matrix menjadi pelengkap. Macro-F1 memberi setiap kelas bobot yang sama dalam seleksi model.
+
+Seluruh angka berikut berasal dari validation internal. Metrik dan confusion matrix dihitung ulang dari prediksi tersimpan dan dicocokkan dengan label validation. Validation yang sama digunakan untuk memilih epoch sekaligus konfigurasi, sehingga skor terbaik merupakan estimasi pengembangan yang berpotensi optimistis. Tidak dilakukan uji signifikansi atau estimasi variasi antar-seed.
+
+\section{Hasil dan Pembahasan}
+\subsection{Evaluasi dan Perbandingan Model}
+% Evidence: E002, E003. Absolute F1 points, not relative percentages.
+Perbandingan pada Tabel~\ref{tab:results} mencakup konfigurasi Twitter-XLM-RoBERTa yang selesai. EN terbaik diperoleh E2, dengan macro-F1 0,6172 dan accuracy 0,6541. Dibanding E0 (0,5885), peningkatan absolutnya 0,0287, atau 2,87 poin pada skala F1 0--100. E7 berada di bawah E2 dengan macro-F1 0,6104. Untuk IT, terbaik sementara adalah E1 dengan macro-F1 0,5794 dan accuracy 0,6182, dibandingkan E0 sebesar 0,5644. Keunggulan IT E1 hanya berlaku di antara E0--E4 yang selesai.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{EN} & \multicolumn{2}{c}{IT} \\
+Run & Macro-F1 & Acc. & Macro-F1 & Acc. \\
+\midrule
+\input{tables/results}
+\end{tabular}
+\caption{Hasil validation; tebal menunjukkan macro-F1 tertinggi di antara run selesai per bahasa. Tanda -- berarti belum tersedia. Tidak ada skor NL pada rangkaian ini.}
+\label{tab:results}
+\end{table}
 
 \begin{figure*}[t]
-  \includegraphics[width=0.48\linewidth]{example-image-a} \hfill
-  \includegraphics[width=0.48\linewidth]{example-image-b}
-  \caption {A minimal working example to demonstrate how to place
-    two images side-by-side.}
+\centering
+\includegraphics[width=\textwidth]{figures/ablation_delta.pdf}
+\caption{Selisih macro-F1 validation terhadap E0 dalam poin pada skala 0--100. EN: 292 contoh; IT: 220 contoh. NA berarti run belum lengkap. Hasil berasal dari satu seed, sehingga tidak ditampilkan error bar. Nilai negatif menunjukkan skor lebih rendah daripada E0.}
+\label{fig:delta}
 \end{figure*}
 
-\subsection{Hyperlinks}
+Gambar~\ref{fig:delta} menunjukkan bahwa perubahan prapemrosesan tidak berdampak seragam. Mempertahankan emoji (E1 versus E0) menaikkan macro-F1 sebesar 0,70 poin untuk EN dan 1,51 poin untuk IT. Mempertahankan kapitalisasi juga (E2 versus E1) menambah 2,17 poin pada EN, tetapi menurunkan 1,45 poin pada IT. Pola ini mendukung pemilihan konfigurasi per bahasa, dengan tetap mempertimbangkan ketidakpastian akibat satu seed dan validation yang kecil.
 
-Users of older versions of \LaTeX{} may encounter the following error during compilation:
-\begin{quote}
-\verb|\pdfendlink| ended up in different nesting level than \verb|\pdfstartlink|.
-\end{quote}
-This happens when pdf\LaTeX{} is used and a citation splits across a page boundary. The best way to fix this is to upgrade \LaTeX{} to 2018-12-01 or later.
+Penghapusan bobot kelas (E3 versus E2) menurunkan macro-F1 sebesar 2,86 poin pada EN dan 1,42 poin pada IT. Pada EN, focal loss E7 memperbaiki E3 sebesar 2,18 poin, tetapi masih berada 0,68 poin di bawah E2. Hasil tersebut mendukung pengujian lanjutan focal loss, tanpa cukup bukti untuk menggantikan weighted cross-entropy secara umum.
 
-\subsection{Citations}
+Penambahan judul (E4 versus E2) menurunkan macro-F1 sebesar 6,25 poin pada EN dan 1,37 poin pada IT. Pada EN, penambahan deskripsi juga menghasilkan skor 0,4667 pada E5, di bawah E4 sebesar 0,5546. E6 menaikkan skor EN terhadap E4 menjadi 0,5708, tetapi belum menyamai E2. Noise konteks, pemotongan token, atau perbedaan distribusi konteks merupakan kemungkinan penjelasan; eksperimen ini belum mengisolasi mekanismenya. Hasil tersebut menegaskan perlunya menguji bentuk konteks secara spesifik, sebagaimana perbedaan temuan studi sebelumnya \citep{pavlopoulos-etal-2020-toxicity,yu-etal-2022-hate}.
 
-\begin{table*}
-  \centering
-  \begin{tabular}{lll}
-    \hline
-    \textbf{Output}           & \textbf{natbib command} & \textbf{ACL only command} \\
-    \hline
-    \citep{Gusfield:97}       & \verb|\citep|           &                           \\
-    \citealp{Gusfield:97}     & \verb|\citealp|         &                           \\
-    \citet{Gusfield:97}       & \verb|\citet|           &                           \\
-    \citeyearpar{Gusfield:97} & \verb|\citeyearpar|     &                           \\
-    \citeposs{Gusfield:97}    &                         & \verb|\citeposs|          \\
-    \hline
-  \end{tabular}
-  \caption{\label{citation-guide}
-    Citation commands supported by the style file.
-    The style is based on the natbib package and supports all natbib citation commands.
-    It also supports commands defined in previous ACL style files for compatibility.
-  }
+\subsection{Analisis Kinerja Berdasarkan Bahasa}
+% Evidence: E002-E004.
+EN E2 memperoleh macro-F1 0,6172, sedangkan IT E1 memperoleh 0,5794. Selisih ini tidak cukup untuk menyimpulkan bahwa Italia secara intrinsik lebih sulit, karena ukuran train, isi komentar, dan konfigurasi terbaik berbeda. Pencarian IT juga belum selengkap EN. Bahkan pada konfigurasi yang sama, variasi data dan pelatihan tetap tidak terkontrol lintas bahasa.
+
+EN E2 dipilih pada epoch ke-8 dan IT E1 pada epoch ke-9 menurut riwayat evaluasi. Weighted-F1 keduanya masing-masing 0,6541 dan 0,6135, lebih tinggi daripada macro-F1. Perbedaan ini menunjukkan perlunya melihat hasil per kelas. Untuk NL, data telah disiapkan, tetapi analisis kinerja menunggu run pada rangkaian yang sama; hasil notebook lain tidak dicampurkan ke tabel ini.
+
+\subsection{Analisis Kinerja Berdasarkan Kelas}
+% Evidence: E003; tables/classes.tex.
+Tabel~\ref{tab:classes} memperlihatkan hasil konfigurasi terbaik sementara. Kelas \texttt{no} memiliki F1 tertinggi pada kedua bahasa: 0,7619 untuk EN dan 0,7317 untuk IT. Pada EN, F1 implisit 0,5455 hampir sama dengan eksplisit 0,5441; tidak tepat menyatakan implisit selalu memiliki F1 terendah. Namun, precision implisit hanya 0,5000: separuh prediksi kelas ini sesuai dengan label gold.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{llrrrr}
+\toprule
+Bahasa & Kelas & Support & Precision & Recall & F1 \\
+\midrule
+\input{tables/classes}
+\end{tabular}
+\caption{Evaluasi per kelas pada validation untuk EN E2 dan IT E1. Support adalah jumlah contoh berlabel aktual. Checkpoint dipilih berdasarkan macro-F1.}
+\label{tab:classes}
 \end{table*}
 
-Table~\ref{citation-guide} shows the syntax supported by the style files.
-We encourage you to use the natbib styles.
-You can use the command \verb|\citet| (cite in text) to get ``author (year)'' citations, like this citation to a paper by \citet{Gusfield:97}.
-You can use the command \verb|\citep| (cite in parentheses) to get ``(author, year)'' citations \citep{Gusfield:97}.
-You can use the command \verb|\citealp| (alternative cite without parentheses) to get ``author, year'' citations, which is useful for using citations within parentheses (e.g. \citealp{Gusfield:97}).
+Pada IT, F1 implisit 0,4124 lebih rendah daripada eksplisit 0,5942. Recall implisit 0,3571 berarti hanya 20 dari 56 contoh implisit dikenali dengan benar. Sebaliknya, 41 dari 59 contoh eksplisit dikenali, dengan recall 0,6949. Accuracy 0,6182 belum menggambarkan keberhasilan mengenali kebencian implisit secara memadai.
 
-A possessive citation can be made with the command \verb|\citeposs|.
-This is not a standard natbib command, so it is generally not compatible
-with other style files.
+\subsection{Analisis Kesalahan Klasifikasi}
+% Evidence: E003 confusion matrices. No raw comments reproduced.
+Gambar~\ref{fig:confusion} merangkum arah kesalahan. EN E2 menghasilkan 101 kesalahan dari 292 komentar. Dari 70 contoh implisit, 18 diprediksi \texttt{no} dan 10 menjadi eksplisit. Dari 75 contoh eksplisit, 21 menjadi implisit dan 17 menjadi \texttt{no}. Sebaliknya, 35 dari 147 komentar \texttt{no} diprediksi sebagai salah satu kelas kebencian. Kebingungan mencakup batas kebencian/nonkebencian sekaligus pemisahan implisit/eksplisit.
 
-\subsection{References}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/confusion_best.pdf}
+\caption{Confusion matrix validation untuk EN E2 ($N=292$) dan IT E1 ($N=220$). Baris: label aktual; kolom: prediksi. Setiap sel menampilkan jumlah dan persentase terhadap total baris; kedua panel memakai skala warna normalisasi baris yang sama.}
+\label{fig:confusion}
+\end{figure*}
 
-\nocite{Ando2005,andrew2007scalable,rasooli-tetrault-2015}
+IT E1 menghasilkan 84 kesalahan dari 220 komentar. Pada kelas implisit, 17 contoh diprediksi \texttt{no} dan 19 menjadi eksplisit. Sebanyak 30 dari 105 komentar \texttt{no} diprediksi hateful. Temuan ini mengidentifikasi kebutuhan meningkatkan cakupan deteksi implisit dan memeriksa false positive pada komentar nonkebencian.
 
-The \LaTeX{} and Bib\TeX{} style files provided roughly follow the American Psychological Association format.
-If your own bib file is named \texttt{custom.bib}, then placing the following before any appendices in your \LaTeX{} file will generate the references section for you:
-\begin{quote}
-\begin{verbatim}
-\bibliography{custom}
-\end{verbatim}
-\end{quote}
+Confusion matrix tidak menjelaskan penyebab linguistik setiap kesalahan. Penelitian ini belum memberikan anotasi manual untuk ironi, negasi, kutipan, atau counter speech. Analisis dibatasi pada pasangan label yang teramati. Pengujian fungsional yang diinspirasi HateCheck \citep{rottger-etal-2021-hatecheck} dan pembacaan terarah atas kasus implisit \citep{elsherief-etal-2021-latent} merupakan langkah lanjutan, bukan eksperimen yang telah selesai.
 
-You can obtain the complete ACL Anthology as a Bib\TeX{} file from \url{https://aclweb.org/anthology/anthology.bib.gz}.
-To include both the Anthology and your own .bib file, use the following instead of the above.
-\begin{quote}
-\begin{verbatim}
-\bibliography{anthology,custom}
-\end{verbatim}
-\end{quote}
+\section{Kesimpulan}
+% Evidence: E001-E004; descriptive scope.
+Ablasi Twitter-XLM-RoBERTa pada Subtask B StereoQueerEval menunjukkan perubahan kinerja validation terkait prapemrosesan dan pembobotan kelas. Di antara 13 run selesai, EN terbaik memakai komentar asli dengan weighted cross-entropy (macro-F1 0,6172), sedangkan IT terbaik mempertahankan emoji dengan casefold dan loss berbobot (0,5794). Metadata video belum mengungguli komentar saja pada perbandingan yang tersedia. Recall implisit Italia yang rendah menegaskan perlunya evaluasi per kelas di samping skor agregat.
 
-Please see Section~\ref{sec:bibtex} for information on preparing Bib\TeX{} files.
+Kesimpulan dibatasi oleh satu seed, pemakaian validation untuk seleksi epoch dan konfigurasi, serta belum lengkapnya run Italia dan Belanda. Evaluasi test konfigurasi final belum tersedia pada rangkaian ini, dan manfaat adaptasi Twitter belum dibandingkan langsung dengan backbone lain. Penelitian lanjutan perlu menyelesaikan run tertunda, mengulang pelatihan dengan beberapa seed, mengukur truncation, dan mengevaluasi konfigurasi final pada test yang disisihkan. Naskah ini merupakan laporan pengembangan dari artefak tersimpan; hasilnya belum menjadi skor resmi shared task.
 
-\subsection{Equations}
-
-An example equation is shown below:
-\begin{equation}
-  \label{eq:example}
-  A = \pi r^2
-\end{equation}
-
-Labels for equation numbers, sections, subsections, figures and tables
-are all defined with the \verb|\label{label}| command and cross references
-to them are made with the \verb|\ref{label}| command.
-
-This an example cross-reference to Equation~\ref{eq:example}.
-
-\subsection{Appendices}
-
-Use \verb|\appendix| before any appendix section to switch the section numbering over to letters. See Appendix~\ref{sec:appendix} for an example.
-
-\section{Bib\TeX{} Files}
-\label{sec:bibtex}
-
-Unicode cannot be used in Bib\TeX{} entries, and some ways of typing special characters can disrupt Bib\TeX's alphabetization. The recommended way of typing special characters is shown in Table~\ref{tab:accents}.
-
-Please ensure that Bib\TeX{} records contain DOIs or URLs when possible, and for all the ACL materials that you reference.
-Use the \verb|doi| field for DOIs and the \verb|url| field for URLs.
-If a Bib\TeX{} entry has a URL or DOI field, the paper title in the references section will appear as a hyperlink to the paper, using the hyperref \LaTeX{} package.
-
-\section*{Limitations}
-
-This document does not cover the content requirements for ACL or any
-other specific venue.  Check the author instructions for
-information on
-maximum page lengths, the required ``Limitations'' section,
-and so on.
-
-\section*{Acknowledgments}
-
-This document has been adapted
-by Steven Bethard, Ryan Cotterell and Rui Yan
-from the instructions for earlier ACL and NAACL proceedings, including those for
-ACL 2019 by Douwe Kiela and Ivan Vuli\'{c},
-NAACL 2019 by Stephanie Lukin and Alla Roskovskaya,
-ACL 2018 by Shay Cohen, Kevin Gimpel, and Wei Lu,
-NAACL 2018 by Margaret Mitchell and Stephanie Lukin,
-Bib\TeX{} suggestions for (NA)ACL 2017/2018 from Jason Eisner,
-ACL 2017 by Dan Gildea and Min-Yen Kan,
-NAACL 2017 by Margaret Mitchell,
-ACL 2012 by Maggie Li and Michael White,
-ACL 2010 by Jing-Shin Chang and Philipp Koehn,
-ACL 2008 by Johanna D. Moore, Simone Teufel, James Allan, and Sadaoki Furui,
-ACL 2005 by Hwee Tou Ng and Kemal Oflazer,
-ACL 2002 by Eugene Charniak and Dekang Lin,
-and earlier ACL and EACL formats written by several people, including
-John Chen, Henry S. Thompson and Donald Walker.
-Additional elements were taken from the formatting instructions of the \emph{International Joint Conference on Artificial Intelligence} and the \emph{Conference on Computer Vision and Pattern Recognition}.
-
-% Bibliography entries for the entire Anthology, followed by custom entries
-%\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
-
-% Custom bibliography entries only
-\bibliography{custom}
-
-\appendix
-
-\section{Example Appendix}
-\label{sec:appendix}
-
-This is an appendix.
-
+\bibliography{references}
 \end{document}
