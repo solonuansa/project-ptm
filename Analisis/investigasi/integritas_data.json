@@ -1,0 +1,17 @@
+{
+  "en": {
+    "all_rows_and_columns_match_original": true,
+    "original_n": 2989,
+    "split_n": 2989
+  },
+  "it": {
+    "all_rows_and_columns_match_original": true,
+    "original_n": 2400,
+    "split_n": 2400
+  },
+  "nl": {
+    "all_rows_and_columns_match_original": true,
+    "original_n": 2238,
+    "split_n": 2238
+  }
+}

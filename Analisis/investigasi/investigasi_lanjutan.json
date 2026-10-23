@@ -1,0 +1,249 @@
+{
+  "target_shift": {
+    "en": {
+      "train_val_JS_distance": 0.23932589973674886,
+      "train_test_JS_distance": 0.17293840135041588,
+      "selected_target_percent": {
+        "test": {
+          "group_t": 20.14,
+          "individual_t": 8.19,
+          "group_lgbtqia+": 12.29
+        },
+        "train": {
+          "group_t": 17.39,
+          "individual_t": 7.15,
+          "group_lgbtqia+": 11.51
+        },
+        "val": {
+          "group_t": 8.56,
+          "individual_t": 11.64,
+          "group_lgbtqia+": 13.36
+        }
+      }
+    },
+    "it": {
+      "train_val_JS_distance": 0.2777225131297802,
+      "train_test_JS_distance": 0.15978229639806502,
+      "selected_target_percent": {
+        "test": {
+          "group_t": 3.53,
+          "individual_t": 8.11,
+          "group_lgbtqia+": 23.28
+        },
+        "train": {
+          "group_t": 3.88,
+          "individual_t": 7.65,
+          "group_lgbtqia+": 23.96
+        },
+        "val": {
+          "group_t": 3.18,
+          "individual_t": 0.45,
+          "group_lgbtqia+": 29.09
+        }
+      }
+    },
+    "nl": {
+      "train_val_JS_distance": 0.3238777831988073,
+      "train_test_JS_distance": 0.21871021671581883,
+      "selected_target_percent": {
+        "test": {
+          "group_t": 9.87,
+          "individual_t": 11.4,
+          "group_lgbtqia+": 12.94
+        },
+        "train": {
+          "group_t": 10.8,
+          "individual_t": 9.25,
+          "group_lgbtqia+": 12.72
+        },
+        "val": {
+          "group_t": 4.42,
+          "individual_t": 19.03,
+          "group_lgbtqia+": 7.52
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "en_val": {
+      "group_n": 23,
+      "macro_f1_95_cluster_bootstrap": [
+        0.522807058824721,
+        0.6281860888802505
+      ]
+    },
+    "en_test": {
+      "group_n": 49,
+      "macro_f1_95_cluster_bootstrap": [
+        0.4559933214574095,
+        0.5429324839522502
+      ]
+    },
+    "it_val": {
+      "group_n": 17,
+      "macro_f1_95_cluster_bootstrap": [
+        0.4749859979962972,
+        0.6025204691092011
+      ]
+    },
+    "it_test": {
+      "group_n": 34,
+      "macro_f1_95_cluster_bootstrap": [
+        0.49960540101364065,
+        0.5763335110593911
+      ]
+    },
+    "nl_val": {
+      "group_n": 13,
+      "macro_f1_95_cluster_bootstrap": [
+        0.45183846691343027,
+        0.5979958976134845
+      ]
+    },
+    "nl_test": {
+      "group_n": 30,
+      "macro_f1_95_cluster_bootstrap": [
+        0.4500660495595913,
+        0.5132284377183136
+      ]
+    }
+  },
+  "mb_unknown": {
+    "en": [
+      [
+        "’",
+        575
+      ],
+      [
+        "“",
+        75
+      ],
+      [
+        "”",
+        74
+      ],
+      [
+        "…",
+        43
+      ],
+      [
+        "‘",
+        19
+      ],
+      [
+        "—",
+        11
+      ],
+      [
+        "–",
+        4
+      ],
+      [
+        "`",
+        4
+      ],
+      [
+        "⃠",
+        1
+      ]
+    ],
+    "it": [
+      [
+        "’",
+        104
+      ],
+      [
+        "…",
+        27
+      ],
+      [
+        "“",
+        20
+      ],
+      [
+        "”",
+        15
+      ],
+      [
+        "`",
+        4
+      ],
+      [
+        "‘",
+        3
+      ],
+      [
+        "all´inizio",
+        1
+      ],
+      [
+        "festeggero´con",
+        1
+      ]
+    ],
+    "nl": [
+      [
+        "’",
+        54
+      ],
+      [
+        "…",
+        35
+      ],
+      [
+        "“",
+        34
+      ],
+      [
+        "”",
+        30
+      ],
+      [
+        "‘",
+        19
+      ],
+      [
+        "–",
+        5
+      ],
+      [
+        "`",
+        4
+      ],
+      [
+        "homo´",
+        1
+      ],
+      [
+        "´s",
+        1
+      ],
+      [
+        "wc´s",
+        1
+      ],
+      [
+        "homo´s",
+        1
+      ],
+      [
+        "z´n",
+        1
+      ]
+    ]
+  },
+  "preprocessing_overlap": [
+    {
+      "StereoQueerEval_id": "training_NL_2127",
+      "split": "train",
+      "hate_speech": "no",
+      "yt_comment": "je mag zijn wie je bent\n\n\n😘"
+    },
+    {
+      "StereoQueerEval_id": "training_NL_0751",
+      "split": "test",
+      "hate_speech": "no",
+      "yt_comment": "Je mag zijn wie je bent 🏳️‍🌈"
+    }
+  ]
+}

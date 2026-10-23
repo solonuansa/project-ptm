@@ -7,8 +7,12 @@ venv/
 
 # Local model weights and training checkpoints
 Analisis/results/**/_checkpoints/
+Analisis/results/**/checkpoints/
+Analisis/results/**/checkpoint-*/
 Analisis/results/**/best_model/
+Analisis/results/**/*.safetensors
 
 # Large per-language archives containing model weights
 # Historical small archives in Analisis/archive/results remain tracked.
 Analisis/results/*/*/*.zip
+Analisis/results/**/*.zip

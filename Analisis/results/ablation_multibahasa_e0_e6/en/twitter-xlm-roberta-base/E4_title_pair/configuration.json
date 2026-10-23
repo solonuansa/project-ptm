@@ -1,0 +1,7 @@
+{
+  "preproc": "raw",
+  "context": "title",
+  "weighted": true,
+  "lr": 1e-05,
+  "warmup": 0.0
+}

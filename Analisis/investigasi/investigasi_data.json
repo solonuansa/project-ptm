@@ -1,0 +1,2083 @@
+{
+  "data": {
+    "en": {
+      "n": 2989,
+      "splits": {
+        "train": {
+          "n": 2111,
+          "counts": {
+            "no": 983,
+            "yes_implicit": 546,
+            "yes_explicit": 582
+          },
+          "percent": {
+            "no": 46.57,
+            "yes_implicit": 25.86,
+            "yes_explicit": 27.57
+          },
+          "groups": 173,
+          "largest_group_n": 27,
+          "top5_group_share": 0.0625,
+          "median_words": 17.0,
+          "words_le5_pct": 11.13,
+          "emoji_pct": 11.89,
+          "lexical_oov_token_pct": 0.0,
+          "unique_targets": 43
+        },
+        "val": {
+          "n": 292,
+          "counts": {
+            "no": 147,
+            "yes_implicit": 70,
+            "yes_explicit": 75
+          },
+          "percent": {
+            "no": 50.34,
+            "yes_implicit": 23.97,
+            "yes_explicit": 25.68
+          },
+          "groups": 23,
+          "largest_group_n": 31,
+          "top5_group_share": 0.4315,
+          "median_words": 15.0,
+          "words_le5_pct": 15.41,
+          "emoji_pct": 14.38,
+          "lexical_oov_token_pct": 8.54,
+          "unique_targets": 14
+        },
+        "test": {
+          "n": 586,
+          "counts": {
+            "no": 277,
+            "yes_implicit": 156,
+            "yes_explicit": 153
+          },
+          "percent": {
+            "no": 47.27,
+            "yes_implicit": 26.62,
+            "yes_explicit": 26.11
+          },
+          "groups": 49,
+          "largest_group_n": 31,
+          "top5_group_share": 0.2235,
+          "median_words": 17.0,
+          "words_le5_pct": 11.95,
+          "emoji_pct": 10.92,
+          "lexical_oov_token_pct": 6.46,
+          "unique_targets": 17
+        }
+      },
+      "duplicates": [
+        {
+          "key": "norm",
+          "duplicate_groups": 0,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        },
+        {
+          "key": "processed",
+          "duplicate_groups": 0,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        }
+      ],
+      "quality": {
+        "empty_comments": 0,
+        "nonletter_comments": 0,
+        "case_changed_pct": 94.81,
+        "replacement_char_rows": 0,
+        "no_with_target": 0,
+        "hate_without_target": 0
+      },
+      "cross_split_overlap": {
+        "StereoQueerEval_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "norm": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "processed": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "context": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "group_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        }
+      }
+    },
+    "it": {
+      "n": 2400,
+      "splits": {
+        "train": {
+          "n": 1699,
+          "counts": {
+            "no": 822,
+            "yes_implicit": 401,
+            "yes_explicit": 476
+          },
+          "percent": {
+            "no": 48.38,
+            "yes_implicit": 23.6,
+            "yes_explicit": 28.02
+          },
+          "groups": 136,
+          "largest_group_n": 39,
+          "top5_group_share": 0.0954,
+          "median_words": 15.0,
+          "words_le5_pct": 14.6,
+          "emoji_pct": 18.78,
+          "lexical_oov_token_pct": 0.0,
+          "unique_targets": 40
+        },
+        "val": {
+          "n": 220,
+          "counts": {
+            "no": 105,
+            "yes_implicit": 56,
+            "yes_explicit": 59
+          },
+          "percent": {
+            "no": 47.73,
+            "yes_implicit": 25.45,
+            "yes_explicit": 26.82
+          },
+          "groups": 17,
+          "largest_group_n": 30,
+          "top5_group_share": 0.5136,
+          "median_words": 15.0,
+          "words_le5_pct": 15.91,
+          "emoji_pct": 18.18,
+          "lexical_oov_token_pct": 11.23,
+          "unique_targets": 17
+        },
+        "test": {
+          "n": 481,
+          "counts": {
+            "no": 233,
+            "yes_implicit": 124,
+            "yes_explicit": 124
+          },
+          "percent": {
+            "no": 48.44,
+            "yes_implicit": 25.78,
+            "yes_explicit": 25.78
+          },
+          "groups": 34,
+          "largest_group_n": 44,
+          "top5_group_share": 0.3181,
+          "median_words": 14.0,
+          "words_le5_pct": 15.18,
+          "emoji_pct": 19.54,
+          "lexical_oov_token_pct": 12.88,
+          "unique_targets": 18
+        }
+      },
+      "duplicates": [
+        {
+          "key": "norm",
+          "duplicate_groups": 1,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        },
+        {
+          "key": "processed",
+          "duplicate_groups": 2,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        }
+      ],
+      "quality": {
+        "empty_comments": 0,
+        "nonletter_comments": 0,
+        "case_changed_pct": 91.71,
+        "replacement_char_rows": 0,
+        "no_with_target": 0,
+        "hate_without_target": 0
+      },
+      "cross_split_overlap": {
+        "StereoQueerEval_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "norm": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "processed": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "context": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "group_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        }
+      }
+    },
+    "nl": {
+      "n": 2238,
+      "splits": {
+        "train": {
+          "n": 1556,
+          "counts": {
+            "no": 784,
+            "yes_implicit": 335,
+            "yes_explicit": 437
+          },
+          "percent": {
+            "no": 50.39,
+            "yes_implicit": 21.53,
+            "yes_explicit": 28.08
+          },
+          "groups": 84,
+          "largest_group_n": 67,
+          "top5_group_share": 0.196,
+          "median_words": 16.0,
+          "words_le5_pct": 10.67,
+          "emoji_pct": 17.22,
+          "lexical_oov_token_pct": 0.0,
+          "unique_targets": 47
+        },
+        "val": {
+          "n": 226,
+          "counts": {
+            "no": 109,
+            "yes_implicit": 55,
+            "yes_explicit": 62
+          },
+          "percent": {
+            "no": 48.23,
+            "yes_implicit": 24.34,
+            "yes_explicit": 27.43
+          },
+          "groups": 13,
+          "largest_group_n": 38,
+          "top5_group_share": 0.6416,
+          "median_words": 15.0,
+          "words_le5_pct": 14.6,
+          "emoji_pct": 15.93,
+          "lexical_oov_token_pct": 10.6,
+          "unique_targets": 26
+        },
+        "test": {
+          "n": 456,
+          "counts": {
+            "no": 234,
+            "yes_implicit": 97,
+            "yes_explicit": 125
+          },
+          "percent": {
+            "no": 51.32,
+            "yes_implicit": 21.27,
+            "yes_explicit": 27.41
+          },
+          "groups": 30,
+          "largest_group_n": 47,
+          "top5_group_share": 0.4781,
+          "median_words": 15.0,
+          "words_le5_pct": 13.6,
+          "emoji_pct": 14.69,
+          "lexical_oov_token_pct": 9.74,
+          "unique_targets": 19
+        }
+      },
+      "duplicates": [
+        {
+          "key": "norm",
+          "duplicate_groups": 0,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        },
+        {
+          "key": "processed",
+          "duplicate_groups": 1,
+          "conflict_groups": 0,
+          "conflict_rows": 0
+        }
+      ],
+      "quality": {
+        "empty_comments": 0,
+        "nonletter_comments": 0,
+        "case_changed_pct": 91.24,
+        "replacement_char_rows": 0,
+        "no_with_target": 0,
+        "hate_without_target": 0
+      },
+      "cross_split_overlap": {
+        "StereoQueerEval_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "norm": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "processed": {
+          "train_val": 0,
+          "train_test": 1,
+          "val_test": 0
+        },
+        "context": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "group_id": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        }
+      }
+    }
+  },
+  "predictions": {
+    "bert-base-multilingual-uncased": {
+      "en": {
+        "val": {
+          "n": 292,
+          "accuracy": 0.6061643835616438,
+          "macro_f1": 0.5516900635244294,
+          "binary_hate_f1": 0.6959706959706959,
+          "confusion": [
+            [
+              114,
+              21,
+              12
+            ],
+            [
+              27,
+              35,
+              8
+            ],
+            [
+              23,
+              24,
+              28
+            ]
+          ],
+          "prediction_counts": {
+            "no": 164,
+            "yes_implicit": 80,
+            "yes_explicit": 48
+          },
+          "short_accuracy": 0.5333333333333333,
+          "longer_accuracy": 0.6194331983805668,
+          "emoji_accuracy": 0.6428571428571429,
+          "noemoji_accuracy": 0.6,
+          "mean_confidence_wrong": 0.6944020312173913,
+          "mean_confidence_correct": 0.7852473885310733,
+          "wrong_confident_90_pct": 9.565217391304348,
+          "group_macro_accuracy": 0.6122085767442834,
+          "top5_groups_error_share": 0.4434782608695652,
+          "groups_n": 23,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0117",
+              "n": 31,
+              "accuracy": 0.5161290322580645,
+              "errors": 15
+            },
+            {
+              "group_id": "EN_group_0612",
+              "n": 23,
+              "accuracy": 0.5652173913043478,
+              "errors": 10
+            },
+            {
+              "group_id": "EN_group_0008",
+              "n": 26,
+              "accuracy": 0.6153846153846154,
+              "errors": 10
+            },
+            {
+              "group_id": "EN_group_0099",
+              "n": 22,
+              "accuracy": 0.6363636363636364,
+              "errors": 8
+            },
+            {
+              "group_id": "EN_group_0231",
+              "n": 12,
+              "accuracy": 0.3333333333333333,
+              "errors": 8
+            }
+          ]
+        },
+        "test": {
+          "n": 586,
+          "accuracy": 0.5563139931740614,
+          "macro_f1": 0.5218671321867557,
+          "binary_hate_f1": 0.6857142857142857,
+          "confusion": [
+            [
+              195,
+              57,
+              25
+            ],
+            [
+              67,
+              61,
+              28
+            ],
+            [
+              38,
+              45,
+              70
+            ]
+          ],
+          "prediction_counts": {
+            "no": 300,
+            "yes_implicit": 163,
+            "yes_explicit": 123
+          },
+          "short_accuracy": 0.5571428571428572,
+          "longer_accuracy": 0.5562015503875969,
+          "emoji_accuracy": 0.5625,
+          "noemoji_accuracy": 0.5555555555555556,
+          "mean_confidence_wrong": 0.6959393536923076,
+          "mean_confidence_correct": 0.7829147886809816,
+          "wrong_confident_90_pct": 11.538461538461538,
+          "group_macro_accuracy": 0.5628228983171639,
+          "top5_groups_error_share": 0.24615384615384617,
+          "groups_n": 49,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0193",
+              "n": 20,
+              "accuracy": 0.3,
+              "errors": 14
+            },
+            {
+              "group_id": "EN_group_0097",
+              "n": 26,
+              "accuracy": 0.5,
+              "errors": 13
+            },
+            {
+              "group_id": "EN_group_0007",
+              "n": 22,
+              "accuracy": 0.4090909090909091,
+              "errors": 13
+            },
+            {
+              "group_id": "EN_group_0157",
+              "n": 31,
+              "accuracy": 0.6129032258064516,
+              "errors": 12
+            },
+            {
+              "group_id": "EN_group_0098",
+              "n": 19,
+              "accuracy": 0.3684210526315789,
+              "errors": 12
+            }
+          ]
+        }
+      },
+      "it": {
+        "val": {
+          "n": 220,
+          "accuracy": 0.5590909090909091,
+          "macro_f1": 0.5408398364920104,
+          "binary_hate_f1": 0.710204081632653,
+          "confusion": [
+            [
+              62,
+              23,
+              20
+            ],
+            [
+              18,
+              24,
+              14
+            ],
+            [
+              10,
+              12,
+              37
+            ]
+          ],
+          "prediction_counts": {
+            "no": 90,
+            "yes_explicit": 71,
+            "yes_implicit": 59
+          },
+          "short_accuracy": 0.5714285714285714,
+          "longer_accuracy": 0.5567567567567567,
+          "emoji_accuracy": 0.6,
+          "noemoji_accuracy": 0.55,
+          "mean_confidence_wrong": 0.526722767113402,
+          "mean_confidence_correct": 0.613193054796748,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.5811134244974601,
+          "top5_groups_error_share": 0.5567010309278351,
+          "groups_n": 17,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0006",
+              "n": 30,
+              "accuracy": 0.5333333333333333,
+              "errors": 14
+            },
+            {
+              "group_id": "IT_group_0133",
+              "n": 23,
+              "accuracy": 0.4782608695652174,
+              "errors": 12
+            },
+            {
+              "group_id": "IT_group_0134",
+              "n": 18,
+              "accuracy": 0.4444444444444444,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0087",
+              "n": 18,
+              "accuracy": 0.4444444444444444,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0115",
+              "n": 10,
+              "accuracy": 0.2,
+              "errors": 8
+            }
+          ]
+        },
+        "test": {
+          "n": 481,
+          "accuracy": 0.498960498960499,
+          "macro_f1": 0.47334325787161396,
+          "binary_hate_f1": 0.6615087040618955,
+          "confusion": [
+            [
+              135,
+              56,
+              42
+            ],
+            [
+              40,
+              52,
+              32
+            ],
+            [
+              37,
+              34,
+              53
+            ]
+          ],
+          "prediction_counts": {
+            "no": 212,
+            "yes_implicit": 142,
+            "yes_explicit": 127
+          },
+          "short_accuracy": 0.5753424657534246,
+          "longer_accuracy": 0.4852941176470588,
+          "emoji_accuracy": 0.5425531914893617,
+          "noemoji_accuracy": 0.4883720930232558,
+          "mean_confidence_wrong": 0.553959636639004,
+          "mean_confidence_correct": 0.636599095875,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.47557188110593673,
+          "top5_groups_error_share": 0.3153526970954357,
+          "groups_n": 34,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0007",
+              "n": 24,
+              "accuracy": 0.2916666666666667,
+              "errors": 17
+            },
+            {
+              "group_id": "IT_group_0039",
+              "n": 27,
+              "accuracy": 0.4074074074074074,
+              "errors": 16
+            },
+            {
+              "group_id": "IT_group_0066",
+              "n": 44,
+              "accuracy": 0.6590909090909091,
+              "errors": 15
+            },
+            {
+              "group_id": "IT_group_0008",
+              "n": 22,
+              "accuracy": 0.36363636363636365,
+              "errors": 14
+            },
+            {
+              "group_id": "IT_group_0044",
+              "n": 26,
+              "accuracy": 0.46153846153846156,
+              "errors": 14
+            }
+          ]
+        }
+      },
+      "nl": {
+        "val": {
+          "n": 226,
+          "accuracy": 0.5,
+          "macro_f1": 0.4705214521452145,
+          "binary_hate_f1": 0.712,
+          "confusion": [
+            [
+              65,
+              23,
+              21
+            ],
+            [
+              11,
+              25,
+              19
+            ],
+            [
+              17,
+              22,
+              23
+            ]
+          ],
+          "prediction_counts": {
+            "no": 93,
+            "yes_implicit": 70,
+            "yes_explicit": 63
+          },
+          "short_accuracy": 0.42424242424242425,
+          "longer_accuracy": 0.5129533678756477,
+          "emoji_accuracy": 0.6944444444444444,
+          "noemoji_accuracy": 0.4631578947368421,
+          "mean_confidence_wrong": 0.6097197656637168,
+          "mean_confidence_correct": 0.6876758214159292,
+          "wrong_confident_90_pct": 2.6548672566371683,
+          "group_macro_accuracy": 0.4458057238055143,
+          "top5_groups_error_share": 0.7079646017699115,
+          "groups_n": 13,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0064",
+              "n": 38,
+              "accuracy": 0.47368421052631576,
+              "errors": 20
+            },
+            {
+              "group_id": "NL_group_0135",
+              "n": 27,
+              "accuracy": 0.2962962962962963,
+              "errors": 19
+            },
+            {
+              "group_id": "NL_group_0088",
+              "n": 29,
+              "accuracy": 0.41379310344827586,
+              "errors": 17
+            },
+            {
+              "group_id": "NL_group_0056",
+              "n": 26,
+              "accuracy": 0.46153846153846156,
+              "errors": 14
+            },
+            {
+              "group_id": "NL_group_0404",
+              "n": 25,
+              "accuracy": 0.6,
+              "errors": 10
+            }
+          ]
+        },
+        "test": {
+          "n": 456,
+          "accuracy": 0.5614035087719298,
+          "macro_f1": 0.531275585339621,
+          "binary_hate_f1": 0.7268993839835729,
+          "confusion": [
+            [
+              146,
+              61,
+              27
+            ],
+            [
+              24,
+              49,
+              24
+            ],
+            [
+              21,
+              43,
+              61
+            ]
+          ],
+          "prediction_counts": {
+            "no": 191,
+            "yes_implicit": 153,
+            "yes_explicit": 112
+          },
+          "short_accuracy": 0.5806451612903226,
+          "longer_accuracy": 0.5583756345177665,
+          "emoji_accuracy": 0.7164179104477612,
+          "noemoji_accuracy": 0.5347043701799485,
+          "mean_confidence_wrong": 0.57640264975,
+          "mean_confidence_correct": 0.6797259390625,
+          "wrong_confident_90_pct": 1.0,
+          "group_macro_accuracy": 0.5768351892763987,
+          "top5_groups_error_share": 0.52,
+          "groups_n": 30,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0281",
+              "n": 42,
+              "accuracy": 0.38095238095238093,
+              "errors": 26
+            },
+            {
+              "group_id": "NL_group_0074",
+              "n": 45,
+              "accuracy": 0.5111111111111111,
+              "errors": 22
+            },
+            {
+              "group_id": "NL_group_0029",
+              "n": 37,
+              "accuracy": 0.43243243243243246,
+              "errors": 21
+            },
+            {
+              "group_id": "NL_group_0513",
+              "n": 44,
+              "accuracy": 0.5909090909090909,
+              "errors": 18
+            },
+            {
+              "group_id": "NL_group_0030",
+              "n": 34,
+              "accuracy": 0.5,
+              "errors": 17
+            }
+          ]
+        }
+      }
+    },
+    "twitter-xlm-roberta-base": {
+      "en": {
+        "val": {
+          "n": 292,
+          "accuracy": 0.613013698630137,
+          "macro_f1": 0.5830898366109634,
+          "binary_hate_f1": 0.7181208053691275,
+          "confusion": [
+            [
+              101,
+              23,
+              23
+            ],
+            [
+              22,
+              34,
+              14
+            ],
+            [
+              16,
+              15,
+              44
+            ]
+          ],
+          "prediction_counts": {
+            "no": 139,
+            "yes_explicit": 81,
+            "yes_implicit": 72
+          },
+          "short_accuracy": 0.6,
+          "longer_accuracy": 0.6153846153846154,
+          "emoji_accuracy": 0.5714285714285714,
+          "noemoji_accuracy": 0.62,
+          "mean_confidence_wrong": 0.516430107699115,
+          "mean_confidence_correct": 0.6007885539664805,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.6182228726299128,
+          "top5_groups_error_share": 0.46017699115044247,
+          "groups_n": 23,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0117",
+              "n": 31,
+              "accuracy": 0.5483870967741935,
+              "errors": 14
+            },
+            {
+              "group_id": "EN_group_0008",
+              "n": 26,
+              "accuracy": 0.5769230769230769,
+              "errors": 11
+            },
+            {
+              "group_id": "EN_group_0040",
+              "n": 24,
+              "accuracy": 0.5833333333333334,
+              "errors": 10
+            },
+            {
+              "group_id": "EN_group_0110",
+              "n": 20,
+              "accuracy": 0.55,
+              "errors": 9
+            },
+            {
+              "group_id": "EN_group_0612",
+              "n": 23,
+              "accuracy": 0.6521739130434783,
+              "errors": 8
+            }
+          ]
+        },
+        "test": {
+          "n": 586,
+          "accuracy": 0.5511945392491467,
+          "macro_f1": 0.5018463182617077,
+          "binary_hate_f1": 0.6779661016949152,
+          "confusion": [
+            [
+              196,
+              37,
+              44
+            ],
+            [
+              61,
+              40,
+              55
+            ],
+            [
+              48,
+              18,
+              87
+            ]
+          ],
+          "prediction_counts": {
+            "no": 305,
+            "yes_explicit": 186,
+            "yes_implicit": 95
+          },
+          "short_accuracy": 0.5857142857142857,
+          "longer_accuracy": 0.5465116279069767,
+          "emoji_accuracy": 0.515625,
+          "noemoji_accuracy": 0.5555555555555556,
+          "mean_confidence_wrong": 0.5286973454752852,
+          "mean_confidence_correct": 0.5957682136532508,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.577201399672901,
+          "top5_groups_error_share": 0.25475285171102663,
+          "groups_n": 49,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0097",
+              "n": 26,
+              "accuracy": 0.34615384615384615,
+              "errors": 17
+            },
+            {
+              "group_id": "EN_group_0158",
+              "n": 24,
+              "accuracy": 0.375,
+              "errors": 15
+            },
+            {
+              "group_id": "EN_group_0017",
+              "n": 26,
+              "accuracy": 0.5384615384615384,
+              "errors": 12
+            },
+            {
+              "group_id": "EN_group_0193",
+              "n": 20,
+              "accuracy": 0.4,
+              "errors": 12
+            },
+            {
+              "group_id": "EN_group_0003",
+              "n": 19,
+              "accuracy": 0.42105263157894735,
+              "errors": 11
+            }
+          ]
+        }
+      },
+      "it": {
+        "val": {
+          "n": 220,
+          "accuracy": 0.5818181818181818,
+          "macro_f1": 0.5457402075049135,
+          "binary_hate_f1": 0.7372881355932204,
+          "confusion": [
+            [
+              71,
+              17,
+              17
+            ],
+            [
+              19,
+              19,
+              18
+            ],
+            [
+              9,
+              12,
+              38
+            ]
+          ],
+          "prediction_counts": {
+            "no": 99,
+            "yes_explicit": 73,
+            "yes_implicit": 48
+          },
+          "short_accuracy": 0.6857142857142857,
+          "longer_accuracy": 0.5621621621621622,
+          "emoji_accuracy": 0.6,
+          "noemoji_accuracy": 0.5777777777777777,
+          "mean_confidence_wrong": 0.8189099292391306,
+          "mean_confidence_correct": 0.88371450453125,
+          "wrong_confident_90_pct": 45.65217391304348,
+          "group_macro_accuracy": 0.6085822845884765,
+          "top5_groups_error_share": 0.532608695652174,
+          "groups_n": 17,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0133",
+              "n": 23,
+              "accuracy": 0.43478260869565216,
+              "errors": 13
+            },
+            {
+              "group_id": "IT_group_0006",
+              "n": 30,
+              "accuracy": 0.6333333333333333,
+              "errors": 11
+            },
+            {
+              "group_id": "IT_group_0144",
+              "n": 23,
+              "accuracy": 0.5652173913043478,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0087",
+              "n": 18,
+              "accuracy": 0.5555555555555556,
+              "errors": 8
+            },
+            {
+              "group_id": "IT_group_0371",
+              "n": 12,
+              "accuracy": 0.4166666666666667,
+              "errors": 7
+            }
+          ]
+        },
+        "test": {
+          "n": 481,
+          "accuracy": 0.5821205821205822,
+          "macro_f1": 0.5431894966622285,
+          "binary_hate_f1": 0.7108433734939759,
+          "confusion": [
+            [
+              160,
+              29,
+              44
+            ],
+            [
+              48,
+              41,
+              35
+            ],
+            [
+              23,
+              22,
+              79
+            ]
+          ],
+          "prediction_counts": {
+            "no": 231,
+            "yes_explicit": 158,
+            "yes_implicit": 92
+          },
+          "short_accuracy": 0.6027397260273972,
+          "longer_accuracy": 0.5784313725490197,
+          "emoji_accuracy": 0.5319148936170213,
+          "noemoji_accuracy": 0.5943152454780362,
+          "mean_confidence_wrong": 0.8108631815920397,
+          "mean_confidence_correct": 0.8773008377142858,
+          "wrong_confident_90_pct": 43.78109452736319,
+          "group_macro_accuracy": 0.5529431875600607,
+          "top5_groups_error_share": 0.31840796019900497,
+          "groups_n": 34,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0007",
+              "n": 24,
+              "accuracy": 0.375,
+              "errors": 15
+            },
+            {
+              "group_id": "IT_group_0039",
+              "n": 27,
+              "accuracy": 0.5185185185185185,
+              "errors": 13
+            },
+            {
+              "group_id": "IT_group_0532",
+              "n": 27,
+              "accuracy": 0.5185185185185185,
+              "errors": 13
+            },
+            {
+              "group_id": "IT_group_0050",
+              "n": 20,
+              "accuracy": 0.4,
+              "errors": 12
+            },
+            {
+              "group_id": "IT_group_0008",
+              "n": 22,
+              "accuracy": 0.5,
+              "errors": 11
+            }
+          ]
+        }
+      },
+      "nl": {
+        "val": {
+          "n": 226,
+          "accuracy": 0.5663716814159292,
+          "macro_f1": 0.5287807156016887,
+          "binary_hate_f1": 0.7124463519313304,
+          "confusion": [
+            [
+              76,
+              20,
+              13
+            ],
+            [
+              19,
+              23,
+              13
+            ],
+            [
+              15,
+              18,
+              29
+            ]
+          ],
+          "prediction_counts": {
+            "no": 110,
+            "yes_implicit": 61,
+            "yes_explicit": 55
+          },
+          "short_accuracy": 0.5454545454545454,
+          "longer_accuracy": 0.5699481865284974,
+          "emoji_accuracy": 0.6388888888888888,
+          "noemoji_accuracy": 0.5526315789473685,
+          "mean_confidence_wrong": 0.6336084217346939,
+          "mean_confidence_correct": 0.751280623359375,
+          "wrong_confident_90_pct": 12.244897959183673,
+          "group_macro_accuracy": 0.5166320034870223,
+          "top5_groups_error_share": 0.7551020408163265,
+          "groups_n": 13,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0064",
+              "n": 38,
+              "accuracy": 0.4473684210526316,
+              "errors": 21
+            },
+            {
+              "group_id": "NL_group_0135",
+              "n": 27,
+              "accuracy": 0.2962962962962963,
+              "errors": 19
+            },
+            {
+              "group_id": "NL_group_0088",
+              "n": 29,
+              "accuracy": 0.4827586206896552,
+              "errors": 15
+            },
+            {
+              "group_id": "NL_group_0056",
+              "n": 26,
+              "accuracy": 0.5384615384615384,
+              "errors": 12
+            },
+            {
+              "group_id": "NL_group_0051",
+              "n": 20,
+              "accuracy": 0.65,
+              "errors": 7
+            }
+          ]
+        },
+        "test": {
+          "n": 456,
+          "accuracy": 0.5482456140350878,
+          "macro_f1": 0.4866898706508908,
+          "binary_hate_f1": 0.7152317880794702,
+          "confusion": [
+            [
+              165,
+              50,
+              19
+            ],
+            [
+              34,
+              28,
+              35
+            ],
+            [
+              26,
+              42,
+              57
+            ]
+          ],
+          "prediction_counts": {
+            "no": 225,
+            "yes_implicit": 120,
+            "yes_explicit": 111
+          },
+          "short_accuracy": 0.4838709677419355,
+          "longer_accuracy": 0.5583756345177665,
+          "emoji_accuracy": 0.7910447761194029,
+          "noemoji_accuracy": 0.506426735218509,
+          "mean_confidence_wrong": 0.6183664314077669,
+          "mean_confidence_correct": 0.76221667416,
+          "wrong_confident_90_pct": 6.796116504854369,
+          "group_macro_accuracy": 0.5333865811015703,
+          "top5_groups_error_share": 0.5339805825242718,
+          "groups_n": 30,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0281",
+              "n": 42,
+              "accuracy": 0.42857142857142855,
+              "errors": 24
+            },
+            {
+              "group_id": "NL_group_0074",
+              "n": 45,
+              "accuracy": 0.4888888888888889,
+              "errors": 23
+            },
+            {
+              "group_id": "NL_group_0513",
+              "n": 44,
+              "accuracy": 0.4772727272727273,
+              "errors": 23
+            },
+            {
+              "group_id": "NL_group_0030",
+              "n": 34,
+              "accuracy": 0.4117647058823529,
+              "errors": 20
+            },
+            {
+              "group_id": "NL_group_0029",
+              "n": 37,
+              "accuracy": 0.4594594594594595,
+              "errors": 20
+            }
+          ]
+        }
+      }
+    },
+    "xlm-roberta-base": {
+      "en": {
+        "val": {
+          "n": 292,
+          "accuracy": 0.6301369863013698,
+          "macro_f1": 0.5875839136708702,
+          "binary_hate_f1": 0.7028985507246377,
+          "confusion": [
+            [
+              113,
+              18,
+              16
+            ],
+            [
+              26,
+              34,
+              10
+            ],
+            [
+              22,
+              16,
+              37
+            ]
+          ],
+          "prediction_counts": {
+            "no": 161,
+            "yes_implicit": 68,
+            "yes_explicit": 63
+          },
+          "short_accuracy": 0.6,
+          "longer_accuracy": 0.6356275303643725,
+          "emoji_accuracy": 0.5476190476190477,
+          "noemoji_accuracy": 0.644,
+          "mean_confidence_wrong": 0.5425700207407408,
+          "mean_confidence_correct": 0.6337092999999999,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.613076970418721,
+          "top5_groups_error_share": 0.46296296296296297,
+          "groups_n": 23,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0117",
+              "n": 31,
+              "accuracy": 0.5806451612903226,
+              "errors": 13
+            },
+            {
+              "group_id": "EN_group_0099",
+              "n": 22,
+              "accuracy": 0.5454545454545454,
+              "errors": 10
+            },
+            {
+              "group_id": "EN_group_0008",
+              "n": 26,
+              "accuracy": 0.6538461538461539,
+              "errors": 9
+            },
+            {
+              "group_id": "EN_group_0110",
+              "n": 20,
+              "accuracy": 0.55,
+              "errors": 9
+            },
+            {
+              "group_id": "EN_group_0612",
+              "n": 23,
+              "accuracy": 0.6086956521739131,
+              "errors": 9
+            }
+          ]
+        },
+        "test": {
+          "n": 586,
+          "accuracy": 0.5273037542662116,
+          "macro_f1": 0.4845059968951763,
+          "binary_hate_f1": 0.649746192893401,
+          "confusion": [
+            [
+              187,
+              51,
+              39
+            ],
+            [
+              70,
+              41,
+              45
+            ],
+            [
+              47,
+              25,
+              81
+            ]
+          ],
+          "prediction_counts": {
+            "no": 304,
+            "yes_explicit": 165,
+            "yes_implicit": 117
+          },
+          "short_accuracy": 0.4714285714285714,
+          "longer_accuracy": 0.5348837209302325,
+          "emoji_accuracy": 0.5,
+          "noemoji_accuracy": 0.5306513409961686,
+          "mean_confidence_wrong": 0.5511711214079421,
+          "mean_confidence_correct": 0.6310009901618123,
+          "wrong_confident_90_pct": 0.0,
+          "group_macro_accuracy": 0.5186977315424874,
+          "top5_groups_error_share": 0.2490974729241877,
+          "groups_n": 49,
+          "worst_groups": [
+            {
+              "group_id": "EN_group_0097",
+              "n": 26,
+              "accuracy": 0.38461538461538464,
+              "errors": 16
+            },
+            {
+              "group_id": "EN_group_0114",
+              "n": 24,
+              "accuracy": 0.4166666666666667,
+              "errors": 14
+            },
+            {
+              "group_id": "EN_group_0003",
+              "n": 19,
+              "accuracy": 0.3157894736842105,
+              "errors": 13
+            },
+            {
+              "group_id": "EN_group_0017",
+              "n": 26,
+              "accuracy": 0.5,
+              "errors": 13
+            },
+            {
+              "group_id": "EN_group_0193",
+              "n": 20,
+              "accuracy": 0.35,
+              "errors": 13
+            }
+          ]
+        }
+      },
+      "it": {
+        "val": {
+          "n": 220,
+          "accuracy": 0.5954545454545455,
+          "macro_f1": 0.5438036083998817,
+          "binary_hate_f1": 0.6857142857142857,
+          "confusion": [
+            [
+              82,
+              11,
+              12
+            ],
+            [
+              30,
+              17,
+              9
+            ],
+            [
+              13,
+              14,
+              32
+            ]
+          ],
+          "prediction_counts": {
+            "no": 125,
+            "yes_explicit": 53,
+            "yes_implicit": 42
+          },
+          "short_accuracy": 0.5714285714285714,
+          "longer_accuracy": 0.6,
+          "emoji_accuracy": 0.65,
+          "noemoji_accuracy": 0.5833333333333334,
+          "mean_confidence_wrong": 0.6783050383146068,
+          "mean_confidence_correct": 0.7549386728244274,
+          "wrong_confident_90_pct": 11.235955056179774,
+          "group_macro_accuracy": 0.619943410413191,
+          "top5_groups_error_share": 0.5280898876404494,
+          "groups_n": 17,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0006",
+              "n": 30,
+              "accuracy": 0.6666666666666666,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0144",
+              "n": 23,
+              "accuracy": 0.5652173913043478,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0087",
+              "n": 18,
+              "accuracy": 0.4444444444444444,
+              "errors": 10
+            },
+            {
+              "group_id": "IT_group_0133",
+              "n": 23,
+              "accuracy": 0.6086956521739131,
+              "errors": 9
+            },
+            {
+              "group_id": "IT_group_0063",
+              "n": 11,
+              "accuracy": 0.2727272727272727,
+              "errors": 8
+            }
+          ]
+        },
+        "test": {
+          "n": 481,
+          "accuracy": 0.5738045738045738,
+          "macro_f1": 0.5278774900808403,
+          "binary_hate_f1": 0.647450110864745,
+          "confusion": [
+            [
+              176,
+              45,
+              12
+            ],
+            [
+              56,
+              51,
+              17
+            ],
+            [
+              46,
+              29,
+              49
+            ]
+          ],
+          "prediction_counts": {
+            "no": 278,
+            "yes_implicit": 125,
+            "yes_explicit": 78
+          },
+          "short_accuracy": 0.5753424657534246,
+          "longer_accuracy": 0.5735294117647058,
+          "emoji_accuracy": 0.5531914893617021,
+          "noemoji_accuracy": 0.5788113695090439,
+          "mean_confidence_wrong": 0.6696943804390244,
+          "mean_confidence_correct": 0.7794508229347825,
+          "wrong_confident_90_pct": 11.219512195121952,
+          "group_macro_accuracy": 0.5096115886750561,
+          "top5_groups_error_share": 0.3073170731707317,
+          "groups_n": 34,
+          "worst_groups": [
+            {
+              "group_id": "IT_group_0007",
+              "n": 24,
+              "accuracy": 0.2916666666666667,
+              "errors": 17
+            },
+            {
+              "group_id": "IT_group_0008",
+              "n": 22,
+              "accuracy": 0.4090909090909091,
+              "errors": 13
+            },
+            {
+              "group_id": "IT_group_0532",
+              "n": 27,
+              "accuracy": 0.5555555555555556,
+              "errors": 12
+            },
+            {
+              "group_id": "IT_group_0030",
+              "n": 15,
+              "accuracy": 0.26666666666666666,
+              "errors": 11
+            },
+            {
+              "group_id": "IT_group_0054",
+              "n": 15,
+              "accuracy": 0.3333333333333333,
+              "errors": 10
+            }
+          ]
+        }
+      },
+      "nl": {
+        "val": {
+          "n": 226,
+          "accuracy": 0.5619469026548672,
+          "macro_f1": 0.5178508420208501,
+          "binary_hate_f1": 0.7088607594936709,
+          "confusion": [
+            [
+              73,
+              6,
+              30
+            ],
+            [
+              19,
+              16,
+              20
+            ],
+            [
+              14,
+              10,
+              38
+            ]
+          ],
+          "prediction_counts": {
+            "no": 106,
+            "yes_explicit": 88,
+            "yes_implicit": 32
+          },
+          "short_accuracy": 0.6666666666666666,
+          "longer_accuracy": 0.5440414507772021,
+          "emoji_accuracy": 0.6111111111111112,
+          "noemoji_accuracy": 0.5526315789473685,
+          "mean_confidence_wrong": 0.5419345924242425,
+          "mean_confidence_correct": 0.6404758070866142,
+          "wrong_confident_90_pct": 7.07070707070707,
+          "group_macro_accuracy": 0.5768388224331963,
+          "top5_groups_error_share": 0.7575757575757576,
+          "groups_n": 13,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0135",
+              "n": 27,
+              "accuracy": 0.18518518518518517,
+              "errors": 22
+            },
+            {
+              "group_id": "NL_group_0064",
+              "n": 38,
+              "accuracy": 0.5263157894736842,
+              "errors": 18
+            },
+            {
+              "group_id": "NL_group_0088",
+              "n": 29,
+              "accuracy": 0.5172413793103449,
+              "errors": 14
+            },
+            {
+              "group_id": "NL_group_0056",
+              "n": 26,
+              "accuracy": 0.5,
+              "errors": 13
+            },
+            {
+              "group_id": "NL_group_0051",
+              "n": 20,
+              "accuracy": 0.6,
+              "errors": 8
+            }
+          ]
+        },
+        "test": {
+          "n": 456,
+          "accuracy": 0.5657894736842105,
+          "macro_f1": 0.5129528109212081,
+          "binary_hate_f1": 0.6993603411513859,
+          "confusion": [
+            [
+              151,
+              43,
+              40
+            ],
+            [
+              35,
+              27,
+              35
+            ],
+            [
+              23,
+              22,
+              80
+            ]
+          ],
+          "prediction_counts": {
+            "no": 209,
+            "yes_explicit": 155,
+            "yes_implicit": 92
+          },
+          "short_accuracy": 0.5483870967741935,
+          "longer_accuracy": 0.5685279187817259,
+          "emoji_accuracy": 0.7164179104477612,
+          "noemoji_accuracy": 0.5398457583547558,
+          "mean_confidence_wrong": 0.5326811598989899,
+          "mean_confidence_correct": 0.6397332150387597,
+          "wrong_confident_90_pct": 4.545454545454546,
+          "group_macro_accuracy": 0.5316065012416538,
+          "top5_groups_error_share": 0.5252525252525253,
+          "groups_n": 30,
+          "worst_groups": [
+            {
+              "group_id": "NL_group_0074",
+              "n": 45,
+              "accuracy": 0.4,
+              "errors": 27
+            },
+            {
+              "group_id": "NL_group_0029",
+              "n": 37,
+              "accuracy": 0.43243243243243246,
+              "errors": 21
+            },
+            {
+              "group_id": "NL_group_0281",
+              "n": 42,
+              "accuracy": 0.5,
+              "errors": 21
+            },
+            {
+              "group_id": "NL_group_0513",
+              "n": 44,
+              "accuracy": 0.5454545454545454,
+              "errors": 20
+            },
+            {
+              "group_id": "NL_group_0009",
+              "n": 47,
+              "accuracy": 0.6808510638297872,
+              "errors": 15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "common_errors": {
+    "en": {
+      "val": {
+        "all_wrong_n": 68,
+        "all_wrong_pct": 23.28767123287671,
+        "all_correct_pct": 46.23287671232877,
+        "unanimous_wrong_n": 50,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 17,
+            "count": 147,
+            "mean": 0.11564625850340136
+          },
+          "yes_explicit": {
+            "sum": 28,
+            "count": 75,
+            "mean": 0.37333333333333335
+          },
+          "yes_implicit": {
+            "sum": 23,
+            "count": 70,
+            "mean": 0.32857142857142857
+          }
+        }
+      },
+      "test": {
+        "all_wrong_n": 157,
+        "all_wrong_pct": 26.791808873720136,
+        "all_correct_pct": 37.03071672354949,
+        "unanimous_wrong_n": 112,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 39,
+            "count": 277,
+            "mean": 0.1407942238267148
+          },
+          "yes_explicit": {
+            "sum": 44,
+            "count": 153,
+            "mean": 0.2875816993464052
+          },
+          "yes_implicit": {
+            "sum": 74,
+            "count": 156,
+            "mean": 0.47435897435897434
+          }
+        }
+      }
+    },
+    "it": {
+      "val": {
+        "all_wrong_n": 50,
+        "all_wrong_pct": 22.727272727272727,
+        "all_correct_pct": 35.45454545454545,
+        "unanimous_wrong_n": 35,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 16,
+            "count": 105,
+            "mean": 0.1523809523809524
+          },
+          "yes_explicit": {
+            "sum": 11,
+            "count": 59,
+            "mean": 0.1864406779661017
+          },
+          "yes_implicit": {
+            "sum": 23,
+            "count": 56,
+            "mean": 0.4107142857142857
+          }
+        }
+      },
+      "test": {
+        "all_wrong_n": 118,
+        "all_wrong_pct": 24.532224532224532,
+        "all_correct_pct": 33.679833679833685,
+        "unanimous_wrong_n": 75,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 37,
+            "count": 233,
+            "mean": 0.15879828326180256
+          },
+          "yes_explicit": {
+            "sum": 33,
+            "count": 124,
+            "mean": 0.2661290322580645
+          },
+          "yes_implicit": {
+            "sum": 48,
+            "count": 124,
+            "mean": 0.3870967741935484
+          }
+        }
+      }
+    },
+    "nl": {
+      "val": {
+        "all_wrong_n": 66,
+        "all_wrong_pct": 29.20353982300885,
+        "all_correct_pct": 37.16814159292036,
+        "unanimous_wrong_n": 41,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 24,
+            "count": 109,
+            "mean": 0.22018348623853212
+          },
+          "yes_explicit": {
+            "sum": 18,
+            "count": 62,
+            "mean": 0.2903225806451613
+          },
+          "yes_implicit": {
+            "sum": 24,
+            "count": 55,
+            "mean": 0.43636363636363634
+          }
+        }
+      },
+      "test": {
+        "all_wrong_n": 113,
+        "all_wrong_pct": 24.780701754385966,
+        "all_correct_pct": 38.59649122807017,
+        "unanimous_wrong_n": 83,
+        "allwrong_by_true": {
+          "no": {
+            "sum": 44,
+            "count": 234,
+            "mean": 0.18803418803418803
+          },
+          "yes_explicit": {
+            "sum": 31,
+            "count": 125,
+            "mean": 0.248
+          },
+          "yes_implicit": {
+            "sum": 38,
+            "count": 97,
+            "mean": 0.3917525773195876
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "en": [
+      {
+        "StereoQueerEval_id": "training_EN_0226",
+        "yt_comment": "Freedom and justice 🏳️‍🌈",
+        "yt_title": "UK pardons historical convictions for abolished consensual same-sex crimes - [CHANNEL]",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_EN_2804",
+        "yt_comment": "Bye, Frank...I mean Felicia!",
+        "yt_title": "Trans people turn to crowdfunding to leave Florida",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1267",
+        "yt_comment": "Being gay is a choice",
+        "yt_title": "Ben Carson apologizes for comments on gay people",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_0191",
+        "yt_comment": "Too bad...I liked that show",
+        "yt_title": "Modern Family' hires transgender child actor",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1675",
+        "yt_comment": "Man that's one ugly \"woman!\"",
+        "yt_title": "TRANSGENDER FMR NAVY SEAL- PURGING THE FEMININE",
+        "hate_speech": "yes_implicit",
+        "predicted": "yes_explicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_2950",
+        "yt_comment": "All families should be respected.",
+        "yt_title": "Pete Buttigieg responds to Mike Johnson's views on gay people",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_2348",
+        "yt_comment": "World has gone to 💩",
+        "yt_title": "Cuba’s first LGBTQ hotels - [CHANNEL]",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1142",
+        "yt_comment": "cody,,, the only ally \nperiod",
+        "yt_title": "Self-described 'straight guy from Oklahoma' tricks out truck for Pride",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1959",
+        "yt_comment": "Blacklivesmatter turns back history at pride",
+        "yt_title": "Justin Trudeau makes history at Pride",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 6
+      },
+      {
+        "StereoQueerEval_id": "training_EN_0879",
+        "yt_comment": "why not get a trans actor",
+        "yt_title": "Redmayne plays transgender pioneer in The Danish Girl - [CHANNEL]",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 6
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1366",
+        "yt_comment": "Christianity is dying, becoming Gayanity 😂✝️🏳️‍🌈",
+        "yt_title": "Vatican hosts first Catholic LGBTQ pilgrimage",
+        "hate_speech": "yes_implicit",
+        "predicted": "yes_explicit",
+        "words": 6
+      },
+      {
+        "StereoQueerEval_id": "training_EN_1132",
+        "yt_comment": "i heard they in jail now",
+        "yt_title": "The queer revolution in the Middle East: 'One good song can do more than 5,000 protests'",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 6
+      }
+    ],
+    "it": [
+      {
+        "StereoQueerEval_id": "training_IT_0614",
+        "yt_comment": "Senza parole",
+        "yt_title": "Niky è una bambina transgender: \"L'identità di genere è una cosa seria e ognun* ha la sua\"",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 2
+      },
+      {
+        "StereoQueerEval_id": "training_IT_1615",
+        "yt_comment": "Solo una parole:ew🤮🤢",
+        "yt_title": "Milano Pride 2023, cittadini, politica e spettacolo: \"Vogliamo i diritti di tutti\"",
+        "hate_speech": "yes_explicit",
+        "predicted": "no",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_IT_2282",
+        "yt_comment": "Bella ragazza! 👍🏻",
+        "yt_title": "La battaglia di Andrea ragazzo trans del liceo Cavour: \"A scuola mi chiamano ancora al femminile\"",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_IT_2228",
+        "yt_comment": "che coraggio 🤣",
+        "yt_title": "Vincenzo Schettini: “Il mio coming out? Ne valeva la pena. Siate voi stessi, nessuno è sbagliato”",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_IT_2351",
+        "yt_comment": "No alla lgbt",
+        "yt_title": "Lettera d'amore a Malika, cacciata di casa perché lesbica: \"Ti vogliamo bene\"",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_IT_2147",
+        "yt_comment": "Ha fatto bene 😈😈😈😈😈",
+        "yt_title": "Manuel vive per strada, cacciato di casa dalla madre perché è gay: \"Fai il maschio, altrimenti via\"",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_IT_1779",
+        "yt_comment": "Fate veramente pietà...bravi 👏👏👏👏",
+        "yt_title": "divBudapest Pride, in 200mila sfidano blocchi e divieti per i diritti delle persone lgbtqia+./div",
+        "hate_speech": "yes_explicit",
+        "predicted": "no",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_IT_0386",
+        "yt_comment": "Come donna era bellissima",
+        "yt_title": "La battaglia di Andrea ragazzo trans del liceo Cavour: \"A scuola mi chiamano ancora al femminile\"",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_IT_1924",
+        "yt_comment": "Piu bella di certe modelle",
+        "yt_title": "Valentina Sampaio, chi è la prima modella trans a posare per Victoria's Secret",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_IT_1414",
+        "yt_comment": "Questi hanno vinto le elezioni...",
+        "yt_title": "Ho più amici gay che normali, le dichiarazioni omofobe della consigliera di Fdl",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 5
+      },
+      {
+        "StereoQueerEval_id": "training_IT_0369",
+        "yt_comment": "Allora i gay non sono normali???",
+        "yt_title": "Ho più amici gay che normali, le dichiarazioni omofobe della consigliera di Fdl",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 6
+      },
+      {
+        "StereoQueerEval_id": "training_IT_1539",
+        "yt_comment": "Che goduria vedere i nazifascisti rosicare😂😂😂😂😂",
+        "yt_title": "divBudapest Pride, in 200mila sfidano blocchi e divieti per i diritti delle persone lgbtqia+./div",
+        "hate_speech": "no",
+        "predicted": "yes_explicit",
+        "words": 6
+      }
+    ],
+    "nl": [
+      {
+        "StereoQueerEval_id": "training_NL_1176",
+        "yt_comment": "Ieuw",
+        "yt_title": "Boris is transgender en blij met de video van Nikkie",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 1
+      },
+      {
+        "StereoQueerEval_id": "training_NL_0559",
+        "yt_comment": "zeer jammer",
+        "yt_title": "Luna en Ivan zijn beide transgender en stapelverliefd op elkaar | Hij is een Zij",
+        "hate_speech": "yes_implicit",
+        "predicted": "no",
+        "words": 2
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1604",
+        "yt_comment": "Linkse indoctrinatie",
+        "yt_title": "Meesters en juffen bij Canal Pride in Utrecht",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 2
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1227",
+        "yt_comment": "In de war",
+        "yt_title": "Luna en Ivan zijn beide transgender en stapelverliefd op elkaar | Hij is een Zij",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1556",
+        "yt_comment": "Trost op hem",
+        "yt_title": "Boris is transgender en blij met de video van Nikkie",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_NL_0618",
+        "yt_comment": "Schelden hoort erbij",
+        "yt_title": "Schelden met homo of gay? OK BOOMER! | UITGEZOCHT #56",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 3
+      },
+      {
+        "StereoQueerEval_id": "training_NL_0675",
+        "yt_comment": "Zal nooit geaccepteerd worden",
+        "yt_title": "Deze voetballers kwamen uit de kast | [CHANNEL]",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1088",
+        "yt_comment": "Is niet bizonder ofzi",
+        "yt_title": "Profvoetballer vertelt dat hij op mannen valt",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1317",
+        "yt_comment": "Kiest ze zelf voor",
+        "yt_title": "Vanwege haar geloofsovertuiging wil ze geen seksuele relatie aangaan met een vrouw | How to be gay",
+        "hate_speech": "no",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1344",
+        "yt_comment": "Lhbt verbieden bedoel je",
+        "yt_title": "LHBT goes MBO",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1580",
+        "yt_comment": "Op de brandstapel ermee",
+        "yt_title": "Transgenders weggepest door hangjongeren",
+        "hate_speech": "yes_explicit",
+        "predicted": "yes_implicit",
+        "words": 4
+      },
+      {
+        "StereoQueerEval_id": "training_NL_1444",
+        "yt_comment": "Dit is echt raar",
+        "yt_title": "Boris is transgender en blij met de video van Nikkie",
+        "hate_speech": "yes_explicit",
+        "predicted": "no",
+        "words": 4
+      }
+    ]
+  }
+}

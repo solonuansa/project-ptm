@@ -1,0 +1,26 @@
+{
+  "model": "cardiffnlp/twitter-xlm-roberta-base",
+  "language": "en",
+  "scenario": {
+    "lr": 1e-05,
+    "warmup": 0.1,
+    "label_smoothing": 0.0
+  },
+  "input": "yt_comment",
+  "preprocessing": "raw",
+  "weighted": true,
+  "seed": 42,
+  "max_length": 384,
+  "epochs": 10,
+  "patience": 3,
+  "train_batch_size": 32,
+  "eval_batch_size": 16,
+  "weight_decay": 0.01,
+  "gradient_checkpointing": true,
+  "eval_accumulation_steps": 1,
+  "data_sha256": {
+    "train": "0accc269cdb4427cadc8fc9e7181d114fb79eee0d3007b21841ab3b2abd57edd",
+    "val": "333bc5a954e1c0c1541c5610031cb38e3e5722e00be51f545b7127cf3b72f7bf",
+    "test": "d6ef66ac736ff169530df997f0d68913d6d970e938a00565073b2fd7be380f1d"
+  }
+}

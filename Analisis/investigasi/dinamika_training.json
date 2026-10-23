@@ -1,0 +1,110 @@
+[
+  {
+    "model": "bert-base-multilingual-uncased",
+    "language": "en",
+    "best_epoch": 5.0,
+    "min_eval_loss": 0.9707528948783875,
+    "final_eval_loss": 1.325157642364502,
+    "best_checkpoint_eval_loss": 1.0835682153701782,
+    "first_logged_train_loss": 1.0777,
+    "last_logged_train_loss": 0.2255,
+    "val_macro_f1": 0.5516900635244294,
+    "test_macro_f1": 0.5218671321867557
+  },
+  {
+    "model": "bert-base-multilingual-uncased",
+    "language": "it",
+    "best_epoch": 4.0,
+    "min_eval_loss": 0.9704425930976868,
+    "final_eval_loss": 1.1750344038009644,
+    "best_checkpoint_eval_loss": 0.9704425930976868,
+    "first_logged_train_loss": 1.106,
+    "last_logged_train_loss": 0.4351,
+    "val_macro_f1": 0.5408398364920104,
+    "test_macro_f1": 0.47334325787161396
+  },
+  {
+    "model": "bert-base-multilingual-uncased",
+    "language": "nl",
+    "best_epoch": 4.0,
+    "min_eval_loss": 1.05690336227417,
+    "final_eval_loss": 1.4195146560668945,
+    "best_checkpoint_eval_loss": 1.1234979629516602,
+    "first_logged_train_loss": 1.095,
+    "last_logged_train_loss": 0.4905,
+    "val_macro_f1": 0.4705214521452145,
+    "test_macro_f1": 0.531275585339621
+  },
+  {
+    "model": "twitter-xlm-roberta-base",
+    "language": "en",
+    "best_epoch": 2.0,
+    "min_eval_loss": 0.9090617895126343,
+    "final_eval_loss": 1.0255208015441895,
+    "best_checkpoint_eval_loss": 0.9090617895126343,
+    "first_logged_train_loss": 1.1443,
+    "last_logged_train_loss": 0.5517,
+    "val_macro_f1": 0.5830898366109634,
+    "test_macro_f1": 0.5018463182617077
+  },
+  {
+    "model": "twitter-xlm-roberta-base",
+    "language": "it",
+    "best_epoch": 9.0,
+    "min_eval_loss": 0.9879270792007446,
+    "final_eval_loss": 1.4860848188400269,
+    "best_checkpoint_eval_loss": 1.4474623203277588,
+    "first_logged_train_loss": 1.1067,
+    "last_logged_train_loss": 0.2917,
+    "val_macro_f1": 0.5457402075049135,
+    "test_macro_f1": 0.5431894966622285
+  },
+  {
+    "model": "twitter-xlm-roberta-base",
+    "language": "nl",
+    "best_epoch": 5.0,
+    "min_eval_loss": 0.9827420115470886,
+    "final_eval_loss": 1.4149458408355713,
+    "best_checkpoint_eval_loss": 1.1415153741836548,
+    "first_logged_train_loss": 1.0992,
+    "last_logged_train_loss": 0.5372,
+    "val_macro_f1": 0.5287807156016887,
+    "test_macro_f1": 0.4866898706508908
+  },
+  {
+    "model": "xlm-roberta-base",
+    "language": "en",
+    "best_epoch": 3.0,
+    "min_eval_loss": 0.8955866098403931,
+    "final_eval_loss": 1.0590145587921143,
+    "best_checkpoint_eval_loss": 0.8955866098403931,
+    "first_logged_train_loss": 1.145,
+    "last_logged_train_loss": 0.6607,
+    "val_macro_f1": 0.5875839136708702,
+    "test_macro_f1": 0.4845059968951763
+  },
+  {
+    "model": "xlm-roberta-base",
+    "language": "it",
+    "best_epoch": 6.0,
+    "min_eval_loss": 1.0109639167785645,
+    "final_eval_loss": 1.2210580110549927,
+    "best_checkpoint_eval_loss": 1.117746114730835,
+    "first_logged_train_loss": 1.1122,
+    "last_logged_train_loss": 0.5891,
+    "val_macro_f1": 0.5438036083998817,
+    "test_macro_f1": 0.5278774900808403
+  },
+  {
+    "model": "xlm-roberta-base",
+    "language": "nl",
+    "best_epoch": 4.0,
+    "min_eval_loss": 1.0569158792495728,
+    "final_eval_loss": 1.2854846715927124,
+    "best_checkpoint_eval_loss": 1.0847690105438232,
+    "first_logged_train_loss": 1.1115,
+    "last_logged_train_loss": 0.8038,
+    "val_macro_f1": 0.5178508420208501,
+    "test_macro_f1": 0.5129528109212081
+  }
+]

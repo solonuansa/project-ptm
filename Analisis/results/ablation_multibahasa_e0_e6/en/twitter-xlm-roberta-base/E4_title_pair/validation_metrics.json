@@ -1,0 +1,20 @@
+{
+  "macro_f1": 0.5546365046999834,
+  "accuracy": 0.5856164383561644,
+  "weighted_f1": 0.5890632304060789,
+  "f1_no": 0.6906474820143885,
+  "recall_no": 0.6530612244897959,
+  "precision_no": 0.732824427480916,
+  "f1_yes_implicit": 0.5026737967914439,
+  "recall_yes_implicit": 0.6714285714285714,
+  "precision_yes_implicit": 0.4017094017094017,
+  "f1_yes_explicit": 0.47058823529411764,
+  "recall_yes_explicit": 0.37333333333333335,
+  "precision_yes_explicit": 0.6363636363636364,
+  "language": "en",
+  "model": "cardiffnlp/twitter-xlm-roberta-base",
+  "run_name": "E4_title_pair",
+  "best_checkpoint": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\en\\twitter-xlm-roberta-base\\E4_title_pair\\checkpoints\\checkpoint-264",
+  "seed": 42,
+  "data_sha256": "0accc269cdb4427cadc8fc9e7181d114fb79eee0d3007b21841ab3b2abd57edd"
+}

@@ -1,0 +1,20 @@
+{
+  "macro_f1": 0.4844070980924562,
+  "accuracy": 0.5353982300884956,
+  "weighted_f1": 0.5333125841239513,
+  "f1_no": 0.6995515695067265,
+  "recall_no": 0.7155963302752294,
+  "precision_no": 0.6842105263157895,
+  "f1_yes_implicit": 0.35,
+  "recall_yes_implicit": 0.38181818181818183,
+  "precision_yes_implicit": 0.3230769230769231,
+  "f1_yes_explicit": 0.4036697247706422,
+  "recall_yes_explicit": 0.3548387096774194,
+  "precision_yes_explicit": 0.46808510638297873,
+  "language": "nl",
+  "model": "cardiffnlp/twitter-xlm-roberta-base",
+  "run_name": "E2_learning_rate",
+  "best_checkpoint": "None",
+  "seed": 42,
+  "data_sha256": "8e53a2430639213c5e02e250f826220b274fb88b88bbab9c9795bc29a18f6232"
+}

@@ -1,0 +1,65 @@
+{
+  "bert-base-multilingual-uncased/en": {
+    "model": "bert-base-multilingual-uncased",
+    "language": "en",
+    "score": 0.5516900635244294,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\en\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\en"
+  },
+  "bert-base-multilingual-uncased/it": {
+    "model": "bert-base-multilingual-uncased",
+    "language": "it",
+    "score": 0.5408398364920104,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\it\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\it"
+  },
+  "bert-base-multilingual-uncased/nl": {
+    "model": "bert-base-multilingual-uncased",
+    "language": "nl",
+    "score": 0.4705214521452145,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\nl\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\bert-base-multilingual-uncased\\20261020T015907Z_e9643845\\nl"
+  },
+  "twitter-xlm-roberta-base/en": {
+    "model": "twitter-xlm-roberta-base",
+    "language": "en",
+    "score": 0.6171589848060436,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\en\\twitter-xlm-roberta-base\\E2_keep_case\\checkpoints\\checkpoint-528",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\en\\twitter-xlm-roberta-base\\E2_keep_case"
+  },
+  "twitter-xlm-roberta-base/it": {
+    "model": "twitter-xlm-roberta-base",
+    "language": "it",
+    "score": 0.5794271165481714,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\it\\twitter-xlm-roberta-base\\E1_keep_emoji\\checkpoints\\checkpoint-486",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\it\\twitter-xlm-roberta-base\\E1_keep_emoji"
+  },
+  "twitter-xlm-roberta-base/nl": {
+    "model": "twitter-xlm-roberta-base",
+    "language": "nl",
+    "score": 0.5287807156016887,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\twitter-xlm-roberta-base\\20261020T040339Z_25022f17\\nl\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\twitter-xlm-roberta-base\\20261020T040339Z_25022f17\\nl"
+  },
+  "xlm-roberta-base/en": {
+    "model": "xlm-roberta-base",
+    "language": "en",
+    "score": 0.5875839136708702,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\en\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\en"
+  },
+  "xlm-roberta-base/it": {
+    "model": "xlm-roberta-base",
+    "language": "it",
+    "score": 0.5438036083998817,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\it\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\it"
+  },
+  "xlm-roberta-base/nl": {
+    "model": "xlm-roberta-base",
+    "language": "nl",
+    "score": 0.5178508420208501,
+    "path": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\nl\\best_model",
+    "run": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\xlm-roberta-base\\20261020T105544Z_e1320f49\\nl"
+  }
+}

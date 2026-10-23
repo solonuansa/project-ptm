@@ -1,0 +1,20 @@
+{
+  "macro_f1": 0.6103576914636822,
+  "accuracy": 0.6506849315068494,
+  "weighted_f1": 0.6507954043305347,
+  "f1_no": 0.7687074829931972,
+  "recall_no": 0.7687074829931972,
+  "precision_no": 0.7687074829931972,
+  "f1_yes_implicit": 0.5290322580645161,
+  "recall_yes_implicit": 0.5857142857142857,
+  "precision_yes_implicit": 0.4823529411764706,
+  "f1_yes_explicit": 0.5333333333333333,
+  "recall_yes_explicit": 0.48,
+  "precision_yes_explicit": 0.6,
+  "language": "en",
+  "model": "cardiffnlp/twitter-xlm-roberta-base",
+  "run_name": "E7_focal_loss",
+  "best_checkpoint": "E:\\Projek\\PTM\\TBP\\Analisis\\results\\ablation_multibahasa_e0_e6\\en\\twitter-xlm-roberta-base\\E7_focal_loss\\checkpoints\\checkpoint-462",
+  "seed": 42,
+  "data_sha256": "0accc269cdb4427cadc8fc9e7181d114fb79eee0d3007b21841ab3b2abd57edd"
+}
