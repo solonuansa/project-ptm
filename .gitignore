@@ -12,6 +12,7 @@ Analisis/results/**/_checkpoints/
 Analisis/results/**/checkpoints/
 Analisis/results/**/checkpoint-*/
 Analisis/results/**/best_model/
+Analisis/results/**/best_adapter/
 Analisis/results/**/*.safetensors
 
 # Large per-language archives containing model weights

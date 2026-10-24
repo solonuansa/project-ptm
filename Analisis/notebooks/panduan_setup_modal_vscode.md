@@ -207,7 +207,7 @@ Harapkan folder kerja `/workspace`, GPU yang diminta, BF16 tersedia, dan CSV dit
 | 7. Baseline zero-shot | Jalankan jika `RUN_ZERO_SHOT_BASELINE=True` |
 | 8. Training SFT | Mulai training dan pemilihan checkpoint berdasarkan macro-F1 validation |
 | 9. Evaluasi akhir | Jalankan setelah konfigurasi final dan checkpoint dipilih |
-| 10. Simpan dan download ZIP | Simpan adapter, laporan, konfigurasi, dan ZIP |
+| 10. Simpan dan download ZIP | Simpan prompt, laporan, konfigurasi, dan ZIP |
 
 Contoh pengaturan awal:
 
@@ -223,20 +223,21 @@ Jangan menjalankan ulang sel pengaturan selama training karena sel tersebut memb
 
 ## 8. Simpan dan download hasil
 
+Nama run mengikuti `qwen35_prompt-<bahasa_prompt>_data-<bahasa_data>_<timestamp>_<id>`. Contoh data NL dengan prompt EN memakai awalan `qwen35_prompt-en_data-nl_`.
+
 Output notebook ringkas berada pada:
 
 ```text
 /workspace/results/
-├── qwen35_en_<timestamp>_<id>/
-│   ├── best_adapter/
+├── qwen35_prompt-en_data-en_<timestamp>_<id>/
 │   ├── checkpoints/
 │   ├── config.json
 │   ├── metrics.json
 │   └── ... laporan, prediksi, dan grafik
-└── qwen35_en_<timestamp>_<id>.zip
+└── qwen35_prompt-en_data-en_<timestamp>_<id>.zip
 ```
 
-Adapter terbaik disimpan pada bagian 10. ZIP mengecualikan checkpoint sementara; base model tetap pada cache. Path ini mengikuti notebook terbaru, bukan struktur `results/Qwen3.5-9B/<run_id>/<bahasa>` pada versi sebelumnya.
+Bagian 10 mengekspor laporan tanpa menyimpan `best_adapter` atau tokenizer. ZIP mengecualikan folder `checkpoints` dan `best_adapter`; base model tetap pada cache. Checkpoint training masih digunakan untuk pemilihan model validation terbaik. Path ini mengikuti notebook terbaru, bukan struktur `results/Qwen3.5-9B/<run_id>/<bahasa>` pada versi sebelumnya.
 
 Setelah file selesai ditulis, commit dari kernel remote:
 
@@ -257,7 +258,7 @@ Untuk mengambil satu ZIP saja, ganti path contoh berikut dengan nama aktual:
 
 ```powershell
 & $ModalPython -X utf8 -m modal volume get ptm-qwen `
-    /results/qwen35_en_TIMESTAMP_ID.zip ./Analisis/results/qwen35_en_TIMESTAMP_ID.zip
+    /results/qwen35_prompt-en_data-en_TIMESTAMP_ID.zip ./Analisis/results/qwen35_prompt-en_data-en_TIMESTAMP_ID.zip
 ```
 
 Gunakan folder tujuan berbeda jika hasil lama sudah ada. Periksa ZIP dan laporan lokal sebelum menghentikan sesi. Link `FileLink` dari VS Code remote mungkin tidak langsung mengunduh file; CLI Volume menyediakan jalur download yang jelas.

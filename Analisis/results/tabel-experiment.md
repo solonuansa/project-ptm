@@ -5,4 +5,4 @@ Isi dengan nilai macro f1-score pada data test
 |---|---|---|---|
 | English (EN) | 0.712664 | — | — |
 | Italian (IT) | 0.7036 | 0.702038 | — |
-| Dutch (NL) | — | — | — |
+| Dutch (NL) | 0.629927 | — | — |
