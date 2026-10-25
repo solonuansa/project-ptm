@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-25",
+  "scope": "targeted narrative research, not systematic review",
+  "sources": [
+    {
+      "anthology_id": "2024.alta-1.11",
+      "key": "chan-etal-2024-hate",
+      "url": "https://aclanthology.org/2024.alta-1.11/",
+      "bibtex_source": "https://aclanthology.org/2024.alta-1.11.bib",
+      "bibliography_sha256": "deafbb861838331062e07c275cef9579981dd929eb3cfabc43043a7010adb5e5",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2025.queerinai-main.4",
+      "key": "nguyen-etal-2025-leveraging",
+      "url": "https://aclanthology.org/2025.queerinai-main.4/",
+      "bibtex_source": "https://aclanthology.org/2025.queerinai-main.4.bib",
+      "bibliography_sha256": "f3f4b7c8ec89141bd16c97a57203895ba0b09cb303f7e1d0379cbd8e8a1821ff",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2023.semeval-1.166",
+      "key": "sorensen-etal-2023-juage",
+      "url": "https://aclanthology.org/2023.semeval-1.166/",
+      "bibtex_source": "https://aclanthology.org/2023.semeval-1.166.bib",
+      "bibliography_sha256": "9658288eee99836e66cb76eb5d59df59544801fcba7c8166693ea71b15daf871",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2022.ltedi-1.37",
+      "key": "nozza-2022-nozza",
+      "url": "https://aclanthology.org/2022.ltedi-1.37/",
+      "bibtex_source": "https://aclanthology.org/2022.ltedi-1.37.bib",
+      "bibliography_sha256": "3b41b145ba65a36a483a11b2a8da2ce140bf3ce27e9fa8f61952b5f527da5682",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2023.ltedi-1.15",
+      "key": "wong-etal-2023-cantnlp",
+      "url": "https://aclanthology.org/2023.ltedi-1.15/",
+      "bibtex_source": "https://aclanthology.org/2023.ltedi-1.15.bib",
+      "bibliography_sha256": "de712990790375e30b114618901aaf13856456e7b75f073e6804ac300d6e808e",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2025.ccl-2.48",
+      "key": "wu-etal-2025-system",
+      "url": "https://aclanthology.org/2025.ccl-2.48/",
+      "bibtex_source": "https://aclanthology.org/2025.ccl-2.48.bib",
+      "bibliography_sha256": "d548468183542ed7d7cb7ab1908a6abbf9678ada73481456b95d7214ef8971d7",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2021.emnlp-main.29",
+      "key": "elsherief-etal-2021-latent",
+      "url": "https://aclanthology.org/2021.emnlp-main.29/",
+      "bibtex_source": "https://aclanthology.org/2021.emnlp-main.29.bib",
+      "bibliography_sha256": "a7e988db1305349127815114c54efa431d4eb4e922de161ebc844e2729873172",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2021.acl-long.4",
+      "key": "rottger-etal-2021-hatecheck",
+      "url": "https://aclanthology.org/2021.acl-long.4/",
+      "bibtex_source": "https://aclanthology.org/2021.acl-long.4.bib",
+      "bibliography_sha256": "da688820b07c6abb8b320623d31214ee25c0b8051b73b6c20d1a7c2afda76e3f",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    },
+    {
+      "anthology_id": "2024.lrec-main.1176",
+      "key": "cignarella-etal-2024-queereotypes",
+      "url": "https://aclanthology.org/2024.lrec-main.1176/",
+      "bibtex_source": "https://aclanthology.org/2024.lrec-main.1176.bib",
+      "bibliography_sha256": "a12cdc5bc0ffa6da4de6ae8aa064d09a761f03c0aecd20f4311b190ac6dab044",
+      "automated_check": "official record opened; supporting locations recorded in literature review",
+      "human_verification": "pending"
+    }
+  ],
+  "bibliography": "Paper/research/qwen35/task-solution-literature.bib",
+  "count": 12,
+  "human_verification": "pending"
+}

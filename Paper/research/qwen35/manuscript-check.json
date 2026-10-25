@@ -1,0 +1,22 @@
+{
+  "status": "draft",
+  "submission_ready": false,
+  "framing": "task-solution paper, accessible academic Indonesian, impersonal wording",
+  "references": 12,
+  "all_references_resolve": true,
+  "unused_references": [],
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "pages": 6,
+  "figures": 2,
+  "tables": 4,
+  "paragraphs_registered": 39,
+  "primary_test_combinations": 9,
+  "matrix_audited_combinations": 7,
+  "full_config_and_prediction_audits": 4,
+  "human_verification": "pending",
+  "wording_checks": "requested exclusions absent in LaTeX and PDF text",
+  "visual_qa": "All final pages rendered; contact sheet and detailed first/last pages inspected",
+  "pdf_sha256": "ccba3830869bf18bbc5568df64b8479e71eb779f23acf90cb5dcb134905d1f40",
+  "main_tex_sha256": "999251101f5c3a4cf5f3e60a7d38ea6905d9d09a558e63dc842d240d992fa4b1"
+}

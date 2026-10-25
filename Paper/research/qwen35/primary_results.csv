@@ -1,0 +1,10 @@
+data_language,prompt_language,primary_macro_f1,evidence,zero_shot_test
+en,en,0.712664,summary_only,
+en,it,0.715757,matrix_and_metrics,0.44994169786759236
+en,nl,0.688340,matrix_and_metrics,0.4189316631093125
+it,en,0.7036,matrix_and_metrics,0.5142966544174367
+it,it,0.702038,summary_only,
+it,nl,0.701449,matrix_and_metrics,0.4394059096644079
+nl,en,0.629927,matrix_and_metrics,0.5052092300693132
+nl,it,0.630810,matrix_and_metrics,0.48049600845994433
+nl,nl,0.641522,matrix_and_metrics,0.4698331731364021

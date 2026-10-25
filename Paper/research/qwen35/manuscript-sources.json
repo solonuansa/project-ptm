@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-25",
+  "sources": [
+    {
+      "key": "cignarella-etal-2024-queereotypes",
+      "evidence_id": "L101",
+      "url": "https://aclanthology.org/2024.lrec-main.1176/",
+      "locator": "abstract",
+      "human_verification": "pending"
+    },
+    {
+      "key": "elsherief-etal-2021-latent",
+      "evidence_id": "L102",
+      "url": "https://aclanthology.org/2021.emnlp-main.29/",
+      "locator": "abstract",
+      "human_verification": "pending"
+    },
+    {
+      "key": "qwen-team-2026-qwen35",
+      "evidence_id": "L103",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "locator": "model card",
+      "human_verification": "pending"
+    },
+    {
+      "key": "hu-etal-2021-lora",
+      "evidence_id": "L104",
+      "url": "https://arxiv.org/abs/2106.09685",
+      "locator": "abstract and method",
+      "human_verification": "pending"
+    },
+    {
+      "key": "rottger-etal-2021-hatecheck",
+      "evidence_id": "L107",
+      "url": "https://aclanthology.org/2021.acl-long.4/",
+      "locator": "abstract",
+      "human_verification": "pending"
+    },
+    {
+      "key": "wong-etal-2023-cantnlp",
+      "evidence_id": "L108",
+      "url": "https://aclanthology.org/2023.ltedi-1.15/",
+      "locator": "abstract and fine-tuning section",
+      "human_verification": "pending"
+    },
+    {
+      "key": "loshchilov-hutter-2019-decoupled",
+      "evidence_id": "L109",
+      "url": "https://arxiv.org/abs/1711.05101",
+      "locator": "abstract and publication metadata",
+      "human_verification": "pending"
+    },
+    {
+      "key": "stereoqueereval-2026-data",
+      "evidence_id": "L110",
+      "url": "https://github.com/StereoQueerEval/StereoQueerEval_SemEval-2027",
+      "locator": "README Files and Columns",
+      "human_verification": "pending"
+    },
+    {
+      "key": "chan-etal-2024-hate",
+      "evidence_id": "L111",
+      "url": "https://aclanthology.org/2024.alta-1.11/",
+      "locator": "PDF sections 2-3 and Table 2, pp147-148",
+      "human_verification": "pending"
+    },
+    {
+      "key": "nguyen-etal-2025-leveraging",
+      "evidence_id": "L112",
+      "url": "https://aclanthology.org/2025.queerinai-main.4/",
+      "locator": "PDF sections 3 and 5; PDF author name Van-Tuan Pham",
+      "human_verification": "pending"
+    },
+    {
+      "key": "sorensen-etal-2023-juage",
+      "evidence_id": "L113",
+      "url": "https://aclanthology.org/2023.semeval-1.166/",
+      "locator": "PDF sections 3-4",
+      "human_verification": "pending"
+    },
+    {
+      "key": "nozza-2022-nozza",
+      "evidence_id": "L114",
+      "url": "https://aclanthology.org/2022.ltedi-1.37/",
+      "locator": "official record and abstract",
+      "human_verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "primary_file": "Analisis/results/tabel-experiment.md",
+  "primary_sha256": "e992afd9f625e0c002e46b6200da6f7e75b878e8cb724e8e1cd96dd9f497371c",
+  "notebook_sha256": "25560c4c54107d0fc9cff05f5f66fa2ce3821e9020afb2ebc614010dd05bdd56",
+  "primary_combinations": 9,
+  "artifact_combinations": 7,
+  "full_config_and_predictions": 4,
+  "summary_only": [
+    "en/en",
+    "it/it"
+  ],
+  "runs": {
+    "it/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-it_20261024T103652Z_2126b07a",
+      "metrics_sha256": "721d9ea1818f7b7257ebcbb003d2d4613d72b3aea377442241e42662b4bb1922",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.55,
+          "macro_f1": 0.4902209618358473,
+          "weighted_f1": 0.5310195122237628,
+          "loss": 0.6234772699873165
+        },
+        "sft_val": {
+          "accuracy": 0.7045454545454546,
+          "macro_f1": 0.6843908112943646,
+          "weighted_f1": 0.7087388358961964,
+          "loss": 0.5536445164375684
+        },
+        "sft_test": {
+          "accuracy": 0.7151767151767152,
+          "macro_f1": 0.7035634218564737,
+          "weighted_f1": 0.7226046742214899,
+          "loss": 0.5738505453553598
+        },
+        "zero_shot_test": {
+          "accuracy": 0.58004158004158,
+          "macro_f1": 0.5142966544174367,
+          "weighted_f1": 0.558820864021861,
+          "loss": 0.5947266961688107
+        }
+      },
+      "config_available": false,
+      "predictions_checked": false,
+      "configuration": null
+    },
+    "nl/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-nl_20261024T113321Z_82ac8320",
+      "metrics_sha256": "238eea888565125d3d1ae0502d4bfea5fef8da3ade2653001d29b78530572d94",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.504424778761062,
+          "macro_f1": 0.4288513627705786,
+          "weighted_f1": 0.4848483023368346,
+          "loss": 0.5967976161447741
+        },
+        "sft_val": {
+          "accuracy": 0.6592920353982301,
+          "macro_f1": 0.6447744613762595,
+          "weighted_f1": 0.6749919185416321,
+          "loss": 0.8408852544480316
+        },
+        "sft_test": {
+          "accuracy": 0.668859649122807,
+          "macro_f1": 0.6299273766934989,
+          "weighted_f1": 0.6808023130403354,
+          "loss": 0.8145490428610732
+        },
+        "zero_shot_test": {
+          "accuracy": 0.5964912280701754,
+          "macro_f1": 0.5052092300693132,
+          "weighted_f1": 0.5805652643291966,
+          "loss": 0.5165747871843658
+        }
+      },
+      "config_available": true,
+      "predictions_checked": true,
+      "configuration": {
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "input_mode": "comment_only",
+        "label_to_answer": {
+          "no": "0",
+          "yes_explicit": "1",
+          "yes_implicit": "2"
+        },
+        "max_length": 1024,
+        "enable_thinking": false,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.20.2",
+          "peft": "0.21.2"
+        }
+      }
+    },
+    "en/it": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-it_data-en_20261025T031812Z_79e868ed",
+      "metrics_sha256": "673a717d1a85a91677f1577a0f53f13756f8192abd50bb01a04ad6188fc121c7",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.5513698630136986,
+          "macro_f1": 0.4525226177216315,
+          "weighted_f1": 0.5169425071715577,
+          "loss": 0.6581280808307769
+        },
+        "sft_val": {
+          "accuracy": 0.7054794520547946,
+          "macro_f1": 0.6737961361617275,
+          "weighted_f1": 0.7153510472114095,
+          "loss": 0.47388361347131575
+        },
+        "sft_test": {
+          "accuracy": 0.735494880546075,
+          "macro_f1": 0.7157566248971552,
+          "weighted_f1": 0.7377711554251722,
+          "loss": 0.43557934475688775
+        },
+        "zero_shot_test": {
+          "accuracy": 0.5221843003412969,
+          "macro_f1": 0.44994169786759236,
+          "weighted_f1": 0.4913190387165154,
+          "loss": 0.6328995296353986
+        }
+      },
+      "config_available": false,
+      "predictions_checked": false,
+      "configuration": null
+    },
+    "nl/it": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-it_data-nl_20261024T133310Z_e0ea89ea",
+      "metrics_sha256": "82f9034eaa28f926c176a9e9568f7891cd4d4fc6068186f6710be8a2e16e7b66",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.4911504424778761,
+          "macro_f1": 0.4064699050351848,
+          "weighted_f1": 0.46082905426362214,
+          "loss": 0.6160734855771823
+        },
+        "sft_val": {
+          "accuracy": 0.6061946902654868,
+          "macro_f1": 0.6007545472292245,
+          "weighted_f1": 0.6264035459521042,
+          "loss": 0.5858266996005339
+        },
+        "sft_test": {
+          "accuracy": 0.6622807017543859,
+          "macro_f1": 0.6308097729833183,
+          "weighted_f1": 0.6782763194672902,
+          "loss": 0.5247356774015747
+        },
+        "zero_shot_test": {
+          "accuracy": 0.5877192982456141,
+          "macro_f1": 0.48049600845994433,
+          "weighted_f1": 0.5610396616520736,
+          "loss": 0.5250280634375948
+        }
+      },
+      "config_available": false,
+      "predictions_checked": false,
+      "configuration": null
+    },
+    "en/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-en_20261025T023209Z_c7ee653f",
+      "metrics_sha256": "449191d7acce9e2313f2ada5fb6607b97d3c964eff96d973c06251e5637263b3",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.5582191780821918,
+          "macro_f1": 0.42476047410555634,
+          "weighted_f1": 0.4941850397919521,
+          "loss": 0.7143982630281841
+        },
+        "sft_val": {
+          "accuracy": 0.7054794520547946,
+          "macro_f1": 0.6638974288380061,
+          "weighted_f1": 0.7074301302605022,
+          "loss": 0.43527575535400714
+        },
+        "sft_test": {
+          "accuracy": 0.7167235494880546,
+          "macro_f1": 0.68833974667308,
+          "weighted_f1": 0.716496572255958,
+          "loss": 0.39532378976378924
+        },
+        "zero_shot_test": {
+          "accuracy": 0.5324232081911263,
+          "macro_f1": 0.4189316631093125,
+          "weighted_f1": 0.46715399270705216,
+          "loss": 0.6635708347948883
+        }
+      },
+      "config_available": true,
+      "predictions_checked": true,
+      "configuration": {
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "input_mode": "comment_only",
+        "label_to_answer": {
+          "no": "0",
+          "yes_explicit": "1",
+          "yes_implicit": "2"
+        },
+        "max_length": 1024,
+        "enable_thinking": false,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.20.2",
+          "peft": "0.21.2"
+        }
+      }
+    },
+    "it/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-it_20261025T020646Z_0bd190be",
+      "metrics_sha256": "44106fae0c16b3c9532bdf09c19aa10849665d0a8036060f67ae30d1f34e728b",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.42634568875262363,
+          "weighted_f1": 0.4803763278561419,
+          "loss": 0.6553113866069576
+        },
+        "sft_val": {
+          "accuracy": 0.7,
+          "macro_f1": 0.6837782784192247,
+          "weighted_f1": 0.7073749391976651,
+          "loss": 0.5289272202252918
+        },
+        "sft_test": {
+          "accuracy": 0.7110187110187111,
+          "macro_f1": 0.7014487604305858,
+          "weighted_f1": 0.7193854245875224,
+          "loss": 0.5337814958642668
+        },
+        "zero_shot_test": {
+          "accuracy": 0.5696465696465697,
+          "macro_f1": 0.4394059096644079,
+          "weighted_f1": 0.49596968659411755,
+          "loss": 0.6529774840216197
+        }
+      },
+      "config_available": true,
+      "predictions_checked": true,
+      "configuration": {
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "input_mode": "comment_only",
+        "label_to_answer": {
+          "no": "0",
+          "yes_explicit": "1",
+          "yes_implicit": "2"
+        },
+        "max_length": 1024,
+        "enable_thinking": false,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.20.2",
+          "peft": "0.21.2"
+        }
+      }
+    },
+    "nl/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-nl_20261025T013713Z_a3fe51dc",
+      "metrics_sha256": "1616ee95a0fc50a29110cf2e0cd7a8ea63ea2586f65b9b6b69e63e0451e77867",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.5309734513274337,
+          "macro_f1": 0.4005060961582701,
+          "weighted_f1": 0.46496210386168063,
+          "loss": 0.6780086345274907
+        },
+        "sft_val": {
+          "accuracy": 0.6637168141592921,
+          "macro_f1": 0.6498643688352366,
+          "weighted_f1": 0.6756144709338373,
+          "loss": 0.8938310664637766
+        },
+        "sft_test": {
+          "accuracy": 0.6842105263157895,
+          "macro_f1": 0.6415218958800766,
+          "weighted_f1": 0.6924998828942728,
+          "loss": 0.8354654246291997
+        },
+        "zero_shot_test": {
+          "accuracy": 0.6052631578947368,
+          "macro_f1": 0.4698331731364021,
+          "weighted_f1": 0.5566497587529383,
+          "loss": 0.5819942126385477
+        }
+      },
+      "config_available": true,
+      "predictions_checked": true,
+      "configuration": {
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "input_mode": "comment_only",
+        "label_to_answer": {
+          "no": "0",
+          "yes_explicit": "1",
+          "yes_implicit": "2"
+        },
+        "max_length": 1024,
+        "enable_thinking": false,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.20.2",
+          "peft": "0.21.2"
+        }
+      }
+    }
+  },
+  "model_execution": false,
+  "raw_text_exported": false
+}

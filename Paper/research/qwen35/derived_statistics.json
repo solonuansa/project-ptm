@@ -1,0 +1,20 @@
+{
+  "source": "primary matrix at displayed precision; baseline gains from saved metrics",
+  "prompt_means": {
+    "en": 0.6820636666666666,
+    "it": 0.6828683333333333,
+    "nl": 0.6771036666666667
+  },
+  "data_ranges": {
+    "en": 0.027417000000000025,
+    "it": 0.002151000000000014,
+    "nl": 0.011595000000000022
+  },
+  "baseline_gain_min_points": 12.471814662418568,
+  "baseline_gain_max_points": 26.940808356376746,
+  "nl_prompt_errors": {
+    "en": 166,
+    "it": 139,
+    "nl": 144
+  }
+}
