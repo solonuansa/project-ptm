@@ -1,5 +1,7 @@
 # Panduan Run Notebook di Cloud
 
+> Arsip panduan eksperimen encoder. Bobot model lama sudah dihapus; laporan evaluasi tetap disimpan. Untuk eksperimen aktif, gunakan [panduan Qwen](../../docs/panduan_setup_modal_vscode.md).
+
 Alur kerja: **pilih notebook → pilih satu bahasa → upload tiga CSV → jalankan pemodelan → download artefak → ulangi untuk bahasa/model lain**.
 
 Setiap model dilatih terpisah untuk EN, IT, dan NL. Total ada **9 eksperimen** (3 model × 3 bahasa). Setiap bahasa dimulai dari model pretrained baru.
@@ -8,11 +10,11 @@ Setiap model dilatih terpisah untuk EN, IT, dan NL. Total ada **9 eksperimen** (
 
 | Model | Notebook |
 |---|---|
-| XLM-RoBERTa-base | [XLM_RoBERTa_Base.ipynb](XLM_RoBERTa_Base.ipynb) |
-| mBERT multilingual uncased | [mBERT_Multilingual_Uncased.ipynb](mBERT_Multilingual_Uncased.ipynb) |
-| Twitter-XLM-RoBERTa-base | [Twitter_XLM_RoBERTa_Base.ipynb](Twitter_XLM_RoBERTa_Base.ipynb) |
+| XLM-RoBERTa-base | [XLM_RoBERTa_Base.ipynb](../notebooks/XLM_RoBERTa_Base.ipynb) |
+| mBERT multilingual uncased | [mBERT_Multilingual_Uncased.ipynb](../notebooks/mBERT_Multilingual_Uncased.ipynb) |
+| Twitter-XLM-RoBERTa-base | [Twitter_XLM_RoBERTa_Base.ipynb](../notebooks/Twitter_XLM_RoBERTa_Base.ipynb) |
 
-Ambil **tiga CSV dari satu bahasa yang sama** di [direktori data](../data/):
+Ambil **tiga CSV dari satu bahasa yang sama** di [direktori data](../../data/):
 
 | Bahasa | Folder | File yang di-upload |
 |---|---|---|
@@ -130,7 +132,7 @@ Eksperimen dianggap selesai setelah **training, evaluasi, ekspor, dan penyimpana
 
 ## Ablation E0-E7 multibahasa
 
-Gunakan [Twitter_XLM_RoBERTa_Base_E0_E6.ipynb](Twitter_XLM_RoBERTa_Base_E0_E6.ipynb) untuk membandingkan delapan skenario pada EN, IT, dan NL secara terpisah. Default satu model Twitter-XLM-R menghasilkan 24 training; ketiga model menghasilkan 72 training. Path data otomatis mendukung folder split lokal dan upload CSV/ZIP di Colab.
+Gunakan [Twitter_XLM_RoBERTa_Base_E0_E6.ipynb](../notebooks/Twitter_XLM_RoBERTa_Base_E0_E6.ipynb) untuk membandingkan delapan skenario pada EN, IT, dan NL secara terpisah. Default satu model Twitter-XLM-R menghasilkan 24 training; ketiga model menghasilkan 72 training. Path data otomatis mendukung folder split lokal dan upload CSV/ZIP di Colab.
 
 Cleanup dipanggil sebelum dan setelah setiap training/evaluasi, termasuk ketika gagal. Gradient checkpointing aktif, batch evaluasi 8, dan prediksi evaluasi dipindahkan ke CPU tiap batch. Jika tetap OOM, turunkan batch train; cleanup tidak mengurangi kebutuhan memori satu batch. Dependensi disiapkan di luar notebook.
 
@@ -152,7 +154,7 @@ Pada pembersihan 23 Oktober 2026, sembilan model terbaik dari run yang tersedia 
 
 ## E2: warmup, learning rate, dan label smoothing
 
-Gunakan [Twitter_XLM_RoBERTa_Base_E2_Tuning.ipynb](Twitter_XLM_RoBERTa_Base_E2_Tuning.ipynb). Semua skenario memakai komentar asli, mempertahankan emoji dan kapitalisasi, serta weighted cross-entropy. Setiap varian mengubah satu faktor terhadap baseline.
+Gunakan [Twitter_XLM_RoBERTa_Base_E2_Tuning.ipynb](../notebooks/Twitter_XLM_RoBERTa_Base_E2_Tuning.ipynb). Semua skenario memakai komentar asli, mempertahankan emoji dan kapitalisasi, serta weighted cross-entropy. Setiap varian mengubah satu faktor terhadap baseline.
 
 | Skenario | Learning rate | Warmup ratio | Label smoothing |
 |---|---:|---:|---:|
@@ -167,6 +169,6 @@ Cleanup dan kebijakan satu pemenang per pasangan model/bahasa tetap mengikuti `b
 
 ## Qwen melalui VS Code dan GPU Modal
 
-Ikuti [panduan setup Modal dari VS Code](panduan_setup_modal_vscode.md) untuk instalasi CLI, autentikasi, upload CSV, pemilihan GPU, koneksi Jupyter remote, menjalankan notebook Qwen versi terbaru, cek billing, penyimpanan/download hasil, dan penghentian sesi.
+Ikuti [panduan setup Modal dari VS Code](../../docs/panduan_setup_modal_vscode.md) untuk instalasi CLI, autentikasi, upload CSV, pemilihan GPU, koneksi Jupyter remote, menjalankan notebook Qwen versi terbaru, cek billing, penyimpanan/download hasil, dan penghentian sesi.
 
-Panduan tersebut mengikuti notebook Qwen ringkas dengan bagian 1?10 setelah PR #4. Launcher tersedia di [modal_qwen_jupyter.py](../modal_qwen_jupyter.py).
+Panduan tersebut mengikuti notebook Qwen ringkas dengan bagian 1?10 setelah PR #4. Launcher tersedia di [modal_qwen_jupyter.py](../../modal_qwen_jupyter.py).

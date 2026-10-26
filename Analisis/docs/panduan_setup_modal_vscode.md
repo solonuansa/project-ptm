@@ -1,6 +1,6 @@
 # Panduan Modal dan VS Code untuk notebook Qwen
 
-Panduan ini memakai PowerShell di Windows, launcher [modal_qwen_jupyter.py](../modal_qwen_jupyter.py), dan notebook [qwen3.5-9b.ipynb](qwen3.5-9b.ipynb). Urutan bagian notebook mengikuti versi ringkas setelah PR #4. Diperbarui: 23 Oktober 2026.
+Panduan ini memakai PowerShell di Windows, launcher [modal_qwen_jupyter.py](../modal_qwen_jupyter.py), dan notebook [qwen3.5-9b.ipynb](../notebooks/qwen3.5-9b.ipynb). Urutan bagian notebook mengikuti versi ringkas setelah PR #4. Diperbarui: 23 Oktober 2026.
 
 ## Daftar isi
 
@@ -166,7 +166,7 @@ Di terminal lokal pertama:
 
 Tunggu image selesai dibangun dan log Jupyter menyatakan server aktif. Catat app ID `ap-...` dari tautan dashboard pada log. Salin nilai `JUPYTER_URL` yang tercetak.
 
-1. Buka [notebook Qwen](qwen3.5-9b.ipynb) di VS Code.
+1. Buka [notebook Qwen](../notebooks/qwen3.5-9b.ipynb) di VS Code.
 2. Pilih **Select Kernel > Select Another Kernel > Existing Jupyter Server**.
 3. Tempel URL lengkap, termasuk `?token=...`.
 4. Pilih kernel **Python 3** pada server tersebut.

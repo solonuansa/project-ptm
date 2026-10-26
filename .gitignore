@@ -19,3 +19,11 @@ Analisis/results/**/*.safetensors
 # Historical small archives in Analisis/archive/results remain tracked.
 Analisis/results/*/*/*.zip
 Analisis/results/**/*.zip
+
+# Archived experiments: exclude regenerated model payloads and checkpoints
+Analisis/archive/**/_checkpoints/
+Analisis/archive/**/checkpoints/
+Analisis/archive/**/checkpoint-*/
+Analisis/archive/**/best_model/
+Analisis/archive/**/best_adapter/
+Analisis/archive/**/*.safetensors

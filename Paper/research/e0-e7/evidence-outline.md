@@ -9,7 +9,7 @@ dipilih pengguna. Belum dinyatakan siap dikirim ke konferensi.
 - E001: `Analisis/notebooks/Twitter_XLM_RoBERTa_Base_E0_E6.ipynb`, sel 2, 6,
   8, 10, 12, 14, 16. Konfigurasi mencakup E0-E7, 24 run direncanakan.
   Output pelatihan terakhir berhenti dengan KeyboardInterrupt pada E5 Italia.
-- E002: `Analisis/results/ablation_multibahasa_e0_e6/*/*/*/validation_metrics.json`.
+- E002: `Analisis/archive/results/ablation_multibahasa_e0_e6/*/*/*/validation_metrics.json`.
   Hanya 13 run lengkap: EN E0-E7, IT E0-E4; tidak ada NL. CSV ringkasan sesuai
   dengan JSON. `audit.json` mencatat hash sumber dan konfigurasi setiap run.
 - E003: direktori yang sama, `predictions_validation.csv`,

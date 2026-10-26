@@ -4,7 +4,7 @@ Tanggal: 23 Oktober 2026. Fokus: fine-tuning transformer untuk tiga kelas `no`, 
 
 ## 1. Bukti dari eksperimen terbaru
 
-Sumber: `Analisis/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/<eksperimen>/validation_metrics.json`, `configuration.json`, dan `training_history.csv`. Angka berikut berasal dari run lokal terbaru, bukan output notebook arsip.
+Sumber: `Analisis/archive/results/ablation_multibahasa_e0_e6/en/twitter-xlm-roberta-base/<eksperimen>/validation_metrics.json`, `configuration.json`, dan `training_history.csv`. Angka berikut berasal dari run lokal terbaru, bukan output notebook arsip.
 
 | Eksperimen EN | Macro-F1 validation | F1 no | F1 implicit | F1 explicit | Epoch terbaik |
 |---|---:|---:|---:|---:|---:|
@@ -35,7 +35,7 @@ Hash train yang dicatat sama pada delapan run EN. Namun, manifest ablation belum
 | IT | 1.699 | 220 | 17 | 401 |
 | NL | 1.556 | 226 | 13 | 335 |
 
-Sumber: `Analisis/data/<bahasa>-splitting/split_summary.json` dan laporan `Analisis/investigasi/analisis_penyebab_hasil.md`.
+Sumber: `Analisis/data/<bahasa>-splitting/split_summary.json` dan laporan `Analisis/archive/investigasi/analisis_penyebab_hasil.md`.
 
 Data per bahasa relatif kecil. Komentar juga tidak sepenuhnya independen karena berbagi kelompok konteks. Ketidakseimbangan kelas moderat, sedangkan kesulitan membedakan dukungan, serangan implisit, dan serangan eksplisit lebih menonjol. Ini diagnosis berdasarkan hasil, bukan pembuktian bahwa label salah.
 
