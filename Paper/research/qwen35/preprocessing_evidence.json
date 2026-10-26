@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-27",
+  "xlmr_notebook_sha256": "d7a3b5020f58aca5411bc1e76d8b25ef3c32e3139fbbaf1f9bb31a3ac8c1b187",
+  "qwen_notebook_sha256": "0a8399c1b8b496700a3f3f43fe4f51aaa9e9b1fa4d6498776b38f9b8ae70bc51",
+  "xlmr_input": "Raw yt_comment passed to tokenizer; code cells10,12,14; exported preprocessing=raw",
+  "qwen_input": "Raw yt_comment inserted in user message; code cell9",
+  "normalization_scope": "Both notebooks use NFKC + casefold + whitespace cleanup for audit keys, without replacing model input text",
+  "nfkc_explicitly_applied_to_model_input": false,
+  "xlmr_train_batch": 32,
+  "xlmr_gpu_evidence": "Cell2 saved output: GPU NVIDIA H200",
+  "new_xlmr_results": "Analisis/results/modal-xlm-roberta/; CSV hashes match the current splits",
+  "current_reported_qwen_it_it_run": "qwen35_prompt-it_data-it_20261026T175537Z_e0dfc951",
+  "latest_it_it_selection": "Explicit run named in the Markdown; no selection by highest test score"
+}

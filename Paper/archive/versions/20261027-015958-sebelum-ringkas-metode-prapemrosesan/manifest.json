@@ -1,0 +1,15 @@
+{
+  "purpose": "Versi sebelum peringkasan NFKC, pemindahan hasil prapemrosesan ke bagian4, dan penyederhanaan lingkungan eksperimen",
+  "sha256": {
+    "main.tex": "aa6eef0081c0483b173c556884e4c7d1fea6e99d127d0d244cf1958171d98899",
+    "main.pdf": "53e61bab217c87cc1789ec6b22eebd2fbbd262b0149aeca5551ef9e3026334d6",
+    "references.bib": "cb2888585779e41bb379002f382eb692a0f5ca5109a17884d5951acc5baa3854",
+    "acl.sty": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+    "acl_natbib.bst": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+    "tables/eda_split_counts.tex": "b9a8ee5329c89841e2e2854f7830c79dda6c014ceefb9db69727e633a5173f23",
+    "tables/reported_macro_f1.tex": "eace9b6ce3ba6970d8b55dad0e64ac41a8d69d586a1352bceb086d85b907367b",
+    "tables/reported_class_f1.tex": "ac6c5c0597583b26d346530a4a769938ba2aa13ab24a22f4583f49f458e4f7f9",
+    "figures/eda_label_distribution.pdf": "7b99b0baa7355da9c7f071df995313c187aa2160df88be8cebe076fe58bd886f",
+    "figures/eda_length_distribution.pdf": "a586a4776c2ba6a2fb2b900192df0fb780bdb0f65c06270cdfe7f66459085078"
+  }
+}

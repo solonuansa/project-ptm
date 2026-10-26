@@ -1,0 +1,172 @@
+{
+  "notebook": "Analisis/notebooks/eda.ipynb",
+  "notebook_sha256": "0f3713c9c6cbd627e3b15c1dc242e797355c25148f7316a5c85ee6172ccd99cf",
+  "executed_notebook_code_cells": true,
+  "source_notebook_modified": false,
+  "total_comments": 7627,
+  "language_summary": {
+    "EN": {
+      "jumlah_baris": 2989,
+      "id_unik": 2989,
+      "komentar_unik": 2989,
+      "komentar_unik_normal": 2989,
+      "rata_rata_kata": 29.1950485112,
+      "median_kata": 17.0
+    },
+    "IT": {
+      "jumlah_baris": 2400,
+      "id_unik": 2400,
+      "komentar_unik": 2399,
+      "komentar_unik_normal": 2399,
+      "rata_rata_kata": 24.69,
+      "median_kata": 15.0
+    },
+    "NL": {
+      "jumlah_baris": 2238,
+      "id_unik": 2238,
+      "komentar_unik": 2238,
+      "komentar_unik_normal": 2238,
+      "rata_rata_kata": 25.1599642538,
+      "median_kata": 15.0
+    }
+  },
+  "label_counts": {
+    "EN": {
+      "no": 1407,
+      "yes_implicit": 772,
+      "yes_explicit": 810
+    },
+    "IT": {
+      "no": 1160,
+      "yes_implicit": 581,
+      "yes_explicit": 659
+    },
+    "NL": {
+      "no": 1127,
+      "yes_implicit": 487,
+      "yes_explicit": 624
+    }
+  },
+  "label_percentages": {
+    "EN": {
+      "no": 47.0725995316,
+      "yes_implicit": 25.8280361325,
+      "yes_explicit": 27.0993643359
+    },
+    "IT": {
+      "no": 48.3333333333,
+      "yes_implicit": 24.2083333333,
+      "yes_explicit": 27.4583333333
+    },
+    "NL": {
+      "no": 50.3574620197,
+      "yes_implicit": 21.7605004468,
+      "yes_explicit": 27.8820375335
+    }
+  },
+  "split_counts": {
+    "EN": {
+      "train": 2111,
+      "val": 292,
+      "test": 586
+    },
+    "IT": {
+      "train": 1699,
+      "val": 220,
+      "test": 481
+    },
+    "NL": {
+      "train": 1556,
+      "val": 226,
+      "test": 456
+    }
+  },
+  "split_percentages": {
+    "EN": {
+      "train": 70.6256273001,
+      "val": 9.7691535631,
+      "test": 19.6052191368
+    },
+    "IT": {
+      "train": 70.7916666667,
+      "val": 9.1666666667,
+      "test": 20.0416666667
+    },
+    "NL": {
+      "train": 69.5263628239,
+      "val": 10.0983020554,
+      "test": 20.3753351206
+    }
+  },
+  "word_lengths": {
+    "EN": {
+      "mean": 29.195048511207762,
+      "50%": 17.0,
+      "95%": 96.0,
+      "99%": 179.0,
+      "max": 496.0
+    },
+    "IT": {
+      "mean": 24.69,
+      "50%": 15.0,
+      "95%": 78.0,
+      "99%": 163.00999999999976,
+      "max": 340.0
+    },
+    "NL": {
+      "mean": 25.159964253798034,
+      "50%": 15.0,
+      "95%": 80.0,
+      "99%": 144.26000000000022,
+      "max": 404.0
+    }
+  },
+  "missing_cells": 0,
+  "data_quality": [
+    {
+      "bahasa": "EN",
+      "baris_duplikat_penuh": 0,
+      "id_duplikat": 0,
+      "komentar_duplikat_normal": 0,
+      "komentar_dengan_label_berbeda": 0,
+      "label_tidak_dikenal": 0
+    },
+    {
+      "bahasa": "IT",
+      "baris_duplikat_penuh": 0,
+      "id_duplikat": 0,
+      "komentar_duplikat_normal": 1,
+      "komentar_dengan_label_berbeda": 0,
+      "label_tidak_dikenal": 0
+    },
+    {
+      "bahasa": "NL",
+      "baris_duplikat_penuh": 0,
+      "id_duplikat": 0,
+      "komentar_duplikat_normal": 0,
+      "komentar_dengan_label_berbeda": 0,
+      "label_tidak_dikenal": 0
+    }
+  ],
+  "overlap_count": 0,
+  "split_content_matches_original": true,
+  "nfkc_changes_to_original_comments": {
+    "EN": 66,
+    "IT": 25,
+    "NL": 31
+  },
+  "original_csv_sha256": {
+    "EN": "c239fcbf65044a688e44ecb38c38449fd7928d78add961045b3b27da58533879",
+    "IT": "e809f50402f971b47bd3c64fb074f952d6b8d51dfb73c779f74467c35bde7804",
+    "NL": "fc6632cbdd48a796d0cea98ab4e0fad79432fa2d736a90d0986638339b865f77"
+  },
+  "embedded_notebook_plots": {
+    "label_distribution": {
+      "cell": 20,
+      "sha256": "e6282363e62fbfc5f298d240175b832e022d9b1f6c812d5d8cece506981a4c82"
+    }
+  },
+  "length_analysis_in_manuscript": false,
+  "plot_adaptation": "Same counts and percentages as notebook cell20; typography adapted for a two-column paper. Length plots are not used in the manuscript.",
+  "human_verification": "pending"
+}

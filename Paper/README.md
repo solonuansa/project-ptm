@@ -1,97 +1,88 @@
 # Paper penyelesaian StereoQueerEval
 
-`main.tex` berisi laporan pendekatan bergaya paper SemEval untuk menyelesaikan
-Subtask B StereoQueerEval dengan SFT LoRA Qwen3.5-9B dan pembanding XLM-RoBERTa
-Base. Tiga bahasa prompt diperlakukan sebagai konfigurasi penyelesaian task.
-Draf berbahasa Indonesia memakai format ACL: delapan halaman, 12 referensi yang
-disitasi, tiga tabel, dan dua gambar statistik. Susunan mengikuti draf acuan
-pengguna: Pendahuluan, Deskripsi Task (termasuk Penelitian Terkait), Metodologi,
-Rancangan Eksperimen, Hasil, Kesimpulan, serta
-Keterbatasan. Referensi Chan et al. (2024), Conneau et al. (2020), dan Behzad
-et al. (2024) mendukung latar belakang dan pilihan pendekatan. Studi tata bahasa
-Behzad tidak diperlakukan sebagai bukti langsung deteksi kebencian. Perbedaan
-weighted-F1/biner pada ALTA dan macro-F1/tiga kelas di sini dijelaskan di naskah.
-Bahasa naskah telah disederhanakan dengan istilah utama yang dijelaskan saat
-pertama digunakan. Detail operasional dipisahkan dari pembahasan ilmiah.
-Nama dan afiliasi penulis masih perlu diisi.
+Naskah aktif menyajikan klasifikasi tiga kelas pada Subtask B StereoQueerEval
+menggunakan Qwen3.5-9B dengan SFT LoRA dan pembanding XLM-RoBERTa Base.
+Draf Indonesia memakai format ACL: delapan halaman, 13 referensi yang disitasi,
+lima tabel, dan satu gambar EDA. Identitas penulis belum diisi.
 
-Penyebutan kategori pada naskah, tabel, dan matriks kesalahan menggunakan nama
-kelas asli: `no`, `yes_implicit`, dan `yes_explicit`.
+Susunan: Pendahuluan, Deskripsi Task, Metodologi, Rancangan Eksperimen,
+Hasil dan Pembahasan, Kesimpulan, serta Keterbatasan. Nama kelas menggunakan
+`no`, `yes_implicit`, dan `yes_explicit`. Istilah train, validation, test, input,
+output, dan prompt digunakan konsisten dan dicetak miring pada naskah.
+Penyebutan notebook dan sumber angka tidak dimasukkan ke dalam narasi paper.
+Rujukan akademis tetap dipertahankan.
 
-Bab Metodologi menjelaskan XLM-RoBERTa, Qwen3.5-9B, alur analisis (EDA,
-prapemrosesan dan pembagian data, pelatihan dan prediksi, evaluasi model), serta
-metrik evaluasi. Bab Rancangan Eksperimen memuat uraian serta tabel data,
-diikuti paragraf skenario dan pengaturan eksperimen tanpa daftar poin atau
-tabel hyperparameter. Bab Hasil menyajikan temuan EDA dan evaluasi, tanpa
-subbagian Data. Perbandingan sebelum dan
-sesudah SFT berada pada Evaluasi, tanpa subbagian Pelatihan tersendiri.
-EDA pada Metodologi menjelaskan prosedur; EDA pada Hasil menyajikan
-temuan dari prosedur tersebut.
+- Metodologi: karakteristik umum model, prosedur EDA, tujuan NFKC, pembagian, tokenisasi,
+  pelatihan/prediksi, serta evaluasi; tidak memuat hasil pemeriksaan atau tabel.
+- Rancangan Eksperimen: gambaran umum dataset, hasil prapemrosesan/pembagian
+  beserta tabel jumlah, skenario, dan tabel perbandingan konfigurasi model dan teks lengkap ketiga prompt.
+- EDA: jumlah asli per bahasa dan kelas, proporsi label, kualitas data, serta
+  satu visualisasi distribusi kelas. Analisis panjang komentar tidak digunakan.
+- Hasil model: macro-F1 dan F1 per kelas terbaru dari ringkasan eksperimen,
+  dengan nilai XLM-RoBERTa dan seluruh sembilan pasangan Qwen.
 
-Salinan sebelum restrukturisasi disimpan tanpa mengubah berkas aslinya di
-[arsip versi](archive/versions/20261026-153722-sebelum-restrukturisasi/README.md).
-Arsip memuat `main.tex`, `main.pdf`, dependensi kompilasi, dan manifest hash.
+PDF: [stereoqueereval-qwen35-lora-draft.pdf](output/pdf/stereoqueereval-qwen35-lora-draft.pdf).
+Salinan identik tersedia pada `main.pdf`; berkas bantu berada di `build/`.
+Versi lama tetap tersimpan di `archive/versions/` dengan manifest hash dan
+semua dependensi kompilasinya.
 
-PDF terkini: [stereoqueereval-qwen35-lora-draft.pdf](output/pdf/stereoqueereval-qwen35-lora-draft.pdf). File build sementara disimpan di `build/`.
+## Sumber dan pemeriksaan
 
-## Sumber utama dan batas verifikasi
+- `../Analisis/results/tabel-experiment.md`: sumber seluruh angka hasil yang
+  ditampilkan, termasuk XLM-R terbaru dan Qwen IT/IT 0.694249.
+- `../Analisis/notebooks/XLM_RoBERTa_Base.ipynb`: kode XLM-R terbaru, batch 32,
+  pelatihan melalui Modal, dan weighted cross-entropy.
+- `../Analisis/notebooks/qwen3.5-9b.ipynb`: metode SFT LoRA dan pemilihan model.
+- `../Analisis/notebooks/eda.ipynb`: distribusi kelas dan panjang komentar,
+  duplikasi, kelengkapan, hasil pembagian dan overlap.
+- `../Analisis/data/original/`, `{en,it,nl}-splitting/`, dan
+  `../Analisis/data/ringkasan_splitting.md`: dataset asli dan pembagian yang sama.
+- `../Analisis/results/modal-xlm-roberta/` dan `modal-qwen/`: pemeriksaan metrik,
+  identitas prediksi, label, konfigurasi, dan hash CSV yang tersedia.
 
-- `../Analisis/notebooks/qwen3.5-9b.ipynb`: metode, hyperparameter, output run
-  terakhir, dan aturan evaluasi.
-- `../Analisis/results/tabel-experiment.md`: sembilan skor macro-F1 test utama.
-- `../Analisis/results/modal-qwen/`: delapan pasangan dengan metrik dan confusion
-  matrix; lima juga memiliki konfigurasi, prompt, log, dan prediksi lengkap.
-- `../Analisis/prompt/`: tiga prompt; komentar tidak diterjemahkan.
-- `../Analisis/data/{en,it,nl}-splitting/`: split internal yang sama untuk setiap
-  bahasa data.
-- `../Analisis/archive/results/xlm-roberta-base/20261020T105544Z_e1320f49/`:
-  manifest, praproses, pengaturan pelatihan, dan prediksi pembanding XLM-RoBERTa.
-  Hash ketiga split, urutan ID dan label, serta metrik validasi/test diperiksa.
+Kedua notebook memberikan komentar asli ke tokenizer. NFKC terdapat pada
+normalisasi kunci audit, bersama casefold dan perapian spasi; hasil normalisasi
+tersebut tidak dituliskan kembali ke komentar masukan model. Catatan kode ini disimpan dalam audit terpisah. Naskah hanya
+meringkas tujuan NFKC untuk penyeragaman representasi karakter dan pemeriksaan
+kesamaan teks. Rujukan tujuan NFKC menggunakan UAX #15 revisi 58.
 
-Skor data IT/prompt IT hanya tersedia dalam tabel ringkasan dan diberi tanda
-dagger dalam tabel paper. Hasil EN/prompt EN tersedia dengan macro-F1 0.719146
-dan rincian prediksi yang sudah diverifikasi. Nilai IT/prompt EN
-0.7036 di tabel utama konsisten dengan 0.7035634218564737 dalam metrik run;
-presisi sumber dipertahankan. Pembanding zero-shot Qwen dibahas pada delapan
-pasangan dengan metrik tersimpan; XLM-RoBERTa tersedia pada ketiga bahasa.
-Analisis per kelas menggunakan prompt NL tetap pada ketiga
-bahasa, bukan tiga pemenang test.
+Hasil IT/IT mengikuti run terbaru yang disebutkan dalam ringkasan, bukan
+pemilihan antar-run berdasarkan test. Semua nilai F1 kelas saat ini tersedia.
+Jika sumber memiliki sel kosong pada revisi berikutnya, generator tetap
+mengosongkannya. Angka per kelas mengikuti empat desimal dari sumber.
+Hasil tetap merupakan evaluasi internal, satu seed, dan satu prompt per bahasa.
 
-Checkpoint dipilih berdasarkan macro-F1 validation. Peringkat tertinggi yang
-teramati pada test dilaporkan secara deskriptif dan tidak dijadikan klaim bahwa
-bahasa prompt final telah dipilih tanpa melihat test. Semua hasil menggunakan
-satu seed, dan test merupakan test internal training release, bukan test resmi
-shared task. Rancangan ini melatih adapter terpisah per pasangan bahasa.
+## Regenerasi aset aktif
 
-## Regenerasi aset dan audit
-
-Dari direktori utama repositori:
+Dari root repositori:
 
 ```powershell
-python Paper/scripts/build_qwen_assets.py
+python Paper/scripts/build_reported_tables.py
+python Paper/scripts/build_eda_assets.py
 ```
 
-Dependensi: numpy, pandas, matplotlib, scikit-learn. Skrip tidak memuat model,
-melatih ulang, mengevaluasi model, atau mengirim data ke layanan luar. Skrip
-merekonstruksi metrik dari matriks, memeriksa prediksi dan hash ketika tersedia,
-serta menghasilkan tabel/gambar agregat berawalan `qwen_`.
-Tabel `model_comparison.tex` dan `research/qwen35/xlmr_audit.json` menambahkan
-pembanding XLM-RoBERTa. Perbandingan dilakukan antara pendekatan dengan praproses,
-ukuran model, dan cara adaptasi berbeda, bukan pengujian satu komponen terisolasi.
+Skrip pertama membaca tabel Markdown dan memverifikasi 12 hasil model dari
+prediksi atau matriks yang tersedia. Run IT/IT dipilih dari nama run yang
+dinyatakan pada Markdown. Seluruh hash split XLM-R terbaru diperiksa.
 
-Catatan riset dan jejak audit ada di `research/qwen35/`:
+Skrip kedua menjalankan kode notebook EDA saja, tanpa mengubah notebook atau
+data. PNG asli yang tertanam pada notebook disimpan di
+`research/eda/notebook_outputs/`. Plot publikasi distribusi kelas menggunakan hitungan dan proporsi yang sama;
+ukuran serta font disesuaikan agar terbaca dalam paper dua kolom. Plot panjang
+komentar versi sebelumnya tidak digunakan dalam naskah aktif. Dependensi: pandas, matplotlib, seaborn.
+Tidak ada pelatihan model atau pengiriman komentar ke layanan luar.
 
-- `evidence-outline.md`: pemetaan bukti, referensi primer, keterbatasan arsip,
-  serta panduan penulisan dan riset yang dipakai.
-- `audit.json`: status setiap run dan pemeriksaan yang dapat dilakukan.
-- `primary_results.csv`, `dataset_counts.csv`, `derived_statistics.json`:
-  sumber agregat dan perhitungan turunan.
-- `display_manifest.json`: asal gambar, transformasi, dan deskripsi gambar.
-- `claims.csv`, `manuscript-check.json`: hash paragraf dan pemeriksaan akhir.
+Audit hasil: `research/qwen35/reported_results_audit.json`.
+Audit EDA: `research/eda/audit.json`. `claims.csv` dan `manuscript-check.json`
+mencatat pemetaan bukti serta pemeriksaan akhir. Status penelaahan ilmiah
+manusia tetap pending. Identitas penulis, afiliasi, atau persetujuan etik
+belum diisi dan tidak dikarang.
 
-Status penelaahan ilmiah manusia masih pending. Tidak ada identitas, afiliasi,
-pendanaan, konflik kepentingan, atau persetujuan etik yang dikarang. Rujukan
-perangkat Scientific Agent Skills dicatat pada bagian perangkat di jejak bukti.
+`build_qwen_assets.py` dan aset tanpa awalan `eda_` merupakan utilitas/hasil
+versi lama; keduanya tidak digunakan untuk regenerasi naskah aktif.
+
+Lingkungan komputasi pada naskah ditulis sebagai Python, PyTorch, dan GPU
+melalui platform Modal. Detail FP16/BF16 tidak ditampilkan.
 
 ## Build PDF
 
@@ -127,9 +118,12 @@ di disk memicu build otomatis; build manual dapat dijalankan dengan Ctrl+Alt+B.
 | Lokasi | Isi |
 |---|---|
 | `main.tex`, `references.bib` | Naskah dan bibliografi penyelesaian task aktif. |
-| `tables/`, `figures/` | Tabel perbandingan model dan aset Qwen yang digunakan naskah. |
+| `tables/` | Tabel pascapembagian `eda_split_counts` serta dua tabel hasil `reported_*`. |
+| `figures/` | Satu gambar distribusi kelas aktif; grafik versi lama tetap disimpan. |
 | `research/qwen35/` | Literatur, agregat hasil, serta jejak audit Qwen. |
-| `scripts/build_qwen_assets.py` | Regenerasi aset dan audit Qwen. |
+| `scripts/build_reported_tables.py` | Regenerasi tabel hasil dan audit run terbaru. |
+| `scripts/build_eda_assets.py` | Pemeriksaan notebook EDA, tabel pascapembagian, dan visualisasi. |
+| `scripts/build_qwen_assets.py` | Audit artefak dan aset versi lama. |
 | `output/pdf/` | Satu PDF draf Qwen terkini. |
 | `templates/` | Kerangka asli dan contoh serta dokumentasi ACL. |
 | `archive/` | Materi encoder terdahulu dan salinan versi naskah sebelum restrukturisasi. |
@@ -146,3 +140,7 @@ terpisah beserta `acl.sty` dan `acl_natbib.bst` jika ingin menggunakannya.
 
 `acl.sty` dan `acl_natbib.bst` tetap di root `Paper` karena diperlukan naskah aktif.
 Bibliografi naskah penelitian memakai `references.bib`.
+
+Keterbatasan membahas reproduksibilitas Qwen: belum ada estimasi variasi
+antar-seed, ketergantungan lingkungan komputasi, dan kebutuhan perangkat.
+Akumulasi gradien tidak dilaporkan pada naskah.

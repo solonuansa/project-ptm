@@ -1,175 +1,143 @@
-# Jejak bukti naskah StereoQueerEval
+# Jejak bukti aktif naskah StereoQueerEval
 
-Diperbarui 26 Oktober 2026. Naskah mengikuti draf LaTeX terbaru pengguna dan
-berfokus pada penyelesaian Subtask B, dengan bahasa akademis Indonesia yang
-mudah dipahami. Pilihan bahasa prompt menjadi pengaturan klasifikasi,
-bukan framing utama penelitian. Mode ACL `review` mengikuti draf acuan.
+Diperbarui 27 Oktober 2026. Fokus tetap penyelesaian Subtask B dengan bahasa
+akademis Indonesia yang mudah dipahami. Riwayat revisi sebelumnya disimpan di
+`history/evidence-outline-before-eda-20261027.md`; angka atau susunan lama di
+riwayat tersebut tidak menjadi keadaan aktif naskah.
 
-## Bukti lokal
+## Sumber lokal
 
-- Q001: `Analisis/notebooks/qwen3.5-9b.ipynb`. SFT LoRA, comment-only,
-  jawaban 0=no/1=explicit/2=implicit, loss hanya jawaban dan penanda akhir,
-  prediksi berdasarkan jumlah log probabilitas jawaban. LoRA r16/alpha32,
-  dropout0.05, BF16, maksimal5 epoch, seed42, GPU H200.
-- Q002: `Analisis/results/tabel-experiment.md`. Sumber utama sembilan skor
-  macro-F1 pengujian. Presisi yang ditampilkan dipertahankan. Nilai IT/EN
-  0.7036 konsisten dengan 0.7035634218564737 pada artefak metrik.
-- Q003: `Analisis/results/modal-qwen/`, delapan pasangan dengan metrik dan
-  matriks kesalahan SFT. Nilai macro-F1, weighted-F1, dan akurasi direkonstruksi
-  dari matriks. Zero-shot tersedia untuk kedelapan pasangan tersebut.
-- Q004: lima pasangan memiliki konfigurasi dan prediksi lengkap: EN/EN, NL/EN,
-  EN/NL, IT/NL, NL/NL (urutan data/prompt). Hash CSV dan prompt,
-  identitas komentar, label, dan metrik validasi/test diverifikasi.
-- Q005: `Analisis/data/{en,it,nl}-splitting/`. CSV, manifest, dan ringkasan
-  pembagian diperiksa. Tidak ada overlap ID, komentar ternormalisasi, pasangan
-  judul-deskripsi nonkosong, atau group_id antarbagian. Judul-deskripsi
-  merupakan proksi konteks video, bukan identitas video yang sempurna.
-- Q006: `Analisis/prompt/{EN,IT,NL}_PROMPT.md`. Instruksi tanpa contoh,
-  komentar tidak diterjemahkan, wrapper pengguna tetap berbahasa Inggris.
-  Adapter dilatih terpisah untuk setiap pasangan data/instruksi.
-- B001: `Analisis/archive/results/xlm-roberta-base/20261020T105544Z_e1320f49/`.
-  Manifest, praproses, dan prediksi validasi/test ketiga bahasa diperiksa.
-  Hash CSV sesuai data saat ini; urutan ID dan label sama dengan Q005.
-  Metrik direkonstruksi dari prediksi. Pelatihan memperbarui seluruh parameter,
-  memakai bobot kelas, learning rate1e-5, batch16, maksimal10 epoch, seed42,
-  FP16, early stopping3. Huruf diseragamkan dengan casefold dan emoji diganti
-  `[EMOJI]`; praproses ini berbeda dari Qwen. Detail audit: `xlmr_audit.json`.
+- Q001: `Analisis/notebooks/qwen3.5-9b.ipynb`. Metode SFT LoRA, komentar asli,
+  prompt, label jawaban, loss jawaban, skor log probabilitas, dan parameter
+  pelatihan. Kode yang dibaca tidak menerapkan NFKC ke komentar masukan.
+- Q002: `Analisis/results/tabel-experiment.md`. Sumber tampilan seluruh hasil
+  model: sembilan skor Qwen, tiga skor XLM-R, dan F1 per kelas kedua model.
+  IT/IT terbaru memiliki macro-F1 0.694249 dan F1 kelas 0.7786/0.5815/0.7227.
+- Q003: metrik dan matriks Qwen terbaru, direkonstruksi dan diperiksa terhadap
+  ringkasan hasil; pelaporan tidak memakai angka dari run yang tidak dipilih.
+- Q004: konfigurasi, prediksi, atau matriks tersimpan pada
+  `Analisis/results/modal-qwen/`. Semua sembilan pasangan diperiksa terhadap
+  Q002. Tiga pasangan lama hanya memiliki matriks, bukan prediksi lengkap.
+- Q005: `Analisis/data/{en,it,nl}-splitting/`, manifest, ringkasan pembagian,
+  serta `Analisis/src/splitting_data.py` dan `data_split.py`. Kelompok konteks
+  dan komentar duplikat tidak dipecah, stratifikasi label, seed42, target
+  70:10:20. Seluruh baris dan isi komentar dipertahankan.
+- Q006: `Analisis/prompt/{EN,IT,NL}_PROMPT.md`. Tiga prompt tanpa contoh;
+  penanda Language/Comment tetap Inggris. Komentar tidak diterjemahkan.
+- Q007: `Analisis/notebooks/eda.ipynb`. Kode EDA dieksekusi ulang secara lokal
+  tanpa mengubah notebook atau sumber. Dataset asli, distribusi kelas, panjang
+  komentar, duplikasi, pembagian, kelengkapan, dan overlap diverifikasi.
+- Q008: run Qwen IT/IT `qwen35_prompt-it_data-it_20261026T175537Z_e0dfc951`.
+  Run ini secara eksplisit disebut pada Markdown, sehingga dipilih untuk
+  pelaporan. Run lain tetap disimpan; tidak memilih antar-run berdasarkan test.
+- B002: `Analisis/notebooks/XLM_RoBERTa_Base.ipynb` dan hasil baru pada
+  `Analisis/results/modal-xlm-roberta/`. Tiga bahasa diverifikasi dari
+  prediksi dan konfigurasi. Prapemrosesan diekspor sebagai raw, batch latih32,
+  FP16, batas384token, maksimal10epoch, learning rate1e-5, early stopping3.
+  Output notebook mencatat NVIDIA H200. Hash CSV sesuai pembagian saat ini.
 
-IT/IT Qwen hanya tersedia pada ringkasan Q002, sehingga diberi dagger.
-Analisis per kelas memakai instruksi NL yang sama pada ketiga bahasa.
-Seluruh skor berasal dari pengujian internal training release, bukan test resmi.
-Perbandingan XLM-RoBERTa dan Qwen merupakan perbandingan pendekatan dengan
-ukuran, praproses, dan pelatihan berbeda. Tidak menarik kesimpulan kausal tentang
-satu komponen. Hasil tertinggi pada test bersifat deskriptif, bukan seleksi
-konfigurasi akhir. Semua percobaan memakai satu seed.
+## Penempatan data dan EDA
 
-## Referensi primer dan pemetaan klaim
+Rancangan Eksperimen menjelaskan dataset, total 7.627 komentar, dan hasil
+prapemrosesan/pembagian beserta tabel jumlah. Bagian3 hanya menjelaskan
+prosedur; jumlah asli per bahasa dan kelas berada pada EDA. Tidak ada
+pembuatan ulang split atau perubahan sumber data.
 
-Metadata serta lokasi dukungan lengkap disimpan di `manuscript-sources.json`.
+EDA: EN2989, IT2400, NL2238. Kelas no1407/1160/1127,
+yes_implicit772/581/487, yes_explicit810/659/624. Tidak ada nilai kosong
+pada lima kolom yang diperiksa, ID unik, dan label valid. Ada satu duplikasi
+komentar ternormalisasi pada Italia tanpa label bertentangan; keduanya tetap
+pada train. Tidak ada overlap antarbagian dan seluruh isi sumber teralokasi.
+Rata-rata kata29.20/24.69/25.16; median17/15/15; maksimum496/340/404.
 
-| ID | Sumber | Dukungan dalam naskah |
-|---|---|---|
-| L101 | Cignarella et al.2024, QUEEREOTYPES | Anotasi stereotip dan kebencian terpisah |
-| L102 | ElSherief et al.2021, Latent Hatred | Kebencian implisit dan bahasa berkode |
-| L103 | Qwen Team2026, model card Qwen3.5-9B | Identitas model |
-| L104 | Hu et al.2021, LoRA | Adaptasi dengan bobot utama dibekukan |
-| L107 | Roettger et al.2021, HateCheck | Pengujian fungsional untuk pengembangan lanjutan |
-| L109 | Loshchilov dan Hutter2019 | AdamW |
-| L110 | Dokumentasi resmi StereoQueerEval | Data, subtask dan label |
-| L111 | Chan et al.2024, ALTA | Teks asli/terjemahan, fine-tuning, saran bahasa instruksi |
-| L112 | Nguyen et al.2025 | Evaluasi LLM zero-shot biner anti-LGBTQIA+ |
-| L114 | Nozza2022 | Transformer untuk homofobia/transfobia |
-| L115 | Conneau et al.2020, ACL | XLM-R, 100 bahasa dan CommonCrawl; mengganti rujukan XLM2019 |
-| L116 | Behzad et al.2024, Findings EMNLP | Pilihan bahasa instruksi pada tugas tata bahasa |
-| L117 | Daftar resmi SemEval2027 | Konfirmasi penomoran Task8, dirujuk pada catatan kaki |
+Satu visualisasi mengikuti sel20 (jumlah/proporsi kelas) pada notebook EDA.
+PNG asli disimpan terpisah dan plot publikasi memakai agregat yang sama
+dengan font yang terbaca. EDA panjang komentar dan gambarnya dihapus dari
+naskah aktif atas permintaan pengguna. Asal serta hash gambar tercatat di
+`Paper/research/eda/audit.json`.
 
-Chan diverifikasi dari PDF, termasuk Limitations/Future Work halaman150.
-Studi Chan menggunakan tugas biner dan weighted-F1; nilainya tidak dibandingkan
-langsung dengan tiga kelas/macro-F1 naskah ini. Behzad membahas tata bahasa,
-bukan deteksi kebencian. Conneau dan Behzad memakai ekspor BibTeX resmi ACL.
-Terdapat 12 referensi yang disitasi; dua entri literatur lama (Wong, Sorensen)
-tetap disimpan dalam berkas BibTeX tetapi tidak muncul di daftar pustaka PDF.
-Status penelaahan ilmiah manusia semua sumber masih **pending**.
+## Prapemrosesan yang benar-benar dijalankan
 
-## Perbaikan terhadap draf acuan
+Kedua notebook mengirim komentar asli ke tokenizer. NFKC, casefold, dan
+perapian spasi hanya membentuk kunci audit. Kode tersebut tidak mengganti
+kolom komentar yang dipakai sebagai masukan model. Dataset memiliki komentar
+yang berubah jika NFKC diterapkan: EN66, IT25, NL31. Karena itu, normalisasi
+NFKC tidak diklaim sebagai transformasi masukan pada eksperimen yang telah
+menghasilkan skor. Tujuannya dijelaskan sebagai penyeragaman representasi
+Unicode untuk pemeriksaan kesamaan teks. Penjelasan lama tentang casefold dan
+penggantian emoji pada XLM-R dihapus karena hanya berlaku pada run arsip.
+Bukti kode: `preprocessing_evidence.json`.
 
-Abstrak, judul, alur klasifikasi, metode Qwen, data, eksplorasi data,
-hyperparameter, metrik, hasil, dan kesimpulan dilengkapi. Klaim bahwa Qwen tidak
-dilatih pada data task diperbaiki menjadi SFT LoRA. Klaim bahwa praproses kedua
-model sama juga diperbaiki. Contoh dan instruksi bawaan ACL setelah kesimpulan
-dihapus dari naskah aktif. Identitas penulis tidak dikarang. Framing tetap
-penyelesaian task; istilah yang diminta pengguna dihindari dalam naskah.
+## Referensi primer
 
-## Panduan, regenerasi dan pemeriksaan
+Metadata dan lokasi dukungan tersimpan di `manuscript-sources.json`.
+Naskah memakai 12 referensi yang disitasi: QUEEREOTYPES (L101), Latent Hatred
+(L102), Qwen (L103), LoRA (L104), AdamW (L109), dokumentasi task (L110),
+Chan2024 (L111), Nguyen2025 (L112), Nozza2022 (L114), XLM-R/Conneau2020 (L115),
+Behzad2024 (L116), dan Unicode Normalization Forms (L118). Daftar SemEval
+resmi (L117) dirujuk lewat catatan kaki. Referensi yang tidak lagi dipakai
+pada naskah tetap tersedia dalam bibliografi atau riwayat.
 
-Panduan scientific-writing dan citation-management K-Dense versi2.3 yang sudah
-dibaca pada penulisan sebelumnya digunakan kembali, bersama skill pdf untuk
-render dan pemeriksaan visual. Tidak ada paket skill baru yang diinstal.
-Rujukan perangkat: Kassis, Timothy; Agarwal, Vinayak; He, Yuhuan; Patel, Darshil;
-Brueckner, Aubrey M.2026. Scientific Agent Skills: A Library of Procedural
-Knowledge for Research Agents. https://doi.org/10.48550/arXiv.2609.00065 .
-Rujukan perangkat bukan bukti kinerja klasifikasi dan tidak dimasukkan sebagai
-referensi ilmiah naskah.
+L118: Unicode Standard Annex15, revisi58, versi18.0.0, tanggal12Agustus2026,
+https://www.unicode.org/reports/tr15/tr15-58.html . Bagian1.1/1.2 diperiksa
+langsung. NFKC merupakan compatibility decomposition diikuti canonical
+composition; tidak mengklaim bahwa seluruh perbedaan format selalu tanpa
+perbedaan makna. Status penelaahan manusia sumber tetap pending.
 
-`python Paper/scripts/build_qwen_assets.py` memeriksa angka dan menghasilkan
-aset agregat; tidak melatih model atau mengirim komentar ke layanan luar.
-Skrip juga menghasilkan audit pembanding XLM-RoBERTa. `claims.csv` memetakan
-paragraf ke bukti dan hash, sedangkan `manuscript-check.json` mencatat pemeriksaan
-akhir. Grafik berupa plot statistik dari hasil tersimpan, tanpa data sintetis.
+## Regenerasi dan audit
 
-## Penyeragaman nama kelas
+- `build_reported_tables.py`: membaca semua hasil dari Markdown, memeriksa
+  tiga run XLM-R dan sembilan pasangan Qwen pada artefak terbaru; hasil kosong
+  tetap kosong. Tidak menggunakan baseline XLM-R arsip untuk naskah aktif.
+- `build_eda_assets.py`: menjalankan kode notebook EDA saja, memeriksa
+  pembagian dan kualitas data, serta menghasilkan tabel pascapembagian dan
+  satu visualisasi distribusi kelas. Notebook, dataset, dan model tidak diubah atau dilatih.
+- `reported_results_audit.json`: sumber, hash, dan pemeriksaan 12 hasil model.
+- `Paper/research/eda/audit.json`: agregat EDA, metadata notebook dan gambar.
+- `claims.csv`, `manuscript-check.json`: pemetaan paragraf dan pemeriksaan akhir.
 
-Atas permintaan pengguna, penyebutan kategori pada naskah, tabel dataset, tabel
-hasil per kelas, dan sumbu matriks kesalahan menggunakan label asli `no`,
-`yes_implicit`, dan `yes_explicit`. Tabel dataset ditata menurut kelas agar
-label lengkap tetap terbaca. Angka evaluasi dan pemetaan label tidak berubah.
+Versi naskah/PDF sebelum perubahan disalin ke direktori `archive/versions/`
+yang tercatat di manuscript-check.json, beserta referensi, tabel, dan gambar.
+Keutuhan seluruh berkas diperiksa terhadap manifest SHA-256. Nama penulis,
+afiliasi, pendanaan, dan persetujuan etik tidak dikarang. Seluruh skor uji
+bersifat internal dan deskriptif, satu seed, bukan peringkat resmi shared task.
 
-## Restrukturisasi Metodologi dan Hasil
+## Panduan penulisan
 
-Naskah mengikuti susunan terbaru pengguna: Bab3 Metodologi (XLM-RoBERTa,
-Qwen3.5-9B, Alur Analisis, Metrik Evaluasi), Bab4 Rancangan Eksperimen, Bab5
-Hasil (Data, EDA, Pelatihan, Evaluasi), Bab6 Kesimpulan, dan Keterbatasan.
-Alur Analisis memuat EDA, Prapemrosesan dan Pembagian Data, serta Pelatihan dan
-Prediksi. EDA pada metode menjelaskan langkah pemeriksaan; EDA pada hasil
-melaporkan komposisi kelas dan pemeriksaan overlap yang sudah tersedia.
-Hasil pelatihan didasarkan pada evaluasi sebelum/sesudah SFT yang tersimpan;
-tidak menambahkan kurva loss, skor, atau pengulangan baru. Sumber bukti dan
-angka tabel/gambar tetap sama.
+Panduan scientific-writing dan citation-management K-Dense2.3 yang dibaca pada
+revisi sebelumnya digunakan kembali; skill pdf dipakai untuk render dan QA.
+Rujukan perangkat: Kassis, Agarwal, He, Patel, Brueckner (2026), Scientific Agent
+Skills: A Library of Procedural Knowledge for Research Agents,
+https://doi.org/10.48550/arXiv.2609.00065 . Ini mencatat perangkat penulisan,
+bukan bukti kinerja model dan bukan referensi hasil eksperimen.
 
-Versi sebelum perubahan disalin ke `archive/versions/20261026-153722-sebelum-restrukturisasi`.
-Arsip menyertakan main.tex, main.pdf, dependensi kompilasi, dan manifest hash.
-Keutuhan seluruh berkas arsip diverifikasi setelah naskah aktif diubah.
+## Peringkasan metode dan penghapusan EDA panjang komentar
 
-## Nomor baris dan kompilasi VS Code
+Atas permintaan terbaru pengguna, bagian3 hanya memuat prosedur. Tabel dan
+hasil pemeriksaan pembagian dipindahkan ke bagian4. Uraian NFKC dipersingkat
+menjadi penyeragaman representasi karakter untuk memeriksa kesamaan teks,
+tanpa rincian kunci audit. Ini tidak mengubah notebook, data, atau eksperimen.
+Detail FP16/BF16 tidak ditampilkan; lingkungan ditulis sebagai Python,
+PyTorch, dan GPU melalui platform Modal. EDA panjang komentar beserta narasi
+dan gambarnya dihapus dari paper. Versi sebelumnya tetap diarsipkan.
+Hasil akhir tujuh halaman, tiga tabel, satu gambar EDA, dan 12 referensi.
 
-Nomor baris mode review dinonaktifkan dengan nolinenumbers; nomor halaman
-tetap ditampilkan. Versi sebelumnya disalin utuh beserta dependensinya ke
-`archive/versions/20261026-154626-sebelum-menonaktifkan-nomor-baris`.
-Raggedbottom digunakan untuk mencegah peregangan vertikal, dan satu kalimat
-pada pendahuluan dirapikan tanpa mengubah makna atau sumbernya.
+## Penyelarasan bahasa dan uraian model
 
-Diagnostik undefined citation dan cross-reference berasal dari recipe global
-pdflatex satu kali, diikuti auto-clean berkas bantu. Folder kerja VS Code
-adalah TBP sehingga Paper/.vscode tidak aktif. Konfigurasi root .vscode kini
-memakai latexmk/BibTeX, pengulangan otomatis, auto-clean never, dan build/ untuk
-berkas bantu. Skrip sync_paper_pdf.ps1 menyelaraskan PDF setelah build berhasil.
-Build dari VS Code yang sedang berjalan diperiksa: Logged 0 messages dan
-BUILD_DONE; seluruh 12 sitasi dan enam rujukan tabel/gambar terselesaikan.
-Tidak ada peringatan Underfull/Overfull pada log final.
+Uraian XLM-R dan Qwen pada bagian model dibatasi pada karakteristik umumnya.
+Penerapan klasifikasi, pembobotan kelas, SFT LoRA, prompt, dan aturan prediksi
+berada pada alur pelatihan dan prediksi. Konfigurasi dibandingkan dalam tabel
+pada Rancangan Eksperimen. Istilah train, validation, test, input, output dan
+terminologi asing dicetak miring. Narasi tidak menyebut notebook atau asal
+berkas angka. Sitasi akademis tetap dipertahankan. Nilai hasil tidak berubah.
+Uraian umum model diperiksa kembali pada artikel XLM-R (ACL 2020) dan kartu
+model resmi Qwen/Qwen3.5-9B.
 
-## Revisi rancangan eksperimen dan evaluasi
+## Prompt dan reproduksibilitas
 
-Rancangan Eksperimen ditulis sebagai paragraf tanpa subbagian Data Eksperimen,
-daftar poin, atau tabel. Nilai hyperparameter yang sebelumnya ditabelkan
-dipertahankan dalam narasi. Evaluasi Model ditambahkan sebagai langkah setelah
-Pelatihan dan Prediksi pada Metodologi. Hasil hanya memiliki Data, EDA, dan
-Evaluasi; perbandingan sebelum/sesudah SFT dipindahkan ke Perbandingan Model,
-tanpa subbagian Pelatihan tersendiri. Sumber dan angka hasil tidak berubah.
-Arsip sebelum perubahan tersedia pada `archive/versions/20261026-160613-sebelum-revisi-rancangan-evaluasi`.
-Seluruh hash arsip diperiksa. Kompilasi final menghasilkan delapan halaman,
-tiga tabel, dua gambar, dan 12 referensi tanpa diagnostik LaTeX.
-
-## Pemindahan uraian data
-
-Uraian jumlah komentar dan tabel dataset dipindahkan ke awal Rancangan
-Eksperimen. Penjelasan rancangan tetap berupa paragraf tanpa subbagian atau
-daftar poin. Hasil kini hanya memiliki EDA dan Evaluasi; pembahasan temuan EDA
-tetap merujuk tabel data yang sama. Angka, aset, dan referensi tidak berubah.
-Versi sebelum pemindahan tersimpan pada `archive/versions/20261026-184506-sebelum-pemindahan-data`.
-Keutuhan arsip dan seluruh dependensi yang tidak berubah telah diperiksa.
-
-## Konsistensi prompt, perapian bahasa, dan hasil terbaru
-
-Istilah prompt digunakan pada naskah, judul kolom tabel, keterangan gambar,
-dan sumbu grafik. Kata mencakup diganti dengan ungkapan yang lebih langsung.
-Hasil EN/EN terbaru pada sumber utama adalah 0.719146 dan memiliki konfigurasi
-serta prediksi lengkap. Audit kini memeriksa delapan matriks dan lima set
-prediksi lengkap; hanya IT/IT yang bersumber dari ringkasan. Narasi diperbarui
-menjadi delapan perbandingan zero-shot/SFT, hasil tertinggi Inggris memakai
-prompt Inggris, serta rentang Inggris 0.688340-0.719146 (selisih 0.030806).
-Analisis kelas tetap memakai prompt NL agar pilihan prompt sama untuk tiga
-bahasa. Rentang kenaikan 12.47-26.94 poin tidak berubah. Naskah tetap melaporkan
-hasil uji tertinggi secara deskriptif tanpa mengklaim seleksi konfigurasi dari
-data validasi. Riwayat penulisan sebelumnya di bawah setiap revisi merekam
-keadaan sumber pada saat revisi tersebut dibuat. Seluruh salinan versi lama
-dipertahankan dan hash-nya diperiksa sebelum commit.
+Q006: seluruh isi tiga prompt disalin tanpa perubahan kata ke tabel Rancangan
+Eksperimen. Q001: format Language/Comment sesuai implementasi. L119: dokumentasi
+resmi PyTorch tentang keterbatasan reproduksibilitas lintas versi dan perangkat.
+Q001/Q004/Q008: hanya satu run terbaru dilaporkan per pasangan, belum tersedia
+estimasi variasi antarpengulangan. Tidak mengklaim ketidakstabilan sudah diukur.
+Tabel konfigurasi tidak lagi melaporkan akumulasi gradien.

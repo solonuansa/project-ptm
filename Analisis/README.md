@@ -2,6 +2,8 @@
 
 Notebook utama proyek adalah [qwen3.5-9b.ipynb](notebooks/qwen3.5-9b.ipynb). Bahasa data dan bahasa prompt dipilih secara terpisah melalui `DATA_LANGUAGE` dan `PROMPT_LANGUAGE`.
 
+Notebook pembanding aktif: [XLM_RoBERTa_Base.ipynb](notebooks/XLM_RoBERTa_Base.ipynb), dengan [panduan menjalankan di Modal](docs/panduan_xlm_roberta_modal.md). Notebook ini memakai launcher dan Volume yang sama dengan Qwen.
+
 ## Mulai menjalankan
 
 1. Ikuti [panduan setup Modal dan VS Code](docs/panduan_setup_modal_vscode.md), termasuk upload data, pemilihan GPU, download hasil, cek billing, dan penghentian sesi.
@@ -13,8 +15,8 @@ Notebook utama proyek adalah [qwen3.5-9b.ipynb](notebooks/qwen3.5-9b.ipynb). Bah
 
 | Lokasi | Isi |
 |---|---|
-| `notebooks/` | Notebook Qwen aktif. |
-| `docs/` | Panduan setup dan penggunaan Qwen di Modal. |
+| `notebooks/` | Notebook Qwen utama dan XLM-RoBERTa-base pembanding. |
+| `docs/` | Panduan setup dan penggunaan notebook di Modal. |
 | `data/original/` | Data sumber. |
 | `data/{en,it,nl}-splitting/` | CSV train, validation, dan test per bahasa. |
 | `data/ringkasan_splitting.md` | Ringkasan pembagian data. |

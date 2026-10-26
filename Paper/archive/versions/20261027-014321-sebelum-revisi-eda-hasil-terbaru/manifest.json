@@ -1,0 +1,13 @@
+{
+  "purpose": "Versi sebelum pembaruan notebook, EDA, prapemrosesan, dan hasil terbaru",
+  "sha256": {
+    "main.tex": "aece4037495838a032b1a6b00dfb2a72ae6579311e4958aeb50d5700e6d917b8",
+    "main.pdf": "009bb3ebb9026932736a7af60bbea2448c28191959bc673789ff9626c94bf48a",
+    "references.bib": "d0e491954a7bd72c5b280d3cb7aa2aa13affedc639fa831e05dbffe38ab80b22",
+    "acl.sty": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+    "acl_natbib.bst": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+    "tables/qwen_dataset.tex": "b9a8ee5329c89841e2e2854f7830c79dda6c014ceefb9db69727e633a5173f23",
+    "tables/reported_macro_f1.tex": "48222605dcd709ab8b85909dbf99fdc08c53843049be0424dca7d30f68355f61",
+    "tables/reported_class_f1.tex": "d1f1817175f1636116d3297f363fc026f5301297d6af828e047d5b70e97800d1"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "sources": [
     {
       "key": "cignarella-etal-2024-queereotypes",
@@ -104,6 +104,20 @@
       "evidence_id": "L117",
       "url": "https://semeval.github.io/SemEval2027/tasks.html",
       "locator": "Task 8 entry, cited by footnote",
+      "human_verification": "pending"
+    },
+    {
+      "key": "unicode-consortium-2026-normalization",
+      "evidence_id": "L118",
+      "url": "https://www.unicode.org/reports/tr15/tr15-58.html",
+      "locator": "sections 1.1 and 1.2; revision58, date2026-08-12",
+      "human_verification": "pending"
+    },
+    {
+      "key": "pytorch-reproducibility",
+      "evidence_id": "L119",
+      "url": "https://docs.pytorch.org/docs/stable/notes/randomness.html",
+      "locator": "Reproducibility: identical seeds do not guarantee identical results across releases, platforms or devices",
       "human_verification": "pending"
     }
   ]

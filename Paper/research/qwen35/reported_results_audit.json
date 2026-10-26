@@ -1,0 +1,248 @@
+{
+  "source": "Analisis/results/tabel-experiment.md",
+  "source_sha256": "9ab8bca65169352dd4e2f1e1857988770bef775eec7393b18500e55839b62104",
+  "macro_rows": [
+    {
+      "data": "EN",
+      "qwen": [
+        "0.719146",
+        "0.715757",
+        "0.688340"
+      ],
+      "xlmr": "0.529052"
+    },
+    {
+      "data": "IT",
+      "qwen": [
+        "0.7036",
+        "0.694249",
+        "0.701449"
+      ],
+      "xlmr": "0.574515"
+    },
+    {
+      "data": "NL",
+      "qwen": [
+        "0.629927",
+        "0.630810",
+        "0.641522"
+      ],
+      "xlmr": "0.507678"
+    }
+  ],
+  "qwen_per_class_rows": [
+    {
+      "data": "EN",
+      "prompt": "EN",
+      "values": [
+        "0.8406",
+        "0.6172",
+        "0.6996"
+      ],
+      "bold": [
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "data": "EN",
+      "prompt": "IT",
+      "values": [
+        "0.8229",
+        "0.5882",
+        "0.7362"
+      ],
+      "bold": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "data": "EN",
+      "prompt": "NL",
+      "values": [
+        "0.8250",
+        "0.5397",
+        "0.7003"
+      ],
+      "bold": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "data": "IT",
+      "prompt": "EN",
+      "values": [
+        "0.7876",
+        "0.6127",
+        "0.7104"
+      ],
+      "bold": [
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "data": "IT",
+      "prompt": "IT",
+      "values": [
+        "0.7786",
+        "0.5815",
+        "0.7227"
+      ],
+      "bold": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "data": "IT",
+      "prompt": "NL",
+      "values": [
+        "0.7806",
+        "0.6020",
+        "0.7217"
+      ],
+      "bold": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "data": "NL",
+      "prompt": "EN",
+      "values": [
+        "0.8118",
+        "0.5094",
+        "0.5686"
+      ],
+      "bold": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "data": "NL",
+      "prompt": "IT",
+      "values": [
+        "0.7908",
+        "0.4806",
+        "0.6210"
+      ],
+      "bold": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "data": "NL",
+      "prompt": "NL",
+      "values": [
+        "0.8140",
+        "0.4828",
+        "0.6278"
+      ],
+      "bold": [
+        true,
+        false,
+        true
+      ]
+    }
+  ],
+  "xlmr_per_class_rows": {
+    "EN": [
+      "0.6569",
+      "0.4085",
+      "0.5217"
+    ],
+    "IT": [
+      "0.7056",
+      "0.4747",
+      "0.5432"
+    ],
+    "NL": [
+      "0.6742",
+      "0.3304",
+      "0.5185"
+    ]
+  },
+  "missing_cells": 0,
+  "verified_runs": {
+    "xlmr/en": {
+      "directory": "Analisis/results/modal-xlm-roberta/xlm_roberta_base_data-en_20261026T175022Z_fa4b09a8",
+      "predictions_sha256": "e13a3b53de264505d770f6ea335537a3c1245b8fc9cf8f623d1ada0c826646eb",
+      "split_hashes_and_predictions_checked": true,
+      "preprocessing": "raw",
+      "train_batch": "32"
+    },
+    "qwen/en/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-en_20261026T032318Z_46a7586c",
+      "predictions_checked": true,
+      "macro_f1": 0.7191456785823499
+    },
+    "qwen/en/it": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-it_data-en_20261025T031812Z_79e868ed",
+      "predictions_checked": false,
+      "macro_f1": 0.7157566248971552
+    },
+    "qwen/en/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-en_20261025T023209Z_c7ee653f",
+      "predictions_checked": true,
+      "macro_f1": 0.68833974667308
+    },
+    "xlmr/it": {
+      "directory": "Analisis/results/modal-xlm-roberta/xlm_roberta_base_data-it_20261026T175209Z_bc72a4c8",
+      "predictions_sha256": "c7f588f04ed42947314ab3338768ce4fa5fa2f3ab1e25060e82883e9c5c49b73",
+      "split_hashes_and_predictions_checked": true,
+      "preprocessing": "raw",
+      "train_batch": "32"
+    },
+    "qwen/it/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-it_20261024T103652Z_2126b07a",
+      "predictions_checked": false,
+      "macro_f1": 0.7035634218564737
+    },
+    "qwen/it/it": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-it_data-it_20261026T175537Z_e0dfc951",
+      "predictions_checked": true,
+      "macro_f1": 0.6942491773261468
+    },
+    "qwen/it/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-it_20261025T020646Z_0bd190be",
+      "predictions_checked": true,
+      "macro_f1": 0.701448760430586
+    },
+    "xlmr/nl": {
+      "directory": "Analisis/results/modal-xlm-roberta/xlm_roberta_base_data-nl_20261026T175333Z_13a5f164",
+      "predictions_sha256": "73daca99e27dbbf886316ed46919527e22d8bad4bc96a4c60bfce872bcb56bb2",
+      "split_hashes_and_predictions_checked": true,
+      "preprocessing": "raw",
+      "train_batch": "32"
+    },
+    "qwen/nl/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-nl_20261024T113321Z_82ac8320",
+      "predictions_checked": true,
+      "macro_f1": 0.6299273766934989
+    },
+    "qwen/nl/it": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-it_data-nl_20261024T133310Z_e0ea89ea",
+      "predictions_checked": false,
+      "macro_f1": 0.6308097729833183
+    },
+    "qwen/nl/nl": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-nl_data-nl_20261025T013713Z_a3fe51dc",
+      "predictions_checked": true,
+      "macro_f1": 0.6415218958800766
+    }
+  },
+  "missing_cell_policy": "Empty cells are preserved; no inference or recovery."
+}

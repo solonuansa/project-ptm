@@ -13,11 +13,6 @@ kedekatan jumlah contoh setiap kelas terhadap target, tanpa melatih model
 atau melihat skor prediksi. Setelah disimpan, gunakan split yang sama untuk
 semua model dan variasi preprocessing.
 Nama CSV mencantumkan bahasa, misalnya en-train.csv, en-val.csv, en-test.csv.
-
-Dependensi: numpy, scikit-learn.
-Referensi metode:
-https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html
-https://stereoqueereval.github.io/stereoqueereval/
 """
 
 import csv

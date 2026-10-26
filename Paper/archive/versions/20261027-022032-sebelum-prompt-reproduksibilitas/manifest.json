@@ -1,0 +1,11 @@
+{
+  "main.tex": "5afc3ad52ca70dc87717202715a894fc4ed2cf2beb8dabf48f6daaf90bb16aab",
+  "main.pdf": "012c73c8c5938f6ed312dcc8c00ff9d83e98a9fa1e42348ded19b5e49e4004bc",
+  "references.bib": "cb2888585779e41bb379002f382eb692a0f5ca5109a17884d5951acc5baa3854",
+  "acl.sty": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+  "acl_natbib.bst": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+  "tables/eda_split_counts.tex": "b9a8ee5329c89841e2e2854f7830c79dda6c014ceefb9db69727e633a5173f23",
+  "tables/reported_macro_f1.tex": "eace9b6ce3ba6970d8b55dad0e64ac41a8d69d586a1352bceb086d85b907367b",
+  "tables/reported_class_f1.tex": "ac6c5c0597583b26d346530a4a769938ba2aa13ab24a22f4583f49f458e4f7f9",
+  "figures/eda_label_distribution.pdf": "e155dfc0b2c1f0eb57f5f6ae16db69f95ca08b544656b19138e0bc60e6df41cb"
+}
