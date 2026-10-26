@@ -1,0 +1,44 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-bibtex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-halt-on-error",
+        "-outdir=%OUTDIR%",
+        "%DOC_EXT%"
+      ]
+    },
+    {
+      "name": "sync-paper-pdf",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "%DIR%/scripts/sync_paper_pdf.ps1",
+        "-RootFile",
+        "%DOC_EXT%",
+        "-OutputDirectory",
+        "%OUTDIR%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (PDF + BibTeX)",
+      "tools": ["latexmk", "sync-paper-pdf"]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.latex.outDir": "%DIR%/build"
+}

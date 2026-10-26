@@ -1,15 +1,62 @@
 {
   "primary_file": "Analisis/results/tabel-experiment.md",
-  "primary_sha256": "e992afd9f625e0c002e46b6200da6f7e75b878e8cb724e8e1cd96dd9f497371c",
-  "notebook_sha256": "5c30db9154d736be926d83a64c2998a8a28dfeeb833b2d6758ea1ec280635b8a",
+  "primary_sha256": "3e46c90b19530b3859cb6c34f0710638029eaa9eb9c7b70556d174444f92479b",
+  "notebook_sha256": "9273a2b2d493db87229aa96250b27be12aaa806bfdc1501af1d38dc60f363d3e",
   "primary_combinations": 9,
-  "artifact_combinations": 7,
-  "full_config_and_predictions": 4,
+  "artifact_combinations": 8,
+  "full_config_and_predictions": 5,
   "summary_only": [
-    "en/en",
     "it/it"
   ],
   "runs": {
+    "en/en": {
+      "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-en_20261026T032318Z_46a7586c",
+      "metrics_sha256": "fedc40e02421d83f9ba3a837cc1c62b3c180f1e1d93c115da3923f06f1908b2f",
+      "metrics": {
+        "zero_shot_val": {
+          "accuracy": 0.5376712328767124,
+          "macro_f1": 0.4471966205837174,
+          "weighted_f1": 0.5118896376491383,
+          "loss": 0.6847501915668445
+        },
+        "sft_val": {
+          "accuracy": 0.6746575342465754,
+          "macro_f1": 0.6307009799262272,
+          "weighted_f1": 0.6776078696030667,
+          "loss": 0.4015422719359328
+        },
+        "sft_test": {
+          "accuracy": 0.742320819112628,
+          "macro_f1": 0.7191456785823499,
+          "weighted_f1": 0.744319765485917,
+          "loss": 0.33634347587513164
+        },
+        "zero_shot_test": {
+          "accuracy": 0.537542662116041,
+          "macro_f1": 0.49160566980364817,
+          "weighted_f1": 0.5288496425839592,
+          "loss": 0.6362333563246817
+        }
+      },
+      "config_available": true,
+      "predictions_checked": true,
+      "configuration": {
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "input_mode": "comment_only",
+        "label_to_answer": {
+          "no": "0",
+          "yes_explicit": "1",
+          "yes_implicit": "2"
+        },
+        "max_length": 1024,
+        "enable_thinking": false,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.20.2",
+          "peft": "0.21.2"
+        }
+      }
+    },
     "it/en": {
       "directory": "Analisis/results/modal-qwen/qwen35_prompt-en_data-it_20261024T103652Z_2126b07a",
       "metrics_sha256": "721d9ea1818f7b7257ebcbb003d2d4613d72b3aea377442241e42662b4bb1922",

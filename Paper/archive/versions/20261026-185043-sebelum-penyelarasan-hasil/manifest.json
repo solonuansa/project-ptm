@@ -1,0 +1,15 @@
+{
+  "purpose": "Snapshot sebelum perapian bahasa dan penyelarasan narasi dengan hasil EN/EN terbaru",
+  "sha256": {
+    "main.tex": "f97a4a4db5e32adaa34bbe7b792d93bd253f1f9103b26337c5c8e9eb07b056b6",
+    "main.pdf": "9acd43fdf3abaedeb1bb4d791f8685cba5cbb89e5fe10c8d1bd9763d2281ecf9",
+    "references.bib": "d0e491954a7bd72c5b280d3cb7aa2aa13affedc639fa831e05dbffe38ab80b22",
+    "acl.sty": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+    "acl_natbib.bst": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+    "tables/qwen_dataset.tex": "b9a8ee5329c89841e2e2854f7830c79dda6c014ceefb9db69727e633a5173f23",
+    "tables/model_comparison.tex": "e24cd81555162675f1136a323e5d5fe07eb18737a2673bc468a1b5fe459f3408",
+    "tables/qwen_classes_nl.tex": "31ea9d22c45daa0c78fc164f7c3d3e5dd647fbb11953f4d7f5aaa3ebfcfa51b0",
+    "figures/qwen_sft_baseline.pdf": "18607a81fa40149452e7c120e9a84dfa3d580d5c2756e5027750ad2a420a94c0",
+    "figures/qwen_confusion_nl.pdf": "f65cfd1b601758f081e43754716ae33d4be4cebbfafb4ee132384f385f213ef5"
+  }
+}

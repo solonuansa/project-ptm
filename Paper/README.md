@@ -2,11 +2,11 @@
 
 `main.tex` berisi laporan pendekatan bergaya paper SemEval untuk menyelesaikan
 Subtask B StereoQueerEval dengan SFT LoRA Qwen3.5-9B dan pembanding XLM-RoBERTa
-Base. Tiga bahasa instruksi diperlakukan sebagai konfigurasi penyelesaian task.
-Draf berbahasa Indonesia memakai format ACL: tujuh halaman, 12 referensi yang
-disitasi, empat tabel, dan dua gambar statistik. Susunan mengikuti draf acuan
-pengguna: Pendahuluan, Deskripsi Task (termasuk Penelitian Terkait), Pendekatan
-Penyelesaian, Pengaturan Eksperimen, Hasil dan Pembahasan, Kesimpulan, serta
+Base. Tiga bahasa prompt diperlakukan sebagai konfigurasi penyelesaian task.
+Draf berbahasa Indonesia memakai format ACL: delapan halaman, 12 referensi yang
+disitasi, tiga tabel, dan dua gambar statistik. Susunan mengikuti draf acuan
+pengguna: Pendahuluan, Deskripsi Task (termasuk Penelitian Terkait), Metodologi,
+Rancangan Eksperimen, Hasil, Kesimpulan, serta
 Keterbatasan. Referensi Chan et al. (2024), Conneau et al. (2020), dan Behzad
 et al. (2024) mendukung latar belakang dan pilihan pendekatan. Studi tata bahasa
 Behzad tidak diperlakukan sebagai bukti langsung deteksi kebencian. Perbedaan
@@ -15,6 +15,23 @@ Bahasa naskah telah disederhanakan dengan istilah utama yang dijelaskan saat
 pertama digunakan. Detail operasional dipisahkan dari pembahasan ilmiah.
 Nama dan afiliasi penulis masih perlu diisi.
 
+Penyebutan kategori pada naskah, tabel, dan matriks kesalahan menggunakan nama
+kelas asli: `no`, `yes_implicit`, dan `yes_explicit`.
+
+Bab Metodologi menjelaskan XLM-RoBERTa, Qwen3.5-9B, alur analisis (EDA,
+prapemrosesan dan pembagian data, pelatihan dan prediksi, evaluasi model), serta
+metrik evaluasi. Bab Rancangan Eksperimen memuat uraian serta tabel data,
+diikuti paragraf skenario dan pengaturan eksperimen tanpa daftar poin atau
+tabel hyperparameter. Bab Hasil menyajikan temuan EDA dan evaluasi, tanpa
+subbagian Data. Perbandingan sebelum dan
+sesudah SFT berada pada Evaluasi, tanpa subbagian Pelatihan tersendiri.
+EDA pada Metodologi menjelaskan prosedur; EDA pada Hasil menyajikan
+temuan dari prosedur tersebut.
+
+Salinan sebelum restrukturisasi disimpan tanpa mengubah berkas aslinya di
+[arsip versi](archive/versions/20261026-153722-sebelum-restrukturisasi/README.md).
+Arsip memuat `main.tex`, `main.pdf`, dependensi kompilasi, dan manifest hash.
+
 PDF terkini: [stereoqueereval-qwen35-lora-draft.pdf](output/pdf/stereoqueereval-qwen35-lora-draft.pdf). File build sementara disimpan di `build/`.
 
 ## Sumber utama dan batas verifikasi
@@ -22,19 +39,20 @@ PDF terkini: [stereoqueereval-qwen35-lora-draft.pdf](output/pdf/stereoqueereval-
 - `../Analisis/notebooks/qwen3.5-9b.ipynb`: metode, hyperparameter, output run
   terakhir, dan aturan evaluasi.
 - `../Analisis/results/tabel-experiment.md`: sembilan skor macro-F1 test utama.
-- `../Analisis/results/modal-qwen/`: tujuh pasangan dengan metrik dan confusion
-  matrix; empat juga memiliki konfigurasi, prompt, log, dan prediksi lengkap.
-- `../Analisis/prompt/`: tiga instruksi; komentar tidak diterjemahkan.
+- `../Analisis/results/modal-qwen/`: delapan pasangan dengan metrik dan confusion
+  matrix; lima juga memiliki konfigurasi, prompt, log, dan prediksi lengkap.
+- `../Analisis/prompt/`: tiga prompt; komentar tidak diterjemahkan.
 - `../Analisis/data/{en,it,nl}-splitting/`: split internal yang sama untuk setiap
   bahasa data.
 - `../Analisis/archive/results/xlm-roberta-base/20261020T105544Z_e1320f49/`:
   manifest, praproses, pengaturan pelatihan, dan prediksi pembanding XLM-RoBERTa.
   Hash ketiga split, urutan ID dan label, serta metrik validasi/test diperiksa.
 
-Dua skor, data EN/prompt EN dan data IT/prompt IT, hanya tersedia dalam tabel
-ringkasan. Keduanya diberi tanda dagger dalam tabel paper. Nilai IT/prompt EN
+Skor data IT/prompt IT hanya tersedia dalam tabel ringkasan dan diberi tanda
+dagger dalam tabel paper. Hasil EN/prompt EN tersedia dengan macro-F1 0.719146
+dan rincian prediksi yang sudah diverifikasi. Nilai IT/prompt EN
 0.7036 di tabel utama konsisten dengan 0.7035634218564737 dalam metrik run;
-presisi sumber dipertahankan. Pembanding zero-shot Qwen dibahas pada tujuh
+presisi sumber dipertahankan. Pembanding zero-shot Qwen dibahas pada delapan
 pasangan dengan metrik tersimpan; XLM-RoBERTa tersedia pada ketiga bahasa.
 Analisis per kelas menggunakan prompt NL tetap pada ketiga
 bahasa, bukan tiga pemenang test.
@@ -58,7 +76,7 @@ melatih ulang, mengevaluasi model, atau mengirim data ke layanan luar. Skrip
 merekonstruksi metrik dari matriks, memeriksa prediksi dan hash ketika tersedia,
 serta menghasilkan tabel/gambar agregat berawalan `qwen_`.
 Tabel `model_comparison.tex` dan `research/qwen35/xlmr_audit.json` menambahkan
-pembanding XLM-RoBERTa. Perbandingan mencakup pendekatan dengan praproses,
+pembanding XLM-RoBERTa. Perbandingan dilakukan antara pendekatan dengan praproses,
 ukuran model, dan cara adaptasi berbeda, bukan pengujian satu komponen terisolasi.
 
 Catatan riset dan jejak audit ada di `research/qwen35/`:
@@ -90,7 +108,19 @@ Untuk Overleaf, unggah `main.tex`, `references.bib`, `tables/`, `figures/`,
 `acl.sty`, dan `acl_natbib.bst`; pilih `main.tex` dengan pdfLaTeX.
 Paket tambahan: booktabs, amsmath, babel (Indonesian), xurl.
 Mode ACL memakai `review`, mengikuti draf acuan terbaru, dengan identitas anonim
-dan nomor baris. Ini tidak menyatakan status submission atau penerimaan.
+dan nomor halaman. Nomor baris dinonaktifkan dengan `\nolinenumbers` agar PDF
+nyaman dibaca. `\raggedbottom` menghindari peregangan jarak vertikal pada kolom
+yang lebih pendek. Ini tidak menyatakan status submission atau penerimaan.
+
+Jika VS Code membuka root repositori `TBP`, konfigurasi aktif berasal dari
+`../.vscode/settings.json`; konfigurasi `Paper/.vscode/settings.json` berlaku
+jika folder `Paper` dibuka secara langsung. Keduanya menggunakan `latexmk`
+dengan BibTeX dan pengulangan kompilasi otomatis, menyimpan hasil bantu di
+`build/`, serta mempertahankan berkas bantu setelah kompilasi. Konfigurasi ini
+menggantikan recipe pengguna yang hanya menjalankan satu kali `pdflatex`.
+Setelah kompilasi berhasil, `scripts/sync_paper_pdf.ps1` menyelaraskan PDF di
+`build/`, `Paper/main.pdf`, dan lokasi output publikasi. Perubahan dependensi
+di disk memicu build otomatis; build manual dapat dijalankan dengan Ctrl+Alt+B.
 
 ## Susunan direktori
 
@@ -102,7 +132,7 @@ dan nomor baris. Ini tidak menyatakan status submission atau penerimaan.
 | `scripts/build_qwen_assets.py` | Regenerasi aset dan audit Qwen. |
 | `output/pdf/` | Satu PDF draf Qwen terkini. |
 | `templates/` | Kerangka asli dan contoh serta dokumentasi ACL. |
-| `archive/` | Riset, aset, skrip, dan PDF eksperimen encoder terdahulu. |
+| `archive/` | Materi encoder terdahulu dan salinan versi naskah sebelum restrukturisasi. |
 | `build/` | Hasil kompilasi sementara; diabaikan Git dan dapat dibersihkan. |
 | `.vscode/` | Konfigurasi LaTeX Workshop; kompilasi diarahkan ke `build/`. |
 

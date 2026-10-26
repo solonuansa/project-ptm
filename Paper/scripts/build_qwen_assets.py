@@ -140,7 +140,14 @@ pd.DataFrame([{'data_language':d,'prompt_language':p,'primary_macro_f1':value,
 def table(name, rows):
     (PAPER/'tables'/name).write_text('\n'.join(' & '.join(row)+r' \\' for row in rows)+'\n\\bottomrule\n',encoding='utf-8')
 
-table('qwen_dataset.tex', [[c['language'].upper(),c['split'],str(c['n']),*[str(c[l]) for l in LABELS]] for c in counts])
+dataset_rows = []
+for data in LANGS:
+    splits = {c['split']: c for c in counts if c['language'] == data}
+    for label in LABELS:
+        display = r'\texttt{' + label.replace('_', r'\_') + '}'
+        dataset_rows.append([data.upper(), display, *[str(splits[s][label]) for s in ['train', 'val', 'test']]])
+    dataset_rows.append([data.upper(), 'Total', *[str(splits[s]['n']) for s in ['train', 'val', 'test']]])
+table('qwen_dataset.tex', dataset_rows)
 rows=[]
 for data in LANGS:
     highest=max(float(primary[data,p]) for p in LANGS)
@@ -199,8 +206,9 @@ save_json(RESEARCH / 'xlmr_audit.json', {
 class_rows=[]
 for data in LANGS:
     report=reports[data,'nl']
-    for label,display in zip(LABELS,['no','implisit','eksplisit']):
+    for label in LABELS:
         r=report[label]
+        display = r'\texttt{' + label.replace('_', r'\_') + '}'
         class_rows.append([data.upper(),display,str(int(r['support'])),*[f'{r[k]:.4f}' for k in ['precision','recall','f1-score']]])
 table('qwen_classes_nl.tex',class_rows)
 
@@ -222,7 +230,7 @@ for offset,kind,color,hatch,label in [(-width/2,'zero_shot_test','#bec9d1','//',
     ax.bar(x+offset,values,width,label=label,color=color,hatch=hatch,edgecolor='black',linewidth=.4)
     for xx,v in zip(x+offset,values): ax.text(xx,v+.01,f'{v:.3f}',ha='center',fontsize=7)
 ax.set_xticks(x,[f'{d.upper()}/{p.upper()}' for d,p in keys])
-ax.set(xlabel='Bahasa data / bahasa instruksi',ylabel='Macro-F1 pengujian internal',ylim=(0,1))
+ax.set(xlabel='Bahasa data / bahasa prompt',ylabel='Macro-F1 pengujian internal',ylim=(0,1))
 ax.legend(loc='upper left',ncol=2,frameon=False,fontsize=8)
 ax.grid(axis='y',alpha=.2);ax.set_axisbelow(True)
 fig.tight_layout(pad=.7)
@@ -237,18 +245,18 @@ for ax,data in zip(axes,LANGS):
         for j in range(3):
             ax.text(j,i,f'{matrix[i,j]}\n{normalized[i,j]*100:.1f}%',ha='center',va='center',fontsize=7,
                     color='white' if normalized[i,j]>.58 else 'black')
-    ax.set_xticks(range(3),['no','impl.','ekspl.'],fontsize=7)
-    ax.set_yticks(range(3),['no','impl.','ekspl.'],fontsize=7)
+    ax.set_xticks(range(3),LABELS,fontsize=7,rotation=40,ha='right')
+    ax.set_yticks(range(3),LABELS,fontsize=7)
     ax.set_xlabel('Prediksi',fontsize=8)
-    ax.set_title(f'Data {data.upper()} | instruksi NL',fontsize=8)
+    ax.set_title(f'Data {data.upper()} | prompt NL',fontsize=8)
 axes[0].set_ylabel('Label aktual',fontsize=8)
 fig.tight_layout(pad=.6,w_pad=.6)
 for ext in ['pdf','png']:fig.savefig(PAPER/f'figures/qwen_confusion_nl.{ext}',dpi=260)
 plt.close(fig)
 save_json(RESEARCH/'display_manifest.json',{'creator':'Codex, local matplotlib; no synthetic data',
     'human_review':'pending','uncertainty':'single seed; no error bars or significance tests',
-    'baseline_alt':'Paired bars: SFT exceeds zero-shot in all seven pairs with saved metrics.',
-    'confusion_alt':'Three row-normalized test matrices at fixed Dutch system prompt; no class is uniformly the weakest across data languages.',
+    'baseline_alt':f'Paired bars: SFT exceeds zero-shot in all {len(audited)} pairs with saved metrics.',
+    'confusion_alt':'Three row-normalized test matrices at fixed Dutch instruction; class labels are no, yes_implicit, yes_explicit.',
     'source':'audit.json and primary_results.csv','script':'Paper/scripts/build_qwen_assets.py'})
 print(f'Audited {len(audited)}/9 matrix entries; {sum(x["predictions_checked"] for x in audited.values())} with full prediction/config audit.')
 print((RESEARCH/'derived_statistics.json').read_text())

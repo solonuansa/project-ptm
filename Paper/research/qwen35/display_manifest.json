@@ -2,8 +2,8 @@
   "creator": "Codex, local matplotlib; no synthetic data",
   "human_review": "pending",
   "uncertainty": "single seed; no error bars or significance tests",
-  "baseline_alt": "Paired bars: SFT exceeds zero-shot in all seven pairs with saved metrics.",
-  "confusion_alt": "Three row-normalized test matrices at fixed Dutch system prompt; no class is uniformly the weakest across data languages.",
+  "baseline_alt": "Paired bars: SFT exceeds zero-shot in all 8 pairs with saved metrics.",
+  "confusion_alt": "Three row-normalized test matrices at fixed Dutch instruction; class labels are no, yes_implicit, yes_explicit.",
   "source": "audit.json and primary_results.csv",
   "script": "Paper/scripts/build_qwen_assets.py"
 }

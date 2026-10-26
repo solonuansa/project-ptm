@@ -1,8 +1,8 @@
-﻿# Jejak bukti naskah StereoQueerEval
+# Jejak bukti naskah StereoQueerEval
 
 Diperbarui 26 Oktober 2026. Naskah mengikuti draf LaTeX terbaru pengguna dan
 berfokus pada penyelesaian Subtask B, dengan bahasa akademis Indonesia yang
-mudah dipahami. Pilihan bahasa instruksi menjadi pengaturan klasifikasi,
+mudah dipahami. Pilihan bahasa prompt menjadi pengaturan klasifikasi,
 bukan framing utama penelitian. Mode ACL `review` mengikuti draf acuan.
 
 ## Bukti lokal
@@ -14,11 +14,11 @@ bukan framing utama penelitian. Mode ACL `review` mengikuti draf acuan.
 - Q002: `Analisis/results/tabel-experiment.md`. Sumber utama sembilan skor
   macro-F1 pengujian. Presisi yang ditampilkan dipertahankan. Nilai IT/EN
   0.7036 konsisten dengan 0.7035634218564737 pada artefak metrik.
-- Q003: `Analisis/results/modal-qwen/`, tujuh pasangan dengan metrik dan
+- Q003: `Analisis/results/modal-qwen/`, delapan pasangan dengan metrik dan
   matriks kesalahan SFT. Nilai macro-F1, weighted-F1, dan akurasi direkonstruksi
-  dari matriks. Zero-shot tersedia untuk ketujuh pasangan tersebut.
-- Q004: empat pasangan memiliki konfigurasi dan prediksi lengkap: NL/EN,
-  EN/NL, IT/NL, NL/NL (urutan data/instruksi). Hash CSV dan instruksi,
+  dari matriks. Zero-shot tersedia untuk kedelapan pasangan tersebut.
+- Q004: lima pasangan memiliki konfigurasi dan prediksi lengkap: EN/EN, NL/EN,
+  EN/NL, IT/NL, NL/NL (urutan data/prompt). Hash CSV dan prompt,
   identitas komentar, label, dan metrik validasi/test diverifikasi.
 - Q005: `Analisis/data/{en,it,nl}-splitting/`. CSV, manifest, dan ringkasan
   pembagian diperiksa. Tidak ada overlap ID, komentar ternormalisasi, pasangan
@@ -35,7 +35,7 @@ bukan framing utama penelitian. Mode ACL `review` mengikuti draf acuan.
   FP16, early stopping3. Huruf diseragamkan dengan casefold dan emoji diganti
   `[EMOJI]`; praproses ini berbeda dari Qwen. Detail audit: `xlmr_audit.json`.
 
-EN/EN dan IT/IT Qwen hanya tersedia pada ringkasan Q002, sehingga diberi dagger.
+IT/IT Qwen hanya tersedia pada ringkasan Q002, sehingga diberi dagger.
 Analisis per kelas memakai instruksi NL yang sama pada ketiga bahasa.
 Seluruh skor berasal dari pengujian internal training release, bukan test resmi.
 Perbandingan XLM-RoBERTa dan Qwen merupakan perbandingan pendekatan dengan
@@ -96,3 +96,80 @@ aset agregat; tidak melatih model atau mengirim komentar ke layanan luar.
 Skrip juga menghasilkan audit pembanding XLM-RoBERTa. `claims.csv` memetakan
 paragraf ke bukti dan hash, sedangkan `manuscript-check.json` mencatat pemeriksaan
 akhir. Grafik berupa plot statistik dari hasil tersimpan, tanpa data sintetis.
+
+## Penyeragaman nama kelas
+
+Atas permintaan pengguna, penyebutan kategori pada naskah, tabel dataset, tabel
+hasil per kelas, dan sumbu matriks kesalahan menggunakan label asli `no`,
+`yes_implicit`, dan `yes_explicit`. Tabel dataset ditata menurut kelas agar
+label lengkap tetap terbaca. Angka evaluasi dan pemetaan label tidak berubah.
+
+## Restrukturisasi Metodologi dan Hasil
+
+Naskah mengikuti susunan terbaru pengguna: Bab3 Metodologi (XLM-RoBERTa,
+Qwen3.5-9B, Alur Analisis, Metrik Evaluasi), Bab4 Rancangan Eksperimen, Bab5
+Hasil (Data, EDA, Pelatihan, Evaluasi), Bab6 Kesimpulan, dan Keterbatasan.
+Alur Analisis memuat EDA, Prapemrosesan dan Pembagian Data, serta Pelatihan dan
+Prediksi. EDA pada metode menjelaskan langkah pemeriksaan; EDA pada hasil
+melaporkan komposisi kelas dan pemeriksaan overlap yang sudah tersedia.
+Hasil pelatihan didasarkan pada evaluasi sebelum/sesudah SFT yang tersimpan;
+tidak menambahkan kurva loss, skor, atau pengulangan baru. Sumber bukti dan
+angka tabel/gambar tetap sama.
+
+Versi sebelum perubahan disalin ke `archive/versions/20261026-153722-sebelum-restrukturisasi`.
+Arsip menyertakan main.tex, main.pdf, dependensi kompilasi, dan manifest hash.
+Keutuhan seluruh berkas arsip diverifikasi setelah naskah aktif diubah.
+
+## Nomor baris dan kompilasi VS Code
+
+Nomor baris mode review dinonaktifkan dengan nolinenumbers; nomor halaman
+tetap ditampilkan. Versi sebelumnya disalin utuh beserta dependensinya ke
+`archive/versions/20261026-154626-sebelum-menonaktifkan-nomor-baris`.
+Raggedbottom digunakan untuk mencegah peregangan vertikal, dan satu kalimat
+pada pendahuluan dirapikan tanpa mengubah makna atau sumbernya.
+
+Diagnostik undefined citation dan cross-reference berasal dari recipe global
+pdflatex satu kali, diikuti auto-clean berkas bantu. Folder kerja VS Code
+adalah TBP sehingga Paper/.vscode tidak aktif. Konfigurasi root .vscode kini
+memakai latexmk/BibTeX, pengulangan otomatis, auto-clean never, dan build/ untuk
+berkas bantu. Skrip sync_paper_pdf.ps1 menyelaraskan PDF setelah build berhasil.
+Build dari VS Code yang sedang berjalan diperiksa: Logged 0 messages dan
+BUILD_DONE; seluruh 12 sitasi dan enam rujukan tabel/gambar terselesaikan.
+Tidak ada peringatan Underfull/Overfull pada log final.
+
+## Revisi rancangan eksperimen dan evaluasi
+
+Rancangan Eksperimen ditulis sebagai paragraf tanpa subbagian Data Eksperimen,
+daftar poin, atau tabel. Nilai hyperparameter yang sebelumnya ditabelkan
+dipertahankan dalam narasi. Evaluasi Model ditambahkan sebagai langkah setelah
+Pelatihan dan Prediksi pada Metodologi. Hasil hanya memiliki Data, EDA, dan
+Evaluasi; perbandingan sebelum/sesudah SFT dipindahkan ke Perbandingan Model,
+tanpa subbagian Pelatihan tersendiri. Sumber dan angka hasil tidak berubah.
+Arsip sebelum perubahan tersedia pada `archive/versions/20261026-160613-sebelum-revisi-rancangan-evaluasi`.
+Seluruh hash arsip diperiksa. Kompilasi final menghasilkan delapan halaman,
+tiga tabel, dua gambar, dan 12 referensi tanpa diagnostik LaTeX.
+
+## Pemindahan uraian data
+
+Uraian jumlah komentar dan tabel dataset dipindahkan ke awal Rancangan
+Eksperimen. Penjelasan rancangan tetap berupa paragraf tanpa subbagian atau
+daftar poin. Hasil kini hanya memiliki EDA dan Evaluasi; pembahasan temuan EDA
+tetap merujuk tabel data yang sama. Angka, aset, dan referensi tidak berubah.
+Versi sebelum pemindahan tersimpan pada `archive/versions/20261026-184506-sebelum-pemindahan-data`.
+Keutuhan arsip dan seluruh dependensi yang tidak berubah telah diperiksa.
+
+## Konsistensi prompt, perapian bahasa, dan hasil terbaru
+
+Istilah prompt digunakan pada naskah, judul kolom tabel, keterangan gambar,
+dan sumbu grafik. Kata mencakup diganti dengan ungkapan yang lebih langsung.
+Hasil EN/EN terbaru pada sumber utama adalah 0.719146 dan memiliki konfigurasi
+serta prediksi lengkap. Audit kini memeriksa delapan matriks dan lima set
+prediksi lengkap; hanya IT/IT yang bersumber dari ringkasan. Narasi diperbarui
+menjadi delapan perbandingan zero-shot/SFT, hasil tertinggi Inggris memakai
+prompt Inggris, serta rentang Inggris 0.688340-0.719146 (selisih 0.030806).
+Analisis kelas tetap memakai prompt NL agar pilihan prompt sama untuk tiga
+bahasa. Rentang kenaikan 12.47-26.94 poin tidak berubah. Naskah tetap melaporkan
+hasil uji tertinggi secara deskriptif tanpa mengklaim seleksi konfigurasi dari
+data validasi. Riwayat penulisan sebelumnya di bawah setiap revisi merekam
+keadaan sumber pada saat revisi tersebut dibuat. Seluruh salinan versi lama
+dipertahankan dan hash-nya diperiksa sebelum commit.
