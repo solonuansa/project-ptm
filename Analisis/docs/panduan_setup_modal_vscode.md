@@ -1,20 +1,29 @@
 # Panduan Modal dan VS Code untuk notebook Qwen
 
-Panduan ini memakai PowerShell di Windows, launcher [modal_qwen_jupyter.py](../modal_qwen_jupyter.py), dan notebook [qwen3.5-9b.ipynb](../notebooks/qwen3.5-9b.ipynb). Urutan bagian notebook mengikuti versi ringkas setelah PR #4. Diperbarui: 23 Oktober 2026.
+Panduan ini memakai PowerShell di Windows, launcher [modal_qwen_jupyter.py](../modal_qwen_jupyter.py), dan notebook [qwen3.5-9b.ipynb](../notebooks/qwen3.5-9b.ipynb). Notebook disiapkan untuk run ulang **data EN + prompt EN**, termasuk ekspor laporan per kelas. Diperbarui: 26 Oktober 2026.
 
 ## Daftar isi
 
-1. [Alur dan lokasi file](#1-alur-dan-lokasi-file)
-2. [Persiapan lokal dan login](#2-persiapan-lokal-dan-login)
-3. [Cek billing sebelum mulai](#3-cek-billing-sebelum-mulai)
-4. [Buat Volume dan upload dataset](#4-buat-volume-dan-upload-dataset)
-5. [Atur GPU dan resource](#5-atur-gpu-dan-resource)
-6. [Jalankan server dan hubungkan VS Code](#6-jalankan-server-dan-hubungkan-vs-code)
-7. [Jalankan notebook](#7-jalankan-notebook)
-8. [Simpan dan download hasil](#8-simpan-dan-download-hasil)
-9. [Ganti bahasa atau GPU](#9-ganti-bahasa-atau-gpu)
-10. [Hentikan sesi](#10-hentikan-sesi)
-11. [Troubleshooting](#11-troubleshooting)
+- [Panduan Modal dan VS Code untuk notebook Qwen](#panduan-modal-dan-vs-code-untuk-notebook-qwen)
+  - [Daftar isi](#daftar-isi)
+  - [1. Alur dan lokasi file](#1-alur-dan-lokasi-file)
+  - [2. Persiapan lokal dan login](#2-persiapan-lokal-dan-login)
+  - [3. Cek billing sebelum mulai](#3-cek-billing-sebelum-mulai)
+    - [Ringkasan penggunaan](#ringkasan-penggunaan)
+    - [Harga resource dan laporan rinci](#harga-resource-dan-laporan-rinci)
+  - [4. Buat Volume dan upload dataset](#4-buat-volume-dan-upload-dataset)
+  - [5. Atur GPU dan resource](#5-atur-gpu-dan-resource)
+  - [6. Jalankan server dan hubungkan VS Code](#6-jalankan-server-dan-hubungkan-vs-code)
+  - [7. Jalankan notebook](#7-jalankan-notebook)
+    - [Periksa kernel dan direktori](#periksa-kernel-dan-direktori)
+    - [Urutan bagian versi terbaru](#urutan-bagian-versi-terbaru)
+  - [8. Simpan dan download hasil](#8-simpan-dan-download-hasil)
+  - [9. Ganti bahasa atau GPU](#9-ganti-bahasa-atau-gpu)
+    - [Bahasa berikutnya](#bahasa-berikutnya)
+    - [GPU berbeda](#gpu-berbeda)
+  - [10. Hentikan sesi](#10-hentikan-sesi)
+  - [11. Troubleshooting](#11-troubleshooting)
+  - [Referensi](#referensi)
 
 ## 1. Alur dan lokasi file
 
@@ -22,8 +31,8 @@ VS Code membuka notebook lokal, sedangkan kernel Python dan training berjalan di
 
 | Komponen | Lokasi |
 |---|---|
-| Proyek lokal | `E:/Projek/PTM/TBP` |
-| Environment CLI lokal | `.venv-modal/` |
+| Proyek lokal | `F:/Semester 7/PTM/Project` |
+| Python CLI lokal yang tersedia | `D:/Python/python.exe` (paket Modal sudah terpasang) |
 | Launcher | `Analisis/modal_qwen_jupyter.py` |
 | Dataset remote | `/workspace/data/{en,it,nl}-splitting/` |
 | Output remote | `/workspace/results/` |
@@ -40,27 +49,22 @@ Volume mempertahankan file lintas sesi; objek dalam RAM/GPU hilang ketika contai
 3. Buka proyek, lalu buka terminal PowerShell:
 
 ```powershell
-Set-Location "E:\Projek\PTM\TBP"
+Set-Location "F:\Semester 7\PTM\Project"
 ```
 
-Jika `.venv-modal` belum ada, buat sekali:
+Tetapkan variabel berikut pada setiap terminal lokal baru. Python yang tersedia saat panduan diperbarui sudah memiliki paket Modal dan profil yang terautentikasi.
 
 ```powershell
-python -m venv .venv-modal
+$ModalPython = (Get-Command python).Source
+& $ModalPython -X utf8 -m modal --version
 ```
 
-Tetapkan variabel berikut pada setiap terminal lokal baru. Semua contoh selanjutnya menggunakan variabel ini, sehingga tidak perlu mengaktifkan environment melalui `Activate.ps1`.
+Periksa profil. Jalankan `token new` hanya jika autentikasi belum tersedia:
 
 ```powershell
-$ModalPython = Join-Path (Get-Location) ".venv-modal/Scripts/python.exe"
-& $ModalPython -m pip install --upgrade modal
-```
-
-Login dan periksa profil:
-
-```powershell
-& $ModalPython -X utf8 -m modal token new
 & $ModalPython -X utf8 -m modal profile list
+# Jika belum login:
+# & $ModalPython -X utf8 -m modal token new
 ```
 
 Ikuti autentikasi browser. Jika profil yang benar sudah aktif, tidak perlu membuat token baru setiap sesi. `-X utf8` menghindari error encoding karakter terminal Windows. Environment `.venv-modal` dan direktori `Analisis/.modal-local/` sudah diabaikan Git.
@@ -199,7 +203,8 @@ Harapkan folder kerja `/workspace`, GPU yang diminta, BF16 tersedia, dan CSV dit
 | Bagian | Tindakan |
 |---|---|
 | 1. Instalasi | Lewati jika menggunakan image launcher ini; paket sudah dipasang |
-| 2. Bahasa dan pengaturan | Pilih `LANGUAGE`, periksa versi, GPU, dan lokasi hasil |
+| Pemeriksaan awal | Jalankan sel pertama: periksa `/workspace`, GPU, tiga CSV EN, dan prompt EN |
+| 2. Bahasa dan pengaturan | Periksa `PROMPT_LANGUAGE='en'`, `DATA_LANGUAGE='en'`, versi, GPU, dan lokasi hasil |
 | 3. Baca dan periksa tiga CSV | Pastikan audit split lulus |
 | 4. Tokenizer dan data SFT | Periksa prompt dan tokenisasi |
 | 5. Muat Qwen dan pasang LoRA | Muat backbone dan adapter baru |
@@ -212,12 +217,13 @@ Harapkan folder kerja `/workspace`, GPU yang diminta, BF16 tersedia, dan CSV dit
 Contoh pengaturan awal:
 
 ```python
-LANGUAGE = "en"
+PROMPT_LANGUAGE = "en"
+DATA_LANGUAGE = "en"
 RUN_ZERO_SHOT_BASELINE = True
 INPUT_MODE = "comment_only"
 ```
 
-Default satu bahasa per run, tanpa splitting ulang. Input komentar mempertahankan kapitalisasi dan emoji. Notebook terbaru memakai label teks `no`, `yes_implicit`, `yes_explicit`. File prompt EN/IT/NL terpisah memakai label numerik dan belum terhubung ke notebook; jangan mengganti mapping hanya pada satu bagian.
+Default satu bahasa data dan satu bahasa prompt per run, tanpa splitting ulang. Komentar mempertahankan kapitalisasi dan emoji. Instruksi dibaca dari `prompt/EN_PROMPT.md` untuk run ini. Label dataset tetap `no`, `yes_implicit`, dan `yes_explicit`; jawaban model mengikuti prompt: `no=0`, `yes_explicit=1`, dan `yes_implicit=2`. Revisi model dikunci ke `c202236235762e1c871ad0ccb60c8ee5ba337b9a`, sesuai konfigurasi run terdahulu yang tersimpan.
 
 Jangan menjalankan ulang sel pengaturan selama training karena sel tersebut membuat direktori run baru. Evaluasi test dilakukan setelah checkpoint dipilih; perubahan hyperparameter selanjutnya tetap ditentukan dari validation.
 
@@ -237,9 +243,9 @@ Output notebook ringkas berada pada:
 └── qwen35_prompt-en_data-en_<timestamp>_<id>.zip
 ```
 
-Bagian 10 mengekspor laporan tanpa menyimpan `best_adapter` atau tokenizer. ZIP mengecualikan folder `checkpoints` dan `best_adapter`; base model tetap pada cache. Checkpoint training masih digunakan untuk pemilihan model validation terbaik. Path ini mengikuti notebook terbaru, bukan struktur `results/Qwen3.5-9B/<run_id>/<bahasa>` pada versi sebelumnya.
+Bagian 9 menyimpan prediksi, laporan precision/recall/F1/support setiap kelas, confusion matrix, dan metrik agregat. Bagian 10 memeriksa kelengkapan laporan, menguji integritas ZIP, lalu melakukan commit ke Volume `ptm-qwen`. Isi ZIP dikelompokkan dalam satu folder bernama run agar ekstraksi antareksperimen tidak bercampur. ZIP mengecualikan folder `checkpoints` dan `best_adapter`; base model tetap pada cache. Checkpoint training masih digunakan untuk pemilihan model validation terbaik.
 
-Setelah file selesai ditulis, commit dari kernel remote:
+Bagian 10 sudah melakukan commit secara otomatis ketika dijalankan pada `/workspace`. Jika perlu menyimpan perubahan lain secara manual dari kernel remote:
 
 ```python
 import modal
@@ -248,26 +254,21 @@ modal.Volume.from_name("ptm-qwen").commit()
 modal.Volume.from_name("ptm-qwen-cache").commit()
 ```
 
-Buka terminal lokal kedua, tetapkan `$ModalPython` seperti bagian 2, kemudian download:
+Buka terminal PowerShell lokal kedua dari root proyek. Bagian 10 mencetak perintah download dengan nama ZIP yang tepat. Bentuk perintahnya sebagai berikut; ganti `TIMESTAMP_ID` dengan nama run pada output:
 
 ```powershell
-& $ModalPython -X utf8 -m modal volume get ptm-qwen /results ./Analisis/results/modal-qwen
+$RunName = "qwen35_prompt-en_data-en_TIMESTAMP_ID"
+python -X utf8 -m modal volume get ptm-qwen "/results/$RunName.zip" "./Analisis/results/$RunName.zip"
+Expand-Archive -LiteralPath "./Analisis/results/$RunName.zip" -DestinationPath "./Analisis/results/modal-qwen"
 ```
 
-Untuk mengambil satu ZIP saja, ganti path contoh berikut dengan nama aktual:
-
-```powershell
-& $ModalPython -X utf8 -m modal volume get ptm-qwen `
-    /results/qwen35_prompt-en_data-en_TIMESTAMP_ID.zip ./Analisis/results/qwen35_prompt-en_data-en_TIMESTAMP_ID.zip
-```
-
-Gunakan folder tujuan berbeda jika hasil lama sudah ada. Periksa ZIP dan laporan lokal sebelum menghentikan sesi. Link `FileLink` dari VS Code remote mungkin tidak langsung mengunduh file; CLI Volume menyediakan jalur download yang jelas.
+Setiap nama run bersifat unik. Setelah ekstraksi, pastikan folder `Analisis/results/modal-qwen/$RunName/` berisi `sft_test_report.csv`, `sft_test_predictions.csv`, `sft_test_confusion_matrix.csv`, dan `metrics.json`. Simpan ZIP serta laporan lokal sebelum menghapus hasil remote atau menghentikan sesi. Link `FileLink` dari VS Code remote mungkin tidak langsung mengunduh file; CLI Volume menyediakan jalur download yang jelas.
 
 ## 9. Ganti bahasa atau GPU
 
 ### Bahasa berikutnya
 
-Setelah ekspor dan commit hasil bahasa sebelumnya, restart kernel agar model/trainer lama dilepas, pilih `LANGUAGE="it"` atau `"nl"`, lalu ulangi bagian 2–10. Server Jupyter dan GPU tetap aktif selama restart kernel. Dataset/cache tidak perlu diunggah ulang jika masih ada di Volume.
+Setelah ekspor, download, dan pemeriksaan laporan sebelumnya, restart kernel agar model/trainer lama dilepas. Untuk run IT-IT berikutnya, ubah kedua pengaturan menjadi `PROMPT_LANGUAGE='it'` dan `DATA_LANGUAGE='it'`, serta sesuaikan pemeriksaan awal untuk CSV IT dan `IT_PROMPT.md`. Jalankan kembali bagian 2–10. Server Jupyter dan GPU tetap aktif selama restart kernel; dataset/cache yang masih ada di Volume dapat digunakan kembali.
 
 ### GPU berbeda
 
