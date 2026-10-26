@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "sources": [
     {
       "key": "cignarella-etal-2024-queereotypes",
@@ -61,7 +61,7 @@
       "key": "chan-etal-2024-hate",
       "evidence_id": "L111",
       "url": "https://aclanthology.org/2024.alta-1.11/",
-      "locator": "PDF sections 2-3 and Table 2, pp147-148",
+      "locator": "PDF sections 2-3, Table 2, Limitations and Future Work p150",
       "human_verification": "pending"
     },
     {
@@ -83,6 +83,27 @@
       "evidence_id": "L114",
       "url": "https://aclanthology.org/2022.ltedi-1.37/",
       "locator": "official record and abstract",
+      "human_verification": "pending"
+    },
+    {
+      "key": "conneau-etal-2020-unsupervised",
+      "evidence_id": "L115",
+      "url": "https://aclanthology.org/2020.acl-main.747/",
+      "locator": "official abstract and BibTeX: XLM-R, not XLM",
+      "human_verification": "pending"
+    },
+    {
+      "key": "behzad-etal-2024-ask",
+      "evidence_id": "L116",
+      "url": "https://aclanthology.org/2024.findings-emnlp.916/",
+      "locator": "official abstract and BibTeX: grammaticality, not hate speech",
+      "human_verification": "pending"
+    },
+    {
+      "key": "semeval-2027-task-list",
+      "evidence_id": "L117",
+      "url": "https://semeval.github.io/SemEval2027/tasks.html",
+      "locator": "Task 8 entry, cited by footnote",
       "human_verification": "pending"
     }
   ]

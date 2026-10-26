@@ -153,6 +153,49 @@ for data in LANGS:
     rows.append(row)
 table('qwen_results.tex',rows)
 
+# Baseline introduced in the supplied draft: verify the same examples and splits.
+encoder_root = ROOT / 'Analisis/archive/results/xlm-roberta-base/20261020T105544Z_e1320f49'
+encoder_audit, comparison_rows = {}, []
+for data in LANGS:
+    folder = encoder_root / data
+    manifest = js(folder / 'experiment_manifest.json')
+    for split in ['train', 'val', 'test']:
+        source = ROOT / f'Analisis/data/{data}-splitting/{data}-{split}.csv'
+        assert sha(source) == manifest['data'][split]['sha256']
+    encoder_reports = {}
+    for split, filename in [('val', 'validation_predictions.csv'), ('test', 'test_predictions.csv')]:
+        predictions = pd.read_csv(folder / filename, dtype=str, keep_default_na=False)
+        assert predictions.StereoQueerEval_id.tolist() == frames[data][split].StereoQueerEval_id.tolist()
+        assert predictions.true_label.tolist() == frames[data][split].hate_speech.tolist()
+        report = classification_report(predictions.true_label, predictions.predicted_label,
+                                       labels=LABELS, output_dict=True, zero_division=0)
+        metric_key = 'validation' if split == 'val' else 'test'
+        for name, value in [('macro_f1', report['macro avg']['f1-score']),
+                            ('weighted_f1', report['weighted avg']['f1-score']),
+                            ('accuracy', report['accuracy'])]:
+            assert np.isclose(value, manifest['evaluation'][metric_key][name], atol=1e-12)
+        encoder_reports[split] = report
+    encoder_f1 = encoder_reports['test']['macro avg']['f1-score']
+    comparison_rows.append([data.upper(), f'{encoder_f1:.6f}', *rows[LANGS.index(data)][1:]])
+    encoder_audit[data] = {
+        'manifest_sha256': sha(folder / 'experiment_manifest.json'),
+        'test_predictions_sha256': sha(folder / 'test_predictions.csv'),
+        'split_hashes_match': True, 'prediction_ids_and_gold_match': True,
+        'preprocessing': manifest['preprocessing'],
+        'training': {k: manifest['training_arguments'][k] for k in [
+            'learning_rate', 'num_train_epochs', 'per_device_train_batch_size',
+            'gradient_accumulation_steps', 'lr_scheduler_type', 'warmup_steps',
+            'weight_decay', 'seed', 'fp16']},
+        'early_stopping_patience': manifest['early_stopping_patience'],
+        'test_report': encoder_reports['test'],
+        'minimum_qwen_gain_points': 100 * (min(float(primary[data,p]) for p in LANGS) - encoder_f1),
+    }
+table('model_comparison.tex', comparison_rows)
+save_json(RESEARCH / 'xlmr_audit.json', {
+    'source': str(encoder_root.relative_to(ROOT)).replace('\\', '/'),
+    'runs': encoder_audit, 'model_execution': False, 'raw_text_exported': False,
+    'comparison_scope': 'Different complete approaches; preprocessing, size and adaptation differ.'})
+
 class_rows=[]
 for data in LANGS:
     report=reports[data,'nl']

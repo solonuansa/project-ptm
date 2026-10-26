@@ -1,22 +1,28 @@
 {
   "status": "draft",
   "submission_ready": false,
-  "framing": "task-solution paper, accessible academic Indonesian, impersonal wording",
+  "framing": "Subtask B solution paper; prompt language is an implementation setting",
+  "acl_mode": "review",
   "references": 12,
   "all_references_resolve": true,
-  "unused_references": [],
+  "uncited_bib_entries": [
+    "sorensen-etal-2023-juage",
+    "wong-etal-2023-cantnlp"
+  ],
   "overfull_boxes": 0,
   "undefined_references": 0,
-  "pages": 6,
+  "pages": 7,
   "figures": 2,
   "tables": 4,
-  "paragraphs_registered": 39,
+  "paragraphs_registered": 47,
   "primary_test_combinations": 9,
   "matrix_audited_combinations": 7,
   "full_config_and_prediction_audits": 4,
+  "xlmr_prediction_audits": 3,
+  "xlmr_and_qwen_split_ids_and_gold_match": true,
   "human_verification": "pending",
-  "wording_checks": "requested exclusions absent in LaTeX and PDF text",
-  "visual_qa": "All final pages rendered; contact sheet and detailed first/last pages inspected",
-  "pdf_sha256": "ccba3830869bf18bbc5568df64b8479e71eb779f23acf90cb5dcb134905d1f40",
-  "main_tex_sha256": "999251101f5c3a4cf5f3e60a7d38ea6905d9d09a558e63dc842d240d992fa4b1"
+  "wording_checks": "Requested exclusions absent; template placeholders removed",
+  "visual_qa": "All seven pages rendered and inspected in contact sheet; result pages inspected at larger size",
+  "pdf_sha256": "946f14c7a44e95608185ab3a29a092e5ff7a069d22ffd15239930f191b8078ba",
+  "main_tex_sha256": "5ae68d47479f54192cb83c85e533d29b12c75c7c957e4254152ded87345ca56b"
 }

@@ -1,7 +1,7 @@
 {
   "primary_file": "Analisis/results/tabel-experiment.md",
   "primary_sha256": "e992afd9f625e0c002e46b6200da6f7e75b878e8cb724e8e1cd96dd9f497371c",
-  "notebook_sha256": "25560c4c54107d0fc9cff05f5f66fa2ce3821e9020afb2ebc614010dd05bdd56",
+  "notebook_sha256": "5c30db9154d736be926d83a64c2998a8a28dfeeb833b2d6758ea1ec280635b8a",
   "primary_combinations": 9,
   "artifact_combinations": 7,
   "full_config_and_predictions": 4,

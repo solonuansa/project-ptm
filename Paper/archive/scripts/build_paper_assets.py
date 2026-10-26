@@ -1,6 +1,6 @@
 """Audit saved E0-E7 results and regenerate aggregate paper displays (no training).
 
-Run from any folder: python Paper/scripts/build_paper_assets.py
+Run from any folder: python Paper/archive/scripts/build_paper_assets.py
 Requires numpy, pandas, matplotlib, and scikit-learn.
 Raw comments and instance IDs are never exported to Paper.
 """
@@ -19,8 +19,8 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 
 PAPER = Path(__file__).resolve().parents[1]
-ROOT = PAPER.parent
-RESULTS = ROOT / 'Analisis/results/ablation_multibahasa_e0_e6'
+ROOT = PAPER.parent.parent
+RESULTS = ROOT / 'Analisis/archive/results/ablation_multibahasa_e0_e6'
 DATA = ROOT / 'Analisis/data'
 FIGURES = PAPER / 'figures'
 TABLES = PAPER / 'tables'

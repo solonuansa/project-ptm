@@ -9,6 +9,7 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "-halt-on-error",
+        "-outdir=%OUTDIR%",
         "%DOC%"
       ]
     }
@@ -16,9 +17,12 @@
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk (PDF + BibTeX)",
-      "tools": ["latexmk"]
+      "tools": [
+        "latexmk"
+      ]
     }
   ],
   "latex-workshop.latex.recipe.default": "first",
-  "latex-workshop.latex.autoClean.run": "never"
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.latex.outDir": "%DIR%/build"
 }

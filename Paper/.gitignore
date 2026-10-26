@@ -19,3 +19,6 @@
 
 # Rebuildable TeX intermediates and visual QA renders
 build/
+
+# Local downloaded literature and supporting reading extracts
+archive/literature/
