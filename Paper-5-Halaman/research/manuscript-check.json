@@ -1,0 +1,57 @@
+{
+  "pages": 6,
+  "page_limit_includes_references": false,
+  "references_cited": 13,
+  "tables": 4,
+  "figures": 1,
+  "body_font_pt": 11,
+  "acl_mode": "review",
+  "line_numbers": false,
+  "margin_or_font_reduction": false,
+  "all_macro_and_class_results_retained": true,
+  "source_result_tables_byte_identical": true,
+  "original_Paper_main_tex_and_pdf_unchanged": true,
+  "latex_warnings": 0,
+  "visual_qa": "Six final pages rendered and inspected; content, figures, tables and one-paragraph limitations end on page5; references start on page6; no LaTeX warnings",
+  "main_tex_sha256": "1c496241e6898bd2b8a148abb1adcdeac841889f8e3849268f27c37b45796572",
+  "pdf_sha256": "52e1da757a3f84707aeb53e6aacd96b201b4fb0e1d5859ee51e285c4b0cfd0aa",
+  "source": "../Paper/main.tex; ../Analisis/results/tabel-experiment.md",
+  "editorial_changes": [
+    "Separate general model subsections restored from original Paper",
+    "Workflow retained",
+    "Language results expanded with scores and baseline differences",
+    "Class discussion includes baseline yes_implicit scores",
+    "Related work expanded",
+    "Metrics equations retained",
+    "One-paragraph limitations included within five main pages",
+    "References start after main content using clearpage"
+  ],
+  "batch_size_reporting": "XLM-R32 / Qwen16; effective training batch as in source paper",
+  "preprocessing_caveat": "Concise NFKC text describes consistency checks; model inputs remain raw yt_comment as in source audit",
+  "expanded_content": [
+    "Related work on model errors without additional training",
+    "Precision/recall explanation",
+    "Class imbalance and interpretation limits",
+    "Grouped split allocation and target ratios",
+    "Qwen versus XLM-R macro-F1 differences",
+    "Per-class yes_implicit score ranges",
+    "Repeated runs and Qwen reproducibility"
+  ],
+  "introduction": "Five paragraphs following user wording: detection challenge, translation study, prompt-language gap, task and baseline, solution objective",
+  "method_structure": [
+    "XLM-RoBERTa",
+    "Qwen3.5-9B",
+    "Alur Analisis: EDA, Prapemrosesan dan Pembagian Data, Pelatihan dan Prediksi, Evaluasi Model",
+    "Metrik Evaluasi"
+  ],
+  "chan_verification": "ALTA2024 PDF section2 English prompts; section4.2 slang/cultural translation errors; limitations page150 prompts in dataset language and comparison with other models",
+  "limitations_paragraphs": 1,
+  "metrics_equations": 2,
+  "related_work": "Subsection2.1, concise Nozza, QUEEREOTYPES and Chan comparison",
+  "main_content_pages": 5,
+  "limitations_in_main_page_limit": true,
+  "reference_pages": [
+    6
+  ],
+  "fine_tuning_wording": "Penyesuaian and corresponding verb forms replaced with italic fine-tuning"
+}

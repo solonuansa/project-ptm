@@ -3,7 +3,7 @@
 Naskah aktif menyajikan klasifikasi tiga kelas pada Subtask B StereoQueerEval
 menggunakan Qwen3.5-9B dengan SFT LoRA dan pembanding XLM-RoBERTa Base.
 Draf Indonesia memakai format ACL: delapan halaman, 13 referensi yang disitasi,
-lima tabel, dan satu gambar EDA. Identitas penulis belum diisi.
+empat tabel, dan satu gambar EDA. Identitas penulis belum diisi.
 
 Susunan: Pendahuluan, Deskripsi Task, Metodologi, Rancangan Eksperimen,
 Hasil dan Pembahasan, Kesimpulan, serta Keterbatasan. Nama kelas menggunakan
@@ -14,10 +14,12 @@ Rujukan akademis tetap dipertahankan.
 
 - Metodologi: karakteristik umum model, prosedur EDA, tujuan NFKC, pembagian, tokenisasi,
   pelatihan/prediksi, serta evaluasi; tidak memuat hasil pemeriksaan atau tabel.
-- Rancangan Eksperimen: gambaran umum dataset, hasil prapemrosesan/pembagian
-  beserta tabel jumlah, skenario, dan tabel perbandingan konfigurasi model dan teks lengkap ketiga prompt.
+- Rancangan Eksperimen: gambaran umum dataset, skenario, dan tabel perbandingan konfigurasi model. Teks lengkap prompt tidak ditampilkan.
 - EDA: jumlah asli per bahasa dan kelas, proporsi label, kualitas data, serta
-  satu visualisasi distribusi kelas. Analisis panjang komentar tidak digunakan.
+  satu diagram batang distribusi kelas dengan jumlah di atas batang dan
+  persentase terhadap total per bahasa di dalam batang. Analisis panjang komentar tidak digunakan.
+- Prapemrosesan dan Pembagian Data (5.2): tabel jumlah train/validation/test
+  dan narasi pemeriksaan pembagian, dipindahkan dari Rancangan Eksperimen.
 - Hasil model: macro-F1 dan F1 per kelas terbaru dari ringkasan eksperimen,
   dengan nilai XLM-RoBERTa dan seluruh sembilan pasangan Qwen.
 

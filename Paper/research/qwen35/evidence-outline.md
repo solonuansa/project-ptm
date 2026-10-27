@@ -141,3 +141,21 @@ resmi PyTorch tentang keterbatasan reproduksibilitas lintas versi dan perangkat.
 Q001/Q004/Q008: hanya satu run terbaru dilaporkan per pasangan, belum tersedia
 estimasi variasi antarpengulangan. Tidak mengklaim ketidakstabilan sudah diukur.
 Tabel konfigurasi tidak lagi melaporkan akumulasi gradien.
+
+## Pemindahan hasil pembagian
+
+Tabel pembagian dan narasi Q005/Q007/B002 kini berada pada bagian5.2,
+Prapemrosesan dan Pembagian Data, setelah EDA dalam Hasil dan Pembahasan.
+Catatan penempatan di bagian4 pada riwayat sebelumnya sudah digantikan.
+
+## Penyederhanaan visualisasi kelas
+
+Diagram distribusi kelas kini satu panel batang berkelompok, dengan jumlah
+di atas dan persentase per bahasa di dalam batang. Angka tetap berasal dari
+Q007 dan tidak berubah. Aset lama tersimpan dalam arsip versi.
+
+## Penghapusan tampilan prompt
+
+Tabel teks lengkap prompt dan paragraf format input di Rancangan Eksperimen
+dihapus sesuai permintaan. Deskripsi metodologi dan pilihan bahasa tetap ada.
+Versi yang memuat tabel prompt tetap tersedia di arsip.

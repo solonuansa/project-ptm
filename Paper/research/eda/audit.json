@@ -167,6 +167,6 @@
     }
   },
   "length_analysis_in_manuscript": false,
-  "plot_adaptation": "Same counts and percentages as notebook cell20; typography adapted for a two-column paper. Length plots are not used in the manuscript.",
+  "plot_adaptation": "Single grouped bar chart using the counts and percentages from notebook cell20. Counts appear above bars and within-language class percentages inside bars. Length plots are not used in the manuscript.",
   "human_verification": "pending"
 }

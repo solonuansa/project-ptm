@@ -72,16 +72,18 @@ plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 8,
                      'axes.titlesize': 9, 'axes.labelsize': 8, 'pdf.fonttype': 42,
                      'axes.spines.top': False, 'axes.spines.right': False})
 palette = namespace['COLORS']
-fig, axes = plt.subplots(1, 2, figsize=(6.65, 2.7))
-counts.plot.bar(ax=axes[0], color=palette, rot=0, legend=False)
-for container in axes[0].containers:
-    axes[0].bar_label(container, padding=3, fontsize=7, rotation=90)
-axes[0].set(title='(a) Jumlah komentar per kelas', xlabel='Bahasa', ylabel='Jumlah komentar', ylim=(0, counts.to_numpy().max() * 1.22))
-percentages.plot.bar(stacked=True, ax=axes[1], color=palette, rot=0, legend=False)
-for container in axes[1].containers:
-    axes[1].bar_label(container, fmt='%.1f%%', label_type='center', fontsize=7)
-axes[1].set(title='(b) Proporsi kelas', xlabel='Bahasa', ylabel='Persentase (%)', ylim=(0, 100))
-handles, names = axes[0].get_legend_handles_labels()
+fig, ax = plt.subplots(figsize=(6.65, 2.7))
+counts.plot.bar(ax=ax, color=palette, rot=0, legend=False, width=.75)
+for column, container in zip(counts.columns, ax.containers):
+    ax.bar_label(container, labels=[f'{int(v):,}'.replace(',', '.') for v in counts[column]],
+                 padding=3, fontsize=8)
+    for bar, percentage in zip(container, percentages[column]):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() - 65,
+                f'{percentage:.1f}%'.replace('.', ','),
+                ha='center', va='top', fontsize=8)
+ax.set(xlabel='Bahasa', ylabel='Jumlah komentar',
+       ylim=(0, counts.to_numpy().max() * 1.15))
+handles, names = ax.get_legend_handles_labels()
 fig.legend(handles, names, ncol=3, loc='lower center', frameon=False, fontsize=8)
 fig.tight_layout(rect=(0, .12, 1, 1), pad=.6)
 for extension in ['pdf', 'png']:
@@ -108,7 +110,7 @@ audit = {
     'nfkc_changes_to_original_comments': {lang: sum(unicodedata.normalize('NFKC', s) != s for s in original[lang].yt_comment) for lang in langs},
     'original_csv_sha256': {lang: sha(ROOT / f'Analisis/data/original/StereoQueerEval_{lang}_training.csv') for lang in langs},
     'embedded_notebook_plots': embedded, 'length_analysis_in_manuscript': False,
-    'plot_adaptation': 'Same counts and percentages as notebook cell20; typography adapted for a two-column paper. Length plots are not used in the manuscript.',
+    'plot_adaptation': 'Single grouped bar chart using the counts and percentages from notebook cell20. Counts appear above bars and within-language class percentages inside bars. Length plots are not used in the manuscript.',
     'human_verification': 'pending',
 }
 (RESEARCH / 'audit.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2,

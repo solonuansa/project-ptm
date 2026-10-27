@@ -8,6 +8,7 @@
 \usepackage{inconsolata}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{capt-of}
 \usepackage{amsmath}
 \usepackage[indonesian]{babel}
 \usepackage{xurl}
@@ -126,61 +127,8 @@ Ukuran utama adalah \textit{macro-F1}, yaitu rata-rata F1 dari tiga kelas dengan
 % Evidence: Q005,Q007,L110.
 \textit{Dataset} berasal dari komentar YouTube yang dirilis penyelenggara StereoQueerEval dan disertai informasi konteks video. Penelitian ini menggunakan total 7.627 komentar berlabel untuk klasifikasi tiga kelas. Teks komentar digunakan sebagai \textit{input} utama, sedangkan judul dan deskripsi membantu pemeriksaan kelompok konteks saat pembagian. Pengujian dilakukan pada pembagian internal data berlabel penyelenggara, bukan pada \textit{test} resmi \textit{shared task}.
 
-\begin{table}[ht]
-\centering
-\small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{llrrr}
-\toprule
-Bahasa & Kelas & \textit{Train} & \textit{Validation} & \textit{Test} \\
-\midrule
-\input{tables/eda_split_counts}
-\end{tabular}
-\caption{Jumlah komentar setiap kelas pada \textit{train}, \textit{validation}, dan \textit{test} setelah pembagian.}
-\label{tab:split}
-\end{table}
-
-% Evidence: Q005,Q007,B002.
-Tabel~\ref{tab:split} memperlihatkan jumlah komentar setelah pembagian. \textit{Train} berjumlah 2.111 pada data Inggris, 1.699 pada data Italia, dan 1.556 pada data Belanda. \textit{Validation} masing-masing berjumlah 292, 220, dan 226, sedangkan \textit{test} berjumlah 586, 481, dan 456. Ketiga kelas hadir pada seluruh bagian. Seluruh baris tetap teralokasi dengan isi komentar yang sama seperti sebelum pembagian. Pemeriksaan tidak menemukan tumpang tindih ID, komentar ternormalisasi, atau pasangan judul--deskripsi nonkosong antarbagian. Duplikasi komentar pada data Italia berada pada \textit{train} yang sama. Konteks judul--deskripsi tetap merupakan pendekatan untuk mengenali kelompok video, bukan jaminan identitas video yang sempurna.
-
-
 % Evidence: Q001,Q002,Q004,Q006,B002.
 Eksperimen membandingkan XLM-RoBERTa Base dengan Qwen3.5-9B yang disesuaikan menggunakan SFT LoRA. XLM-R dilatih satu kali untuk setiap bahasa, sedangkan Qwen dilatih untuk sembilan pasangan bahasa komentar dan bahasa \textit{prompt}. Setiap pasangan Qwen dimulai dari model dasar yang sama dengan parameter LoRA baru. \textit{Prompt} yang dipilih digunakan secara konsisten pada \textit{train}, \textit{validation}, dan \textit{test}. Kedua model menggunakan pembagian data yang sama.
-
-% Evidence: Q001,Q006.
-Teks lengkap ketiga \textit{prompt} disajikan pada Tabel~\ref{tab:prompts}. Setiap komentar diberikan terpisah dengan format \textit{Language: [bahasa]} diikuti \textit{Comment: [komentar]}. Penanda bahasa menggunakan \textit{English}, \textit{Italian}, atau \textit{Dutch}. Format ini digunakan pada seluruh pilihan \textit{prompt}, dengan pemetaan angka ke label yang dijelaskan pada tahap pelatihan dan prediksi.
-
-\begin{table*}[t]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{p{0.31\textwidth}p{0.31\textwidth}p{0.31\textwidth}}
-\toprule
-Inggris & Italia & Belanda \\
-\midrule
-\begin{minipage}[t]{\linewidth}\raggedright\itshape
-You are an AI assistant that classifies YouTube comments into one of three categories of hate speech targeting LGBTQIA+ people.\par\medskip
-Categories:\par 0 - Non-hateful or supportive: Content that does not express hatred, hostility, or discrimination toward LGBTQIA+ people, including neutral or supportive statements.\par 1 - Explicit hate: Content that directly expresses hatred, hostility, or discrimination toward LGBTQIA+ people through overt attacks, insults, or hateful statements.\par 2 - Implicit hate: Content that indirectly expresses hatred, hostility, or discrimination toward LGBTQIA+ people through subtle, coded, or indirect expressions.\par\medskip
-Classify the comment based on its meaning and intent. Do not classify a comment as hateful merely because it mentions LGBTQIA+ identities.\par\medskip
-Respond with only one numeric label: 0, 1, or 2. Do not provide any explanation.
-\end{minipage} &
-\begin{minipage}[t]{\linewidth}\raggedright\itshape
-Sei un assistente di intelligenza artificiale che classifica i commenti di YouTube in una delle tre categorie di discorsi d'odio rivolti alle persone LGBTQIA+.\par\medskip
-Categorie:\par 0 - Non odioso o di supporto: Contenuti che non esprimono odio, ostilità o discriminazione verso le persone LGBTQIA+, comprese affermazioni neutrali o di sostegno.\par 1 - Odio esplicito: Contenuti che esprimono direttamente odio, ostilità o discriminazione verso le persone LGBTQIA+ attraverso attacchi palesi, insulti o dichiarazioni d'odio.\par 2 - Odio implicito: Contenuti che esprimono indirettamente odio, ostilità o discriminazione verso le persone LGBTQIA+ attraverso espressioni sottili, in codice o indirette.\par\medskip
-Classifica il commento in base al suo significato e all'intenzione comunicativa. Non classificare un commento come odioso solo perché menziona identità LGBTQIA+.\par\medskip
-Rispondi esclusivamente con un'etichetta numerica: 0, 1 o 2. Non fornire spiegazioni.
-\end{minipage} &
-\begin{minipage}[t]{\linewidth}\raggedright\itshape
-Je bent een AI-assistent die YouTube-reacties indeelt in een van de drie categorieën van haatdragende uitingen gericht tegen LGBTQIA+-personen.\par\medskip
-Categorieën:\par 0 - Niet-haatdragend of ondersteunend: Inhoud die geen haat, vijandigheid of discriminatie tegen LGBTQIA+-personen uitdrukt, waaronder neutrale of ondersteunende uitspraken.\par 1 - Expliciete haat: Inhoud die rechtstreeks haat, vijandigheid of discriminatie tegen LGBTQIA+-personen uitdrukt door middel van openlijke aanvallen, beledigingen of haatdragende uitspraken.\par 2 - Impliciete haat: Inhoud die indirect haat, vijandigheid of discriminatie tegen LGBTQIA+-personen uitdrukt door middel van subtiele, verhulde of indirecte uitingen.\par\medskip
-Classificeer de reactie op basis van de betekenis en de bedoeling ervan. Classificeer een reactie niet als haatdragend alleen omdat LGBTQIA+-identiteiten worden genoemd.\par\medskip
-Antwoord uitsluitend met één numeriek label: 0, 1 of 2. Geef geen uitleg.
-\end{minipage} \\
-\bottomrule
-\end{tabular}
-\caption{Teks lengkap \textit{prompt} yang digunakan untuk klasifikasi. Teks dipertahankan dalam bahasa masing-masing.}
-\label{tab:prompts}
-\end{table*}
 
 % Evidence: Q001,Q004,B002.
 Pelatihan dan evaluasi model dilakukan menggunakan Python dan PyTorch dengan GPU melalui platform Modal.
@@ -225,7 +173,7 @@ Evaluasi dilakukan pada akhir setiap \textit{epoch}. Pelatihan dihentikan lebih 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/eda_label_distribution.pdf}
-\caption{Jumlah dan proporsi kelas sebelum pembagian. Panel kiri menunjukkan jumlah komentar dan panel kanan menunjukkan persentase pada setiap bahasa.}
+\caption{Distribusi kelas sebelum pembagian. Angka di atas batang menunjukkan jumlah komentar, sedangkan angka di dalam batang menunjukkan persentase kelas terhadap total komentar pada setiap bahasa.}
 \label{fig:eda-labels}
 \end{figure*}
 
@@ -234,6 +182,25 @@ Kelas \texttt{no} menyumbang hampir separuh komentar pada ketiga bahasa. Propors
 
 % Evidence: Q007.
 Pemeriksaan tidak menemukan nilai kosong pada kolom identitas, komentar, konteks video, dan label yang dianalisis. Seluruh ID unik dan semua label sesuai tiga kelas \textit{task}. Pada data Italia terdapat satu duplikasi komentar setelah normalisasi, tanpa perbedaan label.
+
+\subsection{Prapemrosesan dan Pembagian Data}
+\noindent\begin{minipage}{\columnwidth}
+\captionsetup{hypcap=false}
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
+\toprule
+Bahasa & Kelas & \textit{Train} & \textit{Validation} & \textit{Test} \\
+\midrule
+\input{tables/eda_split_counts}
+\end{tabular}
+\captionof{table}{Jumlah komentar setiap kelas pada \textit{train}, \textit{validation}, dan \textit{test} setelah pembagian.}
+\label{tab:split}
+\end{minipage}
+
+% Evidence: Q005,Q007,B002.
+Tabel~\ref{tab:split} memperlihatkan jumlah komentar setelah pembagian. \textit{Train} berjumlah 2.111 pada data Inggris, 1.699 pada data Italia, dan 1.556 pada data Belanda. \textit{Validation} masing-masing berjumlah 292, 220, dan 226, sedangkan \textit{test} berjumlah 586, 481, dan 456. Ketiga kelas hadir pada seluruh bagian. Seluruh baris tetap teralokasi dengan isi komentar yang sama seperti sebelum pembagian. Pemeriksaan tidak menemukan tumpang tindih ID, komentar ternormalisasi, atau pasangan judul--deskripsi nonkosong antarbagian. Duplikasi komentar pada data Italia berada pada \textit{train} yang sama. Konteks judul--deskripsi tetap merupakan pendekatan untuk mengenali kelompok video, bukan jaminan identitas video yang sempurna.
 
 \subsection{Hasil Klasifikasi}
 % Evidence: Q002,B002.

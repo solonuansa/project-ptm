@@ -14,7 +14,7 @@
   "undefined_references": 0,
   "pages": 8,
   "figures": 1,
-  "tables": 5,
+  "tables": 4,
   "paragraphs_registered": 57,
   "primary_test_combinations": 9,
   "matrix_audited_combinations": 9,
@@ -23,9 +23,9 @@
   "xlmr_and_qwen_split_ids_and_gold_match": true,
   "human_verification": "pending",
   "wording_checks": "Requested exclusions absent; template placeholders removed",
-  "visual_qa": "Eight pages rendered and inspected; complete three-language prompt table and limitations reviewed at larger size; no LaTeX warnings",
-  "pdf_sha256": "8bec504d734b2026860fa41827f8c9d4f8a15d0621605254873f73b683c96d68",
-  "main_tex_sha256": "d176f4feef35e30cc88b8838495d7aefc4a87462cbd4fab1a49d45f3c342cc96",
+  "visual_qa": "Eight final pages rendered and inspected after removing prompt display; no LaTeX warnings",
+  "pdf_sha256": "ac6cc797a268d9e5c32055fe98f39f4b665b4ee6adb1fe89b0853303426a4308",
+  "main_tex_sha256": "808d35a938821dc0a6b59a7ab0bb32c267ad362cb4ed2b2d52f04e493fda2e5a",
   "class_naming": "Original labels no, yes_implicit, yes_explicit in manuscript, tables and confusion plot",
   "section_headings": [
     "Pendahuluan",
@@ -43,10 +43,11 @@
   "ide_build_recipe": "latexmk (PDF + BibTeX), then sync-paper-pdf; verified in running VS Code log",
   "workspace_settings": "../.vscode/settings.json",
   "prior_line_number_version_archive": "archive/versions/20261026-154626-sebelum-menonaktifkan-nomor-baris",
-  "experiment_design": "General dataset and total, measured split table, narrative scenarios and comparative configuration table",
+  "experiment_design": "General dataset total, scenarios and configuration table; no full prompt display",
   "method_evaluation": "Evaluasi Model follows Pelatihan dan Prediksi",
   "result_subsections": [
     "Eksplorasi Data (EDA)",
+    "Prapemrosesan dan Pembagian Data",
     "Hasil Klasifikasi",
     "Analisis Berdasarkan Bahasa",
     "Analisis Berdasarkan Kelas"
@@ -79,21 +80,21 @@
   "xlmr_train_batch": 32,
   "xlmr_gpu": "NVIDIA H200",
   "prior_eda_update_archive": "archive/versions/20261027-014321-sebelum-revisi-eda-hasil-terbaru",
-  "method_scope": "Procedures only; split counts and measured overlap checks moved to section4",
+  "method_scope": "Procedures only; measured preprocessing/split results in Results section5.2",
   "manuscript_normalization_description": "Concise NFKC purpose for consistent text-equivalence checking; audit implementation details omitted",
   "model_environment_in_manuscript": "Python, PyTorch, GPU via Modal; no FP16/BF16 details",
   "length_eda_in_manuscript": false,
   "prior_concise_method_archive": "archive/versions/20261027-015958-sebelum-ringkas-metode-prapemrosesan",
   "prior_style_model_archive": "archive/versions/20261027-021447-sebelum-penyelarasan-bahasa-model",
   "model_description_scope": "General model properties in 3.1 and 3.2; task implementation in training and prediction workflow",
-  "prompt_texts_displayed": [
-    "EN",
-    "IT",
-    "NL"
-  ],
+  "prompt_texts_displayed": [],
   "reproducibility_limitation": "Single latest Qwen run per pair; unmeasured repeat variation, environment dependence, compute requirements",
   "configuration_wording": "Fine-tuning, Scheduler, no gradient accumulation, numerical early stopping, dash for absent warmup",
   "prior_prompt_reproducibility_archive": "archive/versions/20261027-022032-sebelum-prompt-reproduksibilitas",
   "batch_reporting": "Single Batch size row: XLM-R32, Qwen16 (effective batch)",
-  "prior_single_batch_archive": "archive/versions/20261027-022718-sebelum-satu-batch-size"
+  "prior_single_batch_archive": "archive/versions/20261027-022718-sebelum-satu-batch-size",
+  "prior_split_results_archive": "archive/versions/20261027-023221-sebelum-pemindahan-hasil-split",
+  "eda_figure_layout": "Single grouped bar chart; counts above bars and class percentage within each language inside bars",
+  "prior_single_panel_archive": "archive/versions/20261027-024235-sebelum-eda-satu-panel",
+  "prior_remove_prompts_archive": "archive/versions/20261027-025128-sebelum-hapus-tampilan-prompt"
 }
