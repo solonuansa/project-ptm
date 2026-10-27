@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[review]{acl}
+\usepackage[final]{acl}
 \usepackage{times}
 \usepackage{latexsym}
 \usepackage[T1]{fontenc}
@@ -12,91 +12,99 @@
 \usepackage{capt-of}
 \usepackage[indonesian]{babel}
 \usepackage{xurl}
-
-\title{StereoQueerEval: Klasifikasi Ujaran Kebencian terhadap\
-Komunitas LGBTQIA+ dengan XLM-RoBERTa dan Qwen3.5-9B}
-\author{Penulis Anonim}
-
+\renewcommand{\abstractname}{Abstrak}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\title{Action+1 at SemEval-2027 Task 8: \textit{Fine-tuning} Qwen3.5-9B dengan \textit{Prompt} Multibahasa untuk Klasifikasi \textit{Hate Speech}}
+\author{\textbf{Aqila Khansa Hartanto \quad Rifki Martleo Alfiansyah} \\
+\textbf{Solo Bening Nuansa Nanditya \quad Wildan Abid Al Hanif} \\
+Universitas Sebelas Maret \\
+\texttt{\{aqilakhansahartanto, solobeningnuansan\}@student.uns.ac.id}}
 \begin{document}
-\nolinenumbers
+\renewcommand{\abstractname}{Abstrak}
+\pagestyle{plain}
 \raggedbottom
 \maketitle
 \begin{abstract}
-% Evidence: Q001,Q002,Q004,B002.
-Penelitian ini menyajikan penyelesaian Subtask B StereoQueerEval melalui klasifikasi komentar YouTube berbahasa Inggris, Italia, dan Belanda ke dalam kelas \texttt{no}, \texttt{yes\_implicit}, dan \texttt{yes\_explicit}. Pendekatan utama menggunakan \textit{fine-tuning} Qwen3.5-9B dengan LoRA, menggunakan tiga pilihan bahasa \textit{prompt}. XLM-RoBERTa Base digunakan sebagai pembanding pada pembagian data yang sama. Seluruh pilihan \textit{prompt} Qwen menghasilkan \textit{macro-F1} lebih tinggi daripada pembanding. Skor tertinggi pada pengujian internal adalah 0,719146 pada data Inggris, 0,7036 pada data Italia, dan 0,641522 pada data Belanda. Kesamaan bahasa \textit{prompt} dan komentar belum memberikan hasil tertinggi secara konsisten. Kelas \texttt{yes\_implicit} memperoleh F1 terendah pada kedua model.
+% Evidence: Q001,Q002,Q004,Q005,Q006,B002.
+Deteksi \textit{hate speech} multibahasa memerlukan pemahaman konteks untuk mengenali pesan yang disampaikan secara tersirat maupun langsung. Penelitian ini menyelesaikan Subtask B StereoQueerEval, yaitu klasifikasi komentar YouTube ke dalam tiga kelas: \texttt{no}, \texttt{yes\_implicit}, dan \texttt{yes\_explicit}. Penyelesaian dilakukan melalui \textit{fine-tuning} Qwen3.5-9B dengan LoRA pada sembilan kombinasi bahasa komentar dan \textit{prompt}. Kinerjanya dibandingkan dengan XLM-RoBERTa Base menggunakan \textit{macro-F1} pada pembagian internal data Inggris, Italia, dan Belanda yang sama. Hasil menunjukkan bahwa seluruh pilihan \textit{prompt} Qwen melampaui pembanding, dengan skor tertinggi 0,719146 pada data Inggris, 0,7036 pada data Italia, dan 0,641522 pada data Belanda. Meskipun demikian, kesamaan bahasa \textit{prompt} dan komentar belum konsisten memberikan skor tertinggi, dan kelas \texttt{yes\_implicit} tetap paling sulit dikenali.
 \end{abstract}
 
 \section{Pendahuluan}
-% Evidence: L102.
+\label{sec:pendahuluan}
+
 Deteksi \textit{hate speech} tidak hanya berkaitan dengan pengenalan kata-kata kasar. Pesan yang menyerang kelompok tertentu juga dapat disampaikan melalui ungkapan tersirat yang membutuhkan pemahaman konteks. \citet{elsherief-etal-2021-latent} menjelaskan bahwa bahasa berkode dan ungkapan tidak langsung menjadi tantangan dalam mendeteksi pesan tersebut. Perbedaan cara penyampaian membuat model perlu mengenali maksud pesan, bukan hanya kata-kata yang muncul di dalamnya.
 
 % Evidence: L111.
-Penelitian \citet{chan-etal-2024-hate} mengkaji deteksi \textit{hate speech} terhadap komunitas LGBTQIA+ menggunakan GPT-3.5-turbo pada teks asli dan teks yang diterjemahkan ke bahasa Inggris. Penerjemahan tidak selalu membantu klasifikasi. Analisis kesalahan menunjukkan bahwa istilah \textit{slang} dan ungkapan yang berkaitan dengan budaya tertentu tidak diterjemahkan dengan tepat. Hasil ini menjadi pertimbangan untuk mempertahankan bahasa asli komentar.
+Penelitian \citet{chan-etal-2024-hate} mengkaji deteksi \textit{hate speech} terhadap komunitas LGBTQIA+ menggunakan GPT-3.5-turbo pada teks asli dan teks yang diterjemahkan ke bahasa Inggris. Peneliti menemukan bahwa sebagian kesalahan klasifikasi berkaitan dengan penerjemahan istilah \textit{slang} dan ungkapan khas budaya yang kurang tepat. Temuan ini menjadi pertimbangan untuk mempertahankan bahasa asli komentar.
 
 % Evidence: L111,Q001,Q006.
 Salah satu hal yang belum diuji oleh \citet{chan-etal-2024-hate} adalah penggunaan bahasa \textit{prompt} yang berbeda. Penelitian tersebut menggunakan \textit{prompt} berbahasa Inggris, termasuk untuk data non-Inggris, dan menyarankan pengujian bahasa \textit{prompt} yang sesuai dengan data beserta model lain. Saran ini menjadi dasar penggunaan Qwen dengan \textit{prompt} Inggris, Italia, dan Belanda, baik pada bahasa komentar yang sama maupun berbeda.
 
 % Evidence: L110,L115,Q001,B002.
-Penelitian ini berfokus pada penyelesaian \textit{Subtask B: Hate Speech Classification} dalam SemEval-2027 Task 8: StereoQueerEval. Komentar berbahasa Inggris, Italia, dan Belanda diklasifikasikan ke dalam kelas \texttt{no}, \texttt{yes\_implicit}, dan \texttt{yes\_explicit}. XLM-RoBERTa digunakan sebagai \textit{baseline} karena prapelatihan multibahasanya mendukung berbagai tugas pemahaman bahasa lintas bahasa \citep{conneau-etal-2020-unsupervised}. Hasilnya dibandingkan dengan Qwen pada \textit{test} yang sama.
+Penelitian ini berfokus pada penyelesaian \textit{Subtask B: Hate Speech Classification} dalam SemEval-2027 Task 8: StereoQueerEval. Komentar berbahasa Inggris, Italia, dan Belanda diklasifikasikan ke dalam kelas \texttt{no}, \texttt{yes\_implicit}, dan \texttt{yes\_explicit}. XLM-RoBERTa digunakan sebagai \textit{baseline} karena model \textit{pretrained} multibahasanya mendukung berbagai tugas lintas bahasa \citep{conneau-etal-2020-unsupervised}, dan hasilnya dibandingkan dengan Qwen pada \textit{test} yang sama.
 
 % Evidence: Q001,Q002,Q004,Q006,B002.
-Tujuan penelitian ini adalah menyelesaikan klasifikasi dengan membandingkan XLM-RoBERTa dan Qwen melalui sembilan kombinasi bahasa data dan bahasa \textit{prompt}. Tiga versi \textit{prompt} memuat arahan dengan makna yang setara, sementara komentar tetap menggunakan bahasa aslinya. Hasil dianalisis untuk melihat apakah kesamaan bahasa \textit{prompt} dan komentar memberikan skor lebih tinggi, sekaligus mengenali kelas yang masih sulit dibedakan.
+Penelitian ini bertujuan menyelesaikan klasifikasi \textit{hate speech} dengan membandingkan Qwen dan XLM-RoBERTa melalui sembilan kombinasi bahasa komentar dan bahasa \textit{prompt}. Tiga versi \textit{prompt} memiliki makna arahan yang setara, sementara komentar tetap menggunakan bahasa aslinya. Hasil evaluasi digunakan untuk menilai apakah kesesuaian bahasa \textit{prompt} dan komentar memberikan \textit{macro-F1} lebih tinggi, sekaligus mengidentifikasi kelas yang sulit diklasifikasikan.
 
 \section{Deskripsi \textit{Task}}
-% Evidence: L110,L117,Q001.
-SemEval-2027 Task 8: StereoQueerEval mengkaji stereotip dan ujaran kebencian terhadap komunitas LGBTQIA+.\footnote{\url{https://semeval.github.io/SemEval2027/tasks.html}} Subtask B meminta klasifikasi komentar ke dalam tiga kelas: \texttt{no} untuk komentar tanpa ujaran kebencian, \nolinkurl{yes_implicit} untuk kebencian yang disampaikan tidak langsung, dan \nolinkurl{yes_explicit} untuk kebencian yang dinyatakan langsung \citep{stereoqueereval-2026-data}. Percobaan menggunakan bahasa Inggris (EN), Italia (IT), dan Belanda (NL). Teks komentar menjadi \textit{input} model, tanpa judul, deskripsi video, atau anotasi dari \textit{subtask} lain.
+\subsection{SemEval-2027 Task 8: StereoQueerEval}
+\label{subsec:task-description}
+
+SemEval-2027 Task 8: StereoQueerEval mengkaji stereotip dan \textit{hate speech} terhadap komunitas LGBTQIA+. Data berupa komentar YouTube beserta judul dan deskripsi video. Tiga \textit{subtask} terdiri atas deteksi stereotip, klasifikasi \textit{hate speech}, dan identifikasi target dan identitas LGBTQIA+.\footnote{\url{https://stereoqueereval.github.io/stereoqueereval/}}
+
+Penelitian ini menyelesaikan Subtask B melalui tiga kelas: \texttt{no} untuk komentar tanpa \textit{hate speech}, termasuk dukungan, \nolinkurl{yes_implicit} untuk \textit{hate speech} tersirat, dan \nolinkurl{yes_explicit} untuk \textit{hate speech} langsung \citep{stereoqueereval-2026-data}. Data Inggris (EN), Italia (IT), dan Belanda (NL) menggunakan kategori yang sama, sehingga hasil dapat dibandingkan per bahasa dan per kelas.
 
 \subsection{Penelitian Terkait}
-% Evidence: L114,L101,L111.
-\citet{nozza-2022-nozza} menggabungkan prediksi BERT, RoBERTa, dan HateBERT untuk mengenali homofobia dan transfobia pada komentar YouTube Inggris. QUEEREOTYPES menyediakan anotasi stereotip dan ujaran kebencian secara terpisah pada data Italia \citep{cignarella-etal-2024-queereotypes}. Sementara itu, \citet{chan-etal-2024-hate} menggunakan GPT-3.5-turbo untuk klasifikasi dua kelas dan mengevaluasinya dengan \textit{weighted-F1}. Penelitian ini membedakan tiga kelas menggunakan \textit{macro-F1}, sehingga skornya tidak dibandingkan langsung dengan penelitian tersebut.
+\label{subsec:related}
 
-% Evidence: L112,L116,Q001,Q006.
-\citet{nguyen-etal-2025-leveraging} mengevaluasi lima model bahasa besar pada deteksi ujaran yang menyerang komunitas LGBTQIA+ tanpa pelatihan tambahan dan melaporkan bahwa kesalahan klasifikasi masih terjadi. Penelitian ini menggunakan \textit{fine-tuning} untuk mempelajari kategori StereoQueerEval. Pilihan bahasa \textit{prompt} juga relevan pada model multibahasa. \citet{behzad-etal-2024-ask} menemukan perbedaan hasil antarbahasa \textit{prompt} pada penilaian tata bahasa Inggris. Temuan tersebut menjadi pertimbangan pengujian pilihan bahasa, bukan bukti langsung pada deteksi ujaran kebencian.
+Penelitian klasifikasi \textit{hate speech} masih menghadapi tantangan dalam mengenali kebencian implisit yang disampaikan melalui stereotip, bahasa berkode, dan ekspresi tidak langsung \citep{elsherief-etal-2021-latent}. Pada komunitas LGBTQIA+ dan konteks multibahasa, \citet{chan-etal-2024-hate} menggunakan GPT-3.5-turbo untuk klasifikasi dua kelas pada teks asli dan terjemahan bahasa Inggris, dan menemukan bahwa penerjemahan tidak selalu mempertahankan nuansa teks asli. Karena itu, penelitian ini mempertahankan bahasa asli komentar dan menggunakan tiga kelas dengan \textit{macro-F1}, sehingga skornya tidak dibandingkan langsung dengan penelitian tersebut. XLM-R digunakan sebagai \textit{baseline} karena representasi lintas bahasanya \citep{conneau-etal-2020-unsupervised}.
+
+Pada \textit{Large Language Model} (LLM), \citet{nguyen-etal-2025-leveraging} mengevaluasi lima LLM tanpa pelatihan tambahan untuk mendeteksi ujaran yang menyerang komunitas LGBTQIA+ dan melaporkan bahwa kesalahan klasifikasi masih terjadi. Bahasa \textit{prompt} juga dapat memengaruhi hasil: \citet{behzad-etal-2024-ask} menemukan perbedaan hasil antarbahasa \textit{prompt} pada penilaian tata bahasa Inggris. Hal ini menjadi pertimbangan untuk menguji \textit{prompt} berbahasa Inggris, Italia, dan Belanda, meskipun bukan bukti langsung pada deteksi ujaran kebencian.
 
 \section{Metodologi}
-\subsection{XLM-RoBERTa}
-% Evidence: L115.
-XLM-RoBERTa merupakan model \textit{Transformer} multibahasa yang dilatih menggunakan lebih dari 2 TB teks CommonCrawl dari 100 bahasa \citep{conneau-etal-2020-unsupervised}. Model ini mempelajari hubungan antarkata melalui \textit{masked language modeling}, yaitu memprediksi token yang disembunyikan berdasarkan konteks di sekitarnya. Dengan cara tersebut, satu model dapat membentuk representasi teks dari berbagai bahasa.
+\subsection{XLM-RoBERTa Base}
+XLM-RoBERTa (XLM-R) merupakan model \textit{Transformer} multibahasa dengan arsitektur \textit{encoder} yang dilatih dengan \textit{Masked Language Modeling} pada lebih dari 2 TB data CommonCrawl dari 100 bahasa, sehingga mampu membangun representasi lintas bahasa tanpa penerjemahan \citep{conneau-etal-2020-unsupervised}. Varian Base, selanjutnya disebut XLM-R, memiliki 12 lapisan \textit{Transformer}, 12 \textit{attention heads}, dan representasi tersembunyi berdimensi 768.
+\footnote{\url{https://huggingface.co/FacebookAI/xlm-roberta-base/blob/main/config.json}}
 
-XLM-RoBERTa menggunakan arsitektur \textit{encoder} yang membaca konteks dari kedua arah. \textit{Output} model berupa representasi token yang dapat digunakan untuk berbagai tugas pemahaman bahasa, termasuk klasifikasi teks. Varian Base digunakan dalam penelitian ini dan selanjutnya disebut XLM-R.
+Setiap token \textit{input} diubah menjadi representasi kontekstual oleh \textit{encoder}. Representasi token klasifikasi dapat diteruskan ke lapisan klasifikasi untuk menghasilkan skor setiap kelas. Probabilitas kelas diperoleh melalui \textit{softmax}.
 
 \subsection{Qwen3.5-9B}
-% Evidence: L103.
-Qwen3.5-9B adalah model multibahasa dengan sekitar sembilan miliar parameter \citep{qwen-team-2026-qwen35}. Model ini mendukung \textit{input} teks dan visual. Komponen bahasanya menghasilkan teks secara bertahap dengan memperkirakan token berikutnya berdasarkan konteks yang telah tersedia.
+\label{subsec:qwen}
 
-Berbeda dari model yang menghasilkan representasi teks untuk lapisan klasifikasi, Qwen dapat menghasilkan \textit{output} teks berdasarkan \textit{prompt}. \textit{Prompt} memberikan konteks dan menjelaskan bentuk \textit{output} yang diharapkan. Kemampuan tersebut memungkinkan model digunakan untuk berbagai tugas bahasa melalui format percakapan.
+Qwen3.5-9B adalah model multibahasa dengan sekitar sembilan miliar parameter yang mendukung \textit{input} teks dan visual \citep{qwen-team-2026-qwen35}. Komponen bahasanya menghasilkan teks secara bertahap dengan memperkirakan token berikutnya berdasarkan konteks. \textit{Prompt} menjelaskan konteks dan bentuk \textit{output} dalam format percakapan.
+
+Model ini memiliki 32 lapisan dan dimensi representasi 4.096. Arsitekturnya mengulang delapan kelompok yang masing-masing terdiri atas tiga lapisan \textit{Gated DeltaNet} dan satu lapisan \textit{Gated Attention}. Setiap lapisan dilengkapi \textit{dense feed-forward network} (FFN). Token diproses melalui \textit{embedding} dan susunan lapisan tersebut, kemudian normalisasi akhir dan \textit{language modeling head} menghasilkan skor token berikutnya.
 
 \subsection{Alur Analisis}
-% Evidence: Q001,Q004,Q005,Q006,B002.
-Alur analisis meliputi eksplorasi data, prapemrosesan dan pembagian data, pelatihan dan prediksi, kemudian evaluasi. Langkah tersebut diterapkan pada setiap bahasa secara terpisah.
 
 \subsubsection{Eksplorasi Data (EDA)}
 % Evidence: Q007.
-Eksplorasi data atau \textit{exploratory data analysis} (EDA) memeriksa distribusi kelas, kelengkapan kolom, keunikan ID, dan duplikasi. Hasil pemeriksaan digunakan untuk memahami komposisi data sebelum pembagian.
+Eksplorasi data atau \textit{exploratory data analysis} (EDA) dilakukan pada \textit{dataset} sebelum pembagian. Pemeriksaan meliputi jumlah komentar pada setiap bahasa dan kelas, kelengkapan kolom, keunikan ID, dan duplikasi komentar. Visualisasi distribusi kelas digunakan untuk memahami ketidakseimbangan label.
 
 \subsubsection{Prapemrosesan dan Pembagian Data}
-% Evidence: Q005,Q007,L118.
-Prapemrosesan menggunakan normalisasi Unicode NFKC untuk menyeragamkan representasi karakter yang setara agar kesamaan teks dapat diperiksa secara konsisten \citep{unicode-consortium-2026-normalization}. Kapitalisasi, emoji, dan tanda baca dipertahankan. Komentar tidak diterjemahkan.
+% Evidence: Q001,Q005,Q007,B002,L118.
+Prapemrosesan menggunakan normalisasi Unicode NFKC untuk menyeragamkan representasi karakter yang setara agar kesamaan teks diperiksa secara konsisten \citep{unicode-consortium-2026-normalization}. Kapitalisasi, emoji, dan tanda baca dipertahankan. Komentar tidak diterjemahkan.
 
-% Evidence: Q005,Q007,Q001,B002.
-Pembagian dilakukan per bahasa dengan stratifikasi label dan pengelompokan konteks video, menggunakan \textit{seed} 42. Targetnya 70\% \textit{train}, 10\% \textit{validation}, dan 20\% \textit{test}. Komentar dengan pasangan judul--deskripsi yang sama atau duplikat setelah normalisasi ditempatkan pada kelompok yang sama agar tidak terpisah antarbagian. Komentar kemudian ditokenisasi dan dipotong sesuai batas \textit{input} masing-masing model.
+% Evidence: Q005,Q007.
+Pembagian dilakukan per bahasa dengan stratifikasi label dan pengelompokan konteks video. Targetnya 70\% \textit{train}, 10\% \textit{validation}, dan 20\% \textit{test}. Komentar dengan pasangan judul--deskripsi yang sama atau duplikat setelah normalisasi ditempatkan pada kelompok yang sama agar tidak terpisah antarbagian. Komentar kemudian ditokenisasi dan dipotong sesuai batas \textit{input} masing-masing model. Pada Qwen, ruang untuk \textit{prompt} dan \textit{output} tetap disediakan.
 
 \subsubsection{Pelatihan dan Prediksi}
 % Evidence: B002.
-XLM-R menggunakan lapisan klasifikasi untuk menghasilkan satu dari tiga label. Seluruh parameter diperbarui selama pelatihan. Bobot kelas dihitung hanya dari \textit{train} untuk memperhatikan kelas dengan contoh lebih sedikit.
+Pada XLM-R, representasi teks diteruskan ke lapisan klasifikasi untuk menentukan satu dari tiga label. Seluruh parameter model dan lapisan klasifikasi diperbarui menggunakan \textit{train}. Bobot kelas dihitung dari jumlah contoh pada \textit{train} agar kelas yang lebih sedikit mendapat perhatian dalam perhitungan kesalahan.
 
 % Evidence: Q001,Q004,L104.
-Pada Qwen, \textit{fine-tuning} menggunakan \textit{Low-Rank Adaptation} (LoRA) dan \textit{supervised fine-tuning} (SFT). LoRA mempertahankan bobot utama model dan memperbarui parameter tambahan berukuran kecil \citep{hu-etal-2021-lora}. Perhitungan kesalahan hanya dilakukan pada bagian \textit{output}, tanpa menyertakan \textit{prompt} dan komentar.
+\textit{Fine-tuning} Qwen menggunakan LoRA dan \textit{supervised fine-tuning} (SFT). SFT menggunakan pasangan \textit{input} dan \textit{output} yang benar, sedangkan LoRA mempertahankan bobot utama model dan memperbarui parameter tambahan berukuran kecil \citep{hu-etal-2021-lora}. Perhitungan kesalahan hanya dilakukan pada bagian \textit{output}, tanpa menyertakan \textit{prompt} dan komentar.
 
 % Evidence: Q001,Q004,Q006.
-\textit{Prompt} menjelaskan tiga kategori dan menegaskan bahwa penyebutan identitas LGBTQIA+ saja tidak cukup untuk menentukan kebencian. Pilihan bahasanya adalah Inggris, Italia, dan Belanda, tanpa contoh komentar berlabel. \textit{Output} dipetakan menjadi angka 0 untuk \texttt{no}, 1 untuk \texttt{yes\_explicit}, dan 2 untuk \texttt{yes\_implicit}. Komentar tetap menggunakan bahasa aslinya, sedangkan nama penanda bahasa dan komentar pada format \textit{input} ditulis dalam bahasa Inggris untuk seluruh pilihan \textit{prompt}.
+\textit{Prompt} menjelaskan ketiga kategori dan menegaskan bahwa penyebutan identitas LGBTQIA+ saja tidak cukup untuk menganggap komentar sebagai kebencian. Tersedia tiga pilihan bahasa \textit{prompt}, yaitu Inggris, Italia, dan Belanda, tanpa contoh komentar berlabel. \textit{Output} berupa satu angka: 0 untuk \texttt{no}, 1 untuk \texttt{yes\_explicit}, dan 2 untuk \texttt{yes\_implicit}. Komentar tetap menggunakan bahasa aslinya. Nama penanda bahasa dan komentar dalam format \textit{input} ditulis dalam bahasa Inggris pada seluruh pilihan \textit{prompt}.
 
 % Evidence: Q001,Q004.
-Saat prediksi, jumlah log probabilitas setiap pilihan \textit{output} beserta penanda akhirnya dihitung. Pilihan dengan skor tertinggi menjadi label prediksi. Cara ini membatasi \textit{output} pada tiga kategori yang ditentukan, sehingga label tidak bergantung pada penjelasan bebas yang dihasilkan model.
+Saat prediksi, Qwen menghitung jumlah log probabilitas setiap pilihan \textit{output} dengan penanda akhirnya. Pilihan dengan skor tertinggi menjadi label prediksi. Dengan aturan ini, \textit{output} selalu berupa salah satu dari tiga kategori.
 
 \subsubsection{Evaluasi Model}
-% Evidence: Q001,Q003,Q004,B002.
-Evaluasi pada akhir setiap \textit{epoch} digunakan untuk memilih model dengan \textit{macro-F1} tertinggi pada \textit{validation}. Model terpilih dievaluasi pada \textit{test} yang sama untuk kedua pendekatan. Label yang benar pada \textit{test} hanya digunakan untuk menghitung metrik evaluasi.
+% Evidence: Q001,Q003,Q004,Q005,B002.
+Model dengan \textit{macro-F1} tertinggi pada \textit{validation} dipilih setelah evaluasi setiap \textit{epoch}. Label prediksi dibandingkan dengan label yang benar pada \textit{test} yang sama untuk kedua pendekatan. Hasil dilaporkan per bahasa dan per kelas. Pengujian merupakan evaluasi internal, bukan evaluasi pada \textit{test} resmi.
 
 \subsection{Metrik Evaluasi}
 % Evidence: Q001,Q002,Q003,Q004,B002.
@@ -111,15 +119,17 @@ F1_c = \frac{2P_cR_c}{P_c+R_c},
 \end{equation}
 $P_c$ dan $R_c$ masing-masing menyatakan \textit{precision} dan \textit{recall} kelas $c$. \textit{Macro-F1} pada \textit{validation} digunakan untuk memilih \textit{checkpoint} terbaik, sedangkan kinerja akhir dilaporkan pada \textit{test} untuk setiap bahasa dan konfigurasi eksperimen. F1 per kelas juga disajikan untuk mengidentifikasi kategori yang masih sulit dikenali.
 
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/eda_label_distribution.pdf}
+\caption{Distribusi kelas sebelum pembagian. Jumlah ditampilkan di atas batang dan persentase terhadap total per bahasa di dalam batang.}
+\label{fig:eda-labels}
+\end{figure*}
+
 \section{Rancangan Eksperimen}
+
 % Evidence: Q005,Q007,L110.
 \textit{Dataset} terdiri atas 7.627 komentar berlabel dari penyelenggara StereoQueerEval. Pengujian menggunakan pembagian internal data tersebut, sehingga hasil belum merupakan evaluasi resmi \textit{shared task}. Judul dan deskripsi hanya digunakan untuk pengelompokan konteks saat pembagian.
-
-% Evidence: Q001,Q002,Q004,Q006,B002.
-XLM-R dilatih satu kali per bahasa. Qwen dilatih pada sembilan pasangan bahasa komentar dan bahasa \textit{prompt}, masing-masing dimulai dari model dasar yang sama dengan parameter LoRA baru. Bahasa \textit{prompt} digunakan secara konsisten pada \textit{train}, \textit{validation}, dan \textit{test}. Pelatihan dilakukan menggunakan Python dan PyTorch dengan GPU melalui platform Modal.
-
-% Evidence: Q001,Q004,Q008,B002,L109.
-Tabel~\ref{tab:configuration} merangkum konfigurasi kedua model. Keduanya menggunakan AdamW \citep{loshchilov-hutter-2019-decoupled}. Batas \textit{input} Qwen memperhitungkan \textit{prompt}, komentar, dan \textit{output}. Pelatihan berhenti ketika skor \textit{validation} tidak membaik sesuai ketentuan \textit{early stopping}. Untuk pasangan yang diulang, hasil dilaporkan dari percobaan terbaru, tanpa memilih berdasarkan skor \textit{test}.
 
 \begin{table}[t]
 \centering\small
@@ -134,69 +144,92 @@ Pengaturan & XLM-R & Qwen \\
 \textit{Learning rate} & $10^{-5}$ & $10^{-4}$ \\
 \textit{Weight decay} & 0,01 & 0,01 \\
 \textit{Batch size} & 32 & 16 \\
-Batas \textit{input} & 384 token & 1.024 token \\
+\textit{Input} maksimum & 384 token & 1.024 token \\
 \textit{Scheduler} & \textit{Linear} & \textit{Cosine} \\
-\textit{Warmup} & -- & Sekitar 5\% langkah \\
+\textit{Warmup} & -- & 5\% \\
 \textit{Early stopping} & 3 & 2 \\
-LoRA \textit{rank}/\textit{alpha} & -- & 16/32 \\
+LoRA $r/\alpha$ & -- & 16/32 \\
 LoRA \textit{dropout} & -- & 0,05 \\
 \bottomrule
 \end{tabular}
-\caption{Konfigurasi pelatihan. \textit{Early stopping} menyatakan jumlah evaluasi tanpa perbaikan pada \textit{validation}.}
+\caption{Konfigurasi \textit{fine-tuning} kedua model. \textit{Early stopping} menyatakan jumlah evaluasi tanpa perbaikan.}
 \label{tab:configuration}
 \end{table}
 
-\section{Hasil dan Pembahasan}
-\subsection{Eksplorasi Data (EDA)}
-% Evidence: Q007.
-Data terdiri atas 2.989 komentar Inggris, 2.400 Italia, dan 2.238 Belanda. Gambar~\ref{fig:eda-labels} menunjukkan bahwa kelas \texttt{no} berjumlah paling banyak dan \texttt{yes\_implicit} paling sedikit pada setiap bahasa. Ketidakseimbangan tersebut mendukung penggunaan \textit{macro-F1} agar setiap kelas mendapat bobot evaluasi yang sama.
+% Evidence: Q001,Q002,Q004,Q006,B002.
+XLM-R dilatih satu kali per bahasa. Qwen dilatih pada sembilan pasangan bahasa komentar dan bahasa \textit{prompt}, masing-masing dimulai dari model dasar yang sama dengan parameter LoRA baru. Bahasa \textit{prompt} digunakan secara konsisten pada \textit{train}, \textit{validation}, dan \textit{test}. Pelatihan dilakukan menggunakan Python dan PyTorch dengan GPU melalui platform Modal.
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/eda_label_distribution.pdf}
-\caption{Distribusi kelas sebelum pembagian. Jumlah komentar ditampilkan di atas batang dan persentase terhadap total per bahasa di dalam batang.}
-\label{fig:eda-labels}
-\end{figure*}
+% Evidence: Q001,Q004,Q008,B002,L109.
+Tabel~\ref{tab:configuration} merangkum konfigurasi kedua model. Keduanya menggunakan AdamW \citep{loshchilov-hutter-2019-decoupled}. Batas \textit{input} Qwen memperhitungkan \textit{prompt}, komentar, dan \textit{output}. Pelatihan berhenti ketika skor \textit{validation} tidak membaik sesuai ketentuan \textit{early stopping}.
+
+\section{Hasil dan Pembahasan}
+
+
+
+\subsection{Eksplorasi Data}
+
+Data terdiri atas 2.989 komentar Inggris, 2.400 Italia, dan 2.238 Belanda. Gambar~\ref{fig:eda-labels} menunjukkan bahwa kelas \texttt{no} berjumlah paling banyak dan \texttt{yes\_implicit} paling sedikit pada setiap bahasa. Ketidakseimbangan tersebut mendukung penggunaan \textit{macro-F1} agar setiap kelas mendapat bobot evaluasi yang sama.
 
 % Evidence: Q007.
 Proporsi \texttt{no} mendekati separuh data, sedangkan \texttt{yes\_implicit} berada pada kisaran 21,76\%--25,83\%. Distribusi label perlu diperhatikan saat membaca F1 per kelas, tetapi belum menjelaskan penyebab perbedaan kinerja antarbahasa.
+Pada XLM-R, bobot kelas untuk pelatihan dihitung hanya dari \textit{train} masing-masing bahasa.
 
 \subsection{Prapemrosesan dan Pembagian Data}
-% Evidence: Q005,Q007,B002.
-Pemeriksaan tidak menemukan nilai kosong pada kolom yang dianalisis. Seluruh ID unik dan label sesuai tiga kelas. Satu duplikasi komentar pada data Italia memiliki label yang sama dan berada pada \textit{train}. Seluruh komentar tetap teralokasi tanpa perubahan isi. Tidak ditemukan tumpang tindih ID, komentar ternormalisasi, atau pasangan judul--deskripsi nonkosong antarbagian. Jumlah hasil pembagian disajikan pada Tabel~\ref{tab:split}.
 
-% Evidence: Q005,Q007.
-Hasil pembagian mendekati target 70:10:20, dengan jumlah aktual mengikuti kelompok komentar yang dipertahankan bersama. Dengan demikian, rasio tidak dipaksakan tepat apabila memerlukan pemisahan anggota kelompok. Pemeriksaan tumpang tindih membantu memastikan bahwa komentar yang sama tidak muncul pada bagian yang digunakan untuk pelatihan dan pengujian.
+Tidak ditemukan nilai kosong pada kolom yang dianalisis. Seluruh ID unik dan label sesuai tiga kelas. Satu komentar duplikat pada data Italia memiliki label yang sama dan berada pada \textit{train}. Seluruh komentar tetap digunakan tanpa perubahan isi.
 
 \begin{table}[t]
-\centering\small
-\begin{tabular}{lrrr}
+
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
 \toprule
-Data & \textit{Train} & \textit{Validation} & \textit{Test} \\
+Bahasa & Kelas & \textit{Train} & \textit{Validation} & \textit{Test} \\
 \midrule
-EN & 2.111 & 292 & 586 \\
-IT & 1.699 & 220 & 481 \\
-NL & 1.556 & 226 & 456 \\
+EN & \texttt{no} & 983 & 147 & 277 \\
+EN & \texttt{yes\_implicit} & 546 & 70 & 156 \\
+EN & \texttt{yes\_explicit} & 582 & 75 & 153 \\
+EN & Total & 2.111 & 292 & 586 \\
+\midrule
+IT & \texttt{no} & 822 & 105 & 233 \\
+IT & \texttt{yes\_implicit} & 401 & 56 & 124 \\
+IT & \texttt{yes\_explicit} & 476 & 59 & 124 \\
+IT & Total & 1.699 & 220 & 481 \\
+\midrule
+NL & \texttt{no} & 784 & 109 & 234 \\
+NL & \texttt{yes\_implicit} & 335 & 55 & 97 \\
+NL & \texttt{yes\_explicit} & 437 & 62 & 125 \\
+NL & Total & 1.556 & 226 & 456 \\
 \bottomrule
 \end{tabular}
-\caption{Jumlah komentar setelah pembagian. Ketiga kelas hadir pada setiap bagian.}
+\caption{Jumlah komentar setiap kelas pada \textit{train}, \textit{validation}, dan \textit{test} setelah pembagian.}
 \label{tab:split}
 \end{table}
 
-\subsection{Hasil Klasifikasi Berdasarkan Bahasa}
-% Evidence: Q002,B002.
-Tabel~\ref{tab:main} membandingkan XLM-R dengan sembilan pasangan bahasa Qwen pada \textit{test} yang sama. Seluruh pilihan \textit{prompt} Qwen memperoleh \textit{macro-F1} lebih tinggi daripada XLM-R.
+Pembagian mempertahankan kelompok komentar pada bagian yang sama, sehingga proporsinya mendekati 70:10:20 (Tabel~\ref{tab:split}). Tidak ditemukan tumpang tindih ID, komentar ternormalisasi, atau pasangan judul--deskripsi nonkosong antarbagian.
+
+
+
+\subsection{Evaluasi dan Perbandingan Model}
+
+Evaluasi membandingkan XLM-R yang dilatih per bahasa dengan Qwen setelah SFT pada sembilan pasangan bahasa data dan \textit{prompt}. Semua pilihan \textit{prompt} Qwen menghasilkan \textit{macro-F1} lebih tinggi pada \textit{test} yang sama (Tabel~\ref{tab:main}). Skor tertinggi yang teramati bersifat deskriptif, bukan pengaturan akhir yang dipilih melalui \textit{validation}.
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{2pt}
+\setlength{\tabcolsep}{3pt}
 \begin{tabular}{lrrrr}
 \toprule
-Data & XLM-R & Q-EN & Q-IT & Q-NL \\
+ & & \multicolumn{3}{c}{Qwen3.5-9B} \\
+\cmidrule(lr){3-5}
+Data & XLM-R & EN & IT & NL \\
 \midrule
-\input{tables/reported_macro_f1}
+EN & 0,529052 & \textbf{0,719146} & 0,715757 & 0,688340 \\
+IT & 0,574515 & \textbf{0,7036}   & 0,694249 & 0,701449 \\
+NL & 0,507678 & 0,629927          & 0,630810 & \textbf{0,641522} \\
+\bottomrule
 \end{tabular}
-\caption{\textit{Macro-F1} pada \textit{test}. Q-EN, Q-IT, dan Q-NL adalah Qwen dengan bahasa \textit{prompt} EN, IT, dan NL. Nilai Qwen tertinggi per bahasa dicetak tebal.}
+\caption{\textit{Macro-F1} pada \textit{test}. Kolom EN, IT, dan NL pada Qwen menunjukkan bahasa \textit{prompt}. Nilai Qwen tertinggi per bahasa data dicetak tebal.}
 \label{tab:main}
 \end{table}
 
@@ -208,46 +241,35 @@ Data & Model & \textit{Prompt} & \texttt{no} & \texttt{yes\_implicit} & \texttt{
 \midrule
 \input{tables/reported_class_f1}
 \end{tabular}
-\caption{F1 setiap kelas pada \textit{test}. Kolom \textit{prompt} hanya berlaku untuk Qwen. Nilai Qwen tertinggi pada setiap kelas dan bahasa data dicetak tebal.}
-\label{tab:classes}
+\caption{F1 setiap kelas pada pengujian internal. Nilai Qwen tertinggi per kelas dan bahasa data dicetak tebal.}\label{tab:classes}
 \end{table*}
 
-% Evidence: Q002,B002.
-Hasil tertinggi disajikan secara deskriptif, bukan sebagai pengaturan akhir yang dipilih melalui \textit{validation}. Perbedaan ukuran model, \textit{tokenizer}, batas \textit{input}, dan pelatihan membuat selisih kedua pendekatan belum dapat dikaitkan dengan satu komponen tertentu.
+Selisih skor Qwen tertinggi terhadap XLM-R adalah sekitar 0,1901 pada data Inggris, 0,1291 pada data Italia, dan 0,1338 pada data Belanda. Kedua model dievaluasi pada \textit{test} yang sama. Namun, ukuran model, \textit{tokenizer}, batas \textit{input}, dan cara pelatihannya berbeda. Oleh karena itu, selisih skor belum dapat dikaitkan dengan satu komponen tertentu.
 
-% Evidence: Q002,B002.
-Pada data Inggris, XLM-R memperoleh \textit{macro-F1} sebesar 0,529052. Skor tertinggi Qwen adalah 0,719146, dengan selisih sekitar 0,1901. \textit{Prompt} Italia berada di urutan berikutnya dengan skor 0,715757, sedangkan \textit{prompt} Belanda memperoleh 0,688340. Hasil ini menunjukkan bahwa \textit{prompt} Inggris dan Italia memberikan skor yang berdekatan pada data Inggris.
+Pada data Inggris, \textit{prompt} Inggris memberikan skor tertinggi, diikuti Italia dan Belanda. Selisih skor tertinggi dan terendah sekitar 0,0308. Skor \textit{prompt} Inggris (0,719146) dan Italia (0,715757) berdekatan.
 
-% Evidence: Q002,B002.
-Pada data Italia, XLM-R memperoleh skor 0,574515. Qwen dengan \textit{prompt} Inggris memperoleh 0,7036, diikuti \textit{prompt} Belanda sebesar 0,701449 dan \textit{prompt} Italia sebesar 0,694249. Selisih Qwen tertinggi terhadap XLM-R sekitar 0,1291. Pada data ini, penggunaan bahasa \textit{prompt} yang sama dengan komentar belum memberikan skor tertinggi.
+Pada data Italia, \textit{prompt} Inggris memperoleh skor tertinggi, diikuti Belanda dan Italia, dengan rentang skor 0,694249--0,7036. Bahasa \textit{prompt} yang sama dengan komentar belum memberikan skor tertinggi.
 
-% Evidence: Q002,B002.
-Pada data Belanda, XLM-R memperoleh skor 0,507678. Skor Qwen tertinggi adalah 0,641522 dengan \textit{prompt} Belanda, diikuti \textit{prompt} Italia sebesar 0,630810 dan \textit{prompt} Inggris sebesar 0,629927. Selisih tertinggi terhadap XLM-R sekitar 0,1338. Walaupun Qwen melampaui pembanding pada ketiga pilihan, kinerja pada data Belanda tetap lebih rendah daripada dua bahasa lain.
+Pada data Belanda, \textit{prompt} Belanda memberikan skor tertinggi, diikuti Italia dan Inggris, dengan rentang 0,629927--0,641522. Seluruh pilihan menghasilkan skor lebih rendah daripada dua bahasa lain. Kesamaan bahasa \textit{prompt} dan komentar belum konsisten memberikan skor tertinggi, dan hasil belum menjelaskan penyebab perbedaan antarbahasa.
 
 \subsection{Analisis Berdasarkan Kelas}
-% Evidence: Q002,B002.
-Tabel~\ref{tab:classes} memperlihatkan bahwa \texttt{no} memperoleh F1 tertinggi dan \texttt{yes\_implicit} terendah pada setiap pengaturan kedua model. Seluruh pilihan \textit{prompt} Qwen menghasilkan F1 lebih tinggi daripada XLM-R untuk ketiga kelas pada bahasa data yang sama.
+
+Tabel~\ref{tab:classes} menyajikan F1 setiap kelas untuk XLM-R dan seluruh kombinasi bahasa data dengan \textit{prompt} Qwen. Kelas \texttt{no} memperoleh F1 tertinggi dan kelas \texttt{yes\_implicit} terendah pada setiap pengaturan kedua model. Seluruh pilihan \textit{prompt} Qwen juga menghasilkan F1 yang lebih tinggi daripada XLM-R untuk ketiga kelas pada bahasa data yang sama.
 
 
 
-% Evidence: Q002.
-Pada data Inggris dan Italia, \textit{prompt} Inggris memberikan F1 tertinggi untuk \texttt{no} dan \nolinkurl{yes_implicit}, sedangkan \textit{prompt} Italia tertinggi untuk \nolinkurl{yes_explicit}. Pada data Belanda, \textit{prompt} Belanda tertinggi untuk \texttt{no} dan \nolinkurl{yes_explicit}, tetapi \textit{prompt} Inggris tertinggi untuk \nolinkurl{yes_implicit}. Dengan demikian, \textit{prompt} dengan \textit{macro-F1} tertinggi belum tentu terbaik pada setiap kelas.
+\textit{Prompt} dengan \textit{macro-F1} tertinggi belum tentu terbaik pada setiap kelas. Pada data Inggris dan Italia, \textit{prompt} Inggris tertinggi untuk \texttt{no} dan \texttt{yes\_implicit}, sedangkan \textit{prompt} Italia tertinggi untuk \texttt{yes\_explicit}. Pada data Belanda, \textit{prompt} Belanda tertinggi untuk \texttt{no} dan \texttt{yes\_explicit}, sedangkan \textit{prompt} Inggris tertinggi untuk \texttt{yes\_implicit}.
 
-% Evidence: Q002.
-Pada kelas \texttt{yes\_implicit}, F1 Qwen berada pada rentang 0,5397--0,6172 untuk data Inggris, 0,5815--0,6127 untuk data Italia, dan 0,4806--0,5094 untuk data Belanda. Bahkan pilihan \textit{prompt} tertinggi pada kelas tersebut masih menghasilkan skor lebih rendah daripada dua kelas lainnya dalam pengaturan yang sama. Perbaikan klasifikasi perlu memberi perhatian pada pembedaan kategori ini, dengan pemeriksaan contoh prediksi untuk mengetahui bentuk kesalahan yang terjadi.
-
-% Evidence: Q002,B002.
-F1 XLM-R pada kelas \texttt{yes\_implicit} adalah 0,4085 pada data Inggris, 0,4747 pada data Italia, dan 0,3304 pada data Belanda. Seluruh pilihan Qwen memperoleh F1 lebih tinggi, tetapi kategori ini tetap memiliki skor terendah. Nilai F1 belum menunjukkan kelas tujuan kesalahan, sehingga pola kekeliruan perlu diperiksa langsung pada prediksi.
+Kelas \texttt{yes\_implicit} tetap menjadi yang paling sulit. F1 Qwen pada kelas ini berada pada rentang 0,5397--0,6172 untuk data Inggris, 0,5815--0,6127 untuk data Italia, dan 0,4806--0,5094 untuk data Belanda, sedangkan XLM-R hanya memperoleh 0,4085, 0,4747, dan 0,3304. Nilai F1 belum menunjukkan ke kelas mana kesalahan diarahkan, sehingga pola kekeliruan perlu diperiksa langsung pada contoh prediksi.
 
 \section{Kesimpulan}
 % Evidence: Q001,Q002,Q004,B002.
 Penyelesaian Subtask B StereoQueerEval menggunakan SFT LoRA pada Qwen3.5-9B menghasilkan skor lebih tinggi daripada XLM-R pada pengujian internal. Skor tertinggi adalah 0,719146 pada data Inggris, 0,7036 pada data Italia, dan 0,641522 pada data Belanda. Kesamaan bahasa \textit{prompt} dan komentar belum konsisten memberikan hasil tertinggi. Pengembangan berikutnya perlu memperkuat klasifikasi \texttt{yes\_implicit} dan memilih pengaturan melalui \textit{validation}.
 
 \section*{Keterbatasan}
-% Evidence: Q001,Q004,Q005,Q006,Q007,Q008,B002,L110,L119.
-Hasil berasal dari pengujian internal dengan satu \textit{seed} dan satu versi \textit{prompt} per bahasa, sehingga belum menunjukkan kinerja pada \textit{test} resmi atau kestabilan antarpengulangan. Setiap pasangan Qwen melatih \textit{adapter} terpisah, sehingga perbedaan skor tidak hanya menggambarkan bahasa \textit{prompt}. Reproduksibilitas Qwen memerlukan kesamaan model, data, dan konfigurasi perangkat lunak. Kesamaan \textit{seed} belum menjamin hasil identik lintas lingkungan komputasi \citep{pytorch-reproducibility}.
+% Evidence: Q001,Q004,Q005,Q006,Q008,B002,L119.
+Percobaan menggunakan satu \textit{seed} dan satu versi \textit{prompt} per bahasa. Setiap pasangan Qwen melatih \textit{adapter} terpisah, sehingga hasil tidak mengisolasi bahasa \textit{prompt} pada satu model terlatih. Variasi antarpengulangan belum dinilai. Reproduksibilitas memerlukan kesamaan model dasar, \textit{tokenizer}, data, \textit{prompt}, dan konfigurasi LoRA. Hasil dapat berbeda lintas versi perangkat lunak atau GPU meskipun \textit{seed} sama \citep{pytorch-reproducibility}. Kestabilan hasil perlu diuji dengan beberapa \textit{seed}.
 
-% Daftar pustaka berada di luar batas lima halaman isi dan keterbatasan.
 \clearpage
 \bibliography{references}
 \end{document}

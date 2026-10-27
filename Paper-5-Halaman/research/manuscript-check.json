@@ -1,30 +1,30 @@
 {
   "pages": 6,
   "page_limit_includes_references": false,
-  "references_cited": 13,
+  "references_cited": 11,
   "tables": 4,
   "figures": 1,
   "body_font_pt": 11,
-  "acl_mode": "review",
+  "acl_mode": "final",
   "line_numbers": false,
   "margin_or_font_reduction": false,
   "all_macro_and_class_results_retained": true,
   "source_result_tables_byte_identical": true,
   "original_Paper_main_tex_and_pdf_unchanged": true,
   "latex_warnings": 0,
-  "visual_qa": "Six final pages rendered and inspected; content, figures, tables and one-paragraph limitations end on page5; references start on page6; no LaTeX warnings",
-  "main_tex_sha256": "1c496241e6898bd2b8a148abb1adcdeac841889f8e3849268f27c37b45796572",
-  "pdf_sha256": "52e1da757a3f84707aeb53e6aacd96b201b4fb0e1d5859ee51e285c4b0cfd0aa",
+  "visual_qa": "All six pages rendered and inspected; final title/author block and page5 reviewed at larger size; five main pages including limitations, references page6; zero LaTeX warnings",
+  "main_tex_sha256": "205b4bca583ff5c7a49fe09b1ebfbdb1fea7fa9b4c19fd6e9982a760c2b52fbe",
+  "pdf_sha256": "ae0be6869fd875e685e6b2c2b0b37fd97395a4cc9eb89249878747b3f75b2451",
   "source": "../Paper/main.tex; ../Analisis/results/tabel-experiment.md",
   "editorial_changes": [
-    "Separate general model subsections restored from original Paper",
-    "Workflow retained",
-    "Language results expanded with scores and baseline differences",
-    "Class discussion includes baseline yes_implicit scores",
-    "Related work expanded",
-    "Metrics equations retained",
-    "One-paragraph limitations included within five main pages",
-    "References start after main content using clearpage"
+    "User-provided manuscript is primary reference",
+    "Title, authors, affiliation and final mode adopted",
+    "Verified architecture details retained",
+    "Detailed per-class split table restored",
+    "Stale EN conclusion score and XLM citation corrected",
+    "Unreported zero-shot comparison removed",
+    "Duplicate prose condensed to five main pages",
+    "LaTeX table rules, labels and paths corrected"
   ],
   "batch_size_reporting": "XLM-R32 / Qwen16; effective training batch as in source paper",
   "preprocessing_caveat": "Concise NFKC text describes consistency checks; model inputs remain raw yt_comment as in source audit",
@@ -53,5 +53,17 @@
   "reference_pages": [
     6
   ],
-  "fine_tuning_wording": "Penyesuaian and corresponding verb forms replaced with italic fine-tuning"
+  "fine_tuning_wording": "Penyesuaian and corresponding verb forms replaced with italic fine-tuning",
+  "authors_from_user_reference": true,
+  "primary_manuscript_reference": "research/acuan-utama-pengguna.txt",
+  "primary_reference_sha256": "1facfc2c95e7cea8198ee2b45db8a8c4e5ebba2525bcada2fdd5bbfbd3563403",
+  "change_log": "PERUBAHAN.md",
+  "detailed_split_rows_verified": 12,
+  "macro_f1_values_verified": 12,
+  "model_architecture_verification": {
+    "xlmr": "https://huggingface.co/FacebookAI/xlm-roberta-base/raw/main/config.json",
+    "qwen": "https://huggingface.co/Qwen/Qwen3.5-9B and raw/main/config.json"
+  },
+  "abstract_format": "Context, methods, results only, ending with observed prompt-language and class results; implication sentence removed per user request",
+  "abstract_task_description": "Subtask B classifies YouTube comments into no, yes_implicit, yes_explicit"
 }

@@ -1,33 +1,28 @@
-# StereoQueerEval: lima halaman isi utama
+# Action+1: lima halaman isi utama
 
-Batas lima halaman berlaku untuk isi utama **termasuk keterbatasan**.
-Daftar pustaka berada di luar batas tersebut. PDF saat ini berjumlah enam
-halaman: isi dan keterbatasan pada halaman1?5, daftar pustaka pada halaman6.
-Folder `../Paper` dan naskah aslinya tidak diubah.
+Naskah mengikuti acuan utama yang dikirim pengguna, disimpan utuh pada
+`research/acuan-utama-pengguna.txt`. Rincian revisi tersedia di [PERUBAHAN.md](PERUBAHAN.md).
 
-- Naskah: `main.tex`. PDF: `main.pdf`, identik dengan salinan `output/pdf/`.
-- Format ACL dengan ukuran huruf11pt dan margin asli, tanpa pengecilan.
-- Empat tabel, satu diagram EDA, dan13 referensi yang disitasi.
-- Metodologi: XLM-RoBERTa, Qwen3.5-9B, Alur Analisis, Metrik Evaluasi.
-- Uraian kedua model kembali seperti versi asal, berfokus pada karakteristik
-  model. Penerapan klasifikasi tetap pada Alur Analisis.
-- Hasil diperluas berdasarkan bahasa, selisih terhadap pembanding, dan kelas.
-- Seluruh skor macro-F1 dan F1 kelas XLM-R dan sembilan pasangan Qwen tetap
-  sama dengan tabel hasil pada naskah asal.
-- Keterbatasan satu paragraf, termasuk evaluasi internal dan reproduksibilitas.
-- Versi terdahulu disimpan dalam `archive/`.
+- `main.tex`: naskah aktif. `main.pdf`: hasil kompilasi.
+- Lima halaman isi **termasuk keterbatasan**, daftar pustaka mulai halaman6.
+- Format ACL final, judul dan identitas penulis mengikuti acuan pengguna.
+- Ukuran huruf11pt dan margin ACL asli dipertahankan.
+- Empat tabel, satu gambar EDA, dan11 referensi yang disitasi.
+- Metodologi memuat XLM-RoBERTa Base, Qwen3.5-9B, Alur Analisis, dan Metrik Evaluasi.
+- Tabel pembagian memuat kelas dan total per bahasa. Seluruh angka dibandingkan
+  dengan tabel asal. Seluruh skor kedua model tetap dipertahankan.
+- Folder `../Paper` tidak diubah. Versi sebelumnya disimpan di `archive/`.
 
 ## Kompilasi
 
-Jalankan dari folder ini. Direktori kompilasi terpisah menghindari benturan
-berkas bantu dengan proses otomatis editor.
+Jalankan dari folder ini. Direktori terpisah menghindari benturan dengan proses editor.
 
 ```powershell
-latexmk -pdf -bibtex -synctex=1 -interaction=nonstopmode -file-line-error -halt-on-error -outdir=build/five-main main.tex
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync_paper_pdf.ps1 -RootFile main.tex -OutputDirectory build/five-main
+latexmk -pdf -bibtex -synctex=1 -interaction=nonstopmode -file-line-error -halt-on-error -outdir=build/reference-main main.tex
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync_paper_pdf.ps1 -RootFile main.tex -OutputDirectory build/reference-main
 ```
 
-Dependensi lokal tersedia di folder ini. Hasil pemeriksaan dicatat dalam
-`research/manuscript-check.json`, sedangkan hash naskah asal disimpan dalam
-`research/original-manifest.json`. Kode bukti pada komentar LaTeX merujuk
-ke `../Paper/research/qwen35/evidence-outline.md`.
+Salinan PDF pada `output/pdf/` identik dengan `main.pdf`. Hasil pemeriksaan
+tersimpan pada `research/manuscript-check.json`. Kode R001 pada daftar klaim
+merujuk pada acuan pengguna. Kode Q/B/L merujuk pada jejak bukti yang tersedia
+pada `../Paper/research/qwen35/evidence-outline.md`.
